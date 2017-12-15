@@ -13,8 +13,8 @@ from netaddr import EUI
 from collections import OrderedDict
 from shlex import split
 
-from core.proxymodecontroller import *
-from core.manipulatorcontroller import *
+from core.proxycontroller import *
+from core.mitmcontroller import *
 
 from os import (
     system,path,getcwd,

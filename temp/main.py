@@ -332,9 +332,9 @@ class WifiPumpkin(QtGui.QWidget):
             self.Stack.addWidget(attackmode)
             self.ControlName[attackmode.ASName] = attackmode.plugin_radio
 
-            # if self.FSettings.Settings.get_setting('plugins', attackmode.ASName, format=bool) == True:
-            #     if attackmode.ASName != "No Proxy":
-            #         self.set_proxy_statusbar(attackmode.ASName)
+            # if self.FSettings.Settings.get_setting('plugins', attackmode.Name, format=bool) == True:
+            #     if attackmode.Name != "No Proxy":
+            #         self.set_proxy_statusbar(attackmode.Name)
             #     else:
             #         self.PopUpPlugins.sendSingal_disable.emit(attackmode.controlui.isChecked())
 

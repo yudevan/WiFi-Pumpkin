@@ -2,11 +2,11 @@ from PyQt4 import QtGui, QtCore
 from collections import OrderedDict
 
 
-class ManipulatorController(QtGui.QTableWidget):
+class MitmController(QtGui.QTableWidget):
     manipulator = {}
     SetNoManipulator = QtCore.pyqtSignal(object)
     def __init__(self,parent = 0):
-        super(ManipulatorController, self).__init__(parent)
+        super(MitmController, self).__init__(parent)
         self.parent=parent
         self.FSettings = self.parent.FSettings
         #self.uplinkIF = self.parent.Refactor.get_interfaces()
