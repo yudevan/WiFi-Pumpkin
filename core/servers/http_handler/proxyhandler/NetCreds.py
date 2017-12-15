@@ -1,7 +1,7 @@
-from core.servers.http_handler.proxyhandler.MitmMode import Manipulator
+from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 
-class NetCreds(Manipulator):
+class NetCreds(MitmMode):
     Name = "Net Credentials"
     Author = "Wahyudin Aziz"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"

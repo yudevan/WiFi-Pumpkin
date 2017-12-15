@@ -1,10 +1,10 @@
 from configobj import ConfigObj
 
 from core.loaders.models.PackagesUI import *
-from core.servers.http_handler.proxyhandler.MitmMode import Manipulator
+from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 
-class Responder(Manipulator):
+class Responder(MitmMode):
     Name = "Responder"
     Author = "Wahyudin Aziz"
     Description = "Responder an LLMNR, NBT-NS and MDNS poisoner By default, the tool will only answer to File Server Service request, which is for SMB."

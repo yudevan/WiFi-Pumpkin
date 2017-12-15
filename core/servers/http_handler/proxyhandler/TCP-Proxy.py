@@ -3,14 +3,14 @@ from functools import partial
 
 import core.utility.constants as C
 from core.main import  QtGui
-from core.servers.http_handler.proxyhandler.MitmMode import Manipulator
+from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 from core.utility.collection import SettingsINI
 from core.widgets.docks.dockmonitor import (
     dockTCPproxy
 )
 
 
-class TCPProxy(Manipulator):
+class TCPProxy(MitmMode):
     Name = "TCP Proxy"
     Author = "Wahyudin Aziz"
     Description = "Sniff for isntercept network traffic on UDP,TCP protocol get password,hash,image,etc..."

@@ -1,10 +1,10 @@
 from collections import OrderedDict
 
 from core.main import  QtGui,QtCore
-from core.servers.http_handler.proxyhandler.MitmMode import Manipulator
+from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 
-class ImageCapture(Manipulator):
+class ImageCapture(MitmMode):
     Name = "Image Capture"
     Author = "Wahyudin Aziz"
     Description = "Capture Image Sniffed from the connection"
