@@ -12,7 +12,7 @@ class MitmController(QtGui.QTableWidget):
         self.FSettings = self.parent.FSettings
         #self.uplinkIF = self.parent.Refactor.get_interfaces()
         #self.downlinkIF = self.parent.selectCard.currentText()
-        __manipulator= [prox(parent=self.parent) for prox in Manipulator.Manipulator.__subclasses__()]
+        __manipulator= [prox(parent=self.parent) for prox in MitmMode.__subclasses__()]
         #Keep Proxy in a dictionary
         for k in __manipulator:
             self.manipulator[k.ASName]=k
