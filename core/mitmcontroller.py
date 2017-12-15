@@ -1,5 +1,6 @@
 from PyQt4 import QtGui, QtCore
 from collections import OrderedDict
+from core.servers.http_handler.proxyhandler.MitmMode import *
 
 
 class MitmController(QtGui.QTableWidget):

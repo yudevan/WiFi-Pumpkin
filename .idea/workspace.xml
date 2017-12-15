@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f5a26e8-20a6-4839-a491-18150b8d1864" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/NetCreds.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/manipulatorcontroller.py" afterPath="$PROJECT_DIR$/core/mitmcontroller.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/proxymodecontroller.py" afterPath="$PROJECT_DIR$/core/proxycontroller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/main.py" afterPath="$PROJECT_DIR$/core/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/proxy/package/NoProxy.py" afterPath="$PROJECT_DIR$/core/servers/proxy/package/NoProxy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/main.py" afterPath="$PROJECT_DIR$/temp/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/mitmcontroller.py" afterPath="$PROJECT_DIR$/core/mitmcontroller.py" />
     </list>
     <ignored path="WiFi-Pumpkin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,8 +36,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1605">
-              <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+            <state relative-caret-position="45">
+              <caret line="192" column="41" selection-start-line="192" selection-start-column="41" selection-end-line="192" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -62,17 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mitmcontroller.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mitmcontroller.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/mitmcontroller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="30">
+              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MitmMode.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MitmMode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -130,7 +121,6 @@
         <option value="$PROJECT_DIR$/core/Manipulator/Manipulator.py" />
         <option value="$PROJECT_DIR$/core/ProxyMode/ProxyMode.py" />
         <option value="$PROJECT_DIR$/core/proxymodecontroller.py" />
-        <option value="$PROJECT_DIR$/core/main.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode/SSLStripSergio.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/SSLStripSergio.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode/__init__.py" />
@@ -139,8 +129,9 @@
         <option value="$PROJECT_DIR$/core/servers/http_handler/Manipulator/ImageCapture.py" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" />
         <option value="$PROJECT_DIR$/core/proxycontroller.py" />
-        <option value="$PROJECT_DIR$/core/mitmcontroller.py" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py" />
+        <option value="$PROJECT_DIR$/core/main.py" />
+        <option value="$PROJECT_DIR$/core/mitmcontroller.py" />
       </list>
     </option>
   </component>
@@ -588,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513341274689</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactored Some Attribute">
+      <created>1513341745975</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513341745975</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -667,7 +665,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved the Proxy mode into proxy package" />
     <MESSAGE value="Moved MITM proxy handler to core.server.http_handler.proxyhandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved MITM proxy handler to core.server.http_handler.proxyhandler" />
+    <MESSAGE value="Refactored Some Attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Some Attribute" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -983,14 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1007,18 +998,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/mitmcontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="192" column="41" selection-start-line="192" selection-start-column="41" selection-end-line="192" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/mitmcontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
           <folding />
         </state>
       </provider>

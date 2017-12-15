@@ -190,7 +190,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.Tab_dock       = QtGui.QMainWindow() # for dockarea
         self.FSettings      = self.mainWindow.FSettings
         self.proxy = ProxyModeController(self)
-        self.manipulator = ManipulatorController(self)
+        self.manipulator = MitmController(self)
 
 
 
