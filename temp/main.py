@@ -1466,7 +1466,7 @@ class WifiPumpkin(QtGui.QWidget):
             for p in self.plugin_classes:
                 self.plugins[p._name] = p()
             # check if twisted is started
-            if not self.THReactor.isRunning():
+            if not self.THReactor.started():
                 self.THReactor.start()
 
         #create logging for somes threads
@@ -1578,6 +1578,7 @@ class WifiPumpkin(QtGui.QWidget):
         # check if dockArea activated and stop dock Area
         self.PumpSettingsTAB.GroupArea.setEnabled(True)
         # stop all Thread in create for Access Point
+        self.THReactor.stop()
         try:
             for thread in self.Apthreads['RougeAP']:
                 thread.stop()

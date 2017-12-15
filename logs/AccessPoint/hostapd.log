@@ -437,3 +437,48 @@ Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
 wlan0: interface state UNINITIALIZED->ENABLED
 wlan0: AP-ENABLED 
 
+SessionID[MzYxNTg=] 2017-12-15 20:42:27,662 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzYxNTg=] 2017-12-15 20:43:11,730 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Nzk0NjI=] 2017-12-15 20:43:11,730 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NTk1MDU=] 2017-12-15 20:46:23,343 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NTk1MDU=] 2017-12-15 20:46:46,170 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODI1MTg=] 2017-12-15 20:46:46,170 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzI1Mjg=] 2017-12-15 20:48:06,612 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzI1Mjg=] 2017-12-15 20:48:22,168 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Nzg0NjY=] 2017-12-15 20:48:22,168 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+

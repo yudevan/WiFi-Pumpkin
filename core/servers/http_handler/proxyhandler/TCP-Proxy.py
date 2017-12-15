@@ -8,6 +8,9 @@ from core.utility.collection import SettingsINI
 from core.widgets.docks.dockmonitor import (
     dockTCPproxy
 )
+from plugins.external.scripts import *
+from plugins.extension import *
+from plugins.analyzers import *
 
 
 class TCPProxy(MitmMode):
