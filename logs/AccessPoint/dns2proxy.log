@@ -1,0 +1,2445 @@
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : ---[ Start Dns2proxy Thu Nov 16 08:41:14 2017]---
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : Non spoofing imap.gmail.com
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : Non spoofing to 127.0.0.1
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : DNS Forwarding activado....
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : binded to UDP port 53.
+SessionID[MTQyNw==] 2017-11-16 08:41:14,179 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:47,984 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:47,984 : msg id = 45789
+SessionID[MTQyNw==] 2017-11-16 08:41:47,985 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:47,985 : request is e13.whatsapp.net. IN A
+2017-11-16 08:41:47 Client IP: 10.0.0.20    request is    e13.whatsapp.net. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:47,985 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:47,986 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:47,986 : q name = e13.whatsapp.net
+SessionID[MTQyNw==] 2017-11-16 08:41:47,986 : Query = e13.whatsapp.net A
+SessionID[MTQyNw==] 2017-11-16 08:41:48,019 : Adding real IP  = 108.168.180.111
+SessionID[MTQyNw==] 2017-11-16 08:41:48,019 : Adding real IP  = 108.168.180.126
+SessionID[MTQyNw==] 2017-11-16 08:41:48,020 : Adding real IP  = 50.22.240.181
+SessionID[MTQyNw==] 2017-11-16 08:41:48,020 : Adding real IP  = 169.63.73.101
+SessionID[MTQyNw==] 2017-11-16 08:41:48,020 : Adding real IP  = 169.47.40.158
+SessionID[MTQyNw==] 2017-11-16 08:41:48,020 : Adding real IP  = 169.55.67.244
+SessionID[MTQyNw==] 2017-11-16 08:41:48,020 : Adding real IP  = 169.55.67.254
+SessionID[MTQyNw==] 2017-11-16 08:41:48,021 : Adding real IP  = 169.45.214.235
+SessionID[MTQyNw==] 2017-11-16 08:41:48,022 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,467 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,467 : msg id = 61277
+SessionID[MTQyNw==] 2017-11-16 08:41:51,468 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:51,468 : request is connectivitycheck.gstatic.com. IN AAAA
+2017-11-16 08:41:51 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN AAAA
+SessionID[MTQyNw==] 2017-11-16 08:41:51,468 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,468 : Host: connectivitycheck.gstatic.com.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,468 : Query = connectivitycheck.gstatic.com AAAA
+SessionID[MTQyNw==] 2017-11-16 08:41:51,507 : Adding 2404:6800:4003:805::2003
+SessionID[MTQyNw==] 2017-11-16 08:41:51,507 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,507 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,507 : msg id = 33628
+SessionID[MTQyNw==] 2017-11-16 08:41:51,507 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:51,507 : request is clients3.google.com. IN A
+2017-11-16 08:41:51 Client IP: 10.0.0.20    request is    clients3.google.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:51,508 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:51,508 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,508 : q name = clients3.google.com
+SessionID[MTQyNw==] 2017-11-16 08:41:51,508 : Query = clients3.google.com A
+SessionID[MTQyNw==] 2017-11-16 08:41:51,539 : Adding real IP  = 172.217.24.78
+SessionID[MTQyNw==] 2017-11-16 08:41:51,539 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,539 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,539 : msg id = 56716
+SessionID[MTQyNw==] 2017-11-16 08:41:51,539 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:51,539 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 08:41:51 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:51,540 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:51,540 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,540 : q name = mqtt-mini.facebook.com
+SessionID[MTQyNw==] 2017-11-16 08:41:51,540 : Query = mqtt-mini.facebook.com A
+SessionID[MTQyNw==] 2017-11-16 08:41:51,572 : Adding real IP  = 31.13.78.32
+SessionID[MTQyNw==] 2017-11-16 08:41:51,572 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,572 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,572 : msg id = 42410
+SessionID[MTQyNw==] 2017-11-16 08:41:51,572 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:51,573 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 08:41:51 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:51,573 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:51,573 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:51,573 : q name = connectivitycheck.gstatic.com
+SessionID[MTQyNw==] 2017-11-16 08:41:51,573 : Query = connectivitycheck.gstatic.com A
+SessionID[MTQyNw==] 2017-11-16 08:41:51,714 : Adding real IP  = 74.125.24.94
+SessionID[MTQyNw==] 2017-11-16 08:41:51,715 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:53,307 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:53,307 : msg id = 0
+SessionID[MTQyNw==] 2017-11-16 08:41:53,307 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:53,307 : request is e13.whatsapp.net. IN A
+2017-11-16 08:41:53 Client IP: 10.0.0.20    request is    e13.whatsapp.net. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:53,308 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:53,308 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:53,308 : q name = e13.whatsapp.net
+SessionID[MTQyNw==] 2017-11-16 08:41:53,308 : Query = e13.whatsapp.net A
+SessionID[MTQyNw==] 2017-11-16 08:41:53,347 : Adding real IP  = 169.47.42.98
+SessionID[MTQyNw==] 2017-11-16 08:41:53,347 : Adding real IP  = 158.85.58.115
+SessionID[MTQyNw==] 2017-11-16 08:41:53,347 : Adding real IP  = 108.168.180.126
+SessionID[MTQyNw==] 2017-11-16 08:41:53,347 : Adding real IP  = 108.168.180.104
+SessionID[MTQyNw==] 2017-11-16 08:41:53,347 : Adding real IP  = 158.85.58.112
+SessionID[MTQyNw==] 2017-11-16 08:41:53,348 : Adding real IP  = 169.47.40.155
+SessionID[MTQyNw==] 2017-11-16 08:41:53,348 : Adding real IP  = 169.47.42.234
+SessionID[MTQyNw==] 2017-11-16 08:41:53,348 : Adding real IP  = 169.53.71.236
+SessionID[MTQyNw==] 2017-11-16 08:41:53,348 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:54,358 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:54,358 : msg id = 37943
+SessionID[MTQyNw==] 2017-11-16 08:41:54,358 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:54,358 : request is e1.whatsapp.net. IN A
+2017-11-16 08:41:54 Client IP: 10.0.0.20    request is    e1.whatsapp.net. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:54,359 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:54,359 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:54,359 : q name = e1.whatsapp.net
+SessionID[MTQyNw==] 2017-11-16 08:41:54,359 : Query = e1.whatsapp.net A
+SessionID[MTQyNw==] 2017-11-16 08:41:54,406 : Adding real IP  = 169.60.79.167
+SessionID[MTQyNw==] 2017-11-16 08:41:54,406 : Adding real IP  = 169.45.214.229
+SessionID[MTQyNw==] 2017-11-16 08:41:54,406 : Adding real IP  = 169.47.42.200
+SessionID[MTQyNw==] 2017-11-16 08:41:54,406 : Adding real IP  = 169.63.73.56
+SessionID[MTQyNw==] 2017-11-16 08:41:54,407 : Adding real IP  = 108.168.176.241
+SessionID[MTQyNw==] 2017-11-16 08:41:54,407 : Adding real IP  = 158.85.48.239
+SessionID[MTQyNw==] 2017-11-16 08:41:54,407 : Adding real IP  = 158.85.48.241
+SessionID[MTQyNw==] 2017-11-16 08:41:54,407 : Adding real IP  = 169.45.214.228
+SessionID[MTQyNw==] 2017-11-16 08:41:54,407 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:56,525 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:56,526 : msg id = 40425
+SessionID[MTQyNw==] 2017-11-16 08:41:56,526 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:56,526 : request is mmg-fna.whatsapp.net. IN A
+2017-11-16 08:41:56 Client IP: 10.0.0.20    request is    mmg-fna.whatsapp.net. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:56,526 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:56,527 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:56,527 : q name = mmg-fna.whatsapp.net
+SessionID[MTQyNw==] 2017-11-16 08:41:56,527 : Query = mmg-fna.whatsapp.net A
+SessionID[MTQyNw==] 2017-11-16 08:41:56,560 : Adding real IP  = 31.13.78.53
+SessionID[MTQyNw==] 2017-11-16 08:41:56,560 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,586 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,587 : msg id = 50069
+SessionID[MTQyNw==] 2017-11-16 08:41:57,587 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:57,587 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 08:41:57 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTQyNw==] 2017-11-16 08:41:57,587 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,587 : Host: global.uci.blackberry.com.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,587 : Query = global.uci.blackberry.com AAAA
+SessionID[MTQyNw==] 2017-11-16 08:41:57,630 : Exception...
+SessionID[MTQyNw==] 2017-11-16 08:41:57,630 : No host....
+SessionID[MTQyNw==] 2017-11-16 08:41:57,630 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,633 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,633 : msg id = 60410
+SessionID[MTQyNw==] 2017-11-16 08:41:57,633 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:57,634 : request is global.uci.blackberry.com. IN A
+2017-11-16 08:41:57 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:57,634 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:57,634 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,634 : q name = global.uci.blackberry.com
+SessionID[MTQyNw==] 2017-11-16 08:41:57,634 : Query = global.uci.blackberry.com A
+SessionID[MTQyNw==] 2017-11-16 08:41:57,670 : Adding real IP  = 74.82.91.81
+SessionID[MTQyNw==] 2017-11-16 08:41:57,670 : Adding real IP  = 74.82.90.81
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.90.74
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.89.62
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.89.122
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.89.100
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.89.84
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.91.129
+SessionID[MTQyNw==] 2017-11-16 08:41:57,671 : Adding real IP  = 74.82.91.52
+SessionID[MTQyNw==] 2017-11-16 08:41:57,672 : Adding real IP  = 74.82.90.72
+SessionID[MTQyNw==] 2017-11-16 08:41:57,672 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,675 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,675 : msg id = 59287
+SessionID[MTQyNw==] 2017-11-16 08:41:57,675 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:57,675 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 08:41:57 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTQyNw==] 2017-11-16 08:41:57,676 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,676 : Host: global.uci.blackberry.com.
+SessionID[MTQyNw==] 2017-11-16 08:41:57,676 : Query = global.uci.blackberry.com AAAA
+SessionID[MTQyNw==] 2017-11-16 08:41:57,712 : Exception...
+SessionID[MTQyNw==] 2017-11-16 08:41:57,712 : No host....
+SessionID[MTQyNw==] 2017-11-16 08:41:57,713 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:41:58,032 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:41:58,032 : msg id = 55869
+SessionID[MTQyNw==] 2017-11-16 08:41:58,032 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:41:58,033 : request is global.uci.blackberry.com. IN A
+2017-11-16 08:41:58 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:41:58,033 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:41:58,033 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:41:58,033 : q name = global.uci.blackberry.com
+SessionID[MTQyNw==] 2017-11-16 08:41:58,033 : Query = global.uci.blackberry.com A
+SessionID[MTQyNw==] 2017-11-16 08:41:58,066 : Adding real IP  = 74.82.89.94
+SessionID[MTQyNw==] 2017-11-16 08:41:58,066 : Adding real IP  = 74.82.89.92
+SessionID[MTQyNw==] 2017-11-16 08:41:58,066 : Adding real IP  = 74.82.89.91
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.90
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.89
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.88
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.104
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.87
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.86
+SessionID[MTQyNw==] 2017-11-16 08:41:58,067 : Adding real IP  = 74.82.89.85
+SessionID[MTQyNw==] 2017-11-16 08:41:58,068 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:42:01,027 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:42:01,027 : msg id = 63329
+SessionID[MTQyNw==] 2017-11-16 08:42:01,027 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:42:01,027 : request is mtalk.google.com. IN A
+2017-11-16 08:42:01 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:42:01,028 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:42:01,028 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:42:01,028 : q name = mtalk.google.com
+SessionID[MTQyNw==] 2017-11-16 08:42:01,028 : Query = mtalk.google.com A
+SessionID[MTQyNw==] 2017-11-16 08:42:01,067 : Adding real IP  = 74.125.130.188
+SessionID[MTQyNw==] 2017-11-16 08:42:01,068 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:42:03,445 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : msg id = 59951
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : request is api.accuweather.com. IN A
+2017-11-16 08:42:03 Client IP: 10.0.0.20    request is    api.accuweather.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : q name = api.accuweather.com
+SessionID[MTQyNw==] 2017-11-16 08:42:03,446 : Query = api.accuweather.com A
+SessionID[MTQyNw==] 2017-11-16 08:42:03,476 : Adding real IP  = 23.0.170.89
+SessionID[MTQyNw==] 2017-11-16 08:42:03,477 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:42:06,562 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : msg id = 49576
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : request is api.accuweather.com. IN A
+2017-11-16 08:42:06 Client IP: 10.0.0.20    request is    api.accuweather.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : q name = api.accuweather.com
+SessionID[MTQyNw==] 2017-11-16 08:42:06,563 : Query = api.accuweather.com A
+SessionID[MTQyNw==] 2017-11-16 08:42:06,596 : Adding real IP  = 23.0.170.89
+SessionID[MTQyNw==] 2017-11-16 08:42:06,596 : waiting requests.
+SessionID[MTQyNw==] 2017-11-16 08:42:20,042 : serving a request.
+SessionID[MTQyNw==] 2017-11-16 08:42:20,043 : msg id = 35840
+SessionID[MTQyNw==] 2017-11-16 08:42:20,043 : Client IP: 10.0.0.20
+SessionID[MTQyNw==] 2017-11-16 08:42:20,043 : request is ssl.google-analytics.com. IN A
+2017-11-16 08:42:20 Client IP: 10.0.0.20    request is    ssl.google-analytics.com. IN A
+SessionID[MTQyNw==] 2017-11-16 08:42:20,043 : Doing the A query....
+SessionID[MTQyNw==] 2017-11-16 08:42:20,044 : 1 questions.
+SessionID[MTQyNw==] 2017-11-16 08:42:20,044 : q name = ssl.google-analytics.com
+SessionID[MTQyNw==] 2017-11-16 08:42:20,044 : Query = ssl.google-analytics.com A
+SessionID[MTQyNw==] 2017-11-16 08:42:20,082 : Adding real IP  = 74.125.200.97
+SessionID[MTQyNw==] 2017-11-16 08:42:20,082 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : ---[ Start Dns2proxy Thu Nov 16 08:59:38 2017]---
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : Non spoofing imap.gmail.com
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : Non spoofing to 127.0.0.1
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : DNS Forwarding activado....
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : binded to UDP port 53.
+SessionID[MTg5MzM=] 2017-11-16 08:59:38,350 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,305 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,305 : msg id = 6811
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,305 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,306 : request is connectivitycheck.gstatic.com. IN AAAA
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,306 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,306 : Host: connectivitycheck.gstatic.com.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,306 : Query = connectivitycheck.gstatic.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,349 : Adding 2404:6800:4003:805::2003
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,349 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,353 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,353 : msg id = 3313
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,353 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,353 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,353 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,354 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,354 : q name = connectivitycheck.gstatic.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,354 : Query = connectivitycheck.gstatic.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,392 : Adding real IP  = 172.217.24.67
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,393 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,405 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,405 : msg id = 19030
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,405 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,406 : request is clients3.google.com. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    clients3.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,406 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,406 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,406 : q name = clients3.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,406 : Query = clients3.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,438 : Adding real IP  = 74.125.24.139
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,439 : Adding real IP  = 74.125.24.113
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,439 : Adding real IP  = 74.125.24.102
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,439 : Adding real IP  = 74.125.24.101
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,440 : Adding real IP  = 74.125.24.138
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,440 : Adding real IP  = 74.125.24.100
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,441 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,476 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,476 : msg id = 2189
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,476 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,476 : request is check.googlezip.net. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    check.googlezip.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,477 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,477 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,477 : q name = check.googlezip.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,477 : Query = check.googlezip.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,526 : Adding real IP  = 74.125.24.114
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,526 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,526 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,526 : msg id = 9670
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,526 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,527 : request is datasaver.googleapis.com. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    datasaver.googleapis.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,527 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,527 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,527 : q name = datasaver.googleapis.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,527 : Query = datasaver.googleapis.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,568 : Adding real IP  = 74.125.24.95
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,568 : Adding real IP  = 74.125.68.95
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : msg id = 17674
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : request is proxy.googlezip.net. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    proxy.googlezip.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : q name = proxy.googlezip.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,569 : Query = proxy.googlezip.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : Adding real IP  = 172.217.24.76
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : msg id = 23517
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : request is www.google.com. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    www.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,599 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,600 : q name = www.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,600 : Query = www.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,629 : Adding real IP  = 172.217.24.68
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : msg id = 13741
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : q name = mqtt-mini.facebook.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,630 : Query = mqtt-mini.facebook.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : Adding real IP  = 31.13.78.32
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : msg id = 18598
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : request is e4.whatsapp.net. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    e4.whatsapp.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,668 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,669 : q name = e4.whatsapp.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,669 : Query = e4.whatsapp.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,712 : Adding real IP  = 169.47.42.203
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 169.55.75.106
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 169.47.42.237
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 158.85.224.184
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 169.63.73.116
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 169.63.73.72
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 169.47.40.153
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,713 : Adding real IP  = 169.60.79.95
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,714 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,771 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,771 : msg id = 2780
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,771 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,772 : request is proxy.googlezip.net. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    proxy.googlezip.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,772 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,772 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,772 : q name = proxy.googlezip.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,772 : Query = proxy.googlezip.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,827 : Adding real IP  = 74.125.24.211
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,827 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,827 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,827 : msg id = 10229
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,828 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,828 : request is www.google.com. IN A
+2017-11-16 09:00:06 Client IP: 10.0.0.20    request is    www.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,828 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,828 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,828 : q name = www.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,828 : Query = www.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,859 : Adding real IP  = 172.217.24.68
+SessionID[MTg5MzM=] 2017-11-16 09:00:06,859 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,473 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,473 : msg id = 727
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,474 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,474 : request is lnvgftdk. IN A
+2017-11-16 09:00:07 Client IP: 10.0.0.20    request is    lnvgftdk. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,474 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,474 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,474 : q name = lnvgftdk
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,474 : Query = lnvgftdk A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,528 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,528 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : msg id = 23860
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : request is fsgowarhotxvg. IN A
+2017-11-16 09:00:07 Client IP: 10.0.0.20    request is    fsgowarhotxvg. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : q name = fsgowarhotxvg
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,529 : Query = fsgowarhotxvg A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : msg id = 27968
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,573 : request is oeqcommpyvzfze. IN A
+2017-11-16 09:00:07 Client IP: 10.0.0.20    request is    oeqcommpyvzfze. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,574 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,574 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,574 : q name = oeqcommpyvzfze
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,574 : Query = oeqcommpyvzfze A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : msg id = 5212
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,628 : request is lnvgftdk. IN A
+2017-11-16 09:00:07 Client IP: 10.0.0.20    request is    lnvgftdk. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,629 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,629 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,629 : q name = lnvgftdk
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,629 : Query = lnvgftdk A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,672 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,672 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,672 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,672 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,672 : msg id = 18497
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,673 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,673 : request is fsgowarhotxvg. IN A
+2017-11-16 09:00:07 Client IP: 10.0.0.20    request is    fsgowarhotxvg. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,673 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,673 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,673 : q name = fsgowarhotxvg
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,673 : Query = fsgowarhotxvg A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,704 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,704 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,704 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : msg id = 31292
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : request is oeqcommpyvzfze. IN A
+2017-11-16 09:00:07 Client IP: 10.0.0.20    request is    oeqcommpyvzfze. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : q name = oeqcommpyvzfze
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,705 : Query = oeqcommpyvzfze A
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,758 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,758 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:07,758 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,602 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,602 : msg id = 30216
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,602 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,602 : request is localhost. IN AAAA
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    localhost. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,603 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,603 : Host: localhost.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,603 : Query = localhost AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,631 : Adding ::1
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : msg id = 10014
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,632 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,673 : Adding real IP  = 74.82.91.112
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,673 : Adding real IP  = 74.82.89.82
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,673 : Adding real IP  = 74.82.89.81
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,673 : Adding real IP  = 74.82.89.80
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,674 : Adding real IP  = 74.82.89.79
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,674 : Adding real IP  = 74.82.89.78
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,674 : Adding real IP  = 74.82.89.56
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,674 : Adding real IP  = 74.82.89.55
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,674 : Adding real IP  = 74.82.89.54
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,674 : Adding real IP  = 74.82.89.53
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : msg id = 22737
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : request is www.google.com. IN A
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    www.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,675 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,676 : q name = www.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,676 : Query = www.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,715 : Adding real IP  = 172.217.24.68
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : msg id = 11633
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : request is www.bbm.com. IN A
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    www.bbm.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : q name = www.bbm.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,716 : Query = www.bbm.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,751 : Adding real IP  = 52.77.192.62
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,751 : Adding real IP  = 54.254.223.30
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,751 : Adding real IP  = 52.77.46.43
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,751 : Adding real IP  = 54.169.19.165
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,752 : Adding real IP  = 54.169.232.203
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,752 : Adding real IP  = 52.77.183.103
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,752 : Adding real IP  = 54.254.185.2
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,752 : Adding real IP  = 54.251.170.171
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : msg id = 19942
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : request is goods.bbm.blackberry.com. IN A
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    goods.bbm.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : q name = goods.bbm.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,753 : Query = goods.bbm.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,782 : Adding real IP  = 74.82.73.241
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,782 : Adding real IP  = 74.82.73.249
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : msg id = 11976
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,783 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,784 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,834 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,834 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,835 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,837 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,837 : msg id = 9655
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,837 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,837 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,837 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,838 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,838 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,838 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,874 : Adding real IP  = 74.82.91.112
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,874 : Adding real IP  = 74.82.89.82
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,874 : Adding real IP  = 74.82.89.81
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,874 : Adding real IP  = 74.82.89.80
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,874 : Adding real IP  = 74.82.89.79
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,874 : Adding real IP  = 74.82.89.78
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,875 : Adding real IP  = 74.82.89.56
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,875 : Adding real IP  = 74.82.89.55
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,875 : Adding real IP  = 74.82.89.54
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,875 : Adding real IP  = 74.82.89.53
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,876 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,879 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,879 : msg id = 20823
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,879 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,880 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:00:10 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,880 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,880 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,880 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,910 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,910 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:10,911 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,806 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,806 : msg id = 21355
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,806 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,806 : request is compress.googlezip.net. IN A
+2017-11-16 09:00:16 Client IP: 10.0.0.20    request is    compress.googlezip.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,806 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,807 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,807 : q name = compress.googlezip.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,807 : Query = compress.googlezip.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,838 : Adding real IP  = 74.125.24.211
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,838 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,937 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,937 : msg id = 20630
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,937 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,938 : request is check.googlezip.net. IN A
+2017-11-16 09:00:16 Client IP: 10.0.0.20    request is    check.googlezip.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,938 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,938 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,938 : q name = check.googlezip.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,938 : Query = check.googlezip.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,969 : Adding real IP  = 74.125.24.114
+SessionID[MTg5MzM=] 2017-11-16 09:00:16,970 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,069 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : msg id = 9144
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : request is api.accuweather.com. IN A
+2017-11-16 09:00:18 Client IP: 10.0.0.20    request is    api.accuweather.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : q name = api.accuweather.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,070 : Query = api.accuweather.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,102 : Adding real IP  = 23.0.170.89
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,102 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,402 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,402 : msg id = 1167
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,402 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,402 : request is mtalk.google.com. IN A
+2017-11-16 09:00:18 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,402 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,402 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,403 : q name = mtalk.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,403 : Query = mtalk.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,434 : Adding real IP  = 74.125.130.188
+SessionID[MTg5MzM=] 2017-11-16 09:00:18,435 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,780 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : msg id = 17198
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : request is e5.whatsapp.net. IN A
+2017-11-16 09:00:36 Client IP: 10.0.0.20    request is    e5.whatsapp.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : q name = e5.whatsapp.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,781 : Query = e5.whatsapp.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,819 : Adding real IP  = 169.53.71.243
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,819 : Adding real IP  = 169.60.79.61
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,819 : Adding real IP  = 169.63.73.79
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,819 : Adding real IP  = 169.47.42.197
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,819 : Adding real IP  = 158.85.58.54
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,820 : Adding real IP  = 108.168.176.198
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,820 : Adding real IP  = 108.168.180.101
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,820 : Adding real IP  = 169.45.248.115
+SessionID[MTg5MzM=] 2017-11-16 09:00:36,821 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : msg id = 14574
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : request is alt5-mtalk.google.com. IN A
+2017-11-16 09:00:38 Client IP: 10.0.0.20    request is    alt5-mtalk.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : q name = alt5-mtalk.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,486 : Query = alt5-mtalk.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,516 : Adding real IP  = 173.194.68.188
+SessionID[MTg5MzM=] 2017-11-16 09:00:38,517 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,801 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,801 : msg id = 15055
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,801 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,802 : request is update.googleapis.com. IN A
+2017-11-16 09:00:41 Client IP: 10.0.0.20    request is    update.googleapis.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,802 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,802 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,802 : q name = update.googleapis.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,802 : Query = update.googleapis.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,836 : Adding real IP  = 172.217.24.67
+SessionID[MTg5MzM=] 2017-11-16 09:00:41,837 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,955 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,955 : msg id = 25252
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,955 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,956 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:00:42 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,956 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,956 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,956 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,988 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,988 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,988 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,991 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,991 : msg id = 28306
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,991 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,991 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:00:42 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,992 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,992 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,992 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:42,992 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.91.109
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.90.128
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.90.125
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.90.124
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.90.123
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.90.112
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,027 : Adding real IP  = 74.82.90.108
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,028 : Adding real IP  = 74.82.89.99
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,028 : Adding real IP  = 74.82.89.97
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,028 : Adding real IP  = 74.82.89.96
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,028 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : msg id = 6437
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:00:43 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,032 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,068 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,068 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:00:43,068 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,998 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : msg id = 21730
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : request is e11.whatsapp.net. IN A
+2017-11-16 09:00:46 Client IP: 10.0.0.20    request is    e11.whatsapp.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : q name = e11.whatsapp.net
+SessionID[MTg5MzM=] 2017-11-16 09:00:46,999 : Query = e11.whatsapp.net A
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,047 : Adding real IP  = 169.45.210.84
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,047 : Adding real IP  = 158.85.58.47
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,047 : Adding real IP  = 158.85.58.45
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,047 : Adding real IP  = 169.53.71.232
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,047 : Adding real IP  = 169.47.42.239
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,048 : Adding real IP  = 108.168.176.204
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,048 : Adding real IP  = 169.63.73.92
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,048 : Adding real IP  = 169.60.79.143
+SessionID[MTg5MzM=] 2017-11-16 09:00:47,048 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,553 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,553 : msg id = 26079
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,553 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,553 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:00:58 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,553 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,553 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,554 : q name = connectivitycheck.gstatic.com
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,554 : Query = connectivitycheck.gstatic.com A
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,657 : Adding real IP  = 172.217.24.67
+SessionID[MTg5MzM=] 2017-11-16 09:00:58,657 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,049 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,050 : msg id = 15463
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,050 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,050 : request is www.google.co.id. IN A
+2017-11-16 09:01:05 Client IP: 10.0.0.20    request is    www.google.co.id. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,050 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,051 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,051 : q name = www.google.co.id
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,051 : Query = www.google.co.id A
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,085 : Adding real IP  = 74.125.24.94
+SessionID[MTg5MzM=] 2017-11-16 09:01:05,086 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,795 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,795 : msg id = 13469
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,795 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,795 : request is plenty.analisis.io. IN A
+2017-11-16 09:01:10 Client IP: 10.0.0.20    request is    plenty.analisis.io. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,796 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,796 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,796 : q name = plenty.analisis.io
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,796 : Query = plenty.analisis.io A
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,836 : Adding real IP  = 130.211.37.21
+SessionID[MTg5MzM=] 2017-11-16 09:01:10,837 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,692 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : msg id = 19005
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : request is mtalk.google.com. IN A
+2017-11-16 09:01:18 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : q name = mtalk.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,693 : Query = mtalk.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,725 : Adding real IP  = 74.125.68.188
+SessionID[MTg5MzM=] 2017-11-16 09:01:18,725 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,292 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,292 : msg id = 21969
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,292 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,293 : request is e15.whatsapp.net. IN A
+2017-11-16 09:01:24 Client IP: 10.0.0.20    request is    e15.whatsapp.net. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,293 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,293 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,293 : q name = e15.whatsapp.net
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,293 : Query = e15.whatsapp.net A
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,325 : Adding real IP  = 169.60.79.68
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 198.11.251.60
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 169.47.5.206
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 169.60.79.130
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 169.63.73.118
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 169.63.73.89
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 169.45.219.241
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,326 : Adding real IP  = 198.11.251.58
+SessionID[MTg5MzM=] 2017-11-16 09:01:24,327 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,647 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,647 : msg id = 5663
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,647 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,647 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:01:34 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,647 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,647 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,648 : q name = mqtt-mini.facebook.com
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,648 : Query = mqtt-mini.facebook.com A
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,679 : Adding real IP  = 31.13.78.32
+SessionID[MTg5MzM=] 2017-11-16 09:01:34,679 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,609 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,609 : msg id = 27294
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,609 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,609 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:01:35 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,609 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,609 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,610 : q name = mqtt-mini.facebook.com
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,610 : Query = mqtt-mini.facebook.com A
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,645 : Adding real IP  = 31.13.78.32
+SessionID[MTg5MzM=] 2017-11-16 09:01:35,645 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,917 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,917 : msg id = 10156
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,917 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,918 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:01:42 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,918 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,918 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,918 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,950 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,950 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,950 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,953 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,953 : msg id = 19897
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,953 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,953 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:01:42 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,954 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,954 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,954 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,954 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,986 : Adding real IP  = 74.82.91.130
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,986 : Adding real IP  = 74.82.89.45
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,986 : Adding real IP  = 74.82.89.44
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,986 : Adding real IP  = 74.82.89.43
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,986 : Adding real IP  = 74.82.89.42
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,986 : Adding real IP  = 74.82.89.41
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,987 : Adding real IP  = 74.82.89.40
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,987 : Adding real IP  = 74.82.89.39
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,987 : Adding real IP  = 74.82.89.38
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,987 : Adding real IP  = 74.82.89.37
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,988 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,991 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,991 : msg id = 9336
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,991 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,991 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:01:42 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,992 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,992 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:01:42,992 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:01:43,047 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:01:43,047 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:01:43,047 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,526 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : msg id = 22159
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : request is alt7-mtalk.google.com. IN A
+2017-11-16 09:02:02 Client IP: 10.0.0.20    request is    alt7-mtalk.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : q name = alt7-mtalk.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,527 : Query = alt7-mtalk.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,558 : Adding real IP  = 64.233.186.188
+SessionID[MTg5MzM=] 2017-11-16 09:02:02,559 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,480 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,480 : msg id = 27316
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,480 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,481 : request is datasaver.googleapis.com. IN A
+2017-11-16 09:02:08 Client IP: 10.0.0.20    request is    datasaver.googleapis.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,481 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,481 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,481 : q name = datasaver.googleapis.com
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,481 : Query = datasaver.googleapis.com A
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,514 : Adding real IP  = 74.125.24.95
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,514 : Adding real IP  = 74.125.68.95
+SessionID[MTg5MzM=] 2017-11-16 09:02:08,515 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,754 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,754 : msg id = 20090
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,754 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,754 : request is facebook.com. IN A
+2017-11-16 09:02:15 Client IP: 10.0.0.20    request is    facebook.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,754 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,754 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,755 : q name = facebook.com
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,755 : Query = facebook.com A
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,835 : Adding real IP  = 31.13.78.35
+SessionID[MTg5MzM=] 2017-11-16 09:02:15,835 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,604 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,604 : msg id = 13079
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,604 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,604 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:02:22 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,604 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,605 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,605 : q name = connectivitycheck.gstatic.com
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,605 : Query = connectivitycheck.gstatic.com A
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,633 : Adding real IP  = 172.217.24.67
+SessionID[MTg5MzM=] 2017-11-16 09:02:22,633 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,185 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,185 : msg id = 32590
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,185 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,186 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:02:27 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,186 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,186 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,186 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,460 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,460 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,461 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : msg id = 9570
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:02:27 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,464 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,496 : Adding real IP  = 74.82.89.16
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.94.150
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.94.149
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.94.147
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.94.146
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.91.148
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.91.147
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.91.146
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,497 : Adding real IP  = 74.82.91.145
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,498 : Adding real IP  = 74.82.91.144
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,498 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : msg id = 1482
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:02:27 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,503 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,540 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,540 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:02:27,541 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,375 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,375 : msg id = 14345
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,375 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,376 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:02:28 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,376 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,376 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,376 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,407 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,407 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,407 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,410 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,410 : msg id = 6660
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,410 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,410 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:02:28 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,410 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,410 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,411 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,411 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,442 : Adding real IP  = 74.82.89.16
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,442 : Adding real IP  = 74.82.94.150
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,442 : Adding real IP  = 74.82.94.149
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.94.147
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.94.146
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.91.148
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.91.147
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.91.146
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.91.145
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,443 : Adding real IP  = 74.82.91.144
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,444 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,455 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,455 : msg id = 4361
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,455 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,455 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:02:28 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,456 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,456 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,456 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,487 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,487 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:02:28,487 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,536 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,536 : msg id = 29127
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,536 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,537 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:03:00 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,537 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,537 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,537 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,817 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,817 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,817 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,822 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,822 : msg id = 29646
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,822 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,822 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:03:00 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,823 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,823 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,823 : q name = global.uci.blackberry.com
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,823 : Query = global.uci.blackberry.com A
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,859 : Adding real IP  = 74.82.89.90
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,859 : Adding real IP  = 74.82.89.88
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,859 : Adding real IP  = 74.82.89.87
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,859 : Adding real IP  = 74.82.90.49
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,860 : Adding real IP  = 74.82.89.121
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,860 : Adding real IP  = 74.82.89.120
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,860 : Adding real IP  = 74.82.89.119
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,860 : Adding real IP  = 74.82.89.118
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,860 : Adding real IP  = 74.82.89.117
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,860 : Adding real IP  = 74.82.89.116
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,861 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,865 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,865 : msg id = 2259
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,865 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,866 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:03:00 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,866 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,866 : Host: global.uci.blackberry.com.
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,866 : Query = global.uci.blackberry.com AAAA
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,916 : Exception...
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,916 : No host....
+SessionID[MTg5MzM=] 2017-11-16 09:03:00,916 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : msg id = 20718
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : request is mtalk.google.com. IN A
+2017-11-16 09:03:01 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : q name = mtalk.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,727 : Query = mtalk.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,758 : Adding real IP  = 74.125.130.188
+SessionID[MTg5MzM=] 2017-11-16 09:03:01,758 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,596 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,596 : msg id = 25027
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,596 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,596 : request is update.googleapis.com. IN A
+2017-11-16 09:03:19 Client IP: 10.0.0.20    request is    update.googleapis.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,597 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,597 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,597 : q name = update.googleapis.com
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,597 : Query = update.googleapis.com A
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,626 : Adding real IP  = 172.217.24.67
+SessionID[MTg5MzM=] 2017-11-16 09:03:19,626 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,803 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,803 : msg id = 20629
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,803 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,804 : request is alt6-mtalk.google.com. IN A
+2017-11-16 09:03:21 Client IP: 10.0.0.20    request is    alt6-mtalk.google.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,804 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,804 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,804 : q name = alt6-mtalk.google.com
+SessionID[MTg5MzM=] 2017-11-16 09:03:21,804 : Query = alt6-mtalk.google.com A
+SessionID[MTg5MzM=] 2017-11-16 09:03:24,033 : Adding real IP  = 74.125.139.188
+SessionID[MTg5MzM=] 2017-11-16 09:03:24,033 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,523 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : msg id = 4219
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:03:31 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : q name = mqtt-mini.facebook.com
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,524 : Query = mqtt-mini.facebook.com A
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,602 : Adding real IP  = 31.13.78.32
+SessionID[MTg5MzM=] 2017-11-16 09:03:31,602 : waiting requests.
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,477 : serving a request.
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,477 : msg id = 58738
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,478 : Client IP: 10.0.0.20
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,478 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:03:41 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,478 : Doing the A query....
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,478 : 1 questions.
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,478 : q name = mqtt-mini.facebook.com
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,478 : Query = mqtt-mini.facebook.com A
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,524 : Adding real IP  = 31.13.78.32
+SessionID[MTg5MzM=] 2017-11-16 09:03:41,524 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,670 : ---[ Start Dns2proxy Thu Nov 16 09:08:05 2017]---
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,671 : Non spoofing imap.gmail.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,671 : Non spoofing to 127.0.0.1
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,671 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,671 : DNS Forwarding activado....
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,671 : binded to UDP port 53.
+SessionID[NjE1NzY=] 2017-11-16 09:08:05,671 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,096 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,096 : msg id = 2438
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,096 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,097 : request is connectivitycheck.gstatic.com. IN AAAA
+2017-11-16 09:08:23 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,097 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,097 : Host: connectivitycheck.gstatic.com.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,097 : Query = connectivitycheck.gstatic.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,140 : Adding 2404:6800:4003:c03::5e
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,141 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,144 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,144 : msg id = 25356
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,144 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,144 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:08:23 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,145 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,145 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,145 : q name = connectivitycheck.gstatic.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,145 : Query = connectivitycheck.gstatic.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,179 : Adding real IP  = 74.125.24.94
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,180 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,215 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,215 : msg id = 2518
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,215 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,216 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:08:23 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,216 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,216 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,216 : q name = mqtt-mini.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,216 : Query = mqtt-mini.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,267 : Adding real IP  = 31.13.78.32
+SessionID[NjE1NzY=] 2017-11-16 09:08:23,268 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,137 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : msg id = 12742
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : request is edge-chat.facebook.com. IN A
+2017-11-16 09:08:32 Client IP: 10.0.0.20    request is    edge-chat.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : q name = edge-chat.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,138 : Query = edge-chat.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,180 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,180 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,781 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,781 : msg id = 6294
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,782 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,782 : request is localhost. IN AAAA
+2017-11-16 09:08:32 Client IP: 10.0.0.20    request is    localhost. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,782 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,782 : Host: localhost.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,782 : Query = localhost AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,823 : Adding ::1
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,823 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : msg id = 19430
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : request is www.google.com. IN A
+2017-11-16 09:08:32 Client IP: 10.0.0.20    request is    www.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : q name = www.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,824 : Query = www.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,868 : Adding real IP  = 172.217.24.68
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,868 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,868 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,868 : msg id = 25030
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,868 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,869 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:08:32 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,869 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,869 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,869 : q name = global.uci.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,869 : Query = global.uci.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.24
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.22
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.21
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.19
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.16
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,992 : Adding real IP  = 74.82.89.15
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,993 : Adding real IP  = 74.82.89.14
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,993 : Adding real IP  = 74.82.90.54
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,993 : Adding real IP  = 74.82.90.53
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,993 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : msg id = 4587
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : request is www.bbm.com. IN A
+2017-11-16 09:08:32 Client IP: 10.0.0.20    request is    www.bbm.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : q name = www.bbm.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:32,994 : Query = www.bbm.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,127 : Adding real IP  = 52.221.125.124
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,127 : Adding real IP  = 52.221.12.176
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,127 : Adding real IP  = 52.220.36.246
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,127 : Adding real IP  = 52.220.216.108
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,127 : Adding real IP  = 52.220.207.6
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,127 : Adding real IP  = 52.221.111.129
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,128 : Adding real IP  = 52.220.9.110
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,128 : Adding real IP  = 52.220.75.205
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,128 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,128 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,128 : msg id = 28773
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,128 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,129 : request is goods.bbm.blackberry.com. IN A
+2017-11-16 09:08:35 Client IP: 10.0.0.20    request is    goods.bbm.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,129 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,129 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,129 : q name = goods.bbm.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,129 : Query = goods.bbm.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,160 : Adding real IP  = 74.82.73.249
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,160 : Adding real IP  = 74.82.73.241
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,160 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,160 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,160 : msg id = 9659
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,161 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,161 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:08:35 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,161 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,161 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,161 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,192 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,192 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,192 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,192 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,192 : msg id = 9987
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,192 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,193 : request is graph.facebook.com. IN A
+2017-11-16 09:08:35 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,193 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,193 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,193 : q name = graph.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,193 : Query = graph.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : msg id = 31153
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : request is m.facebook.com. IN A
+2017-11-16 09:08:35 Client IP: 10.0.0.20    request is    m.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,225 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,226 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,226 : q name = m.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,226 : Query = m.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,257 : Adding real IP  = 31.13.78.36
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,257 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,257 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,257 : msg id = 881
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,257 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,258 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:08:35 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,258 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,258 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,258 : q name = global.uci.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,258 : Query = global.uci.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,291 : Adding real IP  = 74.82.94.178
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,291 : Adding real IP  = 74.82.91.79
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,291 : Adding real IP  = 74.82.91.69
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,291 : Adding real IP  = 74.82.91.61
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,291 : Adding real IP  = 74.82.91.166
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,292 : Adding real IP  = 74.82.91.160
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,292 : Adding real IP  = 74.82.91.149
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,292 : Adding real IP  = 74.82.91.117
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,292 : Adding real IP  = 74.82.90.82
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,292 : Adding real IP  = 74.82.90.80
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,293 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,295 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,295 : msg id = 13873
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,295 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,296 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:08:35 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,296 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,296 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,296 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,574 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,574 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:08:35,575 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : msg id = 32503
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : request is mtalk.google.com. IN A
+2017-11-16 09:08:39 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,023 : q name = mtalk.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,024 : Query = mtalk.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,054 : Adding real IP  = 74.125.68.188
+SessionID[NjE1NzY=] 2017-11-16 09:08:39,054 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,808 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : msg id = 27537
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : request is api.accuweather.com. IN A
+2017-11-16 09:08:40 Client IP: 10.0.0.20    request is    api.accuweather.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : q name = api.accuweather.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,809 : Query = api.accuweather.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,838 : Adding real IP  = 23.0.170.89
+SessionID[NjE1NzY=] 2017-11-16 09:08:40,839 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,085 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,085 : msg id = 20713
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,085 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,085 : request is alt3-mtalk.google.com. IN A
+2017-11-16 09:08:59 Client IP: 10.0.0.20    request is    alt3-mtalk.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,086 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,086 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,086 : q name = alt3-mtalk.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,086 : Query = alt3-mtalk.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,118 : Adding real IP  = 64.233.182.188
+SessionID[NjE1NzY=] 2017-11-16 09:08:59,118 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,636 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,636 : msg id = 25174
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,637 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,637 : request is api.facebook.com. IN A
+2017-11-16 09:09:01 Client IP: 10.0.0.20    request is    api.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,637 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,637 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,638 : q name = api.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,638 : Query = api.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,675 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:09:01,675 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,396 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,396 : msg id = 27658
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,396 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,397 : request is graph.facebook.com. IN A
+2017-11-16 09:09:05 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,397 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,397 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,397 : q name = graph.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,397 : Query = graph.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,431 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:09:05,431 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,141 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,141 : msg id = 25059
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,141 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,141 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:09:08 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,142 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,142 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,142 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,426 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,427 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,427 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,427 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,427 : msg id = 8680
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,427 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,428 : request is video.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:09:08 Client IP: 10.0.0.20    request is    video.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,428 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,428 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,428 : q name = video.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,428 : Query = video.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,477 : Adding real IP  = 114.125.99.210
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,477 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,477 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,478 : msg id = 9633
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,478 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,478 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:09:08 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,478 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,478 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,478 : q name = global.uci.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,479 : Query = global.uci.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,512 : Adding real IP  = 74.82.94.146
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,512 : Adding real IP  = 74.82.91.75
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,512 : Adding real IP  = 74.82.90.71
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,512 : Adding real IP  = 74.82.90.81
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,513 : Adding real IP  = 74.82.94.201
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,513 : Adding real IP  = 74.82.90.74
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,513 : Adding real IP  = 74.82.94.172
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,513 : Adding real IP  = 74.82.90.72
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,513 : Adding real IP  = 74.82.89.30
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,514 : Adding real IP  = 74.82.90.51
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,515 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,517 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,517 : msg id = 14996
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,518 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,518 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:09:08 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,518 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,518 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,518 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,567 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,567 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:09:08,567 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,159 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,159 : msg id = 27596
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,159 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,159 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:09:19 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,160 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,160 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,160 : q name = connectivitycheck.gstatic.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,160 : Query = connectivitycheck.gstatic.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,196 : Adding real IP  = 172.217.24.67
+SessionID[NjE1NzY=] 2017-11-16 09:09:19,197 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,461 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : msg id = 23270
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:09:23 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : q name = mqtt-mini.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,462 : Query = mqtt-mini.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,496 : Adding real IP  = 31.13.78.32
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,496 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,496 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : msg id = 30400
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:09:23 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : q name = mqtt-mini.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,497 : Query = mqtt-mini.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,538 : Adding real IP  = 31.13.78.32
+SessionID[NjE1NzY=] 2017-11-16 09:09:23,538 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,153 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : msg id = 20121
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : request is mtalk.google.com. IN A
+2017-11-16 09:09:29 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : q name = mtalk.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,154 : Query = mtalk.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,188 : Adding real IP  = 74.125.68.188
+SessionID[NjE1NzY=] 2017-11-16 09:09:29,188 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : msg id = 13904
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : request is ssl.google-analytics.com. IN A
+2017-11-16 09:09:30 Client IP: 10.0.0.20    request is    ssl.google-analytics.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : q name = ssl.google-analytics.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,503 : Query = ssl.google-analytics.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,534 : Adding real IP  = 74.125.24.97
+SessionID[NjE1NzY=] 2017-11-16 09:09:30,535 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,634 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,634 : msg id = 22834
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,634 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,635 : request is api.facebook.com. IN A
+2017-11-16 09:09:31 Client IP: 10.0.0.20    request is    api.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,635 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,635 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,635 : q name = api.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,635 : Query = api.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,669 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:09:31,670 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : msg id = 14384
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : request is plenty.analisis.io. IN A
+2017-11-16 09:09:32 Client IP: 10.0.0.20    request is    plenty.analisis.io. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : q name = plenty.analisis.io
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,846 : Query = plenty.analisis.io A
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,883 : Adding real IP  = 130.211.37.21
+SessionID[NjE1NzY=] 2017-11-16 09:09:32,883 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : msg id = 19898
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : request is edge-chat.facebook.com. IN A
+2017-11-16 09:09:33 Client IP: 10.0.0.20    request is    edge-chat.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : q name = edge-chat.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,224 : Query = edge-chat.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,277 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:09:33,277 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : msg id = 21758
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : request is graph.facebook.com. IN A
+2017-11-16 09:09:35 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,400 : q name = graph.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,401 : Query = graph.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,440 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:09:35,440 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : msg id = 20010
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : request is video.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:09:40 Client IP: 10.0.0.20    request is    video.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,360 : q name = video.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,361 : Query = video.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,393 : Adding real IP  = 114.125.99.210
+SessionID[NjE1NzY=] 2017-11-16 09:09:40,393 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,292 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,292 : msg id = 13802
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,292 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,292 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:09:47 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,292 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,292 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,293 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,323 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,323 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,323 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,327 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,327 : msg id = 16230
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,327 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,328 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:09:47 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,328 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,328 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,328 : q name = global.uci.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,328 : Query = global.uci.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,360 : Adding real IP  = 74.82.94.197
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,360 : Adding real IP  = 74.82.90.71
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,360 : Adding real IP  = 74.82.90.41
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.89.58
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.89.57
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.89.30
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.90.61
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.90.60
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.90.58
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,361 : Adding real IP  = 74.82.90.57
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,362 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : msg id = 11446
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:09:47 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,367 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,410 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,410 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:09:47,411 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,219 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,219 : msg id = 12804
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,219 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,220 : request is alt5-mtalk.google.com. IN A
+2017-11-16 09:09:49 Client IP: 10.0.0.20    request is    alt5-mtalk.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,220 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,220 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,220 : q name = alt5-mtalk.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,220 : Query = alt5-mtalk.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,251 : Adding real IP  = 173.194.68.188
+SessionID[NjE1NzY=] 2017-11-16 09:09:49,251 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : msg id = 772
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : request is api.facebook.com. IN A
+2017-11-16 09:10:01 Client IP: 10.0.0.20    request is    api.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,640 : q name = api.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,641 : Query = api.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,838 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:10:01,839 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : msg id = 5267
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : request is z-p3-scontent.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:10:03 Client IP: 10.0.0.20    request is    z-p3-scontent.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : q name = z-p3-scontent.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,013 : Query = z-p3-scontent.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,184 : Adding real IP  = 114.125.99.224
+SessionID[NjE1NzY=] 2017-11-16 09:10:03,184 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,401 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,401 : msg id = 14260
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,402 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,402 : request is graph.facebook.com. IN A
+2017-11-16 09:10:05 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,402 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,402 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,402 : q name = graph.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,402 : Query = graph.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,438 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:10:05,438 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,281 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,281 : msg id = 27449
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,281 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,281 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:10:09 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,281 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,281 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,282 : q name = connectivitycheck.gstatic.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,282 : Query = connectivitycheck.gstatic.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,314 : Adding real IP  = 74.125.24.94
+SessionID[NjE1NzY=] 2017-11-16 09:10:09,315 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,106 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,106 : msg id = 8275
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,106 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,107 : request is video.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:10:16 Client IP: 10.0.0.20    request is    video.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,107 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,107 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,107 : q name = video.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,107 : Query = video.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,161 : Adding real IP  = 114.125.99.210
+SessionID[NjE1NzY=] 2017-11-16 09:10:16,162 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : msg id = 15949
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:10:19 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,737 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,767 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,767 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,767 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,770 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,770 : msg id = 12845
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,770 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,770 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:10:19 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,770 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,771 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,771 : q name = global.uci.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,771 : Query = global.uci.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,808 : Adding real IP  = 74.82.89.114
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,808 : Adding real IP  = 74.82.89.111
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.110
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.109
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.108
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.107
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.106
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.105
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.104
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,809 : Adding real IP  = 74.82.89.103
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,810 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,813 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,813 : msg id = 22575
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,814 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,814 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:10:19 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,814 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,814 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,814 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,847 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,847 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:10:19,847 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : msg id = 9334
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:10:23 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,302 : q name = mqtt-mini.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,303 : Query = mqtt-mini.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,337 : Adding real IP  = 31.13.78.32
+SessionID[NjE1NzY=] 2017-11-16 09:10:23,338 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : msg id = 28734
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : request is z-p3-external.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:10:24 Client IP: 10.0.0.20    request is    z-p3-external.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : q name = z-p3-external.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,636 : Query = z-p3-external.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,668 : Adding real IP  = 114.125.99.224
+SessionID[NjE1NzY=] 2017-11-16 09:10:24,668 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : msg id = 21510
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : request is mtalk.google.com. IN A
+2017-11-16 09:10:29 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : q name = mtalk.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,288 : Query = mtalk.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,327 : Adding real IP  = 74.125.68.188
+SessionID[NjE1NzY=] 2017-11-16 09:10:29,328 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,013 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,013 : msg id = 18898
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,013 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,014 : request is z-p3-scontent.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:10:33 Client IP: 10.0.0.20    request is    z-p3-scontent.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,014 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,014 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,014 : q name = z-p3-scontent.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,014 : Query = z-p3-scontent.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,048 : Adding real IP  = 114.125.99.224
+SessionID[NjE1NzY=] 2017-11-16 09:10:33,049 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : msg id = 6465
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : request is edge-chat.facebook.com. IN A
+2017-11-16 09:10:34 Client IP: 10.0.0.20    request is    edge-chat.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : q name = edge-chat.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,481 : Query = edge-chat.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,514 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:10:34,515 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,406 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,406 : msg id = 30107
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,406 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,407 : request is graph.facebook.com. IN A
+2017-11-16 09:10:35 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,407 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,407 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,407 : q name = graph.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,407 : Query = graph.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,443 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:10:35,444 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,136 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,137 : msg id = 19874
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,137 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,137 : request is video.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:10:49 Client IP: 10.0.0.20    request is    video.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,137 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,137 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,137 : q name = video.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,138 : Query = video.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,179 : Adding real IP  = 114.125.99.210
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,179 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,364 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,364 : msg id = 21654
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,364 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,364 : request is alt3-mtalk.google.com. IN A
+2017-11-16 09:10:49 Client IP: 10.0.0.20    request is    alt3-mtalk.google.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,364 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,364 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,365 : q name = alt3-mtalk.google.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,365 : Query = alt3-mtalk.google.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,394 : Adding real IP  = 64.233.182.188
+SessionID[NjE1NzY=] 2017-11-16 09:10:49,394 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,903 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,903 : msg id = 26348
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,903 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,903 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:10:51 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,904 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,904 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,904 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,967 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,967 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,967 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : msg id = 3752
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:10:51 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : q name = global.uci.blackberry.com
+SessionID[NjE1NzY=] 2017-11-16 09:10:51,979 : Query = global.uci.blackberry.com A
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,072 : Adding real IP  = 74.82.94.194
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,073 : Adding real IP  = 74.82.94.152
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,073 : Adding real IP  = 74.82.94.150
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,073 : Adding real IP  = 74.82.89.81
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,073 : Adding real IP  = 74.82.94.149
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,073 : Adding real IP  = 74.82.91.43
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,073 : Adding real IP  = 74.82.94.147
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,074 : Adding real IP  = 74.82.94.195
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,074 : Adding real IP  = 74.82.94.193
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,074 : Adding real IP  = 74.82.89.115
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,074 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,082 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,083 : msg id = 5778
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,083 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,083 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:10:52 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,083 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,083 : Host: global.uci.blackberry.com.
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,083 : Query = global.uci.blackberry.com AAAA
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,134 : Exception...
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,134 : No host....
+SessionID[NjE1NzY=] 2017-11-16 09:10:52,134 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,645 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,646 : msg id = 26924
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,646 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,646 : request is z-p3-external.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:10:54 Client IP: 10.0.0.20    request is    z-p3-external.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,646 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,646 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,646 : q name = z-p3-external.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,647 : Query = z-p3-external.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,712 : Adding real IP  = 114.125.99.224
+SessionID[NjE1NzY=] 2017-11-16 09:10:54,712 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,016 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,016 : msg id = 5722
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,016 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,017 : request is z-p3-scontent.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:11:03 Client IP: 10.0.0.20    request is    z-p3-scontent.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,017 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,017 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,018 : q name = z-p3-scontent.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,018 : Query = z-p3-scontent.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,051 : Adding real IP  = 114.125.99.224
+SessionID[NjE1NzY=] 2017-11-16 09:11:03,051 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,406 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,406 : msg id = 26230
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,406 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,407 : request is graph.facebook.com. IN A
+2017-11-16 09:11:05 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,407 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,407 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,407 : q name = graph.facebook.com
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,407 : Query = graph.facebook.com A
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,440 : Adding real IP  = 31.13.78.13
+SessionID[NjE1NzY=] 2017-11-16 09:11:05,440 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,427 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,427 : msg id = 14700
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,427 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,427 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:11:09 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,427 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,427 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,428 : q name = connectivitycheck.gstatic.com
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,428 : Query = connectivitycheck.gstatic.com A
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,457 : Adding real IP  = 74.125.24.94
+SessionID[NjE1NzY=] 2017-11-16 09:11:09,457 : waiting requests.
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,654 : serving a request.
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,654 : msg id = 43388
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,655 : Client IP: 10.0.0.20
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,655 : request is z-p3-external.fsub4-1.fna.fbcdn.net. IN A
+2017-11-16 09:11:24 Client IP: 10.0.0.20    request is    z-p3-external.fsub4-1.fna.fbcdn.net. IN A
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,655 : Doing the A query....
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,655 : 1 questions.
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,656 : q name = z-p3-external.fsub4-1.fna.fbcdn.net
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,656 : Query = z-p3-external.fsub4-1.fna.fbcdn.net A
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,701 : Adding real IP  = 114.125.99.224
+SessionID[NjE1NzY=] 2017-11-16 09:11:24,702 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,006 : ---[ Start Dns2proxy Thu Nov 16 09:13:38 2017]---
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,006 : Non spoofing imap.gmail.com
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,007 : Non spoofing to 127.0.0.1
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,007 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,007 : DNS Forwarding activado....
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,007 : binded to UDP port 53.
+SessionID[OTgyNzI=] 2017-11-16 09:13:38,007 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,675 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,676 : msg id = 27383
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,676 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,676 : request is connectivitycheck.gstatic.com. IN AAAA
+2017-11-16 09:15:51 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,677 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,677 : Host: connectivitycheck.gstatic.com.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,677 : Query = connectivitycheck.gstatic.com AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,708 : Adding 2404:6800:4003:c03::5e
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,708 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,711 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,712 : msg id = 25649
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,712 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,712 : request is connectivitycheck.gstatic.com. IN A
+2017-11-16 09:15:51 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,712 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,712 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,712 : q name = connectivitycheck.gstatic.com
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,713 : Query = connectivitycheck.gstatic.com A
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,743 : Adding real IP  = 74.125.24.94
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,743 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,835 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,835 : msg id = 2963
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,836 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,836 : request is clients3.google.com. IN A
+2017-11-16 09:15:51 Client IP: 10.0.0.20    request is    clients3.google.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,836 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,836 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,836 : q name = clients3.google.com
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,837 : Query = clients3.google.com A
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,868 : Adding real IP  = 172.217.24.78
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,869 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,869 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,869 : msg id = 30053
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,869 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,869 : request is mqtt-mini.facebook.com. IN A
+2017-11-16 09:15:51 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,870 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,870 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,870 : q name = mqtt-mini.facebook.com
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,870 : Query = mqtt-mini.facebook.com A
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,904 : Adding real IP  = 31.13.78.32
+SessionID[OTgyNzI=] 2017-11-16 09:15:51,905 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,096 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,096 : msg id = 16898
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,096 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,096 : request is e5.whatsapp.net. IN A
+2017-11-16 09:15:53 Client IP: 10.0.0.20    request is    e5.whatsapp.net. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,097 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,097 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,097 : q name = e5.whatsapp.net
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,097 : Query = e5.whatsapp.net A
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,130 : Adding real IP  = 169.63.73.111
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,130 : Adding real IP  = 158.85.58.126
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,130 : Adding real IP  = 169.63.73.79
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,131 : Adding real IP  = 169.63.73.45
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,131 : Adding real IP  = 169.45.248.113
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,131 : Adding real IP  = 169.60.79.61
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,131 : Adding real IP  = 108.168.180.101
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,131 : Adding real IP  = 169.45.210.83
+SessionID[OTgyNzI=] 2017-11-16 09:15:53,132 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,279 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,279 : msg id = 2742
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,279 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,280 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:15:57 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,280 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,280 : Host: global.uci.blackberry.com.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,280 : Query = global.uci.blackberry.com AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,311 : Exception...
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,311 : No host....
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,312 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : msg id = 18886
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:15:57 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : q name = global.uci.blackberry.com
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,314 : Query = global.uci.blackberry.com A
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,347 : Adding real IP  = 74.82.94.153
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,347 : Adding real IP  = 74.82.91.56
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.60
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.49
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.45
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.44
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.43
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.42
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,348 : Adding real IP  = 74.82.91.37
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,349 : Adding real IP  = 74.82.90.38
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,349 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : msg id = 19686
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : request is global.uci.blackberry.com. IN AAAA
+2017-11-16 09:15:57 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : Host: global.uci.blackberry.com.
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,353 : Query = global.uci.blackberry.com AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,383 : Exception...
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,383 : No host....
+SessionID[OTgyNzI=] 2017-11-16 09:15:57,384 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,072 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,072 : msg id = 10731
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,072 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,072 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:15:58 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,072 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,073 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,073 : q name = global.uci.blackberry.com
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,073 : Query = global.uci.blackberry.com A
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,104 : Adding real IP  = 74.82.91.160
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,104 : Adding real IP  = 74.82.89.25
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,104 : Adding real IP  = 74.82.89.24
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,104 : Adding real IP  = 74.82.89.23
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,104 : Adding real IP  = 74.82.89.22
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,105 : Adding real IP  = 74.82.89.21
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,105 : Adding real IP  = 74.82.89.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,105 : Adding real IP  = 74.82.89.19
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,105 : Adding real IP  = 74.82.89.16
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,105 : Adding real IP  = 74.82.89.15
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,106 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : msg id = 25702
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : request is ssl.google-analytics.com. IN A
+2017-11-16 09:15:58 Client IP: 10.0.0.20    request is    ssl.google-analytics.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : q name = ssl.google-analytics.com
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,315 : Query = ssl.google-analytics.com A
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,390 : Adding real IP  = 74.125.24.97
+SessionID[OTgyNzI=] 2017-11-16 09:15:58,390 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,913 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,914 : msg id = 5637
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,914 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,914 : request is localhost. IN AAAA
+2017-11-16 09:16:00 Client IP: 10.0.0.20    request is    localhost. IN AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,914 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,914 : Host: localhost.
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,914 : Query = localhost AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,959 : Adding ::1
+SessionID[OTgyNzI=] 2017-11-16 09:16:00,959 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,387 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,387 : msg id = 11078
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,388 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,388 : request is global.uci.blackberry.com. IN A
+2017-11-16 09:16:01 Client IP: 10.0.0.20    request is    global.uci.blackberry.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,388 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,388 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,389 : q name = global.uci.blackberry.com
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,389 : Query = global.uci.blackberry.com A
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,430 : Adding real IP  = 74.82.94.153
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,430 : Adding real IP  = 74.82.91.56
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,431 : Adding real IP  = 74.82.91.60
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,431 : Adding real IP  = 74.82.91.49
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,431 : Adding real IP  = 74.82.91.45
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,431 : Adding real IP  = 74.82.91.44
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,431 : Adding real IP  = 74.82.91.43
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,432 : Adding real IP  = 74.82.91.42
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,432 : Adding real IP  = 74.82.91.37
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,432 : Adding real IP  = 74.82.90.38
+SessionID[OTgyNzI=] 2017-11-16 09:16:01,433 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,752 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,752 : msg id = 26399
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,752 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,753 : request is stun.voip.blackberry.com. IN AAAA
+2017-11-16 09:16:02 Client IP: 10.0.0.20    request is    stun.voip.blackberry.com. IN AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,753 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,753 : Host: stun.voip.blackberry.com.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,753 : Query = stun.voip.blackberry.com AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,788 : Exception...
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,788 : No host....
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,788 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,790 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,790 : msg id = 31147
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,790 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,791 : request is stun.voip.blackberry.com. IN A
+2017-11-16 09:16:02 Client IP: 10.0.0.20    request is    stun.voip.blackberry.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,791 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,791 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,791 : q name = stun.voip.blackberry.com
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,791 : Query = stun.voip.blackberry.com A
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,829 : Adding real IP  = 206.53.159.130
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,830 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,832 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,832 : msg id = 19514
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,832 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,832 : request is stun.voip.blackberry.com. IN AAAA
+2017-11-16 09:16:02 Client IP: 10.0.0.20    request is    stun.voip.blackberry.com. IN AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,832 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,832 : Host: stun.voip.blackberry.com.
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,833 : Query = stun.voip.blackberry.com AAAA
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,862 : Exception...
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,862 : No host....
+SessionID[OTgyNzI=] 2017-11-16 09:16:02,863 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,932 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,932 : msg id = 18731
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,932 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,932 : request is mtalk.google.com. IN A
+2017-11-16 09:16:11 Client IP: 10.0.0.20    request is    mtalk.google.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,933 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,933 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,933 : q name = mtalk.google.com
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,933 : Query = mtalk.google.com A
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,969 : Adding real IP  = 74.125.68.188
+SessionID[OTgyNzI=] 2017-11-16 09:16:11,970 : waiting requests.
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,521 : serving a request.
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,521 : msg id = 27298
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,521 : Client IP: 10.0.0.20
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,521 : request is api.accuweather.com. IN A
+2017-11-16 09:16:13 Client IP: 10.0.0.20    request is    api.accuweather.com. IN A
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,522 : Doing the A query....
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,522 : 1 questions.
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,522 : q name = api.accuweather.com
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,522 : Query = api.accuweather.com A
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,555 : Adding real IP  = 23.0.170.89
+SessionID[OTgyNzI=] 2017-11-16 09:16:13,555 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,927 : ---[ Start Dns2proxy Wed Dec  6 19:35:50 2017]---
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,938 : Non spoofing imap.gmail.com
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,938 : Non spoofing to 127.0.0.1
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,939 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,947 : DNS Forwarding activado....
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,947 : binded to UDP port 53.
+SessionID[MjU4OTA=] 2017-12-06 19:35:50,947 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,206 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : msg id = 103
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : Client IP: 127.0.0.1
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : request is accounts.google.com. IN A
+2017-12-06 19:35:51 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : q name = accounts.google.com
+SessionID[MjU4OTA=] 2017-12-06 19:35:51,207 : Query = accounts.google.com A
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,208 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,585 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : msg id = 103
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : I am already serving this request.
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : msg id = 17763
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : Client IP: 127.0.0.1
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : request is 2.debian.pool.ntp.org. IN A
+2017-12-06 19:36:21 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,586 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,587 : q name = 2.debian.pool.ntp.org
+SessionID[MjU4OTA=] 2017-12-06 19:36:21,587 : Query = 2.debian.pool.ntp.org A
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,588 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,588 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,588 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,589 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,589 : msg id = 56688
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,589 : Client IP: 127.0.0.1
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,589 : request is accounts.google.com. IN A
+2017-12-06 19:36:51 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,589 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,590 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,590 : q name = accounts.google.com
+SessionID[MjU4OTA=] 2017-12-06 19:36:51,590 : Query = accounts.google.com A
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,591 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,591 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,591 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,591 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : msg id = 17763
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : I am already serving this request.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : msg id = 56688
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : I am already serving this request.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : msg id = 34344
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : Client IP: 127.0.0.1
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : request is 2.debian.pool.ntp.org. IN A
+2017-12-06 19:37:21 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,592 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,593 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,593 : q name = 2.debian.pool.ntp.org
+SessionID[MjU4OTA=] 2017-12-06 19:37:21,593 : Query = 2.debian.pool.ntp.org A
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,594 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,594 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,595 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,595 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,595 : msg id = 23181
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,596 : Client IP: 10.0.0.20
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,596 : request is connectivitycheck.gstatic.com. IN AAAA
+2017-12-06 19:37:51 Client IP: 10.0.0.20    request is    connectivitycheck.gstatic.com. IN AAAA
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,597 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,597 : Host: connectivitycheck.gstatic.com.
+SessionID[MjU4OTA=] 2017-12-06 19:37:51,597 : Query = connectivitycheck.gstatic.com AAAA
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,598 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,599 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,599 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,599 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,599 : msg id = 29833
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,599 : Client IP: 10.0.0.20
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,600 : request is clients3.google.com. IN A
+2017-12-06 19:38:21 Client IP: 10.0.0.20    request is    clients3.google.com. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,600 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,600 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,600 : q name = clients3.google.com
+SessionID[MjU4OTA=] 2017-12-06 19:38:21,600 : Query = clients3.google.com A
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,602 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,602 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,603 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,603 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,603 : msg id = 2937
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,603 : Client IP: 10.0.0.20
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,604 : request is mqtt-mini.facebook.com. IN A
+2017-12-06 19:38:51 Client IP: 10.0.0.20    request is    mqtt-mini.facebook.com. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,604 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,604 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,605 : q name = mqtt-mini.facebook.com
+SessionID[MjU4OTA=] 2017-12-06 19:38:51,605 : Query = mqtt-mini.facebook.com A
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,606 : Exception...
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,607 : No host....
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,607 : waiting requests.
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,608 : serving a request.
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,608 : msg id = 7198
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,608 : Client IP: 10.0.0.20
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,609 : request is graph.facebook.com. IN A
+2017-12-06 19:39:21 Client IP: 10.0.0.20    request is    graph.facebook.com. IN A
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,609 : Doing the A query....
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,609 : 1 questions.
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,610 : q name = graph.facebook.com
+SessionID[MjU4OTA=] 2017-12-06 19:39:21,610 : Query = graph.facebook.com A
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : ---[ Start Dns2proxy Wed Dec  6 19:57:01 2017]---
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : Non spoofing imap.gmail.com
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : Non spoofing to 127.0.0.1
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : DNS Forwarding activado....
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : binded to UDP port 53.
+SessionID[NjcyODE=] 2017-12-06 19:57:01,380 : waiting requests.
+SessionID[NjcyODE=] 2017-12-06 19:57:03,207 : serving a request.
+SessionID[NjcyODE=] 2017-12-06 19:57:03,207 : msg id = 34422
+SessionID[NjcyODE=] 2017-12-06 19:57:03,207 : Client IP: 127.0.0.1
+SessionID[NjcyODE=] 2017-12-06 19:57:03,208 : request is accounts.google.com. IN A
+2017-12-06 19:57:03 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NjcyODE=] 2017-12-06 19:57:03,208 : Doing the A query....
+SessionID[NjcyODE=] 2017-12-06 19:57:03,208 : 1 questions.
+SessionID[NjcyODE=] 2017-12-06 19:57:03,208 : q name = accounts.google.com
+SessionID[NjcyODE=] 2017-12-06 19:57:03,208 : Query = accounts.google.com A
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,926 : ---[ Start Dns2proxy Wed Dec  6 20:03:59 2017]---
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,926 : Non spoofing imap.gmail.com
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,926 : Non spoofing to 127.0.0.1
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,926 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,927 : DNS Forwarding activado....
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,927 : binded to UDP port 53.
+SessionID[NzUzMDY=] 2017-12-06 20:03:59,927 : waiting requests.
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,210 : serving a request.
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,210 : msg id = 48195
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,210 : Client IP: 127.0.0.1
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,211 : request is accounts.google.com. IN A
+2017-12-06 20:04:00 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,211 : Doing the A query....
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,211 : 1 questions.
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,211 : q name = accounts.google.com
+SessionID[NzUzMDY=] 2017-12-06 20:04:00,211 : Query = accounts.google.com A
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : Exception...
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : No host....
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : waiting requests.
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : serving a request.
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : msg id = 48195
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : I am already serving this request.
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : waiting requests.
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,213 : serving a request.
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : msg id = 24364
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : Client IP: 127.0.0.1
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : request is 1.debian.pool.ntp.org. IN A
+2017-12-06 20:04:30 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : Doing the A query....
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : 1 questions.
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : q name = 1.debian.pool.ntp.org
+SessionID[NzUzMDY=] 2017-12-06 20:04:30,214 : Query = 1.debian.pool.ntp.org A
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,914 : ---[ Start Dns2proxy Wed Dec  6 20:06:29 2017]---
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,914 : Non spoofing imap.gmail.com
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,914 : Non spoofing to 127.0.0.1
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,914 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,914 : DNS Forwarding activado....
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,914 : binded to UDP port 53.
+SessionID[NzQ2MTY=] 2017-12-06 20:06:29,915 : waiting requests.
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,200 : serving a request.
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,200 : msg id = 32073
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,200 : Client IP: 127.0.0.1
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,201 : request is accounts.google.com. IN A
+2017-12-06 20:06:30 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,201 : Doing the A query....
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,201 : 1 questions.
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,201 : q name = accounts.google.com
+SessionID[NzQ2MTY=] 2017-12-06 20:06:30,201 : Query = accounts.google.com A
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,476 : ---[ Start Dns2proxy Wed Dec  6 20:09:35 2017]---
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,476 : Non spoofing imap.gmail.com
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,476 : Non spoofing to 127.0.0.1
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,476 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,476 : DNS Forwarding activado....
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,477 : binded to UDP port 53.
+SessionID[NDY5NDQ=] 2017-12-06 20:09:35,477 : waiting requests.
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,210 : serving a request.
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,210 : msg id = 43318
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,210 : Client IP: 127.0.0.1
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,211 : request is 1.debian.pool.ntp.org. IN A
+2017-12-06 20:09:36 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,211 : Doing the A query....
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,211 : 1 questions.
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,212 : q name = 1.debian.pool.ntp.org
+SessionID[NDY5NDQ=] 2017-12-06 20:09:36,212 : Query = 1.debian.pool.ntp.org A
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,576 : ---[ Start Dns2proxy Wed Dec  6 20:09:55 2017]---
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,577 : Non spoofing imap.gmail.com
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,577 : Non spoofing to 127.0.0.1
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,577 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,577 : DNS Forwarding activado....
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,577 : binded to UDP port 53.
+SessionID[MTk2MzM=] 2017-12-06 20:09:55,577 : waiting requests.
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,210 : serving a request.
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,210 : msg id = 26638
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,210 : Client IP: 127.0.0.1
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,211 : request is 2.debian.pool.ntp.org. IN A
+2017-12-06 20:09:56 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,211 : Doing the A query....
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,212 : 1 questions.
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,212 : q name = 2.debian.pool.ntp.org
+SessionID[MTk2MzM=] 2017-12-06 20:09:56,212 : Query = 2.debian.pool.ntp.org A
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,491 : ---[ Start Dns2proxy Wed Dec  6 20:10:42 2017]---
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,492 : Non spoofing imap.gmail.com
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,492 : Non spoofing to 127.0.0.1
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,492 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,492 : DNS Forwarding activado....
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,492 : binded to UDP port 53.
+SessionID[MzM2Njk=] 2017-12-06 20:10:42,492 : waiting requests.
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,209 : serving a request.
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,209 : msg id = 16668
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,210 : Client IP: 127.0.0.1
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,210 : request is accounts.google.com. IN A
+2017-12-06 20:10:44 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,210 : Doing the A query....
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,210 : 1 questions.
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,210 : q name = accounts.google.com
+SessionID[MzM2Njk=] 2017-12-06 20:10:44,210 : Query = accounts.google.com A
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,211 : Exception...
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : No host....
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : waiting requests.
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : serving a request.
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : msg id = 16668
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : I am already serving this request.
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : waiting requests.
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : serving a request.
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,212 : msg id = 47483
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,213 : Client IP: 127.0.0.1
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,213 : request is 3.debian.pool.ntp.org. IN A
+2017-12-06 20:11:14 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,213 : Doing the A query....
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,213 : 1 questions.
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,213 : q name = 3.debian.pool.ntp.org
+SessionID[MzM2Njk=] 2017-12-06 20:11:14,213 : Query = 3.debian.pool.ntp.org A
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,214 : Exception...
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,214 : No host....
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : waiting requests.
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : serving a request.
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : msg id = 28233
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : Client IP: 127.0.0.1
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : request is accounts.google.com. IN A
+2017-12-06 20:11:44 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : Doing the A query....
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : 1 questions.
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,215 : q name = accounts.google.com
+SessionID[MzM2Njk=] 2017-12-06 20:11:44,216 : Query = accounts.google.com A
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : ---[ Start Dns2proxy Wed Dec  6 20:12:50 2017]---
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : Non spoofing imap.gmail.com
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : Non spoofing to 127.0.0.1
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : DNS Forwarding activado....
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : binded to UDP port 53.
+SessionID[NDU4Mzg=] 2017-12-06 20:12:50,562 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,209 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,210 : msg id = 34205
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,210 : Client IP: 127.0.0.1
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,211 : request is accounts.google.com. IN A
+2017-12-06 20:12:52 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,211 : Doing the A query....
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,212 : 1 questions.
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,212 : q name = accounts.google.com
+SessionID[NDU4Mzg=] 2017-12-06 20:12:52,212 : Query = accounts.google.com A
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,213 : Exception...
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,214 : No host....
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,214 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,214 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,214 : msg id = 53036
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,215 : Client IP: 127.0.0.1
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,215 : request is 1.debian.pool.ntp.org. IN A
+2017-12-06 20:13:22 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,215 : Doing the A query....
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,215 : 1 questions.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,215 : q name = 1.debian.pool.ntp.org
+SessionID[NDU4Mzg=] 2017-12-06 20:13:22,216 : Query = 1.debian.pool.ntp.org A
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,217 : Exception...
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,217 : No host....
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,217 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,217 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : msg id = 34205
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : I am already serving this request.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : msg id = 53036
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : I am already serving this request.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,218 : msg id = 32539
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,219 : Client IP: 127.0.0.1
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,219 : request is accounts.google.com. IN A
+2017-12-06 20:13:52 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,219 : Doing the A query....
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,219 : 1 questions.
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,219 : q name = accounts.google.com
+SessionID[NDU4Mzg=] 2017-12-06 20:13:52,219 : Query = accounts.google.com A
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,221 : Exception...
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,221 : No host....
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,221 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,221 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,221 : msg id = 23894
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,221 : Client IP: 127.0.0.1
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,222 : request is 1.debian.pool.ntp.org. IN A
+2017-12-06 20:14:22 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,222 : Doing the A query....
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,222 : 1 questions.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,222 : q name = 1.debian.pool.ntp.org
+SessionID[NDU4Mzg=] 2017-12-06 20:14:22,222 : Query = 1.debian.pool.ntp.org A
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,223 : Exception...
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,223 : No host....
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : msg id = 32539
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : I am already serving this request.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : msg id = 23894
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : I am already serving this request.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : waiting requests.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : serving a request.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : msg id = 22176
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,224 : Client IP: 127.0.0.1
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,225 : request is 3.debian.pool.ntp.org. IN A
+2017-12-06 20:14:52 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,225 : Doing the A query....
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,225 : 1 questions.
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,225 : q name = 3.debian.pool.ntp.org
+SessionID[NDU4Mzg=] 2017-12-06 20:14:52,225 : Query = 3.debian.pool.ntp.org A
+SessionID[OTA2] 2017-12-06 20:39:18,448 : ---[ Start Dns2proxy Wed Dec  6 20:39:18 2017]---
+SessionID[OTA2] 2017-12-06 20:39:18,448 : Non spoofing imap.gmail.com
+SessionID[OTA2] 2017-12-06 20:39:18,448 : Non spoofing to 127.0.0.1
+SessionID[OTA2] 2017-12-06 20:39:18,448 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTA2] 2017-12-06 20:39:18,449 : DNS Forwarding activado....
+SessionID[OTA2] 2017-12-06 20:39:18,449 : binded to UDP port 53.
+SessionID[OTA2] 2017-12-06 20:39:18,449 : waiting requests.
+SessionID[OTA2] 2017-12-06 20:39:20,209 : serving a request.
+SessionID[OTA2] 2017-12-06 20:39:20,209 : msg id = 23448
+SessionID[OTA2] 2017-12-06 20:39:20,209 : Client IP: 127.0.0.1
+SessionID[OTA2] 2017-12-06 20:39:20,210 : request is accounts.google.com. IN A
+2017-12-06 20:39:20 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTA2] 2017-12-06 20:39:20,210 : Doing the A query....
+SessionID[OTA2] 2017-12-06 20:39:20,210 : 1 questions.
+SessionID[OTA2] 2017-12-06 20:39:20,210 : q name = accounts.google.com
+SessionID[OTA2] 2017-12-06 20:39:20,210 : Query = accounts.google.com A
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : ---[ Start Dns2proxy Wed Dec  6 20:40:27 2017]---
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : Non spoofing imap.gmail.com
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : Non spoofing to 127.0.0.1
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : DNS Forwarding activado....
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : binded to UDP port 53.
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,020 : waiting requests.
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,208 : serving a request.
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,208 : msg id = 3421
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,209 : Client IP: 127.0.0.1
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,210 : request is accounts.google.com. IN A
+2017-12-06 20:40:27 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,210 : Doing the A query....
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,210 : 1 questions.
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,210 : q name = accounts.google.com
+SessionID[NzYzOTM=] 2017-12-06 20:40:27,210 : Query = accounts.google.com A
+SessionID[NzQxMw==] 2017-12-06 20:43:00,837 : ---[ Start Dns2proxy Wed Dec  6 20:43:00 2017]---
+SessionID[NzQxMw==] 2017-12-06 20:43:00,837 : Non spoofing imap.gmail.com
+SessionID[NzQxMw==] 2017-12-06 20:43:00,837 : Non spoofing to 127.0.0.1
+SessionID[NzQxMw==] 2017-12-06 20:43:00,838 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzQxMw==] 2017-12-06 20:43:00,838 : DNS Forwarding activado....
+SessionID[NzQxMw==] 2017-12-06 20:43:00,838 : binded to UDP port 53.
+SessionID[NzQxMw==] 2017-12-06 20:43:00,838 : waiting requests.
+SessionID[NzQxMw==] 2017-12-06 20:43:01,206 : serving a request.
+SessionID[NzQxMw==] 2017-12-06 20:43:01,206 : msg id = 41701
+SessionID[NzQxMw==] 2017-12-06 20:43:01,207 : Client IP: 127.0.0.1
+SessionID[NzQxMw==] 2017-12-06 20:43:01,207 : request is accounts.google.com. IN A
+2017-12-06 20:43:01 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NzQxMw==] 2017-12-06 20:43:01,207 : Doing the A query....
+SessionID[NzQxMw==] 2017-12-06 20:43:01,208 : 1 questions.
+SessionID[NzQxMw==] 2017-12-06 20:43:01,208 : q name = accounts.google.com
+SessionID[NzQxMw==] 2017-12-06 20:43:01,208 : Query = accounts.google.com A
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : ---[ Start Dns2proxy Wed Dec  6 20:43:30 2017]---
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : Non spoofing imap.gmail.com
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : Non spoofing to 127.0.0.1
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : DNS Forwarding activado....
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : binded to UDP port 53.
+SessionID[NDY4ODk=] 2017-12-06 20:43:30,608 : waiting requests.
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,207 : serving a request.
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,207 : msg id = 46284
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,207 : Client IP: 127.0.0.1
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,208 : request is accounts.google.com. IN A
+2017-12-06 20:43:32 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,208 : Doing the A query....
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,208 : 1 questions.
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,208 : q name = accounts.google.com
+SessionID[NDY4ODk=] 2017-12-06 20:43:32,208 : Query = accounts.google.com A
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,358 : ---[ Start Dns2proxy Wed Dec  6 21:06:39 2017]---
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,359 : Non spoofing imap.gmail.com
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,359 : Non spoofing to 127.0.0.1
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,359 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,359 : DNS Forwarding activado....
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,359 : binded to UDP port 53.
+SessionID[ODU1MjE=] 2017-12-06 21:06:39,359 : waiting requests.
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,207 : serving a request.
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,208 : msg id = 63808
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,208 : Client IP: 127.0.0.1
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,208 : request is accounts.google.com. IN A
+2017-12-06 21:06:41 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,208 : Doing the A query....
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,208 : 1 questions.
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,209 : q name = accounts.google.com
+SessionID[ODU1MjE=] 2017-12-06 21:06:41,209 : Query = accounts.google.com A
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,209 : Exception...
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,210 : No host....
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,210 : waiting requests.
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,210 : serving a request.
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,210 : msg id = 63808
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,210 : I am already serving this request.
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,210 : waiting requests.
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,211 : serving a request.
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,211 : msg id = 61341
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,211 : Client IP: 127.0.0.1
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,211 : request is 0.debian.pool.ntp.org. IN A
+2017-12-06 21:07:11 Client IP: 127.0.0.1    request is    0.debian.pool.ntp.org. IN A
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,211 : Doing the A query....
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,212 : 1 questions.
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,212 : q name = 0.debian.pool.ntp.org
+SessionID[ODU1MjE=] 2017-12-06 21:07:11,212 : Query = 0.debian.pool.ntp.org A
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,213 : Exception...
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,213 : No host....
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,213 : waiting requests.
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : serving a request.
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : msg id = 8330
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : Client IP: 127.0.0.1
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : request is accounts.google.com. IN A
+2017-12-06 21:07:41 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : Doing the A query....
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : 1 questions.
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : q name = accounts.google.com
+SessionID[ODU1MjE=] 2017-12-06 21:07:41,214 : Query = accounts.google.com A

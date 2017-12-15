@@ -1,0 +1,168 @@
+GET http://74.125.200.139/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.102/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.114/connect
+{'host': 'check.googlezip.net', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': ''}
+
+GET http://74.125.200.114/generate_204
+{'content-length': '0', 'accept-language': 'en-US,en;q=0.9,id;q=0.8,es;q=0.7', 'chrome-proxy-ect': '4G', 'chrome-proxy': 's=CmkKEwjh4Mbxz8HXAhVD32gKHaDaDKgSDAiMobjQBRDslPSQAxoqCh1zdGFsZV9wcmV2aWV3c19yb2xsb3V0X3N0YWJsZRIHY29udHJvbCABIhZzdGFsZV9wcmV2aWV3c19jb250cm9sKAESRzBFAiB7pdIFrTeDELJfnRULJM5zqcbOeQoltjkHZdxjoH7F5QIhAOjS3Owhma48YAkBVw_MKVrqF9FyLks2bFL_a9JMNE7c, c=android, b=3202, p=84', 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; ASUS_Z010D Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36', 'host': 'check.googlezip.net', 'pragma': 'no-cache', 'proxy-connection': 'keep-alive'}
+
+GET http://74.125.200.114/generate_204
+{'connection': 'keep-alive', 'accept-language': 'en-US,en;q=0.9,id;q=0.8,es;q=0.7', 'pragma': 'no-cache', 'host': 'check.googlezip.net', 'content-length': '0', 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; ASUS_Z010D Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+POST http://74.125.200.94/service/update2?cup2key=7:3837272460&cup2hreq=07f5ce3f7b84ca39f54c9ad2a486a7963d0cc8c623b2679300dccecb3f03321a
+{'content-length': '822', 'host': 'update.googleapis.com', 'content-type': 'application/xml', 'connection': 'keep-alive', 'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; ASUS_Z010D Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36'}
+<?xml version="1.0" encoding="UTF-8"?><request protocol="3.1" dedup="cr" acceptformat="crx2,crx3" version="chrome-62.0.3202.84" prodversion="62.0.3202.84" requestid="{0f2768ec-5154-436f-b70f-f53cf721d9b3}" lang="en-US" updaterchannel="" prodchannel="" os="android" arch="arm" nacl_arch="arm"><hw physmemory="2"/><os platform="Android" arch="armv8l" version="6.0.1"/><app appid="llkgjffcdpffmhiakmfcdcblohccpfmo" version="0.0.0.0"><updatecheck/><ping rd="3971" ping_freshness="{bfa17368-9956-46ab-8630-c463e2bc45ae}"/></app><app appid="khaoiebndkojlmppeemjhbpbandiljpe" version="14" cohort="1:cux:" cohortname="Auto"><updatecheck/><ping rd="3971" ping_freshness="{ecf3eba0-d1bf-4612-9c82-96d10e7c2a08}"/><packages><package fp="1.bcdb2d0d5781e8a57ce83c3afa560df24cb27481e137621ebc0be2b3ce0d1140"/></packages></app></request>
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://74.125.200.139/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_Z010D Build/MMB29P)'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/locations/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&detail=false&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/daily/10day/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/currentconditions/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d482f67&details=true&language=en
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+
+GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
+{'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+pip install -r /usr/share/WiFi-Pumpkin/requirements.txt
+if which update-alternatives >/dev/null; then
+    update-alternatives --install /usr/bin/wifi-pumpkin wifi-pumpkin /usr/share/WiFi-Pumpkin/wifi-pumpkin 1
+else
+    ln -sfT /usr/share/WiFi-Pumpkin/wifi-pumpkin /usr/bin/wifi-pumpkin
+fi
+chmod +x /usr/share/WiFi-Pumpkin/wifi-pumpkin
+chown root:root /usr/share/applications/wifi-pumpkin.desktop

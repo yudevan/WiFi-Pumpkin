@@ -1,0 +1,103 @@
+
+GET http://216.58.221.67/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.0; Redmi Note 4 MIUI/V8.5.4.0.NCFMIED)'}
+
+GET http://216.58.221.67/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.0; Redmi Note 4 MIUI/V8.5.4.0.NCFMIED)'}
+
+GET http://216.58.221.67/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 4A MIUI/V8.5.1.0.MCCMIED)'}
+
+GET http://52.221.2.149/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=27&osver=23&os=Redmi%204A%3AV8.5.1.0.MCCMIED&mi=3&key=6ecb355ebe9b209f9382e96cbd7460ac
+{'host': 'resolver.msg.xiaomi.net', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 4A MIUI/V8.5.1.0.MCCMIED)'}
+
+GET http://216.58.221.67/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.0; Redmi Note 4 MIUI/V8.5.4.0.NCFMIED)'}
+
+GET http://202.70.57.170/bag
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'host': 'init-p01st.push.apple.com', 'accept': '*/*', 'user-agent': 'iPad5,3/10.3.3 (14G60)'}
+
+GET http://17.253.83.203/hotspot-detect.html
+{'host': 'captive.apple.com', 'connection': 'close', 'content-length': '0', 'user-agent': 'CaptiveNetworkSupport-346.50.1 wispr'}
+
+GET http://172.217.24.110/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; S5J Build/WG5004-ADVAN_S5J_BCM23550_A21_V1.3_V1.0-2014.04.29)'}
+
+GET http://172.217.24.110/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; S5J Build/WG5004-ADVAN_S5J_BCM23550_A21_V1.3_V1.0-2014.04.29)'}
+
+GET http://172.217.24.110/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; S5J Build/WG5004-ADVAN_S5J_BCM23550_A21_V1.3_V1.0-2014.04.29)'}
+
+GET http://172.217.24.110/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; S5J Build/WG5004-ADVAN_S5J_BCM23550_A21_V1.3_V1.0-2014.04.29)'}
+
+GET http://172.217.24.110/generate_204
+{'host': '172.217.24.110', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.2.2; S5J Build/WG5004-ADVAN_S5J_BCM23550_A21_V1.3_V1.0-2014.04.29)'}
+
+GET http://216.58.221.67/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 3S MIUI/V8.5.3.0.MALMIED)'}
+
+GET http://172.217.24.110/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 3S MIUI/V8.5.3.0.MALMIED)'}
+
+GET http://52.221.2.149/gslb/?ver=4.0&type=wifi&uuid=0&list=app.chat.xiaomi.net%2Cresolver.msg.xiaomi.net&sdkver=27&osver=23&os=Redmi%203S%3AV8.5.3.0.MALMIED&mi=3&key=c6080fd111ff59768e7492f0e85c46db
+{'host': 'resolver.msg.xiaomi.net', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 3S MIUI/V8.5.3.0.MALMIED)'}
+
+GET http://216.58.221.67/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; Redmi 3S MIUI/V8.5.3.0.MALMIED)'}
+
+GET http://34.210.233.169/api_endpoint
+{'host': 'mobilesystemservice.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Apache-HttpClient/UNAVAILABLE (java 1.4)'}
+
+GET http://23.197.61.108/generate_204
+{'connection': 'close', 'host': 'conn1.oppomobile.com', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1; A1601 Build/LMY47I)'}
+
+GET http://23.197.61.108/generate_204
+{'host': 'conn1.oppomobile.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 5.1; A1601 Build/LMY47I)'}
+
+GET http://157.240.7.20/mobile/status.php
+{'content-length': '0', 'host': 'portal.fb.com', 'x-fb-net-hni': '51010', 'connection': 'keep-alive', 'x-fb-sim-hni': '51010', 'x-fb-http-engine': 'Liger', 'user-agent': 'Facebook', 'x-fb-background-state': '1'}
+
+GET https://mobilesystemservice.com/api_endpoint
+{'host': 'mobilesystemservice.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Apache-HttpClient/UNAVAILABLE (java 1.4)'}
+
+GET http://17.253.83.203/hotspot-detect.html
+{'host': 'captive.apple.com', 'connection': 'close', 'content-length': '0', 'user-agent': 'CaptiveNetworkSupport-346.50.1 wispr'}
+
+GET http://17.253.83.202/hotspot-detect.html
+{'host': 'captive.apple.com', 'connection': 'close', 'content-length': '0', 'user-agent': 'CaptiveNetworkSupport-346.50.1 wispr'}
+
+GET http://202.70.57.170/bag
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'host': 'init-p01st.push.apple.com', 'accept': '*/*', 'user-agent': 'iPad5,3/10.3.3 (14G60)'}
+
+GET http://74.125.68.138/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; GT-N7100 Build/KOT49H)'}
+
+GET http://74.125.68.139/generate_204
+{'host': '74.125.68.139', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; GT-N7100 Build/KOT49H)'}
+
+GET http://74.125.68.138/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; GT-N7100 Build/KOT49H)'}
+
+GET http://74.125.68.138/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; GT-N7100 Build/KOT49H)'}
+
+GET http://31.13.78.13/mobile/status.php
+{'content-length': '0', 'host': 'portal.fb.com', 'x-fb-net-hni': '51089', 'connection': 'keep-alive', 'x-fb-sim-hni': '51089', 'x-fb-http-engine': 'Liger', 'user-agent': 'Facebook', 'x-fb-background-state': '1'}
+
+GET http://146.185.49.2/feed/menu?format=json&platform=app&show_dossiers=false
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'cookie': '__utma=226283141.822024846.1458075156.1483061585.1498895309.5; __utmz=226283141.1498895309.5.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gfp_64b=W7XF0FeUCNyOxAudIfNHBEQMeoHlGElr_LBwGqX4Ftr.R7', 'host': 'nieuws.vtm.be', 'accept': '*/*', 'user-agent': 'VTM%20NIEUWS/1 CFNetwork/811.5.4 Darwin/16.7.0'}
+
+GET http://146.185.49.2/feed/page-layout/home
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'cookie': '__utma=226283141.822024846.1458075156.1483061585.1498895309.5; __utmz=226283141.1498895309.5.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gfp_64b=W7XF0FeUCNyOxAudIfNHBEQMeoHlGElr_LBwGqX4Ftr.R7', 'host': 'nieuws.vtm.be', 'accept': '*/*', 'user-agent': 'VTM%20NIEUWS/1 CFNetwork/811.5.4 Darwin/16.7.0'}
+
+GET http://146.185.49.2/feed/programs?count=100&format=json&from=0&include_fake_programs=false&include_featured_tags=true&only_with_video=false&type=all
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'cookie': '__utma=226283141.822024846.1458075156.1483061585.1498895309.5; __utmz=226283141.1498895309.5.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gfp_64b=W7XF0FeUCNyOxAudIfNHBEQMeoHlGElr_LBwGqX4Ftr.R7', 'host': 'nieuws.vtm.be', 'accept': '*/*', 'user-agent': 'VTM%20NIEUWS/1 CFNetwork/811.5.4 Darwin/16.7.0'}
+
+GET http://146.185.49.2/feed/articles?count=100&fields=adzone,categories,freewheel,html,persons,program,properties,scribble_eventid,tags,text,video&filterExcluded=false&format=json&from=0&since=1493575168&sort=mostRecent&type=all
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'cookie': '__utma=226283141.822024846.1458075156.1483061585.1498895309.5; __utmz=226283141.1498895309.5.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gfp_64b=W7XF0FeUCNyOxAudIfNHBEQMeoHlGElr_LBwGqX4Ftr.R7', 'host': 'nieuws.vtm.be', 'accept': '*/*', 'user-agent': 'VTM%20NIEUWS/1 CFNetwork/811.5.4 Darwin/16.7.0'}
+
+GET http://178.32.206.60/redot.gif?l=60&screen=1024x768&lsdata=-NOTSUP&id=B3BAS6ck85f.rCf91zpyFJQb..m6pqPZJkvSXKX.Cs3.i7&et=view&hsrc=1&extra=
+{'connection': 'keep-alive', 'accept-language': 'nl-be', 'content-length': '0', 'cookie': 'Gdyn=KlQDRMMGQMQGP_x5tx61lFG5ssGMaH4yH84xLbGHan7cX8JSssXAIm8cGKZgaEB1SGS82jXG08SmSmsGvMGpUGZwnGsa', 'host': 'gabe.hit.gemius.pl', 'accept': '*/*', 'user-agent': 'GemiusSDK/1.2.1 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 DeviceUID: C01C07D1-4BF9-4A9C-B43B-A64056D7AC8B'}
+

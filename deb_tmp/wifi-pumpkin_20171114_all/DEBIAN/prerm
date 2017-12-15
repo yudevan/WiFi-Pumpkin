@@ -1,0 +1,16 @@
+#!/bin/bash
+if which update-alternatives >/dev/null; then
+    update-alternatives --remove wifi-pumpkin /usr/share/WiFi-Pumpkin/wifi-pumpkin
+else
+    rm -rf /usr/bin/wifi-pumpkin
+fi
+
+if [ -d "/usr/share/WiFi-Pumpkin" ]; then
+    # Delete every *.pyc file
+    find /usr/share/WiFi-Pumpkin -name "*.pyc" |
+    while read p; do
+        rm -rf $p
+    done
+
+    rm -rf /usr/share/WiFi-Pumpkin/templates/Update
+fi
