@@ -2,19 +2,18 @@ import os
 import sys
 from PyQt4 import QtGui, QtCore
 from collections import OrderedDict
-from core.servers.proxy.package import  *
+from core.servers.proxy.package import *
 
 
 class ProxyModeController(QtGui.QTableWidget):
     proxies = {}
     SetNoProxy = QtCore.pyqtSignal(object)
-    def __init__(self,parent = 0):
+    def __init__(self,parent, FsettingsUI=None, main_method=None, **kwargs):
         super(ProxyModeController, self).__init__(parent)
         self.parent=parent
         self.FSettings = self.parent.FSettings
         self.proxyGroup = QtGui.QButtonGroup()
         __proxlist= [prox(parent=self.parent) for prox in ProxyMode.ProxyMode.__subclasses__()]
-        print __proxlist
         #Keep Proxy in a dictionary
         for k in __proxlist:
             self.proxies[k.Name]=k
