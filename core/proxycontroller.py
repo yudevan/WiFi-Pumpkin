@@ -14,6 +14,7 @@ class ProxyModeController(QtGui.QTableWidget):
         self.FSettings = self.parent.FSettings
         self.proxyGroup = QtGui.QButtonGroup()
         __proxlist= [prox(parent=self.parent) for prox in ProxyMode.__subclasses__()]
+        print __proxlist
         #Keep Proxy in a dictionary
         for k in __proxlist:
             self.proxies[k.ASName]=k
