@@ -41,7 +41,7 @@ from core.utility.threads import  (
     ThRunDhcp,Thread_sslstrip,ProcessThread,
     ThreadReactor,ThreadPopen,ThreadPumpkinProxy
 )
-from core.ProxyMode import  *
+from core.servers.proxy.package.ProxyMode import  *
 from core.Manipulator import *
 from core.widgets.customiseds import AutoTableWidget
 from plugins.external.scripts import *

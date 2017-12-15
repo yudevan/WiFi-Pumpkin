@@ -1,8 +1,9 @@
-import os, sys
-from collections import OrderedDict
-from core.ProxyMode import  *
+import os
+import sys
 from PyQt4 import QtGui, QtCore
+from collections import OrderedDict
 
+from core.servers.proxy.package.ProxyMode import  *
 
 
 class ProxyModeController(QtGui.QTableWidget):
