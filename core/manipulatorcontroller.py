@@ -1,8 +1,5 @@
-import os, sys
-from collections import OrderedDict
-from core.Manipulator import *
 from PyQt4 import QtGui, QtCore
-
+from collections import OrderedDict
 
 
 class ManipulatorController(QtGui.QTableWidget):
@@ -32,12 +29,12 @@ class ManipulatorController(QtGui.QTableWidget):
             #self.parent.Stack.addWidget(p)
 
         self.ManipulatorTable = OrderedDict(
-            [('Manipulator', self.m_name),
+            [('proxyhandler', self.m_name),
              ('Settings', self.m_settings),
              ('Description', self.m_desc)
              ])
         self.setColumnCount(3)
-        self.setRowCount(len(self.ManipulatorTable['Manipulator']))
+        self.setRowCount(len(self.ManipulatorTable['proxyhandler']))
         self.resizeRowsToContents()
         self.setSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
         self.horizontalHeader().setStretchLastSection(True)

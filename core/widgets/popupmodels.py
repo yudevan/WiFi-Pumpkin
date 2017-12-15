@@ -35,7 +35,7 @@ class PopUpPlugins(QtGui.QVBoxLayout):
         self.layout = QtGui.QVBoxLayout()
         self.layoutform = QtGui.QFormLayout()
         self.GroupPlugins = QtGui.QGroupBox()
-        self.GroupPlugins.setTitle('Manipulator:')
+        self.GroupPlugins.setTitle('proxyhandler:')
 
         self.layoutproxy = QtGui.QVBoxLayout()
         self.GroupPluginsProxy = QtGui.QGroupBox()

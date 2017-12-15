@@ -331,7 +331,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.status_plugin_proxy_name = QtGui.QLabel('') # status name proxy activated
         self.SessionsAP     = loads(str(self.FSettings.Settings.get_setting('accesspoint','sessions')))
 
-        #self.proxyhandler = [hnd(parent=self) for hnd in Manipulator.ProxyHandlerModel.__subclasses__()]
+        #self.proxyhandler = [hnd(parent=self) for hnd in proxyhandler.ProxyHandlerModel.__subclasses__()]
 
         self.PopUpPlugins   = PopUpPlugins(self.FSettings,self) # create popupPlugins
         self.PopUpPlugins.layoutproxy.addWidget(self.proxy)

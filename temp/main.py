@@ -1,30 +1,22 @@
 from logging import getLogger,ERROR
 getLogger('scapy.runtime').setLevel(ERROR)
-from PyQt4 import QtGui
-from PyQt4 import QtCore
 from json import dumps,loads
 from pwd import getpwnam
 from grp import getgrnam
 from time import asctime
 from shutil import move
 from re import search,sub
-from platform import dist
 from netaddr import EUI
-from collections import OrderedDict
-from shlex import split
-
-from core.proxymodecontroller import *
 
 from os import (
-    system,path,getcwd,
-    popen,listdir,mkdir,chown
+    popen, mkdir, chown
 )
 from subprocess import (
-    Popen,PIPE,call,check_output,
+    call,check_output,
 )
 
 from core.utils import (
-    Refactor,set_monitor_mode,waiterSleepThread,
+    waiterSleepThread,
     setup_logger,is_ascii,is_hexadecimal,exec_bash,del_item_folder
 )
 from core.widgets.tabmodels import (
@@ -36,15 +28,8 @@ from core.widgets.popupmodels import (
     PopUpPlugins
 )
 
-from core.utility.threads import  (
-    ProcessHostapd,Thread_sergioProxy,
-    ThRunDhcp,Thread_sslstrip,ProcessThread,
-    ThreadReactor,ThreadPopen,ThreadPumpkinProxy
-)
 from core.servers.proxy.package.ProxyMode import  *
-from core.Manipulator import *
 from core.widgets.customiseds import AutoTableWidget
-from plugins.external.scripts import *
 import modules as GUIModules
 from core.helpers.about import frmAbout
 from core.helpers.update import frm_githubUpdate
@@ -55,7 +40,6 @@ from core.helpers.report import frm_ReportLogger
 from core.packets.dhcpserver import DHCPServer,DNSServer
 from core.widgets.notifications import ServiceNotify
 from isc_dhcp_leases.iscdhcpleases import IscDhcpLeases
-from netfilterqueue import NetfilterQueue
 from core.servers.proxy.tcp.intercept import ThreadSniffingPackets
 
 """
