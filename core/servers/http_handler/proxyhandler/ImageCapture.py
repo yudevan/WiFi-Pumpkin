@@ -5,13 +5,13 @@ from core.servers.http_handler.proxyhandler.MitmMode import Manipulator
 
 
 class ImageCapture(Manipulator):
-    ASName = "Image Capture"
-    ASAuthor = "Wahyudin Aziz"
-    ASDescription = "Capture Image Sniffed from the connection"
-    ASIcon = "icons/image.png"
-    ASSettings = True
+    Name = "Image Capture"
+    Author = "Wahyudin Aziz"
+    Description = "Capture Image Sniffed from the connection"
+    Icon = "icons/image.png"
+    ModSettings = True
     Hidden = False
-    ASType = "proxy"  # proxy or server
+    ModType = "proxy"  # proxy or server
     def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
         super(ImageCapture, self).__init__(parent)
         self.mainLayout     = QtGui.QVBoxLayout()

@@ -347,12 +347,12 @@ class WifiPumpkin(QtGui.QWidget):
                 self.TabListWidget_Menu.addItem(v.tabinterface)
                 self.Stack.addWidget(v)
             if v.controlui.isChecked():
-                if v.ASName == "No Proxy":
+                if v.Name == "No Proxy":
                     self.set_proxy_statusbar('', disabled=True)
                     v.sendSingal_disable.emit(v.controlui.isChecked())
                     continue
 
-                self.set_proxy_statusbar(v.ASName)
+                self.set_proxy_statusbar(v.Name)
 
 
 

@@ -11,12 +11,12 @@ from core.widgets.docks.dockmonitor import (
 
 
 class TCPProxy(Manipulator):
-    ASName = "TCP Proxy"
-    ASAuthor = "Wahyudin Aziz"
-    ASDescription = "Sniff for isntercept network traffic on UDP,TCP protocol get password,hash,image,etc..."
-    ASIcon = "icons/tcpproxy.png"
-    ASSettings = True
-    ASType = "proxy"  # proxy or server
+    Name = "TCP Proxy"
+    Author = "Wahyudin Aziz"
+    Description = "Sniff for isntercept network traffic on UDP,TCP protocol get password,hash,image,etc..."
+    Icon = "icons/tcpproxy.png"
+    ModSettings = True
+    ModType = "proxy"  # proxy or server
     def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
         super(TCPProxy,self).__init__(parent)
         self.mainLayout = QtGui.QVBoxLayout()
@@ -106,7 +106,7 @@ class TCPProxy(Manipulator):
             if p().Name != 'httpCap':
                 self.plugins.append(p())
     def CheckOptions(self):
-        self.FSettings.Settings.set_setting('manipulator', self.ASName, self.plugin_radio.isChecked())
+        self.FSettings.Settings.set_setting('manipulator', self.Name, self.plugin_radio.isChecked())
         if self.plugin_radio.isChecked() == True:
             self.setEnabled(True)
         else:

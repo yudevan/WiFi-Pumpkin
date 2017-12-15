@@ -15,7 +15,7 @@ class MitmController(QtGui.QTableWidget):
         __manipulator= [prox(parent=self.parent) for prox in MitmMode.__subclasses__()]
         #Keep Proxy in a dictionary
         for k in __manipulator:
-            self.manipulator[k.ASName]=k
+            self.manipulator[k.Name]=k
 
         self.m_name = []
         self.m_desc = []
@@ -80,9 +80,9 @@ class MitmController(QtGui.QTableWidget):
         pass
     def Start(self):
         for i in self.Activated:
-            print "Starting {}".format(i.ASName)
+            print "Starting {}".format(i.Name)
             i.boot()
     def Stop(self):
         for i in self.Activated:
-            print "Stopping {}".format(i.ASName)
+            print "Stopping {}".format(i.Name)
             i.shutdown()

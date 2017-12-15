@@ -2,7 +2,7 @@ import os
 import sys
 from PyQt4 import QtGui, QtCore
 from collections import OrderedDict
-from core.servers.proxy.package.ProxyMode import  *
+from core.servers.proxy.package import  *
 
 
 class ProxyModeController(QtGui.QTableWidget):
@@ -13,11 +13,11 @@ class ProxyModeController(QtGui.QTableWidget):
         self.parent=parent
         self.FSettings = self.parent.FSettings
         self.proxyGroup = QtGui.QButtonGroup()
-        __proxlist= [prox(parent=self.parent) for prox in ProxyMode.__subclasses__()]
+        __proxlist= [prox(parent=self.parent) for prox in ProxyMode.ProxyMode.__subclasses__()]
         print __proxlist
         #Keep Proxy in a dictionary
         for k in __proxlist:
-            self.proxies[k.ASName]=k
+            self.proxies[k.Name]=k
 
         self.p_name = []
         self.p_desc = []
@@ -67,7 +67,7 @@ class ProxyModeController(QtGui.QTableWidget):
     def Activated(self):
         for act in self.proxies.values():
             if act.controlui.isChecked():
-                if act.ASName =="No Proxy":
+                if act.Name =="No Proxy":
                     return None
                 else:
                     return act

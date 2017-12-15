@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1f5a26e8-20a6-4839-a491-18150b8d1864" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/main.py" afterPath="$PROJECT_DIR$/core/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/mitmcontroller.py" afterPath="$PROJECT_DIR$/core/mitmcontroller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/proxycontroller.py" afterPath="$PROJECT_DIR$/core/proxycontroller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py" afterPath="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/NetCreds.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/NetCreds.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/main.py" afterPath="$PROJECT_DIR$/temp/main.py" />
     </list>
     <ignored path="WiFi-Pumpkin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +42,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="192" column="41" selection-start-line="192" selection-start-column="41" selection-end-line="192" selection-end-column="41" />
+            <state relative-caret-position="5235">
+              <caret line="349" column="21" selection-start-line="349" selection-start-column="21" selection-end-line="349" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -46,18 +52,18 @@
       <file leaf-file-name="proxycontroller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/proxycontroller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="60">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyMode.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProxyMode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -78,6 +84,26 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSLStripProxy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageCapture.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -137,12 +163,13 @@
         <option value="$PROJECT_DIR$/core/servers/proxy/package/__init__.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/Manipulator/ImageCapture.py" />
-        <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py" />
-        <option value="$PROJECT_DIR$/core/main.py" />
         <option value="$PROJECT_DIR$/core/mitmcontroller.py" />
-        <option value="$PROJECT_DIR$/core/proxycontroller.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py" />
+        <option value="$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py" />
+        <option value="$PROJECT_DIR$/core/proxycontroller.py" />
+        <option value="$PROJECT_DIR$/core/main.py" />
+        <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" />
       </list>
     </option>
   </component>
@@ -292,6 +319,7 @@
     <property name="last_opened_file_path" value="/media/data/github/Wifi-Mashup" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -563,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513341941226</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Another variable refactor&#10;">
+      <created>1513342103838</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513342103838</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -645,7 +680,8 @@
     <MESSAGE value="Refactored Some Attribute" />
     <MESSAGE value="Added definition MitmMode inside mitmcontroller&#10;" />
     <MESSAGE value="First run, plugin has no UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="First run, plugin has no UI" />
+    <MESSAGE value="Another variable refactor&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another variable refactor&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,14 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="179" column="50" selection-start-line="179" selection-start-column="50" selection-end-line="179" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripSergio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -937,14 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -961,22 +981,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="192" column="41" selection-start-line="192" selection-start-column="41" selection-end-line="192" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/mitmcontroller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-458">
@@ -985,18 +989,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/proxycontroller.py">
+    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="210">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py">
+    <entry file="file://$PROJECT_DIR$/core/proxycontroller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5235">
+          <caret line="349" column="21" selection-start-line="349" selection-start-column="21" selection-end-line="349" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>

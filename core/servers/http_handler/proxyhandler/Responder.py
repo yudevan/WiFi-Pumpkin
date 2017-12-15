@@ -5,12 +5,12 @@ from core.servers.http_handler.proxyhandler.MitmMode import Manipulator
 
 
 class Responder(Manipulator):
-    ASName = "Responder"
-    ASAuthor = "Wahyudin Aziz"
-    ASDescription = "Responder an LLMNR, NBT-NS and MDNS poisoner By default, the tool will only answer to File Server Service request, which is for SMB."
-    ASIcon = "icons/tcpproxy.png"
-    ASSettings = True
-    ASType = "proxy"  # proxy or server
+    Name = "Responder"
+    Author = "Wahyudin Aziz"
+    Description = "Responder an LLMNR, NBT-NS and MDNS poisoner By default, the tool will only answer to File Server Service request, which is for SMB."
+    Icon = "icons/tcpproxy.png"
+    ModSettings = True
+    ModType = "proxy"  # proxy or server
     def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
         super(Responder, self).__init__(parent)
         self.ConfigWindow = ResponderSettings()
