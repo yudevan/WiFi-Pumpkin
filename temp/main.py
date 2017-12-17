@@ -1466,8 +1466,8 @@ class WifiPumpkin(QtGui.QWidget):
             for p in self.plugin_classes:
                 self.plugins[p._name] = p()
             # check if twisted is started
-            if not self.THReactor.started():
-                self.THReactor.start()
+            if not self.THReactor.isRunning():
+                self.THReactor.run()
 
         #create logging for somes threads
         setup_logger('pumpkinproxy', C.LOG_PUMPKINPROXY, self.currentSessionID)
@@ -1485,7 +1485,7 @@ class WifiPumpkin(QtGui.QWidget):
         if self.PopUpPlugins.check_responder.isChecked():
             # create thread for plugin responder
             self.Thread_responder = ProcessThread({
-                'python':[C.RESPONDER_EXEC,'-I', str(self.selectCard.currentText()),'-wrFbv']})
+                'python':[C.RESPONDER_EXEC,,'-I', str(self.selectCard.currentText()),'-wrFbv']})
             self.Thread_responder._ProcssOutput.connect(self.get_responder_output)
             self.Thread_responder.setObjectName('Firelamb')
             self.Apthreads['RougeAP'].append(self.Thread_responder)

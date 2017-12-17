@@ -63,6 +63,18 @@ class ProxyModeController(QtGui.QTableWidget):
     def DisableProxy(self,status):
         self.SetNoProxy.emit(status)
     @property
+    def ActiveReactor(self):
+        reactor = []
+        for act in self.proxies.values():
+            if act.controlui.isChecked():
+                if act.Name =="No Proxy":
+                    return None
+                else:
+                    reactor.append(act.reactor)
+                    if act.subreactor:
+                        reactor.append(act.subreactor)
+        return reactor
+    @property
     def Activated(self):
         for act in self.proxies.values():
             if act.controlui.isChecked():
@@ -81,9 +93,13 @@ class ProxyModeController(QtGui.QTableWidget):
         pass
     def Start(self):
         self.setEnabled(False)
+        self.Activated.Serve()
         self.Activated.boot()
+
     def Stop(self):
         self.setEnabled(True)
+        self.Activated.Serve(False)
         self.Activated.shutdown()
     def SaveLog(self):
+
         self.Activated.SaveLog()

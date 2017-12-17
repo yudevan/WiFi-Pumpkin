@@ -190,7 +190,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.Tab_dock       = QtGui.QMainWindow() # for dockarea
         self.FSettings      = self.mainWindow.FSettings
         self.proxy = ProxyModeController(self)
-        self.manipulator = MitmController(self)
+        self.mitmhandler = MitmController(self)
 
 
 
@@ -331,11 +331,9 @@ class WifiPumpkin(QtGui.QWidget):
         self.status_plugin_proxy_name = QtGui.QLabel('') # status name proxy activated
         self.SessionsAP     = loads(str(self.FSettings.Settings.get_setting('accesspoint','sessions')))
 
-        #self.proxyhandler = [hnd(parent=self) for hnd in proxyhandler.ProxyHandlerModel.__subclasses__()]
-
         self.PopUpPlugins   = PopUpPlugins(self.FSettings,self) # create popupPlugins
         self.PopUpPlugins.layoutproxy.addWidget(self.proxy)
-        self.PopUpPlugins.layoutform.addWidget(self.manipulator)
+        self.PopUpPlugins.layoutform.addWidget(self.mitmhandler)
         self.PopUpPlugins.GroupPluginsProxy.setChecked(self.FSettings.Settings.get_setting('plugins', 'disableproxy', format=bool))
         self.PopUpPlugins.GroupPluginsProxy.toggled.connect(self.get_disable_proxy)
 
@@ -1376,7 +1374,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.PumpSettingsTAB.GroupDHCP.setEnabled(False)
 
         self.proxy.setEnabled(False)
-        self.manipulator.setEnabled(False)
+        self.mitmhandler.setEnabled(False)
         self.btn_cancelar.setEnabled(True)
 
         # start section time
@@ -1432,7 +1430,7 @@ class WifiPumpkin(QtGui.QWidget):
 
         #TODO The code below is a replacement for the all codes
         self.proxy.Start()
-        self.manipulator.Start()
+        self.mitmhandler.Start()
 
         #TODO Need to remove the code below as it has been replaced by modules
         # # check plugins that use sslstrip
@@ -1458,49 +1456,10 @@ class WifiPumpkin(QtGui.QWidget):
         self.LogTcpproxy        = getLogger('tcp_proxy')
         self.responderlog       = getLogger('responder')
 
+        self.Apthreads['RougeAP'].extend(self.proxy.ActiveReactor)
+        self.Apthreads['RougeAP'].extend(self.mitmhandler.ActiveReactor)
 
-        if self.PopUpPlugins.check_responder.isChecked():
-            # create thread for plugin responder
-            self.Thread_responder = ProcessThread({
-                'python':[C.RESPONDER_EXEC,'-I', str(self.selectCard.currentText()),'-wrFbv']})
-            self.Thread_responder._ProcssOutput.connect(self.get_responder_output)
-            self.Thread_responder.setObjectName('Firelamb')
-            self.Apthreads['RougeAP'].append(self.Thread_responder)
 
-        if self.PopUpPlugins.check_dns2proy.isChecked():
-            # create thread for plugin DNS2proxy
-            self.Thread_dns2proxy = ProcessThread(
-            {'python':[C.DNS2PROXY_EXEC,'-i',str(self.selectCard.currentText()),'-k',self.currentSessionID]})
-            self.Thread_dns2proxy._ProcssOutput.connect(self.get_dns2proxy_output)
-            self.Thread_dns2proxy.setObjectName('Dns2Proxy')
-            self.Apthreads['RougeAP'].append(self.Thread_dns2proxy)
-
-            # create thread for plugin SSLstrip
-            self.Threadsslstrip = Thread_sslstrip(self.SettingsEnable['PortRedirect'],
-            self.plugins,self.ProxyPluginsTAB._PluginsToLoader,self.currentSessionID)
-            self.Threadsslstrip.setObjectName("sslstrip2")
-            self.Apthreads['RougeAP'].append(self.Threadsslstrip)
-
-        elif self.PopUpPlugins.check_sergioProxy.isChecked():
-            # create thread for plugin Sergio-proxy
-            self.Threadsslstrip = Thread_sergioProxy(self.SettingsEnable['PortRedirect'],
-            self.plugins,self.ProxyPluginsTAB._PluginsToLoader,self.currentSessionID)
-            self.Threadsslstrip.setObjectName("sslstrip")
-            self.Apthreads['RougeAP'].append(self.Threadsslstrip)
-
-        elif self.PopUpPlugins.check_bdfproxy.isChecked():
-            # create thread for plugin BDFproxy-ng
-            self.Thread_bdfproxy = ProcessThread({'python':[C.BDFPROXY_EXEC,'-k',self.currentSessionID]})
-            self.Thread_bdfproxy._ProcssOutput.connect(self.get_bdfproxy_output)
-            self.Thread_bdfproxy.setObjectName('BDFProxy-ng')
-            self.Apthreads['RougeAP'].append(self.Thread_bdfproxy)
-
-        elif self.PopUpPlugins.check_pumpkinProxy.isChecked():
-            # create thread for plugin Pumpkin-Proxy
-            self.Thread_PumpkinProxy = ThreadPumpkinProxy(self.currentSessionID)
-            self.Thread_PumpkinProxy.send.connect(self.get_PumpkinProxy_output)
-            self.Thread_PumpkinProxy.setObjectName('Pumpkin-Proxy')
-            self.Apthreads['RougeAP'].append(self.Thread_PumpkinProxy)
 
         # start thread TCPproxy Module
         if self.PopUpPlugins.check_tcpproxy.isChecked():
@@ -1548,7 +1507,7 @@ class WifiPumpkin(QtGui.QWidget):
         if self.Apthreads['RougeAP'] == []: return
         print('-------------------------------')
         self.proxy.Stop()
-        self.manipulator.Stop()
+        self.mitmhandler.Stop()
         self.FSettings.Settings.set_setting('accesspoint','statusAP',False)
         self.FSettings.Settings.set_setting('accesspoint','bssid',str(self.EditBSSID.text()))
         self.SessionsAP[self.currentSessionID]['stoped'] = asctime()
@@ -1604,7 +1563,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.GroupAdapter.setEnabled(True)
         self.PumpSettingsTAB.GroupDHCP.setEnabled(True)
         self.proxy.setEnabled(True)
-        self.manipulator.setEnabled(True)
+        self.mitmhandler.setEnabled(True)
         self.btn_cancelar.setEnabled(False)
         self.progress.showProcessBar()
 

@@ -7,6 +7,11 @@ from core.utility.threads import ThreadPopen
 from core.widgets.docks.dockmonitor import (
     dockAreaAPI,dockUrlMonitor,dockCredsMonitor,dockPumpkinProxy,dockTCPproxy
 )
+from core.utility.threads import  (
+    ProcessHostapd,Thread_sergioProxy,
+    ThRunDhcp,Thread_sslstrip,ProcessThread,
+    ThreadReactor,ThreadPopen,ThreadPumpkinProxy
+)
 from core.widgets.pluginssettings import PumpkinProxySettings
 from core.utility.collection import SettingsINI
 from plugins.external.scripts import *
@@ -30,6 +35,7 @@ class MitmMode(Widget):
     ModSettings = False
     ModType = "proxy" # proxy or server
     Hidden = True
+    _cmd_array = []
     plugins = []
     sendError = QtCore.pyqtSignal(str)
     sendSingal_disable = QtCore.pyqtSignal(object)
@@ -39,6 +45,7 @@ class MitmMode(Widget):
         self.parent = parent
         self.FSettings = parent.FSettings
         self.reactor = None
+        self.server = None
         self.popup = QtGui.QWidget()
         self.tabinterface = QtGui.QListWidgetItem()
         self.tabinterface.setText(self.Name)
@@ -48,10 +55,10 @@ class MitmMode(Widget):
 
         self.plugin_radio = QtGui.QCheckBox(self.Name)
         self.plugin_radio.setObjectName(QtCore.QString(self.Description))
-        self.plugin_radio.setChecked(self.FSettings.Settings.get_setting('manipulator', self.Name, format=bool))
+        self.plugin_radio.setChecked(self.FSettings.Settings.get_setting('mitmhandler', self.Name, format=bool))
         self.plugin_radio.clicked.connect(self.CheckOptions)
 
-        self.setEnabled(self.FSettings.Settings.get_setting('manipulator', self.Name, format=bool))
+        self.setEnabled(self.FSettings.Settings.get_setting('mitmhandler', self.Name, format=bool))
         self.btnChangeSettings = QtGui.QPushButton("None")
         self.btnChangeSettings.setEnabled(False)
 
@@ -70,12 +77,15 @@ class MitmMode(Widget):
         self.scroll.setWidget(self.scrollwidget)
         self.layout = QtGui.QHBoxLayout()
         self.layout.addWidget(self.scroll)
+    @property
+    def CMD_ARRAY(self):
+        return self._cmd_array
 
     @property
     def hasSettings(self):
         return self.ModSettings
     def CheckOptions(self):
-        self.FSettings.Settings.set_setting('manipulator', self.Name, self.plugin_radio.isChecked())
+        self.FSettings.Settings.set_setting('mitmhandler', self.Name, self.plugin_radio.isChecked())
         if self.plugin_radio.isChecked() == True:
             self.setEnabled(True)
         else:
@@ -90,8 +100,14 @@ class MitmMode(Widget):
     def Configure(self):
         self.ConfigWindow.show()
     def boot(self):
-        pass
+        if self.CMD_ARRAY:
+            self.reactor= ProcessThread({'python': self.CMD_ARRAY})
+            self.reactor._ProcssOutput.connect(self.LogOutput)
+            self.reactor.setObjectName(self.Name)
+            print "Scheduling {}".format(self.Name)
     def shutdown(self):
+        pass
+    def LogOutput(self,data):
         pass
 
 

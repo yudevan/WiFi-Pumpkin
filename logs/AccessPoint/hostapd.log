@@ -482,3 +482,297 @@ Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
 wlan0: interface state UNINITIALIZED->ENABLED
 wlan0: AP-ENABLED 
 
+SessionID[NzI1Mjg=] 2017-12-15 20:52:16,392 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Nzg0NjY=] 2017-12-15 20:52:16,392 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzExNDY=] 2017-12-15 20:52:16,392 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzI1Mjg=] 2017-12-15 20:53:14,503 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Nzg0NjY=] 2017-12-15 20:53:14,503 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzExNDY=] 2017-12-15 20:53:14,503 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzQyODk=] 2017-12-15 20:53:14,503 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjY2MzM=] 2017-12-15 21:01:57,206 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjY2MzM=] 2017-12-15 21:02:08,853 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MTM0Njk=] 2017-12-15 21:02:08,853 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzYwOTc=] 2017-12-16 18:39:32,627 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzYwOTc=] 2017-12-16 18:40:25,129 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: authenticated
+
+SessionID[NzYwOTc=] 2017-12-16 18:40:25,131 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: associated (aid 1)
+
+SessionID[NzYwOTc=] 2017-12-16 18:40:25,131 : wlan0: AP-STA-CONNECTED f0:f6:1c:cf:21:18
+wlan0: STA f0:f6:1c:cf:21:18 RADIUS: starting accounting session 5A3505F1-00000000
+
+SessionID[MjMxMjE=] 2017-12-16 18:43:24,595 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NTIzNDA=] 2017-12-16 18:46:17,222 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODkwNzg=] 2017-12-16 19:16:11,418 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzU1NTU=] 2017-12-16 19:27:20,666 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NDg1] 2017-12-16 19:55:54,925 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzI3MjQ=] 2017-12-16 19:58:39,054 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NTU3NjQ=] 2017-12-16 20:00:27,158 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODY3NDI=] 2017-12-16 20:03:15,159 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjQxMzY=] 2017-12-16 20:05:34,166 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MTI0MzA=] 2017-12-16 20:09:14,369 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzE3Mjk=] 2017-12-16 20:12:44,727 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzE3Mjk=] 2017-12-16 20:12:45,883 : wlan0: STA 34:97:f6:c4:c5:34 IEEE 802.11: authenticated
+
+SessionID[NzE3Mjk=] 2017-12-16 20:12:45,886 : wlan0: STA 34:97:f6:c4:c5:34 IEEE 802.11: associated (aid 1)
+
+SessionID[NzE3Mjk=] 2017-12-16 20:12:45,886 : wlan0: AP-STA-CONNECTED 34:97:f6:c4:c5:34
+wlan0: STA 34:97:f6:c4:c5:34 RADIUS: starting accounting session 5A351BC9-00000000
+
+SessionID[NjgxMzE=] 2017-12-16 20:15:56,156 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODcw] 2017-12-16 20:34:53,616 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzQ0MTA=] 2017-12-16 20:43:21,923 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Mzg5OTY=] 2017-12-16 20:44:25,335 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjU4MTg=] 2017-12-16 20:45:21,951 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTAxNzM=] 2017-12-16 20:49:36,254 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTUxNTE=] 2017-12-16 20:57:51,009 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTAwODA=] 2017-12-16 21:02:00,745 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTAwODA=] 2017-12-16 21:02:21,156 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: authenticated
+
+SessionID[OTAwODA=] 2017-12-16 21:02:21,158 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: associated (aid 1)
+
+SessionID[OTAwODA=] 2017-12-16 21:02:21,159 : wlan0: AP-STA-CONNECTED f0:f6:1c:cf:21:18
+wlan0: STA f0:f6:1c:cf:21:18 RADIUS: starting accounting session 5A352754-00000000
+
+SessionID[OTAwODA=] 2017-12-16 21:03:19,491 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTA5ODA=] 2017-12-16 21:03:19,491 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTAwODA=] 2017-12-16 21:03:44,485 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: authenticated
+
+SessionID[OTA5ODA=] 2017-12-16 21:03:44,485 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: authenticated
+
+SessionID[OTAwODA=] 2017-12-16 21:03:44,488 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: associated (aid 1)
+
+SessionID[OTA5ODA=] 2017-12-16 21:03:44,488 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: associated (aid 1)
+
+SessionID[OTAwODA=] 2017-12-16 21:03:44,489 : wlan0: AP-STA-CONNECTED f0:f6:1c:cf:21:18
+wlan0: STA f0:f6:1c:cf:21:18 RADIUS: starting accounting session 5A3527A2-00000000
+
+SessionID[OTA5ODA=] 2017-12-16 21:03:44,489 : wlan0: AP-STA-CONNECTED f0:f6:1c:cf:21:18
+wlan0: STA f0:f6:1c:cf:21:18 RADIUS: starting accounting session 5A3527A2-00000000
+
+SessionID[OTAwODA=] 2017-12-16 21:04:46,263 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTA5ODA=] 2017-12-16 21:04:46,263 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Nzk4Nw==] 2017-12-16 21:04:46,263 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTAwODA=] 2017-12-16 21:05:04,558 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTA5ODA=] 2017-12-16 21:05:04,558 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Nzk4Nw==] 2017-12-16 21:05:04,558 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjUyODU=] 2017-12-16 21:05:04,558 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTA4NzI=] 2017-12-16 21:05:45,798 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTA4NzI=] 2017-12-16 21:06:05,348 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: authenticated
+
+SessionID[OTA4NzI=] 2017-12-16 21:06:05,351 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: associated (aid 1)
+
+SessionID[OTA4NzI=] 2017-12-16 21:06:05,351 : wlan0: AP-STA-CONNECTED f0:f6:1c:cf:21:18
+wlan0: STA f0:f6:1c:cf:21:18 RADIUS: starting accounting session 5A352834-00000000
+
+SessionID[OTA4NzI=] 2017-12-16 21:07:34,932 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzUyODY=] 2017-12-16 21:07:34,932 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[OTA4NzI=] 2017-12-17 17:59:23,741 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzUyODY=] 2017-12-17 17:59:23,741 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODQwMjM=] 2017-12-17 17:59:23,741 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjMyNTU=] 2017-12-17 18:11:50,910 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzE0MDc=] 2017-12-17 18:15:31,931 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzE0MDc=] 2017-12-17 18:16:10,409 : wlan0: STA 34:97:f6:c4:c5:34 IEEE 802.11: authenticated
+
+SessionID[MzE0MDc=] 2017-12-17 18:16:10,412 : wlan0: STA 34:97:f6:c4:c5:34 IEEE 802.11: associated (aid 1)
+
+SessionID[MzE0MDc=] 2017-12-17 18:16:10,413 : wlan0: AP-STA-CONNECTED 34:97:f6:c4:c5:34
+wlan0: STA 34:97:f6:c4:c5:34 RADIUS: starting accounting session 5A3651CF-00000000
+
+SessionID[MzE0MDc=] 2017-12-17 18:17:03,447 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzI2MDY=] 2017-12-17 18:17:03,447 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+

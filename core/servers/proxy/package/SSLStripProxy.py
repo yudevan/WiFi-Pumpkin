@@ -13,6 +13,11 @@ from core.widgets.customiseds import AutoGridLayout
 from core.widgets.docks.dockmonitor import (
     dockAreaAPI,dockUrlMonitor,dockCredsMonitor,dockPumpkinProxy,dockTCPproxy
 )
+from core.utility.threads import  (
+    ProcessHostapd,Thread_sergioProxy,
+    ThRunDhcp,Thread_sslstrip,ProcessThread,
+    ThreadReactor,ThreadPopen,ThreadPumpkinProxy
+)
 from core.widgets.pluginssettings import PumpkinProxySettings
 from plugins.analyzers import *
 from plugins.extension import *
@@ -28,6 +33,7 @@ class ProxySSLstrip(ProxyMode):
     ModType = "proxy"  # proxy or server
     Hidden = False
     plugins = []
+    _cmd_array = []
     _PluginsToLoader = {'plugins': None,'Content':''}
 
     def __init__(self,parent, FsettingsUI=None, main_method=None, **kwargs):
@@ -200,15 +206,31 @@ class ProxySSLstrip(ProxyMode):
         for p in self.plugin_classes:
             self.plugins[p._name] = p()
         self.comboxBox.addItems(self.plugins.keys())
+    @property
+    def CMD_ARRAY(self):
+        self._cmd_array=[C.DNS2PROXY_EXEC,'-i',str(self.parent.selectCard.currentText()),'-k',self.parent.currentSessionID]
+
+        return self._cmd_array
+    def Serve(self,on=True):
+        if on:
+            self.plugin_classes = Plugin.PluginProxy.__subclasses__()
+            self.plugins = {}
+            for p in self.plugin_classes:
+                self.plugins[p._name] = p()
+            if not self.server.isRunning():
+                self.server.start()
+        else:
+            self.server.stop()
     def boot(self):
-        self.plugin_classes = Plugin.PluginProxy.__subclasses__()
-        self.plugins = {}
-        for p in self.plugin_classes:
-            self.plugins[p._name] = p()
-        if not self.reactor.isRunning():
-            self.reactor.start()
-    def shutdown(self):
-        self.reactor.stop()
+        self.reactor = ProcessThread({'python': self.CMD_ARRAY})
+        self.reactor._ProcssOutput.connect(self.LogOutput)
+        self.reactor.setObjectName(self.Name)
+        
+        self.subreactor = Thread_sslstrip(self.parent.SettingsEnable['PortRedirect'],
+                                               self.plugins, self._PluginsToLoader,
+                                               self.parent.currentSessionID)
+        self.subreactor.setObjectName("sslstrip2")
+
     def SafeLog(self):
         lines = []
         if self.log_inject.count()>0:

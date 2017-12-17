@@ -70,6 +70,12 @@ class MitmController(QtGui.QTableWidget):
                 manobj.append(manip)
         return manobj
     @property
+    def ActiveReactor(self):
+        reactor=[]
+        for i in self.Activated:
+            reactor.append(i.reactor)
+        return reactor
+    @property
     def get(self):
         return self.manipulator
     @classmethod
@@ -80,9 +86,7 @@ class MitmController(QtGui.QTableWidget):
         pass
     def Start(self):
         for i in self.Activated:
-            print "Starting {}".format(i.Name)
             i.boot()
     def Stop(self):
         for i in self.Activated:
-            print "Stopping {}".format(i.Name)
             i.shutdown()

@@ -1,5 +1,5 @@
 from configobj import ConfigObj
-
+import core.utility.constants as C
 from core.loaders.models.PackagesUI import *
 from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
@@ -11,9 +11,14 @@ class Responder(MitmMode):
     Icon = "icons/tcpproxy.png"
     ModSettings = True
     ModType = "proxy"  # proxy or server
+    _cmd_array = []
     def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
         super(Responder, self).__init__(parent)
         self.ConfigWindow = ResponderSettings()
+    @property
+    def CMD_ARRAY(self):
+        self._cmd_array=[C.RESPONDER_EXEC,'-I', str(self.parent.selectCard.currentText()),'-wrFbv']
+        return self._cmd_array
 
 
 class ResponderSettings(PumpkinModule):
@@ -54,7 +59,6 @@ class ResponderSettings(PumpkinModule):
             datafilter.append(key)
             datafilter.append(item)
         return datafilter
-
     def addAllconfigKeys(self):
         ''' get all settings and add into table'''
         for key in self.userConfig.keys():
@@ -74,7 +78,6 @@ class ResponderSettings(PumpkinModule):
                 for items in self.userConfig[key].items():
                     self.userConfig[key][items[0]] = settings[settings.index(items[0])+1]
             self.userConfig.write()
-
     def saveConfigObject(self):
         self.checkConfigKeysResponder(saveObjct=True)
         QtGui.QMessageBox.information(self,'Firelamb settings','All settings in {} has been saved '

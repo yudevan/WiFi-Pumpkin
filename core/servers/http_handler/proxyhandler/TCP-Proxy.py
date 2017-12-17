@@ -109,7 +109,7 @@ class TCPProxy(MitmMode):
             if p().Name != 'httpCap':
                 self.plugins.append(p())
     def CheckOptions(self):
-        self.FSettings.Settings.set_setting('manipulator', self.Name, self.plugin_radio.isChecked())
+        self.FSettings.Settings.set_setting('mitmhandler', self.Name, self.plugin_radio.isChecked())
         if self.plugin_radio.isChecked() == True:
             self.setEnabled(True)
         else:
