@@ -31,7 +31,7 @@ Copyright:
 """
 
 class ThreadSniffingPackets(QThread):
-    output_plugins = pyqtSignal(object)
+    _ProcssOutput = pyqtSignal(object)
     def __init__(self,interface,session):
         QThread.__init__(self)
         self.interface  = interface
@@ -75,7 +75,7 @@ class ThreadSniffingPackets(QThread):
         for p in self.plugin_classes:
             plugin_load = p()
             self.plugins[plugin_load.Name] = plugin_load
-            self.plugins[plugin_load.Name].output = self.output_plugins
+            self.plugins[plugin_load.Name].output = self._ProcssOutput
             self.plugins[plugin_load.Name].session = self.session
         print '\n[*] Firelamb running on port 80/8080:\n'
         for name in self.plugins.keys():
@@ -132,7 +132,7 @@ class ThreadSniffingPackets(QThread):
         username = re.findall(user_regex, payload)
         password = re.findall(pw_regex, payload)
         if not username ==[] and not password == []:
-            self.output_plugins.emit({'POSTCreds':{'User':username[0][1],
+            self._ProcssOutput.emit({'POSTCreds':{'User':username[0][1],
             'Pass': password[0][1],'Url':url,'destination':'{}/{}'.format(sport,dport)}})
 
     def get_http_POST(self,load):

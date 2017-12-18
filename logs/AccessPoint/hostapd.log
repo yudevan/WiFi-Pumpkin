@@ -776,3 +776,45 @@ Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
 wlan0: interface state UNINITIALIZED->ENABLED
 wlan0: AP-ENABLED 
 
+SessionID[MzIxMTc=] 2017-12-18 17:33:37,586 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MzIxMTc=] 2017-12-18 17:33:51,984 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzY4OTM=] 2017-12-18 17:33:51,984 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NDEyNzM=] 2017-12-18 19:09:36,606 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NzAyNDQ=] 2017-12-18 19:11:26,554 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NDEwNzc=] 2017-12-18 19:12:35,968 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjkyMTc=] 2017-12-18 19:16:11,578 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "AirportWifi"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjkyMTc=] 2017-12-18 19:16:52,953 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: authenticated
+
+SessionID[MjkyMTc=] 2017-12-18 19:16:52,955 : wlan0: STA f0:f6:1c:cf:21:18 IEEE 802.11: associated (aid 1)
+
+SessionID[MjkyMTc=] 2017-12-18 19:16:52,956 : wlan0: AP-STA-CONNECTED f0:f6:1c:cf:21:18
+wlan0: STA f0:f6:1c:cf:21:18 RADIUS: starting accounting session 5A37B185-00000000
+

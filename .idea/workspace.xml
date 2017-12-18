@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f5a26e8-20a6-4839-a491-18150b8d1864" name="Default" comment="Upd">
+    <list default="true" id="1f5a26e8-20a6-4839-a491-18150b8d1864" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/widgets/default/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/widgets/default/activitymonitor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/widgets/default/tabs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/widgets/docks/dock.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/config/app/config.ini" afterPath="$PROJECT_DIR$/core/config/app/config.ini" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/main.py" afterPath="$PROJECT_DIR$/core/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/mitmcontroller.py" afterPath="$PROJECT_DIR$/core/mitmcontroller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/proxycontroller.py" afterPath="$PROJECT_DIR$/core/proxycontroller.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" afterPath="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py" afterPath="$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/utility/constants.py" afterPath="$PROJECT_DIR$/core/utility/constants.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/servers/proxy/tcp/intercept.py" afterPath="$PROJECT_DIR$/core/servers/proxy/tcp/intercept.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/AccessPoint/dns2proxy.log" afterPath="$PROJECT_DIR$/logs/AccessPoint/dns2proxy.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/AccessPoint/hostapd.log" afterPath="$PROJECT_DIR$/logs/AccessPoint/hostapd.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/AccessPoint/responder.log" afterPath="$PROJECT_DIR$/logs/AccessPoint/responder.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/main.py" afterPath="$PROJECT_DIR$/temp/main.py" />
     </list>
     <ignored path="WiFi-Pumpkin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,31 +45,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="1527" column="29" selection-start-line="1527" selection-start-column="24" selection-end-line="1527" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProxyMode.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
+            <state relative-caret-position="408">
+              <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Responder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py">
+      <file leaf-file-name="dock.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/widgets/docks/dock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            <state relative-caret-position="33">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MitmMode.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-521">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSLStripProxy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -87,51 +95,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="proxycontroller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/proxycontroller.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+            <state relative-caret-position="281">
+              <caret line="1126" column="53" selection-start-line="1126" selection-start-column="53" selection-end-line="1126" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PumpkinProxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/PumpkinProxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="141" column="48" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SSLStripSergio.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripSergio.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="228" column="18" selection-start-line="228" selection-start-column="18" selection-end-line="228" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SSLStripProxy.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
+      <file leaf-file-name="intercept.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/servers/proxy/tcp/intercept.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threads.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TCP-Proxy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="132" column="38" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="threads.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/utility/threads.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="191" column="66" selection-start-line="191" selection-start-column="66" selection-end-line="191" selection-end-column="66" />
+            <state relative-caret-position="161">
+              <caret line="204" column="25" selection-start-line="204" selection-start-column="24" selection-end-line="204" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -152,12 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/scenario/ManaMode.py" />
-        <option value="$PROJECT_DIR$/core/scenario/NoProxy.py" />
-        <option value="$PROJECT_DIR$/core/scenario/SSLStripProxy.py" />
-        <option value="$PROJECT_DIR$/core/scenario/TCP-Proxy.py" />
-        <option value="$PROJECT_DIR$/core/scenario/PumpkinProxy.py" />
-        <option value="$PROJECT_DIR$/core/scenario/AttackScenario.py" />
         <option value="$PROJECT_DIR$/core/ProxyMode/AttackScenario.py" />
         <option value="$PROJECT_DIR$/core/ProxyHandler/TCP-Proxy.py" />
         <option value="$PROJECT_DIR$/temp/temp.py" />
@@ -190,19 +182,25 @@
         <option value="$PROJECT_DIR$/core/servers/proxy/package/NoProxy.py" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/ImageCapture.py" />
         <option value="$PROJECT_DIR$/core/widgets/tabmodels.py" />
-        <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" />
         <option value="$PROJECT_DIR$/temp/main.py" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/Responder.py" />
         <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py" />
         <option value="$PROJECT_DIR$/core/mitmcontroller.py" />
-        <option value="$PROJECT_DIR$/core/proxycontroller.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/BDFProxy.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/PumpkinProxy.py" />
-        <option value="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py" />
-        <option value="$PROJECT_DIR$/core/main.py" />
         <option value="$PROJECT_DIR$/core/servers/proxy/package/SSLStripSergio.py" />
         <option value="$PROJECT_DIR$/core/utility/constants.py" />
+        <option value="$PROJECT_DIR$/core/widgets/default/avtivitymonitor.py" />
+        <option value="$PROJECT_DIR$/core/widgets/default/activitymonitor.py" />
+        <option value="$PROJECT_DIR$/core/widgets/default/tabs.py" />
+        <option value="$PROJECT_DIR$/core/widgets/default/dock.py" />
+        <option value="$PROJECT_DIR$/core/proxycontroller.py" />
+        <option value="$PROJECT_DIR$/core/servers/proxy/tcp/intercept.py" />
+        <option value="$PROJECT_DIR$/core/main.py" />
+        <option value="$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py" />
+        <option value="$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py" />
+        <option value="$PROJECT_DIR$/core/widgets/docks/dock.py" />
       </list>
     </option>
   </component>
@@ -307,6 +305,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="widgets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WiFi-Pumpkin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WiFi-Pumpkin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="utility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -348,6 +368,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="proxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WiFi-Pumpkin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WiFi-Pumpkin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,18 +485,19 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py&#10;/home/wahyudin/Project/python/WiFi-Pumpkin/core/servers/proxy/package/ProxyMode.py" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/core/servers/proxy/package" />
-      <recent name="$PROJECT_DIR$/temp" />
-      <recent name="$PROJECT_DIR$/core/servers/http_handler" />
-      <recent name="$PROJECT_DIR$/core/ProxyHandler" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/core/ProxyMode" />
       <recent name="$PROJECT_DIR$/core/Manipulator" />
       <recent name="$PROJECT_DIR$/core" />
       <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$/deb_tmp/wifi-pumpkin_20171114_all/usr/share/WiFi-Pumpkin/core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/widgets/docks" />
+      <recent name="$PROJECT_DIR$/core/servers/proxy/package" />
+      <recent name="$PROJECT_DIR$/temp" />
+      <recent name="$PROJECT_DIR$/core/servers/http_handler" />
+      <recent name="$PROJECT_DIR$/core/ProxyHandler" />
     </key>
   </component>
   <component name="RunManager" selected="Python.wifi-pumpkin">
@@ -770,7 +817,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513345782716</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed the start AP routine with new modularize proxy">
+      <created>1513509529835</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513509529835</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -787,10 +841,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14767025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22126436" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -806,21 +860,21 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14767025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14767025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24874552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24874552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -863,7 +917,8 @@
     <MESSAGE value="First run, plugin has no UI" />
     <MESSAGE value="Another variable refactor&#10;" />
     <MESSAGE value="Working sets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working sets" />
+    <MESSAGE value="Fixed the start AP routine with new modularize proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the start AP routine with new modularize proxy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,35 +927,17 @@
           <url>file://$PROJECT_DIR$/core/main.py</url>
           <line>519</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/widgets/tabmodels.py</url>
+          <line>772</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/config/commits/Lcommits.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/scenario/NoProxy.py" />
-    <entry file="file://$PROJECT_DIR$/core/WirelessMode/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deb_tmp/wifi-pumpkin_20171114_all/usr/share/WiFi-Pumpkin/core/main_backup.py" />
-    <entry file="file://$PROJECT_DIR$/deb_tmp/wifi-pumpkin_20171114_all/usr/share/WiFi-Pumpkin/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="465" column="33" selection-start-line="465" selection-start-column="33" selection-end-line="465" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp/temp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -1013,6 +1050,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/widgets/pluginssettings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4110">
@@ -1128,26 +1158,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/widgets/tabmodels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="701" column="50" selection-start-line="701" selection-start-column="50" selection-end-line="701" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-839">
           <caret line="1486" column="10" selection-start-line="1486" selection-start-column="10" selection-end-line="1486" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1168,50 +1182,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/proxycontroller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/PumpkinProxy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="141" column="48" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="1527" column="29" selection-start-line="1527" selection-start-column="24" selection-end-line="1527" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripSergio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="228" column="18" selection-start-line="228" selection-start-column="18" selection-end-line="228" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1224,6 +1198,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripSergio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="228" column="18" selection-start-line="228" selection-start-column="18" selection-end-line="228" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/widgets/default/activitymonitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/proxycontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/widgets/tabmodels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="766" column="8" selection-start-line="766" selection-start-column="8" selection-end-line="766" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/widgets/docks/dockmonitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="88" column="71" selection-start-line="88" selection-start-column="71" selection-end-line="88" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/utility/constants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -1232,10 +1246,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/widgets/default/tabs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/utility/threads.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="191" column="66" selection-start-line="191" selection-start-column="66" selection-end-line="191" selection-end-column="66" />
+        <state relative-caret-position="161">
+          <caret line="204" column="25" selection-start-line="204" selection-start-column="24" selection-end-line="204" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/MitmMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-521">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="1126" column="53" selection-start-line="1126" selection-start-column="53" selection-end-line="1126" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/proxy/tcp/intercept.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/SSLStripProxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/http_handler/proxyhandler/TCP-Proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="132" column="38" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/servers/proxy/package/ProxyMode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/widgets/docks/dock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>

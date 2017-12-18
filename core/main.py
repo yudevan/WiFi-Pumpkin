@@ -1116,7 +1116,7 @@ class WifiPumpkin(QtGui.QWidget):
             if not self.SettingsEnable['ProgCheck'][3]:
                 return QtGui.QMessageBox.warning(self,'Error dhcpd','isc-dhcp-server (dhcpd) is not installed')
         return True
-
+    #TODO get_dns2proxy_output
     def get_dns2proxy_output(self,data):
         ''' get std_ouput the thread dns2proxy and add in DockArea '''
         if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
@@ -1458,15 +1458,6 @@ class WifiPumpkin(QtGui.QWidget):
 
         self.Apthreads['RougeAP'].extend(self.proxy.ActiveReactor)
         self.Apthreads['RougeAP'].extend(self.mitmhandler.ActiveReactor)
-
-
-
-        # start thread TCPproxy Module
-        if self.PopUpPlugins.check_tcpproxy.isChecked():
-            self.Thread_TCPproxy = ThreadSniffingPackets(str(self.selectCard.currentText()),self.currentSessionID)
-            self.Thread_TCPproxy.setObjectName('Firelamb')
-            self.Thread_TCPproxy.output_plugins.connect(self.get_TCPproxy_output)
-            self.Apthreads['RougeAP'].append(self.Thread_TCPproxy)
 
         if self.InternetShareWiFi:
             print('[*] Sharing Internet Connections with NAT...')

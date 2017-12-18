@@ -27,8 +27,6 @@ class ProxyModeController(QtGui.QTableWidget):
             self.p_desc.append(p.controlui.objectName())
             self.proxyGroup.addButton(p.controlui)
             p.sendSingal_disable.connect(self.DisableProxy)
-            #self.parent.TabListWidget_Menu.addItem(p.tabinterface)
-            #self.parent.Stack.addWidget(p)
 
         self.THeadersPluginsProxy = OrderedDict(
             [('Proxies', self.p_name),
