@@ -2,8 +2,12 @@
 
 [![build](https://travis-ci.org/P0cL4bs/WiFi-Pumpkin.svg)](https://travis-ci.org/P0cL4bs/WiFi-Pumpkin/)
 
-WiFi-Pumpkin - Framework for Rogue Wi-Fi Access Point Attack
+WiFi-Pumpkin - Framework for Rogue Wi-Fi Access Point Attack (Modularized)
 ### Description
+This release is no difference in term of functionalities with the original release by P0cL4bs, 
+the only differences on this release is that I did refactor major functions which was defined 
+inside one file into separate files with plugins method, the idea is to make future development easy in case somebody want to add Proxy method, connection handler etc. I have separated most of definition so it can be autoloaded during Accesspoint Boot up.
+
 WiFi-Pumpkin is a very complete framework for auditing Wi-Fi security. The main feature is the ability to create a fake AP and make Man In The Middle attack, but the list of features is quite broad.
 
 ![screenshot](https://i.imgur.com/bNTOHLq.png)
