@@ -3,7 +3,7 @@ from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 class NetCreds(MitmMode):
     Name = "Net Credentials"
-    Author = "Wahyudin Aziz"
+    Author = "P0cL4bs"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"
     Icon = "icons/tcpproxy.png"
     ModSettings = True

@@ -23,7 +23,7 @@ from plugins.analyzers import *
 
 class TCPProxy(MitmMode):
     Name = "TCP Proxy"
-    Author = "Wahyudin Aziz"
+    Author = "P0cL4bs"
     Description = "Sniff for isntercept network traffic on UDP,TCP protocol get password,hash,image,etc..."
     Icon = "icons/tcpproxy.png"
     ModSettings = True

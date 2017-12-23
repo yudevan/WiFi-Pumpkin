@@ -3,15 +3,18 @@ import sys
 from PyQt4 import QtGui, QtCore
 from collections import OrderedDict
 from core.servers.proxy.package import *
+from core.widgets.default.SettingsItem import *
 
 
 class ProxyModeController(QtGui.QTableWidget):
     proxies = {}
     SetNoProxy = QtCore.pyqtSignal(object)
-    def __init__(self,parent, FsettingsUI=None, main_method=None, **kwargs):
+    dockMount = QtCore.pyqtSignal(bool)
+
+    def __init__(self,parent, Settings=None, main_method=None, **kwargs):
         super(ProxyModeController, self).__init__(parent)
         self.parent=parent
-        self.FSettings = self.parent.FSettings
+        #self.FSettings = Settings
         self.proxyGroup = QtGui.QButtonGroup()
         __proxlist= [prox(parent=self.parent) for prox in ProxyMode.ProxyMode.__subclasses__()]
         #Keep Proxy in a dictionary
@@ -27,6 +30,7 @@ class ProxyModeController(QtGui.QTableWidget):
             self.p_desc.append(p.controlui.objectName())
             self.proxyGroup.addButton(p.controlui)
             p.sendSingal_disable.connect(self.DisableProxy)
+            p.dockwidget.addDock.connect(self.dockUpdate)
 
         self.THeadersPluginsProxy = OrderedDict(
             [('Proxies', self.p_name),
@@ -58,8 +62,15 @@ class ProxyModeController(QtGui.QTableWidget):
                     item = QtGui.QTableWidgetItem(item)
                     self.setItem(m, n, item)
         self.setHorizontalHeaderLabels(self.THeadersPluginsProxy.keys())
+    def dockUpdate(self,add=True):
+        self.dockMount.emit(add)
+
     def DisableProxy(self,status):
         self.SetNoProxy.emit(status)
+    @property
+    def ActiveDocks(self):
+        return self.Activated.dockwidget
+
     @property
     def ActiveReactor(self):
         reactor = []

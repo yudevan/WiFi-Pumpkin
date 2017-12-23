@@ -6,7 +6,7 @@ from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 class Responder(MitmMode):
     Name = "Responder"
-    Author = "Wahyudin Aziz"
+    Author = "P0cL4bs"
     Description = "Responder an LLMNR, NBT-NS and MDNS poisoner By default, the tool will only answer to File Server Service request, which is for SMB."
     Icon = "icons/tcpproxy.png"
     ModSettings = True
