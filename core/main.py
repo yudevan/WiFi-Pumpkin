@@ -55,7 +55,9 @@ from core.packets.dhcpserver import DHCPServer,DNSServer
 from core.widgets.notifications import ServiceNotify
 from isc_dhcp_leases.iscdhcpleases import IscDhcpLeases
 from netfilterqueue import NetfilterQueue
-from core.servers.proxy.tcp.intercept import ThreadSniffingPackets
+from core.widgets.default import *
+from core.activitymonitorcontrol import *
+from core.defaultwidget import *
 
 """
 Description:
@@ -189,8 +191,16 @@ class WifiPumpkin(QtGui.QWidget):
         self.Tab_Plugins    = QtGui.QWidget()
         self.Tab_dock       = QtGui.QMainWindow() # for dockarea
         self.FSettings      = self.mainWindow.FSettings
+
+
+        #TODO This is a new Implementation to simplify development
+        self.coreui = DefaultWidget()
         self.proxy = ProxyModeController(self)
+        self.proxy.dockMount.connect(self.dockAdd)
+        self.proxyDocklist = []
+        self.mitmDockList=[]
         self.mitmhandler = MitmController(self)
+        self.mitmhandler.dockMount.connect(self.mitmDockAdd)
 
 
 
@@ -202,7 +212,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.dock.setFeatures(QtGui.QDockWidget.NoDockWidgetFeatures)
         self.dock.setAllowedAreas(QtCore.Qt.AllDockWidgetAreas)
 
-        # icons menus left widgets
+        # icons menus left widget
         self.TabListWidget_Menu = QtGui.QListWidget()
         self.item_home = QtGui.QListWidgetItem()
         self.item_home.setText('Home')
@@ -325,8 +335,16 @@ class WifiPumpkin(QtGui.QWidget):
             }
         }
         self.SettingsEnable     = {
-        'ProgCheck':[],'AP_iface': None,'PortRedirect': None, 'interface':'None'}
-        self.THeaders  = OrderedDict([ ('Devices',[]),('IP Address',[]),('Mac Address',[]),('Vendors',[])])
+            'ProgCheck':[],
+            'AP_iface': None,
+            'PortRedirect': None,
+            'interface':'None',
+        }
+        self.THeaders  = OrderedDict([ ('Devices',[]),
+                                       ('IP Address',[]),
+                                       ('Mac Address',[]),
+                                       ('Vendors',[])],
+                                     )
         # load all session saved in file ctg
         self.status_plugin_proxy_name = QtGui.QLabel('') # status name proxy activated
         self.SessionsAP     = loads(str(self.FSettings.Settings.get_setting('accesspoint','sessions')))
@@ -357,15 +375,45 @@ class WifiPumpkin(QtGui.QWidget):
         self.THReactor = ThreadReactor() # thread reactor for sslstrip
         self.window_phishing = GUIModules.frm_PhishingManager()
         self.initial_GUI_loader()
+        self.proxy.Activated.dockwidget.addDock.emit(self.proxy.Activated.controlui.isChecked())
+        for mitm in self.mitmhandler.Activated:
+            mitm.dockwidget.addDock.emit(mitm.controlui.isChecked())
+    def mitmDockAdd(self,adding=True):
+        temp = self.mitmhandler.ActiveDock
+        for active in temp:
+            self.mitmDockList.append(active)
+            self.PumpSettingsTAB.Tab_Dock.addDockWidget(QtCore.Qt.LeftDockWidgetArea, active)
+
+        for i in self.mitmDockList:
+            if i not in temp:
+                i.close()
+                self.mitmDockList.remove(i)
+                self.PumpSettingsTAB.Tab_Dock.removeDockWidget(i)
+        alldock = self.mitmDockList + self.proxyDocklist
+
+        if len(alldock) > 1:
+            for index in range(1, len(alldock) - 1):
+                self.PumpSettingsTAB.Tab_Dock.tabifyDockWidget(alldock[index],
+                                                   alldock[index + 1])
+
+    def dockAdd(self,adding=True):
+        for i in self.proxyDocklist:
+            i.close()
+            self.PumpSettingsTAB.Tab_Dock.removeDockWidget(i)
+        if adding:
+            self.proxyDocklist.append(self.proxy.Activated.dockwidget)
+            self.PumpSettingsTAB.Tab_Dock.addDockWidget(QtCore.Qt.LeftDockWidgetArea, self.proxy.Activated.dockwidget)
+        alldock = self.mitmDockList + self.proxyDocklist
+
+        if len(alldock) > 1:
+            for index in range(1, len(alldock) - 1):
+                self.PumpSettingsTAB.Tab_Dock.tabifyDockWidget(alldock[index],
+                                                               alldock[index + 1])
+
+
     def get_disable_proxy(self):
         self.FSettings.Settings.set_setting('plugins', 'disableproxy',
                                             self.PopUpPlugins.GroupPluginsProxy.isChecked())
-
-
-
-
-
-
 
     def initial_GUI_loader(self):
         ''' configure GUI default window '''
@@ -489,6 +537,8 @@ class WifiPumpkin(QtGui.QWidget):
         self.boxHome = QtGui.QVBoxLayout(self)
         self.boxHome.addWidget(self.myQMenuBar)
 
+
+
         # create Horizontal widgets
         hbox = QtGui.QHBoxLayout()
         self.hBoxbutton.addWidget(self.TabListWidget_Menu)
@@ -534,8 +584,12 @@ class WifiPumpkin(QtGui.QWidget):
 
     def settings_TAB_Content(self):
         ''' add Layout page Pump-settings in dashboard '''
-        widgets = {'SettingsAP': self.slipt, 'DockInfo': self.AreaDockInfo,
-        'Tab_dock': self.Tab_dock, 'Settings': self.FSettings,'Network': self.GroupAdapter}
+        widgets = {'SettingsAP': self.slipt,
+                   'DockInfo': self.AreaDockInfo,
+                   'Tab_dock': self.Tab_dock,
+                   'Settings': self.FSettings,
+                   'Network': self.GroupAdapter,
+                   }
         self.PumpSettingsTAB = PumpkinSettings(None,widgets)
         self.PumpSettingsTAB.checkDockArea.connect(self.get_Content_Tab_Dock)
         self.PumpSettingsTAB.sendMensage.connect(self.set_dhcp_setings_ap)
@@ -1130,28 +1184,6 @@ class WifiPumpkin(QtGui.QWidget):
                     except IndexError:
                         return None
 
-    def get_responder_output(self,data):
-        ''' get std_ouput the thread responder and add in DockArea '''
-        if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
-            if hasattr(self,'dockAreaList'):
-                if self.PumpSettingsTAB.dockInfo['Firelamb']['active']:
-                    for line in data.split('\n'):
-                        self.dockAreaList['Firelamb'].writeModeData(line)
-                        self.responderlog.info(line)
-
-    def get_bdfproxy_output(self,data):
-        ''' get std_ouput the thread bdfproxy and add in DockArea '''
-        if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
-            if hasattr(self,'dockAreaList'):
-                if self.PumpSettingsTAB.dockInfo['BDFProxy']['active']:
-                    try:
-                        data = str(data).split(' : ')[1]
-                        for line in data.split('\n'):
-                            if len(line) > 2:
-                                self.dockAreaList['BDFProxy'].writeModeData(line)
-                    except IndexError:
-                        return None
-
     def get_PumpkinProxy_output(self,data):
         ''' get std_ouput the thread Pumpkin-Proxy and add in DockArea '''
         if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
@@ -1477,9 +1509,11 @@ class WifiPumpkin(QtGui.QWidget):
 
         # start all Thread in sessions
         for thread in self.Apthreads['RougeAP']:
-            self.progress.update_bar_simple(20)
-            QtCore.QThread.sleep(1)
-            thread.start()
+            print type(thread)
+            if thread is not None:
+                self.progress.update_bar_simple(20)
+                QtCore.QThread.sleep(1)
+                thread.start()
         self.progress.setValue(100)
         self.progress.hideProcessbar()
         # check if Advanced mode is enable
