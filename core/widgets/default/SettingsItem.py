@@ -3,8 +3,12 @@ from PyQt4.QtCore import *
 from core.widgets.default.tabs import *
 
 
-class Settings(Tabs):
+class SettingsItem(TabsWidget):
+    __subitem = True
     def __init__(self,parent=None,FSettings=None):
-        super(Settings,self).__init__(parent,FSettings)
+        super(SettingsItem,self).__init__(parent,FSettings)
         self.title = self.__class__.__name__
+        self.parent = parent
+        self.FSettings = FSettings
+
 

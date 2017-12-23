@@ -6,7 +6,7 @@ from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 class Responder(MitmMode):
     Name = "Responder"
-    Author = "Wahyudin Aziz"
+    Author = "P0cl4bs Team"
     Description = "Responder an LLMNR, NBT-NS and MDNS poisoner By default, the tool will only answer to File Server Service request, which is for SMB."
     Icon = "icons/tcpproxy.png"
     ModSettings = True
@@ -24,7 +24,7 @@ class Responder(MitmMode):
 class ResponderSettings(PumpkinModule):
     def __init__(self,parent=None):
         super(ResponderSettings, self).__init__(parent)
-        self.setWindowTitle('Firelamb Plugin settings')
+        self.setWindowTitle('Responder Plugin settings')
         self.setGeometry(0,0,480, 500)
         self.main       = QtGui.QVBoxLayout()
         self.THeaders   = {'Config':[],'Value':[] }
@@ -80,7 +80,7 @@ class ResponderSettings(PumpkinModule):
             self.userConfig.write()
     def saveConfigObject(self):
         self.checkConfigKeysResponder(saveObjct=True)
-        QtGui.QMessageBox.information(self,'Firelamb settings','All settings in {} has been saved '
+        QtGui.QMessageBox.information(self,'Responder settings','All settings in {} has been saved '
         'with success.'.format(str(self.configure.Settings.get_setting('plugins','responder_config'))))
         self.close()
 

@@ -10,6 +10,7 @@ from core.utility.collection import SettingsINI
 from core.utility.threads import ThreadPopen
 from core.utils import Refactor
 from core.widgets.customiseds import AutoGridLayout
+from core.widgets.docks.dock import DockableWidget
 from core.widgets.docks.dockmonitor import (
     dockAreaAPI,dockUrlMonitor,dockCredsMonitor,dockPumpkinProxy,dockTCPproxy
 )
@@ -23,7 +24,9 @@ from plugins.analyzers import *
 from plugins.extension import *
 from plugins.external.scripts import *
 
-
+class ProxySSLstripDock(DockableWidget):
+    def __init__(self,parent=0,title="",infor={}):
+        super(ProxySSLstripDock,self).__init__(parent)
 class ProxySSLstrip(ProxyMode):
     Name = "SSLStrip+DNS2Proxy"
     Author = "Wahyudin Aziz"
@@ -42,6 +45,7 @@ class ProxySSLstrip(ProxyMode):
         self.urlinjected= []
         self.FSettings  = parent.FSettings
         self.mainLayout    = QtGui.QVBoxLayout()
+        self.dock = ProxySSLstripDock(self,self.Name)
 
         #scroll area
         self.scrollwidget = QtGui.QWidget()

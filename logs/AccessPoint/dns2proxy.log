@@ -3661,3 +3661,1489 @@ SessionID[MjkyMTc=] 2017-12-18 19:17:41,782 : Doing the A query....
 SessionID[MjkyMTc=] 2017-12-18 19:17:41,782 : 1 questions.
 SessionID[MjkyMTc=] 2017-12-18 19:17:41,782 : q name = accounts.google.com
 SessionID[MjkyMTc=] 2017-12-18 19:17:41,782 : Query = accounts.google.com A
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,033 : ---[ Start Dns2proxy Mon Dec 18 19:27:10 2017]---
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,033 : Non spoofing imap.gmail.com
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,033 : Non spoofing to 127.0.0.1
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,033 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,034 : DNS Forwarding activado....
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,034 : binded to UDP port 53.
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,034 : waiting requests.
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,474 : serving a request.
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,474 : msg id = 56815
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,474 : Client IP: 127.0.0.1
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,475 : request is 0.debian.pool.ntp.org. IN A
+2017-12-18 19:27:10 Client IP: 127.0.0.1    request is    0.debian.pool.ntp.org. IN A
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,476 : Doing the A query....
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,476 : 1 questions.
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,476 : q name = 0.debian.pool.ntp.org
+SessionID[NTcxNzI=] 2017-12-18 19:27:10,476 : Query = 0.debian.pool.ntp.org A
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : ---[ Start Dns2proxy Mon Dec 18 19:27:12 2017]---
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : Non spoofing imap.gmail.com
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : Non spoofing to 127.0.0.1
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : DNS Forwarding activado....
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : binded to UDP port 53.
+SessionID[NTcxNzI=] 2017-12-18 19:27:12,039 : waiting requests.
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,479 : serving a request.
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,479 : msg id = 56815
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,479 : Client IP: 127.0.0.1
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,480 : request is 0.debian.pool.ntp.org. IN A
+2017-12-18 19:27:15 Client IP: 127.0.0.1    request is    0.debian.pool.ntp.org. IN A
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,480 : Doing the A query....
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,480 : 1 questions.
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,480 : q name = 0.debian.pool.ntp.org
+SessionID[NTcxNzI=] 2017-12-18 19:27:15,480 : Query = 0.debian.pool.ntp.org A
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,362 : ---[ Start Dns2proxy Mon Dec 18 19:27:41 2017]---
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,362 : Non spoofing imap.gmail.com
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,362 : Non spoofing to 127.0.0.1
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,362 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,363 : DNS Forwarding activado....
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,363 : binded to UDP port 53.
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,363 : waiting requests.
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,763 : serving a request.
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,763 : msg id = 10627
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,763 : Client IP: 127.0.0.1
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,763 : request is accounts.google.com. IN A
+2017-12-18 19:27:41 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,764 : Doing the A query....
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,764 : 1 questions.
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,764 : q name = accounts.google.com
+SessionID[ODU3ODI=] 2017-12-18 19:27:41,764 : Query = accounts.google.com A
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,333 : ---[ Start Dns2proxy Mon Dec 18 19:45:29 2017]---
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,334 : Non spoofing imap.gmail.com
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,334 : Non spoofing to 127.0.0.1
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,334 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,334 : DNS Forwarding activado....
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,334 : binded to UDP port 53.
+SessionID[NTIzMjk=] 2017-12-18 19:45:29,334 : waiting requests.
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,771 : serving a request.
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,771 : msg id = 17259
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,771 : Client IP: 127.0.0.1
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,772 : request is accounts.google.com. IN A
+2017-12-18 19:45:30 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,772 : Doing the A query....
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,772 : 1 questions.
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,772 : q name = accounts.google.com
+SessionID[NTIzMjk=] 2017-12-18 19:45:30,773 : Query = accounts.google.com A
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,682 : ---[ Start Dns2proxy Mon Dec 18 19:55:45 2017]---
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,683 : Non spoofing imap.gmail.com
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,683 : Non spoofing to 127.0.0.1
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,683 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,683 : DNS Forwarding activado....
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,683 : binded to UDP port 53.
+SessionID[MjUyNTY=] 2017-12-18 19:55:45,683 : waiting requests.
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,770 : serving a request.
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,771 : msg id = 34255
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,771 : Client IP: 127.0.0.1
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,772 : request is accounts.google.com. IN A
+2017-12-18 19:55:47 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,772 : Doing the A query....
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,772 : 1 questions.
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,772 : q name = accounts.google.com
+SessionID[MjUyNTY=] 2017-12-18 19:55:47,772 : Query = accounts.google.com A
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,773 : Exception...
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,774 : No host....
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,775 : waiting requests.
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,775 : serving a request.
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,775 : msg id = 34255
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,775 : I am already serving this request.
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,775 : waiting requests.
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,775 : serving a request.
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,776 : msg id = 16088
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,776 : Client IP: 127.0.0.1
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,776 : request is accounts.google.com. IN A
+2017-12-18 19:56:17 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,777 : Doing the A query....
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,777 : 1 questions.
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,777 : q name = accounts.google.com
+SessionID[MjUyNTY=] 2017-12-18 19:56:17,777 : Query = accounts.google.com A
+SessionID[MjYw] 2017-12-18 20:04:00,981 : ---[ Start Dns2proxy Mon Dec 18 20:04:00 2017]---
+SessionID[MjYw] 2017-12-18 20:04:00,981 : Non spoofing imap.gmail.com
+SessionID[MjYw] 2017-12-18 20:04:00,982 : Non spoofing to 127.0.0.1
+SessionID[MjYw] 2017-12-18 20:04:00,982 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MjYw] 2017-12-18 20:04:00,982 : DNS Forwarding activado....
+SessionID[MjYw] 2017-12-18 20:04:00,982 : binded to UDP port 53.
+SessionID[MjYw] 2017-12-18 20:04:00,982 : waiting requests.
+SessionID[MjYw] 2017-12-18 20:04:02,769 : serving a request.
+SessionID[MjYw] 2017-12-18 20:04:02,769 : msg id = 50690
+SessionID[MjYw] 2017-12-18 20:04:02,770 : Client IP: 127.0.0.1
+SessionID[MjYw] 2017-12-18 20:04:02,770 : request is accounts.google.com. IN A
+2017-12-18 20:04:02 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MjYw] 2017-12-18 20:04:02,770 : Doing the A query....
+SessionID[MjYw] 2017-12-18 20:04:02,771 : 1 questions.
+SessionID[MjYw] 2017-12-18 20:04:02,771 : q name = accounts.google.com
+SessionID[MjYw] 2017-12-18 20:04:02,771 : Query = accounts.google.com A
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,733 : ---[ Start Dns2proxy Mon Dec 18 20:34:28 2017]---
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,733 : Non spoofing imap.gmail.com
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,733 : Non spoofing to 127.0.0.1
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,733 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,733 : DNS Forwarding activado....
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,733 : binded to UDP port 53.
+SessionID[NDM1MzA=] 2017-12-18 20:34:28,734 : waiting requests.
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,350 : serving a request.
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,350 : msg id = 6925
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,350 : Client IP: 127.0.0.1
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,351 : request is 0.debian.pool.ntp.org. IN A
+2017-12-18 20:34:29 Client IP: 127.0.0.1    request is    0.debian.pool.ntp.org. IN A
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,352 : Doing the A query....
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,352 : 1 questions.
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,352 : q name = 0.debian.pool.ntp.org
+SessionID[NDM1MzA=] 2017-12-18 20:34:29,352 : Query = 0.debian.pool.ntp.org A
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,353 : Exception...
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,354 : No host....
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,355 : waiting requests.
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,355 : serving a request.
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,355 : msg id = 35751
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,355 : Client IP: 127.0.0.1
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,356 : request is 0.debian.pool.ntp.org. IN AAAA
+2017-12-18 20:34:59 Client IP: 127.0.0.1    request is    0.debian.pool.ntp.org. IN AAAA
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,356 : 1 questions.
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,356 : Host: 0.debian.pool.ntp.org.
+SessionID[NDM1MzA=] 2017-12-18 20:34:59,357 : Query = 0.debian.pool.ntp.org AAAA
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,558 : ---[ Start Dns2proxy Mon Dec 18 20:53:54 2017]---
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,559 : Non spoofing imap.gmail.com
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,559 : Non spoofing to 127.0.0.1
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,559 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,559 : DNS Forwarding activado....
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,559 : binded to UDP port 53.
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,559 : waiting requests.
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,771 : serving a request.
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,771 : msg id = 6742
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,772 : Client IP: 127.0.0.1
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,773 : request is accounts.google.com. IN A
+2017-12-18 20:53:54 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,773 : Doing the A query....
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,773 : 1 questions.
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,773 : q name = accounts.google.com
+SessionID[NDk2ODE=] 2017-12-18 20:53:54,774 : Query = accounts.google.com A
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,090 : ---[ Start Dns2proxy Mon Dec 18 21:11:11 2017]---
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,091 : Non spoofing imap.gmail.com
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,091 : Non spoofing to 127.0.0.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,091 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,091 : DNS Forwarding activado....
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,091 : binded to UDP port 53.
+SessionID[MTY2Njk=] 2017-12-18 21:11:11,091 : waiting requests.
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,771 : serving a request.
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,771 : msg id = 4184
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,771 : Client IP: 127.0.0.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,771 : request is accounts.google.com. IN A
+2017-12-18 21:11:12 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,772 : Doing the A query....
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,772 : 1 questions.
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,772 : q name = accounts.google.com
+SessionID[MTY2Njk=] 2017-12-18 21:11:12,772 : Query = accounts.google.com A
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,094 : ---[ Start Dns2proxy Mon Dec 18 21:11:13 2017]---
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,094 : Non spoofing imap.gmail.com
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,095 : Non spoofing to 127.0.0.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,095 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,095 : DNS Forwarding activado....
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,095 : binded to UDP port 53.
+SessionID[MTY2Njk=] 2017-12-18 21:11:13,095 : waiting requests.
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,776 : serving a request.
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,776 : msg id = 4184
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,776 : Client IP: 127.0.0.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,777 : request is accounts.google.com. IN A
+2017-12-18 21:11:17 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,777 : Doing the A query....
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,778 : 1 questions.
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,778 : q name = accounts.google.com
+SessionID[MTY2Njk=] 2017-12-18 21:11:17,778 : Query = accounts.google.com A
+SessionID[MTY2Njk=] 2017-12-18 21:11:42,773 : Exception...
+SessionID[MTY2Njk=] 2017-12-18 21:11:42,774 : No host....
+SessionID[MTY2Njk=] 2017-12-18 21:11:42,775 : waiting requests.
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,779 : Exception...
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,780 : No host....
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,781 : waiting requests.
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,781 : serving a request.
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,781 : msg id = 54590
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,782 : Client IP: 127.0.0.1
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,782 : request is accounts.google.com. IN A
+2017-12-18 21:11:47 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,783 : Doing the A query....
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,783 : 1 questions.
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,783 : q name = accounts.google.com
+SessionID[MTY2Njk=] 2017-12-18 21:11:47,784 : Query = accounts.google.com A
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,785 : Exception...
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,785 : No host....
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,786 : waiting requests.
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,787 : serving a request.
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,787 : msg id = 17564
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,787 : Client IP: 127.0.0.1
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,788 : request is 1.debian.pool.ntp.org. IN A
+2017-12-18 21:12:17 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,788 : Doing the A query....
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,789 : 1 questions.
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,789 : q name = 1.debian.pool.ntp.org
+SessionID[MTY2Njk=] 2017-12-18 21:12:17,789 : Query = 1.debian.pool.ntp.org A
+SessionID[NzcyODI=] 2017-12-18 21:12:39,881 : ---[ Start Dns2proxy Mon Dec 18 21:12:39 2017]---
+SessionID[NzcyODI=] 2017-12-18 21:12:39,882 : Non spoofing imap.gmail.com
+SessionID[NzcyODI=] 2017-12-18 21:12:39,882 : Non spoofing to 127.0.0.1
+SessionID[NzcyODI=] 2017-12-18 21:12:39,882 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzcyODI=] 2017-12-18 21:12:39,882 : DNS Forwarding activado....
+SessionID[NzcyODI=] 2017-12-18 21:12:39,882 : binded to UDP port 53.
+SessionID[NzcyODI=] 2017-12-18 21:12:39,882 : waiting requests.
+SessionID[NzcyODI=] 2017-12-18 21:12:41,350 : serving a request.
+SessionID[NzcyODI=] 2017-12-18 21:12:41,350 : msg id = 898
+SessionID[NzcyODI=] 2017-12-18 21:12:41,350 : Client IP: 127.0.0.1
+SessionID[NzcyODI=] 2017-12-18 21:12:41,351 : request is 3.debian.pool.ntp.org. IN A
+2017-12-18 21:12:41 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[NzcyODI=] 2017-12-18 21:12:41,352 : Doing the A query....
+SessionID[NzcyODI=] 2017-12-18 21:12:41,352 : 1 questions.
+SessionID[NzcyODI=] 2017-12-18 21:12:41,352 : q name = 3.debian.pool.ntp.org
+SessionID[NzcyODI=] 2017-12-18 21:12:41,352 : Query = 3.debian.pool.ntp.org A
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : ---[ Start Dns2proxy Mon Dec 18 21:12:41 2017]---
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : Non spoofing imap.gmail.com
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : Non spoofing to 127.0.0.1
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : DNS Forwarding activado....
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : binded to UDP port 53.
+SessionID[NzcyODI=] 2017-12-18 21:12:41,887 : waiting requests.
+SessionID[NzcyODI=] 2017-12-18 21:12:46,351 : serving a request.
+SessionID[NzcyODI=] 2017-12-18 21:12:46,351 : msg id = 898
+SessionID[NzcyODI=] 2017-12-18 21:12:46,352 : Client IP: 127.0.0.1
+SessionID[NzcyODI=] 2017-12-18 21:12:46,353 : request is 3.debian.pool.ntp.org. IN A
+2017-12-18 21:12:46 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[NzcyODI=] 2017-12-18 21:12:46,353 : Doing the A query....
+SessionID[NzcyODI=] 2017-12-18 21:12:46,353 : 1 questions.
+SessionID[NzcyODI=] 2017-12-18 21:12:46,354 : q name = 3.debian.pool.ntp.org
+SessionID[NzcyODI=] 2017-12-18 21:12:46,354 : Query = 3.debian.pool.ntp.org A
+SessionID[NzcyODI=] 2017-12-18 21:13:11,354 : Exception...
+SessionID[NzcyODI=] 2017-12-18 21:13:11,354 : No host....
+SessionID[NzcyODI=] 2017-12-18 21:13:11,355 : waiting requests.
+SessionID[NzcyODI=] 2017-12-18 21:13:11,355 : serving a request.
+SessionID[NzcyODI=] 2017-12-18 21:13:11,355 : msg id = 19442
+SessionID[NzcyODI=] 2017-12-18 21:13:11,355 : Client IP: 127.0.0.1
+SessionID[NzcyODI=] 2017-12-18 21:13:11,356 : request is 3.debian.pool.ntp.org. IN AAAA
+2017-12-18 21:13:11 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN AAAA
+SessionID[NzcyODI=] 2017-12-18 21:13:11,356 : 1 questions.
+SessionID[NzcyODI=] 2017-12-18 21:13:11,357 : Host: 3.debian.pool.ntp.org.
+SessionID[NzcyODI=] 2017-12-18 21:13:11,357 : Query = 3.debian.pool.ntp.org AAAA
+SessionID[NzcyODI=] 2017-12-18 21:13:16,355 : Exception...
+SessionID[NzcyODI=] 2017-12-18 21:13:16,356 : No host....
+SessionID[NzcyODI=] 2017-12-18 21:13:16,356 : waiting requests.
+SessionID[NzcyODI=] 2017-12-18 21:13:16,357 : serving a request.
+SessionID[NzcyODI=] 2017-12-18 21:13:16,357 : msg id = 19442
+SessionID[NzcyODI=] 2017-12-18 21:13:16,357 : Client IP: 127.0.0.1
+SessionID[NzcyODI=] 2017-12-18 21:13:16,358 : request is 3.debian.pool.ntp.org. IN AAAA
+2017-12-18 21:13:16 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN AAAA
+SessionID[NzcyODI=] 2017-12-18 21:13:16,358 : 1 questions.
+SessionID[NzcyODI=] 2017-12-18 21:13:16,358 : Host: 3.debian.pool.ntp.org.
+SessionID[NzcyODI=] 2017-12-18 21:13:16,358 : Query = 3.debian.pool.ntp.org AAAA
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,573 : ---[ Start Dns2proxy Thu Dec 21 21:20:15 2017]---
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,606 : Non spoofing imap.gmail.com
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,607 : Non spoofing to 127.0.0.1
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,607 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,615 : DNS Forwarding activado....
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,616 : binded to UDP port 53.
+SessionID[MzI5NTg=] 2017-12-21 21:20:15,616 : waiting requests.
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,600 : serving a request.
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,600 : msg id = 457
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,600 : Client IP: 127.0.0.1
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,601 : request is mtalk.google.com. IN A
+2017-12-21 21:20:16 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,602 : Doing the A query....
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,602 : 1 questions.
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,602 : q name = mtalk.google.com
+SessionID[MzI5NTg=] 2017-12-21 21:20:16,602 : Query = mtalk.google.com A
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,635 : ---[ Start Dns2proxy Thu Dec 21 21:20:54 2017]---
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,635 : Non spoofing imap.gmail.com
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,635 : Non spoofing to 127.0.0.1
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,635 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,635 : DNS Forwarding activado....
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,636 : binded to UDP port 53.
+SessionID[NzMxMzY=] 2017-12-21 21:20:54,636 : waiting requests.
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,497 : serving a request.
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,497 : msg id = 17704
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,497 : Client IP: 127.0.0.1
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,498 : request is mtalk.google.com. IN A
+2017-12-21 21:20:55 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,498 : Doing the A query....
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,499 : 1 questions.
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,499 : q name = mtalk.google.com
+SessionID[NzMxMzY=] 2017-12-21 21:20:55,499 : Query = mtalk.google.com A
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,643 : ---[ Start Dns2proxy Thu Dec 21 21:20:56 2017]---
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,643 : Non spoofing imap.gmail.com
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,643 : Non spoofing to 127.0.0.1
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,643 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,644 : DNS Forwarding activado....
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,644 : binded to UDP port 53.
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,644 : waiting requests.
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,765 : serving a request.
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,765 : msg id = 45416
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,766 : Client IP: 127.0.0.1
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,766 : request is accounts.google.com. IN A
+2017-12-21 21:20:56 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,766 : Doing the A query....
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,766 : 1 questions.
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,767 : q name = accounts.google.com
+SessionID[NzMxMzY=] 2017-12-21 21:20:56,767 : Query = accounts.google.com A
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,357 : ---[ Start Dns2proxy Thu Dec 21 21:22:02 2017]---
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,358 : Non spoofing imap.gmail.com
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,358 : Non spoofing to 127.0.0.1
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,358 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,358 : DNS Forwarding activado....
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,358 : binded to UDP port 53.
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,358 : waiting requests.
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,765 : serving a request.
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,765 : msg id = 45987
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,765 : Client IP: 127.0.0.1
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,766 : request is accounts.google.com. IN A
+2017-12-21 21:22:02 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,766 : Doing the A query....
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,766 : 1 questions.
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,766 : q name = accounts.google.com
+SessionID[OTA0NjM=] 2017-12-21 21:22:02,766 : Query = accounts.google.com A
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,367 : ---[ Start Dns2proxy Thu Dec 21 21:22:04 2017]---
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,368 : Non spoofing imap.gmail.com
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,368 : Non spoofing to 127.0.0.1
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,368 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,368 : DNS Forwarding activado....
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,368 : binded to UDP port 53.
+SessionID[OTA0NjM=] 2017-12-21 21:22:04,368 : waiting requests.
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,765 : serving a request.
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,766 : msg id = 45987
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,766 : Client IP: 127.0.0.1
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,767 : request is accounts.google.com. IN A
+2017-12-21 21:22:07 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,767 : Doing the A query....
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,767 : 1 questions.
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,768 : q name = accounts.google.com
+SessionID[OTA0NjM=] 2017-12-21 21:22:07,768 : Query = accounts.google.com A
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : ---[ Start Dns2proxy Thu Dec 21 21:24:45 2017]---
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : Non spoofing imap.gmail.com
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : Non spoofing to 127.0.0.1
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : DNS Forwarding activado....
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : binded to UDP port 53.
+SessionID[OTExNDQ=] 2017-12-21 21:24:45,963 : waiting requests.
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,116 : serving a request.
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,116 : msg id = 14440
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,116 : Client IP: 127.0.0.1
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,117 : request is 1.debian.pool.ntp.org. IN A
+2017-12-21 21:24:46 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,117 : Doing the A query....
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,118 : 1 questions.
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,118 : q name = 1.debian.pool.ntp.org
+SessionID[OTExNDQ=] 2017-12-21 21:24:46,118 : Query = 1.debian.pool.ntp.org A
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,971 : ---[ Start Dns2proxy Thu Dec 21 21:24:47 2017]---
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,971 : Non spoofing imap.gmail.com
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,971 : Non spoofing to 127.0.0.1
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,972 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,972 : DNS Forwarding activado....
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,972 : binded to UDP port 53.
+SessionID[OTExNDQ=] 2017-12-21 21:24:47,972 : waiting requests.
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,118 : serving a request.
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,119 : msg id = 14440
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,119 : Client IP: 127.0.0.1
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,120 : request is 1.debian.pool.ntp.org. IN A
+2017-12-21 21:24:51 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,120 : Doing the A query....
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,121 : 1 questions.
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,121 : q name = 1.debian.pool.ntp.org
+SessionID[OTExNDQ=] 2017-12-21 21:24:51,121 : Query = 1.debian.pool.ntp.org A
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,111 : ---[ Start Dns2proxy Thu Dec 21 21:26:16 2017]---
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,112 : Non spoofing imap.gmail.com
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,112 : Non spoofing to 127.0.0.1
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,112 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,112 : DNS Forwarding activado....
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,112 : binded to UDP port 53.
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,112 : waiting requests.
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : serving a request.
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : msg id = 20543
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : Client IP: 127.0.0.1
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : request is 2.debian.pool.ntp.org. IN A
+2017-12-21 21:26:16 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : Doing the A query....
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : 1 questions.
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : q name = 2.debian.pool.ntp.org
+SessionID[NjU5NjE=] 2017-12-21 21:26:16,116 : Query = 2.debian.pool.ntp.org A
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : ---[ Start Dns2proxy Thu Dec 21 21:26:18 2017]---
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : Non spoofing imap.gmail.com
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : Non spoofing to 127.0.0.1
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : DNS Forwarding activado....
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : binded to UDP port 53.
+SessionID[NjU5NjE=] 2017-12-21 21:26:18,122 : waiting requests.
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,121 : serving a request.
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,121 : msg id = 20543
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,121 : Client IP: 127.0.0.1
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,122 : request is 2.debian.pool.ntp.org. IN A
+2017-12-21 21:26:21 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,123 : Doing the A query....
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,123 : 1 questions.
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,123 : q name = 2.debian.pool.ntp.org
+SessionID[NjU5NjE=] 2017-12-21 21:26:21,123 : Query = 2.debian.pool.ntp.org A
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,750 : ---[ Start Dns2proxy Thu Dec 21 21:28:04 2017]---
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,750 : Non spoofing imap.gmail.com
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,750 : Non spoofing to 127.0.0.1
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,750 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,750 : DNS Forwarding activado....
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,750 : binded to UDP port 53.
+SessionID[MzQ4MTY=] 2017-12-21 21:28:04,751 : waiting requests.
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,612 : serving a request.
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,612 : msg id = 52437
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,613 : Client IP: 127.0.0.1
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,614 : request is mtalk.google.com. IN A
+2017-12-21 21:28:05 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,614 : Doing the A query....
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,614 : 1 questions.
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,614 : q name = mtalk.google.com
+SessionID[MzQ4MTY=] 2017-12-21 21:28:05,615 : Query = mtalk.google.com A
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,319 : ---[ Start Dns2proxy Thu Dec 21 21:28:37 2017]---
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,319 : Non spoofing imap.gmail.com
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,320 : Non spoofing to 127.0.0.1
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,320 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,320 : DNS Forwarding activado....
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,320 : binded to UDP port 53.
+SessionID[MzE2Mw==] 2017-12-21 21:28:37,320 : waiting requests.
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,184 : serving a request.
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,185 : msg id = 48201
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,185 : Client IP: 127.0.0.1
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,186 : request is mtalk.google.com. IN A
+2017-12-21 21:28:38 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,186 : Doing the A query....
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,186 : 1 questions.
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,186 : q name = mtalk.google.com
+SessionID[MzE2Mw==] 2017-12-21 21:28:38,187 : Query = mtalk.google.com A
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,329 : ---[ Start Dns2proxy Thu Dec 21 21:28:39 2017]---
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,329 : Non spoofing imap.gmail.com
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,329 : Non spoofing to 127.0.0.1
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,330 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,330 : DNS Forwarding activado....
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,330 : binded to UDP port 53.
+SessionID[MzE2Mw==] 2017-12-21 21:28:39,330 : waiting requests.
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,189 : serving a request.
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,190 : msg id = 48201
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,190 : Client IP: 127.0.0.1
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,191 : request is mtalk.google.com. IN A
+2017-12-21 21:28:43 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,192 : Doing the A query....
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,192 : 1 questions.
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,193 : q name = mtalk.google.com
+SessionID[MzE2Mw==] 2017-12-21 21:28:43,193 : Query = mtalk.google.com A
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,770 : ---[ Start Dns2proxy Thu Dec 21 21:30:15 2017]---
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,771 : Non spoofing imap.gmail.com
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,771 : Non spoofing to 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,771 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,771 : DNS Forwarding activado....
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,771 : binded to UDP port 53.
+SessionID[NTcwMTY=] 2017-12-21 21:30:15,771 : waiting requests.
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,636 : serving a request.
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,636 : msg id = 59832
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,636 : Client IP: 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,637 : request is mtalk.google.com. IN A
+2017-12-21 21:30:16 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,638 : Doing the A query....
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,638 : 1 questions.
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,638 : q name = mtalk.google.com
+SessionID[NTcwMTY=] 2017-12-21 21:30:16,638 : Query = mtalk.google.com A
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,772 : ---[ Start Dns2proxy Thu Dec 21 21:30:17 2017]---
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,772 : Non spoofing imap.gmail.com
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,772 : Non spoofing to 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,772 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,773 : DNS Forwarding activado....
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,773 : binded to UDP port 53.
+SessionID[NTcwMTY=] 2017-12-21 21:30:17,773 : waiting requests.
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,638 : serving a request.
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,639 : msg id = 59832
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,639 : Client IP: 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,640 : request is mtalk.google.com. IN A
+2017-12-21 21:30:21 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,640 : Doing the A query....
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,641 : 1 questions.
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,641 : q name = mtalk.google.com
+SessionID[NTcwMTY=] 2017-12-21 21:30:21,641 : Query = mtalk.google.com A
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,640 : Exception...
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,640 : No host....
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : waiting requests.
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : serving a request.
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : msg id = 25010
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : Client IP: 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : request is www.google.com. IN A
+2017-12-21 21:30:46 Client IP: 127.0.0.1    request is    www.google.com. IN A
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : Doing the A query....
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : 1 questions.
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,641 : q name = www.google.com
+SessionID[NTcwMTY=] 2017-12-21 21:30:46,642 : Query = www.google.com A
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,642 : Exception...
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,643 : No host....
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,643 : waiting requests.
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,644 : serving a request.
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,644 : msg id = 25010
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,644 : Client IP: 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,644 : request is www.google.com. IN A
+2017-12-21 21:30:51 Client IP: 127.0.0.1    request is    www.google.com. IN A
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,645 : Doing the A query....
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,645 : 1 questions.
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,645 : q name = www.google.com
+SessionID[NTcwMTY=] 2017-12-21 21:30:51,645 : Query = www.google.com A
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,643 : Exception...
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,643 : No host....
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,644 : waiting requests.
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,644 : serving a request.
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,644 : msg id = 40239
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,644 : Client IP: 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,645 : request is www.googleapis.com. IN A
+2017-12-21 21:31:16 Client IP: 127.0.0.1    request is    www.googleapis.com. IN A
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,645 : Doing the A query....
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,645 : 1 questions.
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,646 : q name = www.googleapis.com
+SessionID[NTcwMTY=] 2017-12-21 21:31:16,646 : Query = www.googleapis.com A
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,647 : Exception...
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,647 : No host....
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,648 : waiting requests.
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,648 : serving a request.
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,648 : msg id = 40239
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,648 : Client IP: 127.0.0.1
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,649 : request is www.googleapis.com. IN A
+2017-12-21 21:31:21 Client IP: 127.0.0.1    request is    www.googleapis.com. IN A
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,649 : Doing the A query....
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,649 : 1 questions.
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,650 : q name = www.googleapis.com
+SessionID[NTcwMTY=] 2017-12-21 21:31:21,650 : Query = www.googleapis.com A
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,886 : ---[ Start Dns2proxy Thu Dec 21 21:31:46 2017]---
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,886 : Non spoofing imap.gmail.com
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,886 : Non spoofing to 127.0.0.1
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,886 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,887 : DNS Forwarding activado....
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,887 : binded to UDP port 53.
+SessionID[MzAwNzI=] 2017-12-21 21:31:46,887 : waiting requests.
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,744 : serving a request.
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,744 : msg id = 56885
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,745 : Client IP: 127.0.0.1
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,746 : request is mtalk.google.com. IN A
+2017-12-21 21:31:47 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,746 : Doing the A query....
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,746 : 1 questions.
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,746 : q name = mtalk.google.com
+SessionID[MzAwNzI=] 2017-12-21 21:31:47,747 : Query = mtalk.google.com A
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,891 : ---[ Start Dns2proxy Thu Dec 21 21:31:48 2017]---
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,892 : Non spoofing imap.gmail.com
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,892 : Non spoofing to 127.0.0.1
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,892 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,892 : DNS Forwarding activado....
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,892 : binded to UDP port 53.
+SessionID[MzAwNzI=] 2017-12-21 21:31:48,892 : waiting requests.
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,282 : serving a request.
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,282 : msg id = 64903
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,282 : Client IP: 127.0.0.1
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,283 : request is www.googleapis.com. IN A
+2017-12-21 21:31:49 Client IP: 127.0.0.1    request is    www.googleapis.com. IN A
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,284 : Doing the A query....
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,284 : 1 questions.
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,284 : q name = www.googleapis.com
+SessionID[MzAwNzI=] 2017-12-21 21:31:49,284 : Query = www.googleapis.com A
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,748 : Exception...
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,748 : No host....
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,749 : waiting requests.
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,749 : serving a request.
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,749 : msg id = 47081
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,750 : Client IP: 127.0.0.1
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,750 : request is www.google.com. IN A
+2017-12-21 21:32:17 Client IP: 127.0.0.1    request is    www.google.com. IN A
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,750 : Doing the A query....
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,751 : 1 questions.
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,751 : q name = www.google.com
+SessionID[MzAwNzI=] 2017-12-21 21:32:17,751 : Query = www.google.com A
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,286 : Exception...
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,286 : No host....
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,287 : waiting requests.
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,287 : serving a request.
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,287 : msg id = 47081
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,287 : Client IP: 127.0.0.1
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,288 : request is www.google.com. IN A
+2017-12-21 21:32:19 Client IP: 127.0.0.1    request is    www.google.com. IN A
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,288 : Doing the A query....
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,288 : 1 questions.
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,289 : q name = www.google.com
+SessionID[MzAwNzI=] 2017-12-21 21:32:19,289 : Query = www.google.com A
+SessionID[MTEwODY=] 2017-12-21 21:52:09,348 : ---[ Start Dns2proxy Thu Dec 21 21:52:09 2017]---
+SessionID[MTEwODY=] 2017-12-21 21:52:09,349 : Non spoofing imap.gmail.com
+SessionID[MTEwODY=] 2017-12-21 21:52:09,349 : Non spoofing to 127.0.0.1
+SessionID[MTEwODY=] 2017-12-21 21:52:09,349 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTEwODY=] 2017-12-21 21:52:09,349 : DNS Forwarding activado....
+SessionID[MTEwODY=] 2017-12-21 21:52:09,349 : binded to UDP port 53.
+SessionID[MTEwODY=] 2017-12-21 21:52:09,349 : waiting requests.
+SessionID[MTEwODY=] 2017-12-21 21:52:09,765 : serving a request.
+SessionID[MTEwODY=] 2017-12-21 21:52:09,765 : msg id = 16552
+SessionID[MTEwODY=] 2017-12-21 21:52:09,766 : Client IP: 127.0.0.1
+SessionID[MTEwODY=] 2017-12-21 21:52:09,766 : request is accounts.google.com. IN A
+2017-12-21 21:52:09 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTEwODY=] 2017-12-21 21:52:09,766 : Doing the A query....
+SessionID[MTEwODY=] 2017-12-21 21:52:09,766 : 1 questions.
+SessionID[MTEwODY=] 2017-12-21 21:52:09,767 : q name = accounts.google.com
+SessionID[MTEwODY=] 2017-12-21 21:52:09,767 : Query = accounts.google.com A
+SessionID[MTEwODY=] 2017-12-21 21:52:39,768 : Exception...
+SessionID[MTEwODY=] 2017-12-21 21:52:39,768 : No host....
+SessionID[MTEwODY=] 2017-12-21 21:52:39,769 : waiting requests.
+SessionID[MTEwODY=] 2017-12-21 21:52:39,769 : serving a request.
+SessionID[MTEwODY=] 2017-12-21 21:52:39,769 : msg id = 45206
+SessionID[MTEwODY=] 2017-12-21 21:52:39,770 : Client IP: 127.0.0.1
+SessionID[MTEwODY=] 2017-12-21 21:52:39,770 : request is mtalk.google.com. IN A
+2017-12-21 21:52:39 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MTEwODY=] 2017-12-21 21:52:39,770 : Doing the A query....
+SessionID[MTEwODY=] 2017-12-21 21:52:39,771 : 1 questions.
+SessionID[MTEwODY=] 2017-12-21 21:52:39,771 : q name = mtalk.google.com
+SessionID[MTEwODY=] 2017-12-21 21:52:39,771 : Query = mtalk.google.com A
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : ---[ Start Dns2proxy Thu Dec 21 22:04:08 2017]---
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : Non spoofing imap.gmail.com
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : Non spoofing to 127.0.0.1
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : DNS Forwarding activado....
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : binded to UDP port 53.
+SessionID[MTIyNjM=] 2017-12-21 22:04:08,610 : waiting requests.
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,308 : serving a request.
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,308 : msg id = 44311
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,308 : Client IP: 127.0.0.1
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,309 : request is www.googleapis.com. IN A
+2017-12-21 22:04:09 Client IP: 127.0.0.1    request is    www.googleapis.com. IN A
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,309 : Doing the A query....
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,310 : 1 questions.
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,310 : q name = www.googleapis.com
+SessionID[MTIyNjM=] 2017-12-21 22:04:09,310 : Query = www.googleapis.com A
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,619 : ---[ Start Dns2proxy Thu Dec 21 22:04:10 2017]---
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,619 : Non spoofing imap.gmail.com
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,619 : Non spoofing to 127.0.0.1
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,619 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,619 : DNS Forwarding activado....
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,620 : binded to UDP port 53.
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,620 : waiting requests.
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,766 : serving a request.
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,766 : msg id = 45396
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,767 : Client IP: 127.0.0.1
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,767 : request is accounts.google.com. IN A
+2017-12-21 22:04:10 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,767 : Doing the A query....
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,768 : 1 questions.
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,768 : q name = accounts.google.com
+SessionID[MTIyNjM=] 2017-12-21 22:04:10,768 : Query = accounts.google.com A
+SessionID[OTM1MA==] 2017-12-21 22:07:18,651 : ---[ Start Dns2proxy Thu Dec 21 22:07:18 2017]---
+SessionID[OTM1MA==] 2017-12-21 22:07:18,651 : Non spoofing imap.gmail.com
+SessionID[OTM1MA==] 2017-12-21 22:07:18,651 : Non spoofing to 127.0.0.1
+SessionID[OTM1MA==] 2017-12-21 22:07:18,652 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTM1MA==] 2017-12-21 22:07:18,652 : DNS Forwarding activado....
+SessionID[OTM1MA==] 2017-12-21 22:07:18,652 : binded to UDP port 53.
+SessionID[OTM1MA==] 2017-12-21 22:07:18,652 : waiting requests.
+SessionID[OTM1MA==] 2017-12-21 22:07:19,516 : serving a request.
+SessionID[OTM1MA==] 2017-12-21 22:07:19,516 : msg id = 28280
+SessionID[OTM1MA==] 2017-12-21 22:07:19,516 : Client IP: 127.0.0.1
+SessionID[OTM1MA==] 2017-12-21 22:07:19,517 : request is mtalk.google.com. IN A
+2017-12-21 22:07:19 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[OTM1MA==] 2017-12-21 22:07:19,518 : Doing the A query....
+SessionID[OTM1MA==] 2017-12-21 22:07:19,518 : 1 questions.
+SessionID[OTM1MA==] 2017-12-21 22:07:19,518 : q name = mtalk.google.com
+SessionID[OTM1MA==] 2017-12-21 22:07:19,518 : Query = mtalk.google.com A
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,819 : ---[ Start Dns2proxy Thu Dec 21 22:11:03 2017]---
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,819 : Non spoofing imap.gmail.com
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,819 : Non spoofing to 127.0.0.1
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,819 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,820 : DNS Forwarding activado....
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,820 : binded to UDP port 53.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:03,820 : waiting requests.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,116 : serving a request.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,116 : msg id = 8531
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,116 : Client IP: 127.0.0.1
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,117 : request is 2.debian.pool.ntp.org. IN A
+2017-12-21 22:11:04 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,117 : Doing the A query....
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,118 : 1 questions.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,118 : q name = 2.debian.pool.ntp.org
+SessionID[NTY4MjQ=] 2017-12-21 22:11:04,118 : Query = 2.debian.pool.ntp.org A
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,826 : ---[ Start Dns2proxy Thu Dec 21 22:11:05 2017]---
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,826 : Non spoofing imap.gmail.com
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,826 : Non spoofing to 127.0.0.1
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,826 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,826 : DNS Forwarding activado....
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,826 : binded to UDP port 53.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:05,827 : waiting requests.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,121 : serving a request.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,121 : msg id = 8531
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,121 : Client IP: 127.0.0.1
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,122 : request is 2.debian.pool.ntp.org. IN A
+2017-12-21 22:11:09 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,123 : Doing the A query....
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,123 : 1 questions.
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,123 : q name = 2.debian.pool.ntp.org
+SessionID[NTY4MjQ=] 2017-12-21 22:11:09,123 : Query = 2.debian.pool.ntp.org A
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,113 : ---[ Start Dns2proxy Fri Dec 22 20:15:47 2017]---
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,151 : Non spoofing imap.gmail.com
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,152 : Non spoofing to 127.0.0.1
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,152 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,160 : DNS Forwarding activado....
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,161 : binded to UDP port 53.
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,161 : waiting requests.
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,651 : serving a request.
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,651 : msg id = 18478
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,652 : Client IP: 127.0.0.1
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,652 : request is accounts.google.com. IN A
+2017-12-22 20:15:47 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,652 : Doing the A query....
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,652 : 1 questions.
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,652 : q name = accounts.google.com
+SessionID[MTA4MjA=] 2017-12-22 20:15:47,652 : Query = accounts.google.com A
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,654 : Exception...
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,654 : No host....
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,655 : waiting requests.
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,655 : serving a request.
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,655 : msg id = 18478
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,655 : I am already serving this request.
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,655 : waiting requests.
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,656 : serving a request.
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,656 : msg id = 1471
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,656 : Client IP: 127.0.0.1
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,656 : request is accounts.google.com. IN A
+2017-12-22 20:16:17 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,657 : Doing the A query....
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,657 : 1 questions.
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,657 : q name = accounts.google.com
+SessionID[MTA4MjA=] 2017-12-22 20:16:17,657 : Query = accounts.google.com A
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,053 : ---[ Start Dns2proxy Fri Dec 22 21:46:18 2017]---
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,053 : Non spoofing imap.gmail.com
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,053 : Non spoofing to 127.0.0.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,054 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,054 : DNS Forwarding activado....
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,054 : binded to UDP port 53.
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,054 : waiting requests.
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,169 : serving a request.
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,169 : msg id = 1936
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,170 : Client IP: 127.0.0.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,170 : request is 3.debian.pool.ntp.org. IN A
+2017-12-22 21:46:18 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,171 : Doing the A query....
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,171 : 1 questions.
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,171 : q name = 3.debian.pool.ntp.org
+SessionID[NDUyOTU=] 2017-12-22 21:46:18,171 : Query = 3.debian.pool.ntp.org A
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : ---[ Start Dns2proxy Fri Dec 22 21:46:20 2017]---
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : Non spoofing imap.gmail.com
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : Non spoofing to 127.0.0.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : DNS Forwarding activado....
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : binded to UDP port 53.
+SessionID[NDUyOTU=] 2017-12-22 21:46:20,064 : waiting requests.
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,173 : serving a request.
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,173 : msg id = 1936
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,173 : Client IP: 127.0.0.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,174 : request is 3.debian.pool.ntp.org. IN A
+2017-12-22 21:46:23 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,174 : Doing the A query....
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,174 : 1 questions.
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,174 : q name = 3.debian.pool.ntp.org
+SessionID[NDUyOTU=] 2017-12-22 21:46:23,174 : Query = 3.debian.pool.ntp.org A
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,173 : Exception...
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,173 : No host....
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,173 : waiting requests.
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,174 : serving a request.
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,174 : msg id = 40677
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,174 : Client IP: 127.0.0.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,174 : request is 3.debian.pool.ntp.org. IN AAAA
+2017-12-22 21:46:48 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN AAAA
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,174 : 1 questions.
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,175 : Host: 3.debian.pool.ntp.org.
+SessionID[NDUyOTU=] 2017-12-22 21:46:48,175 : Query = 3.debian.pool.ntp.org AAAA
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,175 : Exception...
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,176 : No host....
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,176 : waiting requests.
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,176 : serving a request.
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,176 : msg id = 40677
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,176 : Client IP: 127.0.0.1
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,177 : request is 3.debian.pool.ntp.org. IN AAAA
+2017-12-22 21:46:53 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN AAAA
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,177 : 1 questions.
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,177 : Host: 3.debian.pool.ntp.org.
+SessionID[NDUyOTU=] 2017-12-22 21:46:53,177 : Query = 3.debian.pool.ntp.org AAAA
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : ---[ Start Dns2proxy Fri Dec 22 21:47:27 2017]---
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : Non spoofing imap.gmail.com
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : Non spoofing to 127.0.0.1
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : DNS Forwarding activado....
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : binded to UDP port 53.
+SessionID[NjcwOTI=] 2017-12-22 21:47:27,513 : waiting requests.
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,419 : serving a request.
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,419 : msg id = 37877
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,420 : Client IP: 127.0.0.1
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,421 : request is 3.debian.pool.ntp.org. IN A
+2017-12-22 21:47:28 Client IP: 127.0.0.1    request is    3.debian.pool.ntp.org. IN A
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,421 : Doing the A query....
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,421 : 1 questions.
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,421 : q name = 3.debian.pool.ntp.org
+SessionID[NjcwOTI=] 2017-12-22 21:47:28,422 : Query = 3.debian.pool.ntp.org A
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : ---[ Start Dns2proxy Fri Dec 22 21:48:04 2017]---
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : Non spoofing imap.gmail.com
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : Non spoofing to 127.0.0.1
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : DNS Forwarding activado....
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : binded to UDP port 53.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,214 : waiting requests.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,646 : serving a request.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,646 : msg id = 40150
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,646 : Client IP: 127.0.0.1
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,647 : request is accounts.google.com. IN A
+2017-12-22 21:48:04 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,647 : Doing the A query....
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,647 : 1 questions.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,647 : q name = accounts.google.com
+SessionID[MzAwMzQ=] 2017-12-22 21:48:04,647 : Query = accounts.google.com A
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,221 : ---[ Start Dns2proxy Fri Dec 22 21:48:06 2017]---
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,221 : Non spoofing imap.gmail.com
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,222 : Non spoofing to 127.0.0.1
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,222 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,222 : DNS Forwarding activado....
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,222 : binded to UDP port 53.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:06,222 : waiting requests.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,651 : serving a request.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,651 : msg id = 40150
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,651 : Client IP: 127.0.0.1
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,652 : request is accounts.google.com. IN A
+2017-12-22 21:48:09 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,652 : Doing the A query....
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,652 : 1 questions.
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,652 : q name = accounts.google.com
+SessionID[MzAwMzQ=] 2017-12-22 21:48:09,652 : Query = accounts.google.com A
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,097 : ---[ Start Dns2proxy Fri Dec 22 21:48:32 2017]---
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,097 : Non spoofing imap.gmail.com
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,097 : Non spoofing to 127.0.0.1
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,097 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,097 : DNS Forwarding activado....
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,098 : binded to UDP port 53.
+SessionID[NDcxNTE=] 2017-12-22 21:48:32,098 : waiting requests.
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,638 : serving a request.
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,638 : msg id = 35194
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,638 : Client IP: 127.0.0.1
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,639 : request is accounts.google.com. IN A
+2017-12-22 21:48:33 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,639 : Doing the A query....
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,639 : 1 questions.
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,639 : q name = accounts.google.com
+SessionID[NDcxNTE=] 2017-12-22 21:48:33,639 : Query = accounts.google.com A
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,103 : ---[ Start Dns2proxy Fri Dec 22 21:48:34 2017]---
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,103 : Non spoofing imap.gmail.com
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,104 : Non spoofing to 127.0.0.1
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,104 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,104 : DNS Forwarding activado....
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,104 : binded to UDP port 53.
+SessionID[NDcxNTE=] 2017-12-22 21:48:34,104 : waiting requests.
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,434 : serving a request.
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,435 : msg id = 39883
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,435 : Client IP: 127.0.0.1
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,435 : request is 1.debian.pool.ntp.org. IN A
+2017-12-22 21:48:35 Client IP: 127.0.0.1    request is    1.debian.pool.ntp.org. IN A
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,435 : Doing the A query....
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,435 : 1 questions.
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,436 : q name = 1.debian.pool.ntp.org
+SessionID[NDcxNTE=] 2017-12-22 21:48:35,436 : Query = 1.debian.pool.ntp.org A
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,146 : ---[ Start Dns2proxy Fri Dec 22 21:49:23 2017]---
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,146 : Non spoofing imap.gmail.com
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,146 : Non spoofing to 127.0.0.1
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,147 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,147 : DNS Forwarding activado....
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,147 : binded to UDP port 53.
+SessionID[NTY1NDg=] 2017-12-22 21:49:23,147 : waiting requests.
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,169 : serving a request.
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,169 : msg id = 12191
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,170 : Client IP: 127.0.0.1
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,171 : request is 2.debian.pool.ntp.org. IN A
+2017-12-22 21:49:24 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,171 : Doing the A query....
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,171 : 1 questions.
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,171 : q name = 2.debian.pool.ntp.org
+SessionID[NTY1NDg=] 2017-12-22 21:49:24,172 : Query = 2.debian.pool.ntp.org A
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,156 : ---[ Start Dns2proxy Fri Dec 22 21:49:25 2017]---
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,156 : Non spoofing imap.gmail.com
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,156 : Non spoofing to 127.0.0.1
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,156 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,157 : DNS Forwarding activado....
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,157 : binded to UDP port 53.
+SessionID[NTY1NDg=] 2017-12-22 21:49:25,157 : waiting requests.
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,435 : serving a request.
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,435 : msg id = 10088
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,435 : Client IP: 127.0.0.1
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,436 : request is 2.debian.pool.ntp.org. IN A
+2017-12-22 21:49:27 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,437 : Doing the A query....
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,437 : 1 questions.
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,437 : q name = 2.debian.pool.ntp.org
+SessionID[NTY1NDg=] 2017-12-22 21:49:27,437 : Query = 2.debian.pool.ntp.org A
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,717 : ---[ Start Dns2proxy Sat Dec 23 02:22:03 2017]---
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,743 : Non spoofing imap.gmail.com
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,743 : Non spoofing to 127.0.0.1
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,743 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,752 : DNS Forwarding activado....
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,752 : binded to UDP port 53.
+SessionID[NDIxNTk=] 2017-12-23 02:22:03,752 : waiting requests.
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,374 : serving a request.
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,374 : msg id = 42105
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,374 : Client IP: 127.0.0.1
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,375 : request is accounts.google.com. IN A
+2017-12-23 02:22:05 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,375 : Doing the A query....
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,375 : 1 questions.
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,375 : q name = accounts.google.com
+SessionID[NDIxNTk=] 2017-12-23 02:22:05,375 : Query = accounts.google.com A
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,092 : ---[ Start Dns2proxy Sat Dec 23 02:22:47 2017]---
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,092 : Non spoofing imap.gmail.com
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,093 : Non spoofing to 127.0.0.1
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,093 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,093 : DNS Forwarding activado....
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,093 : binded to UDP port 53.
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,093 : waiting requests.
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,369 : serving a request.
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,369 : msg id = 4421
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,369 : Client IP: 127.0.0.1
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,370 : request is accounts.google.com. IN A
+2017-12-23 02:22:47 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,370 : Doing the A query....
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,370 : 1 questions.
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,371 : q name = accounts.google.com
+SessionID[OTk0MjE=] 2017-12-23 02:22:47,371 : Query = accounts.google.com A
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,637 : ---[ Start Dns2proxy Sat Dec 23 02:23:44 2017]---
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,637 : Non spoofing imap.gmail.com
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,637 : Non spoofing to 127.0.0.1
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,637 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,637 : DNS Forwarding activado....
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,637 : binded to UDP port 53.
+SessionID[NjEwMTI=] 2017-12-23 02:23:44,638 : waiting requests.
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,372 : serving a request.
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,372 : msg id = 28507
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,372 : Client IP: 127.0.0.1
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,373 : request is accounts.google.com. IN A
+2017-12-23 02:23:46 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,373 : Doing the A query....
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,373 : 1 questions.
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,373 : q name = accounts.google.com
+SessionID[NjEwMTI=] 2017-12-23 02:23:46,373 : Query = accounts.google.com A
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : ---[ Start Dns2proxy Sat Dec 23 02:24:28 2017]---
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : Non spoofing imap.gmail.com
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : Non spoofing to 127.0.0.1
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : DNS Forwarding activado....
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : binded to UDP port 53.
+SessionID[NDAwNTA=] 2017-12-23 02:24:28,625 : waiting requests.
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,373 : serving a request.
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,373 : msg id = 3619
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,373 : Client IP: 127.0.0.1
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,374 : request is accounts.google.com. IN A
+2017-12-23 02:24:30 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,374 : Doing the A query....
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,374 : 1 questions.
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,374 : q name = accounts.google.com
+SessionID[NDAwNTA=] 2017-12-23 02:24:30,375 : Query = accounts.google.com A
+SessionID[NjgyODU=] 2017-12-23 02:25:58,691 : ---[ Start Dns2proxy Sat Dec 23 02:25:58 2017]---
+SessionID[NjgyODU=] 2017-12-23 02:25:58,691 : Non spoofing imap.gmail.com
+SessionID[NjgyODU=] 2017-12-23 02:25:58,691 : Non spoofing to 127.0.0.1
+SessionID[NjgyODU=] 2017-12-23 02:25:58,691 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjgyODU=] 2017-12-23 02:25:58,691 : DNS Forwarding activado....
+SessionID[NjgyODU=] 2017-12-23 02:25:58,691 : binded to UDP port 53.
+SessionID[NjgyODU=] 2017-12-23 02:25:58,692 : waiting requests.
+SessionID[NjgyODU=] 2017-12-23 02:26:00,368 : serving a request.
+SessionID[NjgyODU=] 2017-12-23 02:26:00,369 : msg id = 49051
+SessionID[NjgyODU=] 2017-12-23 02:26:00,369 : Client IP: 127.0.0.1
+SessionID[NjgyODU=] 2017-12-23 02:26:00,369 : request is accounts.google.com. IN A
+2017-12-23 02:26:00 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NjgyODU=] 2017-12-23 02:26:00,370 : Doing the A query....
+SessionID[NjgyODU=] 2017-12-23 02:26:00,370 : 1 questions.
+SessionID[NjgyODU=] 2017-12-23 02:26:00,370 : q name = accounts.google.com
+SessionID[NjgyODU=] 2017-12-23 02:26:00,370 : Query = accounts.google.com A
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,376 : ---[ Start Dns2proxy Sat Dec 23 02:26:30 2017]---
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,376 : Non spoofing imap.gmail.com
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,376 : Non spoofing to 127.0.0.1
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,377 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,377 : DNS Forwarding activado....
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,377 : binded to UDP port 53.
+SessionID[NjA5MzY=] 2017-12-23 02:26:30,377 : waiting requests.
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,372 : serving a request.
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,372 : msg id = 2402
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,372 : Client IP: 127.0.0.1
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,372 : request is accounts.google.com. IN A
+2017-12-23 02:26:32 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,373 : Doing the A query....
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,373 : 1 questions.
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,373 : q name = accounts.google.com
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,373 : Query = accounts.google.com A
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,376 : ---[ Start Dns2proxy Sat Dec 23 02:26:32 2017]---
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,376 : Non spoofing imap.gmail.com
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,376 : Non spoofing to 127.0.0.1
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,377 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,377 : DNS Forwarding activado....
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,377 : binded to UDP port 53.
+SessionID[NjA5MzY=] 2017-12-23 02:26:32,377 : waiting requests.
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,377 : serving a request.
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,377 : msg id = 2402
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,378 : Client IP: 127.0.0.1
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,378 : request is accounts.google.com. IN A
+2017-12-23 02:26:37 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,378 : Doing the A query....
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,378 : 1 questions.
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,378 : q name = accounts.google.com
+SessionID[NjA5MzY=] 2017-12-23 02:26:37,378 : Query = accounts.google.com A
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,527 : ---[ Start Dns2proxy Sat Dec 23 02:29:12 2017]---
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,527 : Non spoofing imap.gmail.com
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,528 : Non spoofing to 127.0.0.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,528 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,528 : DNS Forwarding activado....
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,528 : binded to UDP port 53.
+SessionID[NTM5MjY=] 2017-12-23 02:29:12,528 : waiting requests.
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,406 : serving a request.
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,406 : msg id = 49660
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,406 : Client IP: 127.0.0.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,407 : request is accounts.google.com. IN A
+2017-12-23 02:29:14 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,407 : Doing the A query....
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,407 : 1 questions.
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,407 : q name = accounts.google.com
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,407 : Query = accounts.google.com A
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,555 : ---[ Start Dns2proxy Sat Dec 23 02:29:14 2017]---
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,555 : Non spoofing imap.gmail.com
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,556 : Non spoofing to 127.0.0.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,556 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,556 : DNS Forwarding activado....
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,556 : binded to UDP port 53.
+SessionID[NTM5MjY=] 2017-12-23 02:29:14,556 : waiting requests.
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,413 : serving a request.
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,413 : msg id = 49660
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,414 : Client IP: 127.0.0.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,415 : request is accounts.google.com. IN A
+2017-12-23 02:29:19 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,415 : Doing the A query....
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,415 : 1 questions.
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,415 : q name = accounts.google.com
+SessionID[NTM5MjY=] 2017-12-23 02:29:19,416 : Query = accounts.google.com A
+SessionID[NTM5MjY=] 2017-12-23 02:29:44,408 : Exception...
+SessionID[NTM5MjY=] 2017-12-23 02:29:44,409 : No host....
+SessionID[NTM5MjY=] 2017-12-23 02:29:44,410 : waiting requests.
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,417 : Exception...
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,417 : No host....
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,417 : waiting requests.
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : serving a request.
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : msg id = 30619
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : Client IP: 127.0.0.1
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : request is accounts.google.com. IN A
+2017-12-23 02:29:49 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : Doing the A query....
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : 1 questions.
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : q name = accounts.google.com
+SessionID[NTM5MjY=] 2017-12-23 02:29:49,418 : Query = accounts.google.com A
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,481 : ---[ Start Dns2proxy Sat Dec 23 02:35:17 2017]---
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,481 : Non spoofing imap.gmail.com
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,481 : Non spoofing to 127.0.0.1
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,481 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,482 : DNS Forwarding activado....
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,482 : binded to UDP port 53.
+SessionID[MzI2NDU=] 2017-12-23 02:35:17,482 : waiting requests.
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,368 : serving a request.
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,368 : msg id = 17621
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,368 : Client IP: 127.0.0.1
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,369 : request is accounts.google.com. IN A
+2017-12-23 02:35:19 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,369 : Doing the A query....
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,369 : 1 questions.
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,369 : q name = accounts.google.com
+SessionID[MzI2NDU=] 2017-12-23 02:35:19,369 : Query = accounts.google.com A
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : ---[ Start Dns2proxy Sat Dec 23 02:36:33 2017]---
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : Non spoofing imap.gmail.com
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : Non spoofing to 127.0.0.1
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : DNS Forwarding activado....
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : binded to UDP port 53.
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,121 : waiting requests.
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,370 : serving a request.
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,370 : msg id = 17534
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,370 : Client IP: 127.0.0.1
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,370 : request is accounts.google.com. IN A
+2017-12-23 02:36:33 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,371 : Doing the A query....
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,371 : 1 questions.
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,371 : q name = accounts.google.com
+SessionID[MzMzMzM=] 2017-12-23 02:36:33,371 : Query = accounts.google.com A
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : ---[ Start Dns2proxy Sat Dec 23 02:36:35 2017]---
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : Non spoofing imap.gmail.com
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : Non spoofing to 127.0.0.1
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : DNS Forwarding activado....
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : binded to UDP port 53.
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,129 : waiting requests.
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,322 : serving a request.
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,322 : msg id = 22708
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,323 : Client IP: 127.0.0.1
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,324 : request is 2.debian.pool.ntp.org. IN A
+2017-12-23 02:36:35 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN A
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,324 : Doing the A query....
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,324 : 1 questions.
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,324 : q name = 2.debian.pool.ntp.org
+SessionID[MzMzMzM=] 2017-12-23 02:36:35,325 : Query = 2.debian.pool.ntp.org A
+SessionID[MzMzMzM=] 2017-12-23 02:37:03,372 : Exception...
+SessionID[MzMzMzM=] 2017-12-23 02:37:03,373 : No host....
+SessionID[MzMzMzM=] 2017-12-23 02:37:03,373 : waiting requests.
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,326 : Exception...
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,326 : No host....
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,327 : waiting requests.
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,327 : serving a request.
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,328 : msg id = 9295
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,328 : Client IP: 127.0.0.1
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,328 : request is 2.debian.pool.ntp.org. IN AAAA
+2017-12-23 02:37:05 Client IP: 127.0.0.1    request is    2.debian.pool.ntp.org. IN AAAA
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,329 : 1 questions.
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,329 : Host: 2.debian.pool.ntp.org.
+SessionID[MzMzMzM=] 2017-12-23 02:37:05,329 : Query = 2.debian.pool.ntp.org AAAA
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,301 : ---[ Start Dns2proxy Sat Dec 23 02:38:06 2017]---
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,301 : Non spoofing imap.gmail.com
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,301 : Non spoofing to 127.0.0.1
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,301 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,302 : DNS Forwarding activado....
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,302 : binded to UDP port 53.
+SessionID[MTIzMjU=] 2017-12-23 02:38:06,302 : waiting requests.
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,369 : serving a request.
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,369 : msg id = 612
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,369 : Client IP: 127.0.0.1
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,369 : request is accounts.google.com. IN A
+2017-12-23 02:38:08 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,369 : Doing the A query....
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,369 : 1 questions.
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,370 : q name = accounts.google.com
+SessionID[MTIzMjU=] 2017-12-23 02:38:08,370 : Query = accounts.google.com A
+SessionID[NDUwNg==] 2017-12-23 03:09:19,420 : ---[ Start Dns2proxy Sat Dec 23 03:09:19 2017]---
+SessionID[NDUwNg==] 2017-12-23 03:09:19,458 : Non spoofing imap.gmail.com
+SessionID[NDUwNg==] 2017-12-23 03:09:19,458 : Non spoofing to 127.0.0.1
+SessionID[NDUwNg==] 2017-12-23 03:09:19,459 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NDUwNg==] 2017-12-23 03:09:19,467 : DNS Forwarding activado....
+SessionID[NDUwNg==] 2017-12-23 03:09:19,468 : binded to UDP port 53.
+SessionID[NDUwNg==] 2017-12-23 03:09:19,468 : waiting requests.
+SessionID[NDUwNg==] 2017-12-23 03:09:21,213 : serving a request.
+SessionID[NDUwNg==] 2017-12-23 03:09:21,213 : msg id = 31649
+SessionID[NDUwNg==] 2017-12-23 03:09:21,213 : Client IP: 127.0.0.1
+SessionID[NDUwNg==] 2017-12-23 03:09:21,214 : request is accounts.google.com. IN A
+2017-12-23 03:09:21 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NDUwNg==] 2017-12-23 03:09:21,214 : Doing the A query....
+SessionID[NDUwNg==] 2017-12-23 03:09:21,214 : 1 questions.
+SessionID[NDUwNg==] 2017-12-23 03:09:21,214 : q name = accounts.google.com
+SessionID[NDUwNg==] 2017-12-23 03:09:21,214 : Query = accounts.google.com A
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,090 : ---[ Start Dns2proxy Sat Dec 23 03:11:08 2017]---
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,090 : Non spoofing imap.gmail.com
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,090 : Non spoofing to 127.0.0.1
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,090 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,090 : DNS Forwarding activado....
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,091 : binded to UDP port 53.
+SessionID[MTYxOTM=] 2017-12-23 03:11:08,091 : waiting requests.
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,213 : serving a request.
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,213 : msg id = 51496
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,213 : Client IP: 127.0.0.1
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,214 : request is accounts.google.com. IN A
+2017-12-23 03:11:10 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,214 : Doing the A query....
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,214 : 1 questions.
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,214 : q name = accounts.google.com
+SessionID[MTYxOTM=] 2017-12-23 03:11:10,214 : Query = accounts.google.com A
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : ---[ Start Dns2proxy Sat Dec 23 03:11:49 2017]---
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : Non spoofing imap.gmail.com
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : Non spoofing to 127.0.0.1
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : DNS Forwarding activado....
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : binded to UDP port 53.
+SessionID[OTk2NzU=] 2017-12-23 03:11:49,652 : waiting requests.
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,205 : serving a request.
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,205 : msg id = 23410
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,206 : Client IP: 127.0.0.1
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,206 : request is accounts.google.com. IN A
+2017-12-23 03:11:51 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,206 : Doing the A query....
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,206 : 1 questions.
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,206 : q name = accounts.google.com
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,206 : Query = accounts.google.com A
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,656 : ---[ Start Dns2proxy Sat Dec 23 03:11:51 2017]---
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,656 : Non spoofing imap.gmail.com
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,656 : Non spoofing to 127.0.0.1
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,656 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,657 : DNS Forwarding activado....
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,657 : binded to UDP port 53.
+SessionID[OTk2NzU=] 2017-12-23 03:11:51,657 : waiting requests.
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,210 : serving a request.
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,210 : msg id = 23410
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,210 : Client IP: 127.0.0.1
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,210 : request is accounts.google.com. IN A
+2017-12-23 03:11:56 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,210 : Doing the A query....
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,211 : 1 questions.
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,211 : q name = accounts.google.com
+SessionID[OTk2NzU=] 2017-12-23 03:11:56,211 : Query = accounts.google.com A
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : ---[ Start Dns2proxy Sat Dec 23 03:12:06 2017]---
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : Non spoofing imap.gmail.com
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : Non spoofing to 127.0.0.1
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : DNS Forwarding activado....
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : binded to UDP port 53.
+SessionID[Mjc2MzI=] 2017-12-23 03:12:06,150 : waiting requests.
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,212 : serving a request.
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,212 : msg id = 26990
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,212 : Client IP: 127.0.0.1
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,213 : request is accounts.google.com. IN A
+2017-12-23 03:12:08 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,213 : Doing the A query....
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,213 : 1 questions.
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,213 : q name = accounts.google.com
+SessionID[Mjc2MzI=] 2017-12-23 03:12:08,213 : Query = accounts.google.com A
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : ---[ Start Dns2proxy Sat Dec 23 03:13:02 2017]---
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : Non spoofing imap.gmail.com
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : Non spoofing to 127.0.0.1
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : DNS Forwarding activado....
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : binded to UDP port 53.
+SessionID[MTQ2NzY=] 2017-12-23 03:13:02,826 : waiting requests.
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,210 : serving a request.
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,211 : msg id = 35675
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,211 : Client IP: 127.0.0.1
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,212 : request is accounts.google.com. IN A
+2017-12-23 03:13:03 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,212 : Doing the A query....
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,212 : 1 questions.
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,213 : q name = accounts.google.com
+SessionID[MTQ2NzY=] 2017-12-23 03:13:03,213 : Query = accounts.google.com A
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,949 : ---[ Start Dns2proxy Sat Dec 23 03:13:41 2017]---
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,950 : Non spoofing imap.gmail.com
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,950 : Non spoofing to 127.0.0.1
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,950 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,950 : DNS Forwarding activado....
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,950 : binded to UDP port 53.
+SessionID[OTgyMjY=] 2017-12-23 03:13:41,950 : waiting requests.
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,211 : serving a request.
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,211 : msg id = 42635
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,211 : Client IP: 127.0.0.1
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,212 : request is accounts.google.com. IN A
+2017-12-23 03:13:42 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,212 : Doing the A query....
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,212 : 1 questions.
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,212 : q name = accounts.google.com
+SessionID[OTgyMjY=] 2017-12-23 03:13:42,212 : Query = accounts.google.com A
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,958 : ---[ Start Dns2proxy Sat Dec 23 03:13:43 2017]---
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,958 : Non spoofing imap.gmail.com
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,959 : Non spoofing to 127.0.0.1
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,959 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,959 : DNS Forwarding activado....
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,959 : binded to UDP port 53.
+SessionID[OTgyMjY=] 2017-12-23 03:13:43,959 : waiting requests.
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,216 : serving a request.
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,216 : msg id = 42635
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,217 : Client IP: 127.0.0.1
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,217 : request is accounts.google.com. IN A
+2017-12-23 03:13:47 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,218 : Doing the A query....
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,218 : 1 questions.
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,218 : q name = accounts.google.com
+SessionID[OTgyMjY=] 2017-12-23 03:13:47,218 : Query = accounts.google.com A
+SessionID[OTgyMjY=] 2017-12-23 03:14:12,214 : Exception...
+SessionID[OTgyMjY=] 2017-12-23 03:14:12,214 : No host....
+SessionID[OTgyMjY=] 2017-12-23 03:14:12,214 : waiting requests.
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : Exception...
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : No host....
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : waiting requests.
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : serving a request.
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : msg id = 63477
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : Client IP: 127.0.0.1
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,220 : request is accounts.google.com. IN A
+2017-12-23 03:14:17 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,221 : Doing the A query....
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,221 : 1 questions.
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,221 : q name = accounts.google.com
+SessionID[OTgyMjY=] 2017-12-23 03:14:17,221 : Query = accounts.google.com A
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : ---[ Start Dns2proxy Sat Dec 23 03:15:15 2017]---
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : Non spoofing imap.gmail.com
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : Non spoofing to 127.0.0.1
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : DNS Forwarding activado....
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : binded to UDP port 53.
+SessionID[NTg5Mw==] 2017-12-23 03:15:15,517 : waiting requests.
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,212 : serving a request.
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,213 : msg id = 25394
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,213 : Client IP: 127.0.0.1
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,213 : request is accounts.google.com. IN A
+2017-12-23 03:15:17 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,214 : Doing the A query....
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,214 : 1 questions.
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,214 : q name = accounts.google.com
+SessionID[NTg5Mw==] 2017-12-23 03:15:17,214 : Query = accounts.google.com A
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,553 : ---[ Start Dns2proxy Sat Dec 23 03:15:59 2017]---
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,553 : Non spoofing imap.gmail.com
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,553 : Non spoofing to 127.0.0.1
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,553 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,554 : DNS Forwarding activado....
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,554 : binded to UDP port 53.
+SessionID[MjI1MTE=] 2017-12-23 03:15:59,554 : waiting requests.
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,211 : serving a request.
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,212 : msg id = 52775
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,212 : Client IP: 127.0.0.1
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,212 : request is accounts.google.com. IN A
+2017-12-23 03:16:01 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,213 : Doing the A query....
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,213 : 1 questions.
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,213 : q name = accounts.google.com
+SessionID[MjI1MTE=] 2017-12-23 03:16:01,213 : Query = accounts.google.com A
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,610 : ---[ Start Dns2proxy Sat Dec 23 03:18:23 2017]---
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,610 : Non spoofing imap.gmail.com
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,611 : Non spoofing to 127.0.0.1
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,611 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,611 : DNS Forwarding activado....
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,611 : binded to UDP port 53.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:23,611 : waiting requests.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,212 : serving a request.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,212 : msg id = 19531
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,213 : Client IP: 127.0.0.1
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,214 : request is accounts.google.com. IN A
+2017-12-23 03:18:25 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,214 : Doing the A query....
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,215 : 1 questions.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,215 : q name = accounts.google.com
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,215 : Query = accounts.google.com A
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : ---[ Start Dns2proxy Sat Dec 23 03:18:25 2017]---
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : Non spoofing imap.gmail.com
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : Non spoofing to 127.0.0.1
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : DNS Forwarding activado....
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : binded to UDP port 53.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:25,622 : waiting requests.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,217 : serving a request.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,217 : msg id = 19531
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,217 : Client IP: 127.0.0.1
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,217 : request is accounts.google.com. IN A
+2017-12-23 03:18:30 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,218 : Doing the A query....
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,218 : 1 questions.
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,218 : q name = accounts.google.com
+SessionID[MTQzOTQ=] 2017-12-23 03:18:30,218 : Query = accounts.google.com A
+SessionID[OTM2MzE=] 2017-12-23 14:56:31,992 : ---[ Start Dns2proxy Sat Dec 23 14:56:31 2017]---
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,031 : Non spoofing imap.gmail.com
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,031 : Non spoofing to 127.0.0.1
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,032 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,040 : DNS Forwarding activado....
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,040 : binded to UDP port 53.
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,040 : waiting requests.
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,553 : serving a request.
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,553 : msg id = 50939
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,553 : Client IP: 127.0.0.1
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,554 : request is accounts.google.com. IN A
+2017-12-23 14:56:32 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,554 : Doing the A query....
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,554 : 1 questions.
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,554 : q name = accounts.google.com
+SessionID[OTM2MzE=] 2017-12-23 14:56:32,554 : Query = accounts.google.com A
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,956 : ---[ Start Dns2proxy Sat Dec 23 14:56:33 2017]---
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,956 : Non spoofing imap.gmail.com
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,956 : Non spoofing to 127.0.0.1
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,956 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,956 : DNS Forwarding activado....
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,956 : binded to UDP port 53.
+SessionID[OTM2MzE=] 2017-12-23 14:56:33,957 : waiting requests.
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,019 : serving a request.
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,019 : msg id = 38103
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,019 : Client IP: 127.0.0.1
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,020 : request is xecfwik. IN A
+2017-12-23 14:56:34 Client IP: 127.0.0.1    request is    xecfwik. IN A
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,020 : Doing the A query....
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,020 : 1 questions.
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,021 : q name = xecfwik
+SessionID[OTM2MzE=] 2017-12-23 14:56:34,021 : Query = xecfwik A
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,039 : ---[ Start Dns2proxy Sat Dec 23 14:57:08 2017]---
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,039 : Non spoofing imap.gmail.com
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,040 : Non spoofing to 127.0.0.1
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,040 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,040 : DNS Forwarding activado....
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,040 : binded to UDP port 53.
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,040 : waiting requests.
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,909 : serving a request.
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,910 : msg id = 4006
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,910 : Client IP: 127.0.0.1
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,911 : request is mtalk.google.com. IN A
+2017-12-23 14:57:08 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,911 : Doing the A query....
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,912 : 1 questions.
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,912 : q name = mtalk.google.com
+SessionID[MzQ3Mzk=] 2017-12-23 14:57:08,912 : Query = mtalk.google.com A
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,804 : ---[ Start Dns2proxy Sat Dec 23 15:10:33 2017]---
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,804 : Non spoofing imap.gmail.com
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,804 : Non spoofing to 127.0.0.1
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,804 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,804 : DNS Forwarding activado....
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,805 : binded to UDP port 53.
+SessionID[MzQ4ODI=] 2017-12-23 15:10:33,805 : waiting requests.
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,665 : serving a request.
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,665 : msg id = 34445
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,666 : Client IP: 127.0.0.1
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,667 : request is mtalk.google.com. IN A
+2017-12-23 15:10:34 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,667 : Doing the A query....
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,667 : 1 questions.
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,668 : q name = mtalk.google.com
+SessionID[MzQ4ODI=] 2017-12-23 15:10:34,668 : Query = mtalk.google.com A
+SessionID[MjQyODY=] 2017-12-23 15:11:08,107 : ---[ Start Dns2proxy Sat Dec 23 15:11:08 2017]---
+SessionID[MjQyODY=] 2017-12-23 15:11:08,107 : Non spoofing imap.gmail.com
+SessionID[MjQyODY=] 2017-12-23 15:11:08,107 : Non spoofing to 127.0.0.1
+SessionID[MjQyODY=] 2017-12-23 15:11:08,108 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MjQyODY=] 2017-12-23 15:11:08,108 : DNS Forwarding activado....
+SessionID[MjQyODY=] 2017-12-23 15:11:08,108 : binded to UDP port 53.
+SessionID[MjQyODY=] 2017-12-23 15:11:08,108 : waiting requests.
+SessionID[MjQyODY=] 2017-12-23 15:11:08,969 : serving a request.
+SessionID[MjQyODY=] 2017-12-23 15:11:08,969 : msg id = 29045
+SessionID[MjQyODY=] 2017-12-23 15:11:08,969 : Client IP: 127.0.0.1
+SessionID[MjQyODY=] 2017-12-23 15:11:08,970 : request is mtalk.google.com. IN A
+2017-12-23 15:11:08 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MjQyODY=] 2017-12-23 15:11:08,970 : Doing the A query....
+SessionID[MjQyODY=] 2017-12-23 15:11:08,970 : 1 questions.
+SessionID[MjQyODY=] 2017-12-23 15:11:08,971 : q name = mtalk.google.com
+SessionID[MjQyODY=] 2017-12-23 15:11:08,971 : Query = mtalk.google.com A
+SessionID[MjQyODY=] 2017-12-23 15:11:10,112 : ---[ Start Dns2proxy Sat Dec 23 15:11:10 2017]---
+SessionID[MjQyODY=] 2017-12-23 15:11:10,112 : Non spoofing imap.gmail.com
+SessionID[MjQyODY=] 2017-12-23 15:11:10,112 : Non spoofing to 127.0.0.1
+SessionID[MjQyODY=] 2017-12-23 15:11:10,112 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[MjQyODY=] 2017-12-23 15:11:10,113 : DNS Forwarding activado....
+SessionID[MjQyODY=] 2017-12-23 15:11:10,113 : binded to UDP port 53.
+SessionID[MjQyODY=] 2017-12-23 15:11:10,113 : waiting requests.
+SessionID[MjQyODY=] 2017-12-23 15:11:13,974 : serving a request.
+SessionID[MjQyODY=] 2017-12-23 15:11:13,974 : msg id = 29045
+SessionID[MjQyODY=] 2017-12-23 15:11:13,974 : Client IP: 127.0.0.1
+SessionID[MjQyODY=] 2017-12-23 15:11:13,975 : request is mtalk.google.com. IN A
+2017-12-23 15:11:13 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[MjQyODY=] 2017-12-23 15:11:13,975 : Doing the A query....
+SessionID[MjQyODY=] 2017-12-23 15:11:13,975 : 1 questions.
+SessionID[MjQyODY=] 2017-12-23 15:11:13,975 : q name = mtalk.google.com
+SessionID[MjQyODY=] 2017-12-23 15:11:13,975 : Query = mtalk.google.com A
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,195 : ---[ Start Dns2proxy Sat Dec 23 15:11:35 2017]---
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,195 : Non spoofing imap.gmail.com
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,195 : Non spoofing to 127.0.0.1
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,195 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,196 : DNS Forwarding activado....
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,196 : binded to UDP port 53.
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,196 : waiting requests.
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,554 : serving a request.
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,554 : msg id = 15624
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,554 : Client IP: 127.0.0.1
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,555 : request is accounts.google.com. IN A
+2017-12-23 15:11:35 Client IP: 127.0.0.1    request is    accounts.google.com. IN A
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,555 : Doing the A query....
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,555 : 1 questions.
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,555 : q name = accounts.google.com
+SessionID[ODU0ODY=] 2017-12-23 15:11:35,555 : Query = accounts.google.com A
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,556 : Exception...
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : No host....
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : waiting requests.
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : serving a request.
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : msg id = 12042
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : Client IP: 127.0.0.1
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : request is mtalk.google.com. IN A
+2017-12-23 15:12:05 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : Doing the A query....
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,557 : 1 questions.
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,558 : q name = mtalk.google.com
+SessionID[ODU0ODY=] 2017-12-23 15:12:05,558 : Query = mtalk.google.com A
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : ---[ Start Dns2proxy Sat Dec 23 15:28:06 2017]---
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : Non spoofing imap.gmail.com
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : Non spoofing to 127.0.0.1
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : Specific domain IP .domain.com with 192.168.1.1
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : DNS Forwarding activado....
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : binded to UDP port 53.
+SessionID[NjMwNjQ=] 2017-12-23 15:28:06,403 : waiting requests.
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,270 : serving a request.
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,270 : msg id = 22724
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,270 : Client IP: 127.0.0.1
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,271 : request is mtalk.google.com. IN A
+2017-12-23 15:28:07 Client IP: 127.0.0.1    request is    mtalk.google.com. IN A
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,272 : Doing the A query....
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,272 : 1 questions.
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,272 : q name = mtalk.google.com
+SessionID[NjMwNjQ=] 2017-12-23 15:28:07,272 : Query = mtalk.google.com A

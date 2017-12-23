@@ -6,60 +6,51 @@ from PyQt4.QtCore import *
 from PyQt4.Qt import *
 
 from core.widgets.docks.dock import DockableWidget
-class NetCredential(DockableWidget):
-    id = "NetCredential"
-    title = "Net Crendential"
+class URLMonitorDock(DockableWidget):
+    id = "URLMonitor"
+    title = "URLMonitor"
     def __init__(self,parent=None,title="",info={}):
-        super(NetCredential,self).__init__(parent,title,info)
-        self.maindockwidget = QTableWidget()
-        self.maindockwidget.setColumnCount(4)
-        self.maindockwidget.resizeRowsToContents()
-        self.maindockwidget.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
-        self.maindockwidget.horizontalHeader().setStretchLastSection(True)
+        super(URLMonitorDock,self).__init__(parent,title,info)
+        self.maindockwidget = QTreeView()
         self.maindockwidget.setSelectionBehavior(QAbstractItemView.SelectRows)
-        self.maindockwidget.verticalHeader().setVisible(False)
-        self.maindockwidget.verticalHeader().setDefaultSectionSize(27)
-        self.maindockwidget.setSortingEnabled(True)
-        self.THeaders  = OrderedDict([ ('Username',[]),('Password',[]),('Url',[]),('Source/Destination',[])])
-        self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
-        self.maindockwidget.horizontalHeader().resizeSection(0,120)
-        self.maindockwidget.horizontalHeader().resizeSection(1,120)
-        self.maindockwidget.horizontalHeader().resizeSection(2,180)
+        self.model = QStandardItemModel()
+        self.model.setHorizontalHeaderLabels(['URL', 'HTTP-Headers'])
+        self.maindockwidget.setModel(self.model)
+        self.maindockwidget.setUniformRowHeights(True)
+        self.maindockwidget.setColumnWidth(0, 130)
         self.setWidget(self.maindockwidget)
+        self.setObjectName(self.title)
 
-    def writeModeData(self,data):
+    def writeModeData(self, data):
         ''' get data output and add on QtableWidgets '''
-        self.THeaders['Username'].append(data['POSTCreds']['User'])
-        self.THeaders['Password'].append(data['POSTCreds']['Pass'])
-        self.THeaders['Url'].append(data['POSTCreds']['Url'])
-        self.THeaders['Source/Destination'].append(data['POSTCreds']['Destination'])
-        Headers = []
-        self.maindockwidget.setRowCount(len(self.THeaders['Username']))
-        for n, key in enumerate(self.THeaders.keys()):
-            Headers.append(key)
-            for m, item in enumerate(self.THeaders[key]):
-                item = QTableWidgetItem(item)
-                item.setTextAlignment(Qt.AlignVCenter | Qt.AlignCenter)
-                self.maindockwidget.setItem(m, n, item)
-        self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
-        self.maindockwidget.verticalHeader().setDefaultSectionSize(27)
+        ParentMaster = QStandardItem('[ {0[src]} > {0[dst]} ] {1[Method]} {1[Host]}{1[Path]}'.format(
+            data['urlsCap']['IP'], data['urlsCap']['Headers']))
+        ParentMaster.setIcon(QIcon('icons/accept.png'))
+        ParentMaster.setSizeHint(QSize(30, 30))
+        for item in data['urlsCap']['Headers']:
+            ParentMaster.appendRow([QStandardItem('{}'.format(item)),
+                                    QStandardItem(data['urlsCap']['Headers'][item])])
+        self.maindockwidget.model.appendRow(ParentMaster)
+        self.maindockwidget.setFirstColumnSpanned(ParentMaster.row(),
+                                   self.rootIndex(), True)
         self.maindockwidget.scrollToBottom()
 
+    def clear(self):
+        self.maindockwidget.model.clear()
+
     def stopProcess(self):
-        self.maindockwidget.setRowCount(0)
-        self.maindockwidget.clearContents()
-        self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
-class NetCreds(MitmMode):
-    Name = "Net Credentials"
-    Author = "Wahyudin Aziz"
+        self.maindockwidget.clearSelection()
+class URLMonitor(MitmMode):
+    Name = "URLMonitor"
+    Author = "P0cl4bs Team"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"
     Icon = "icons/tcpproxy.png"
     _cmd_array = []
     ModSettings = True
     ModType = "proxy"  # proxy or server
     def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
-        super(NetCreds, self).__init__(parent)
-        self.dockwidget = NetCredential(None,title=self.Name)
+        super(URLMonitor, self).__init__(parent)
+        self.dockwidget = URLMonitorDock(None,title=self.Name)
     @property
     def CMD_ARRAY(self):
         self._cmd_array=[C.NETCREDS_EXEC,'-i',str(self.parent.selectCard.currentText())]

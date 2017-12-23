@@ -1,33 +1,40 @@
 from PyQt4 import QtGui,QtCore,Qt
 from functools import  partial
 
-class Docking(QtGui.QDockWidget):
+class DockableWidget(QtGui.QDockWidget):
     title = 'Default'
     id = 'default'
-    def __init__(self,parent=0,title='Default',info={}):
-        super(Docking,self).__init__(parent)
+    addDock = QtCore.pyqtSignal(object)
+    def __init__(self,parent=0,t='Default',info={}):
+        super(DockableWidget,self).__init__(t)
+        self.setObjectName(t)
         self.parent = parent
-        self.title = title
+        self.title = t
         self.logger = info
         self.startThread = False
         self.processThrear = None
         self.setSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
         self.setAllowedAreas(QtCore.Qt.AllDockWidgetAreas)
         self.setFeatures(QtGui.QDockWidget.DockWidgetMovable | QtGui.QDockWidget.DockWidgetFloatable)
-
         self.controlui = QtGui.QCheckBox(self.title)
-        self.controlui.toggled.connect(partial(self.controlui_toggled))
+        self.controlui.clicked.connect(partial(self.controlui_toggled))
+        self.mainlayout = QtGui.QGridLayout()
+        self.maindockwidget = QtGui.QListWidget()
+        self.setWidget(self.maindockwidget)
     def runThread(self):
         self.startThread=True
     def controlui_toggled(self):
-        pass
+        if self.controlui.isChecked():
+            self.addDock.emit(True)
+        else:
+            self.addDock.emit(False)
     def writeModeData(self,data):
-        item = QListWidgetItem()
+        item = QtGui.QListWidgetItem()
         item.setText(data)
-        item.setSizeHint(QSize(27, 27))
-        item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsEditable | Qt.ItemIsSelectable)
-        self.insertItem(self.count() + 1, item)
-        self.scrollToBottom()
+        item.setSizeHint(Qt.QSize(27, 27))
+        #item.setFlags(Qt.ItemIsEnabled | Qt.ItemIsEditable | Qt.ItemIsSelectable)
+        self.maindockwidget.insertItem(self.maindockwidget.count() + 1, item)
+        self.maindockwidget.scrollToBottom()
     def clear(self):
         pass
     def stopProcess(self):

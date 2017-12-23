@@ -774,11 +774,11 @@ class PumpkinSettings(QtGui.QVBoxLayout):
                 if DockInfo[key]['active']:
                     self.dock = QtGui.QDockWidget(key)
                     if key == 'HTTP-Authentication':
-                        self.AllDockArea[key] = dockCredsMonitor(None,DockInfo[key])
+                        self.AllDockArea[key] = dockCredsMonitor(None,DockInfo[key]) #TODO Done by netcreds mitmmodule
                     elif key == 'HTTP-Requests':
-                        self.AllDockArea[key] = dockUrlMonitor(None,DockInfo[key])
+                        self.AllDockArea[key] = dockUrlMonitor(None,DockInfo[key]) #TODO Need to be added
                     elif key == 'PumpkinProxy':
-                        self.AllDockArea[key] = dockPumpkinProxy(None, DockInfo[key])
+                        self.AllDockArea[key] = dockPumpkinProxy(None, DockInfo[key]) #TODO Done by TCP PRoxy Module
                     else:
                         self.AllDockArea[key] = dockAreaAPI(None,DockInfo[key])
                     self.dock.setWidget(self.AllDockArea[key])
@@ -790,6 +790,7 @@ class PumpkinSettings(QtGui.QVBoxLayout):
             if len(self.dockList) > 1:
                 for index in range(1, len(self.dockList) - 1):
                     if self.dockList[index].objectName() != 'HTTP-Requests':
+                        #TODO Continue Refactor Here
                         self.Tab_Dock.tabifyDockWidget(self.dockList[index],
                             self.dockList[index + 1])
             try:

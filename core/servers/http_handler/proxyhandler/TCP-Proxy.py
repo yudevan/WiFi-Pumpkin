@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from functools import partial
+from PyQt4.QtGui import *
 from PyQt4.QtCore import QThread,pyqtSignal
 from time import sleep,asctime,strftime
 import threading
@@ -19,13 +20,58 @@ from core.widgets.docks.dockmonitor import (
 from plugins.external.scripts import *
 from plugins.extension import *
 from plugins.analyzers import *
+from core.widgets.docks.dock import DockableWidget
+class TCPProxyDock(DockableWidget):
+    id = "TCPProxy"
+    title = "TCPProxy"
 
+    def __init__(self,parent=0,title="",info={}):
+        super(TCPProxyDock,self).__init__(parent,title,info={})
+        self.setObjectName(self.title)
+        self.maindockwidget = QTableWidget()
+        self.maindockwidget.setColumnCount(2)
+        self.maindockwidget.resizeRowsToContents()
+        self.maindockwidget.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        self.maindockwidget.horizontalHeader().setStretchLastSection(True)
+        self.maindockwidget.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.maindockwidget.verticalHeader().setVisible(False)
+        self.maindockwidget.verticalHeader().setDefaultSectionSize(27)
+        self.maindockwidget.setSortingEnabled(True)
+        self.THeaders  = OrderedDict([ ('Plugin',[]),('Logging',[])])
+        self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
+        self.maindockwidget.horizontalHeader().resizeSection(0,150)
+        self.maindockwidget.horizontalHeader().resizeSection(1,150)
+        self.setWidget(self.maindockwidget)
+
+
+    def writeModeData(self,data):
+        ''' get data output and add on QtableWidgets '''
+        self.THeaders['Plugin'].append(data.keys()[0])
+        self.THeaders['Logging'].append(data[data.keys()[0]])
+        Headers = []
+        self.maindockwidget.setRowCount(len(self.THeaders['Plugin']))
+        for n, key in enumerate(self.THeaders.keys()):
+            Headers.append(key)
+            for m, item in enumerate(self.THeaders[key]):
+                item = QTableWidgetItem(item)
+                if key != 'Logging':
+                    item.setTextAlignment(Qt.AlignVCenter | Qt.AlignCenter)
+                self.maindockwidget.setItem(m, n, item)
+        self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
+        self.maindockwidget.verticalHeader().setDefaultSectionSize(27)
+        self.maindockwidget.scrollToBottom()
+
+    def stopProcess(self):
+        self.maindockwidget.setRowCount(0)
+        self.maindockwidget.clearContents()
+        self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
 
 class TCPProxy(MitmMode):
     Name = "TCP Proxy"
-    Author = "Wahyudin Aziz"
+    Author = "P0cl4bs Team"
     Description = "Sniff for isntercept network traffic on UDP,TCP protocol get password,hash,image,etc..."
     Icon = "icons/tcpproxy.png"
+    _cmd_array = []
     ModSettings = True
     ModType = "proxy"  # proxy or server
     def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
@@ -69,6 +115,8 @@ class TCPProxy(MitmMode):
         self.TabPlugins.setHorizontalHeaderLabels(self.THeaders.keys())
         self.TabPlugins.horizontalHeader().resizeSection(0, 158)
         self.TabPlugins.horizontalHeader().resizeSection(1, 120)
+
+        self.dockwidget = TCPProxyDock(None,title=self.Name)
 
         self.page_1.addWidget(self.TabPlugins)
         self.page_2.addWidget(self.tableLogging)
@@ -116,17 +164,29 @@ class TCPProxy(MitmMode):
         for p in plugin_classes:
             if p().Name != 'httpCap':
                 self.plugins.append(p())
-    def CheckOptions(self):
-        self.FSettings.Settings.set_setting('mitmhandler', self.Name, self.plugin_radio.isChecked())
-        if self.plugin_radio.isChecked() == True:
-            self.setEnabled(True)
-        else:
-            self.setEnabled(False)
-        self.Initialize()
     def boot(self):
         self.reactor=TCPProxyCore(str(self.parent.selectCard.currentText()), self.parent.currentSessionID)
         self.reactor.setObjectName(self.Name)
         self.reactor._ProcssOutput.connect(self.LogOutput)
+    def LogOutput(self,data):
+        if self.parent.FSettings.Settings.get_setting('accesspoint', 'statusAP', format=bool):
+            if data.keys()[0] == 'urlsCap':
+                if self.PumpSettingsTAB.dockInfo['HTTP-Requests']['active']:
+                    self.dockAreaList['HTTP-Requests'].writeModeData(data)
+                    self.LogUrlMonitor.info('[ {0[src]} > {0[dst]} ] {1[Method]} {1[Host]}{1[Path]}'.format(
+                        data['urlsCap']['IP'], data['urlsCap']['Headers']))
+            elif data.keys()[0] == 'POSTCreds':
+                if self.PumpSettingsTAB.dockInfo['HTTP-Authentication']['active']:
+                    self.dockAreaList['HTTP-Authentication'].writeModeData(data)
+                    self.LogCredsMonitor.info('URL: {}'.format(data['POSTCreds']['Url']))
+                    self.LogCredsMonitor.info('UserName: {}'.format(data['POSTCreds']['User']))
+                    self.LogCredsMonitor.info('UserName: {}'.format(data['POSTCreds']['Pass']))
+                    self.LogCredsMonitor.info('Packets: {}'.format(data['POSTCreds']['Destination']))
+            elif data.keys()[0] == 'image':
+                self.ImageCapTAB.SendImageTableWidgets(data['image'])
+            else:
+                self.PacketSnifferTAB.tableLogging.writeModeData(data)
+                self.LogTcpproxy.info('[{}] {}'.format(data.keys()[0],data[data.keys()[0]]))
 
 
 class TCPProxyCore(QThread):
@@ -163,9 +223,9 @@ class TCPProxyCore(QThread):
                     if  pluginconf.Name == name:
                         self.plugins[name] = pluginconf
                         self.plugins[name].getInstance()._activated = True
-                        print('Firelamb::{0:17} status:On'.format(name))
+                        print('TCPProxy::{0:17} status:On'.format(name))
         else:
-            print('Firelamb::{0:17} status:Off'.format(name))
+            print('TCPProxy::{0:17} status:Off'.format(name))
             self.plugins.pop(self.plugins[name].Name)
 
     def main(self):
@@ -176,11 +236,11 @@ class TCPProxyCore(QThread):
             self.plugins[plugin_load.Name] = plugin_load
             self.plugins[plugin_load.Name].output = self._ProcssOutput
             self.plugins[plugin_load.Name].session = self.session
-        print '\n[*] Firelamb running on port 80/8080:\n'
+        print '\n[*] TCPProxy running on port 80/8080:\n'
         for name in self.plugins.keys():
             if self.config.get_setting('plugins', name, format=bool):
                 self.plugins[name].getInstance()._activated = True
-                print('Firelamb::{0:17} status:On'.format(name))
+                print('TCPProxy::{0:17} status:On'.format(name))
         print('\n')
         q = Queue.Queue()
         sniff = Thread(target =self.sniffer, args = (q,))

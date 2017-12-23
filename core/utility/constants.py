@@ -68,6 +68,7 @@ SOURCE_URL      = 'https://github.com/P0cL4bs/WiFi-Pumpkin.git'
 FIRELAMB_EXEC  = 'plugins/external/firelamb/firelamb.py'
 RESPONDER_EXEC  = 'plugins/external/Responder/Responder.py'
 DNS2PROXY_EXEC  = 'plugins/external/dns2proxy/dns2proxy.py'
+NETCREDS_EXEC  = 'plugins/external/net-creds/net-creds.py'
 BDFPROXY_EXEC   = 'plugins/external/BDFProxy-ng/bdf_proxy.py'
 
 #colors

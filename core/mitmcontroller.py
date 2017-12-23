@@ -4,8 +4,9 @@ from core.servers.http_handler.proxyhandler import *
 
 
 class MitmController(QtGui.QTableWidget):
-    manipulator = {}
+    mitmhandler = {}
     SetNoMitmMode = QtCore.pyqtSignal(object)
+    dockMount = QtCore.pyqtSignal(bool)
     def __init__(self,parent = 0):
         super(MitmController, self).__init__(parent)
         self.parent=parent
@@ -15,17 +16,18 @@ class MitmController(QtGui.QTableWidget):
         __manipulator= [prox(parent=self.parent) for prox in MitmMode.MitmMode.__subclasses__()]
         #Keep Proxy in a dictionary
         for k in __manipulator:
-            self.manipulator[k.Name]=k
+            self.mitmhandler[k.Name]=k
 
         self.m_name = []
         self.m_desc = []
         self.m_settings = []
-        for n,p in self.manipulator.items():
-            self.m_name.append(p.plugin_radio)
+        for n,p in self.mitmhandler.items():
+            self.m_name.append(p.controlui)
             self.m_settings.append(p.btnChangeSettings)
-            self.m_desc.append(p.plugin_radio.objectName())
+            self.m_desc.append(p.controlui.objectName())
             #self.manipulatorGroup.addButton(p.controlui)
             p.sendSingal_disable.connect(self.DisableMitmMode)
+            p.dockwidget.addDock.connect(self.dockUpdate)
             #self.parent.TabListWidget_Menu.addItem(p.tabinterface)
             #self.parent.Stack.addWidget(p)
 
@@ -62,11 +64,20 @@ class MitmController(QtGui.QTableWidget):
         self.setHorizontalHeaderLabels(self.MitmModeTable.keys())
     def DisableMitmMode(self,status):
         self.SetNoMitmMode.emit(status)
+    def dockUpdate(self,add=True):
+        self.dockMount.emit(add)
+    @property
+    def ActiveDock(self):
+        manobj = []
+        for manip in self.mitmhandler.values():
+            if manip.controlui.isChecked():
+                manobj.append(manip.dockwidget)
+        return manobj
     @property
     def Activated(self):
         manobj =[]
-        for manip in self.manipulator.values():
-            if manip.plugin_radio.isChecked():
+        for manip in self.mitmhandler.values():
+            if manip.controlui.isChecked():
                 manobj.append(manip)
         return manobj
     @property
@@ -77,7 +88,7 @@ class MitmController(QtGui.QTableWidget):
         return reactor
     @property
     def get(self):
-        return self.manipulator
+        return self.mitmhandler
     @classmethod
     def disable(cls, val=True):
         pass
