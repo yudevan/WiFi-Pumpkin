@@ -33,7 +33,7 @@ class frm_PhishingManager(QtGui.QWidget):
         super(frm_PhishingManager, self).__init__(parent)
         self.label = QtGui.QLabel()
         self.Main  = QtGui.QVBoxLayout()
-        self.config = frm_Settings()
+        self.config = frm_Settings.instances[0]
         self.session = str()
         self.setWindowTitle('Phishing Manager')
         self.ThreadTemplates = {'Server':[]}

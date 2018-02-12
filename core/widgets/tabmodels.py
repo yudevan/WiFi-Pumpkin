@@ -64,7 +64,7 @@ class StatusAccessPoint(QtGui.QVBoxLayout):
         self.AP_name = QtGui.QLabel(self.main_method.EditApName.text())
         self.AP_BSSID = QtGui.QLabel(self.main_method.EditBSSID.text())
         self.AP_Channel = QtGui.QLabel(self.main_method.EditChannel.text())
-        self.AP_NetworkApdater = QtGui.QLabel(self.main_method.selectCard.currentText())
+        self.AP_NetworkApdater = QtGui.QLabel(self.main_method.WLANCard.currentText())
         self.AP_ROUTER = QtGui.QLabel(self.main_method.DHCP['router'])
         self.AP_DHCP_range = QtGui.QLabel(self.main_method.DHCP['range'])
         self.AP_Security  = QtGui.QLabel('')
@@ -103,7 +103,7 @@ class StatusAccessPoint(QtGui.QVBoxLayout):
         self.AP_name.setText(self.main_method.EditApName.text())
         self.AP_BSSID.setText(self.main_method.EditBSSID.text())
         self.AP_Channel.setText(self.main_method.EditChannel.text())
-        self.AP_NetworkApdater.setText(self.main_method.selectCard.currentText())
+        self.AP_NetworkApdater.setText(self.main_method.WLANCard.currentText())
         self.AP_ROUTER.setText(self.main_method.DHCP['router'])
         self.AP_DHCP_range.setText(self.main_method.DHCP['range'])
         self.update_security_label(self.main_method.GroupApPassphrase.isChecked())
@@ -774,11 +774,11 @@ class PumpkinSettings(QtGui.QVBoxLayout):
                 if DockInfo[key]['active']:
                     self.dock = QtGui.QDockWidget(key)
                     if key == 'HTTP-Authentication':
-                        self.AllDockArea[key] = dockCredsMonitor(None,DockInfo[key])
+                        self.AllDockArea[key] = dockCredsMonitor(None,DockInfo[key]) #TODO Done by netcreds mitmmodule
                     elif key == 'HTTP-Requests':
-                        self.AllDockArea[key] = dockUrlMonitor(None,DockInfo[key])
+                        self.AllDockArea[key] = dockUrlMonitor(None,DockInfo[key]) #TODO Need to be added
                     elif key == 'PumpkinProxy':
-                        self.AllDockArea[key] = dockPumpkinProxy(None, DockInfo[key])
+                        self.AllDockArea[key] = dockPumpkinProxy(None, DockInfo[key]) #TODO Done by TCP PRoxy Module
                     else:
                         self.AllDockArea[key] = dockAreaAPI(None,DockInfo[key])
                     self.dock.setWidget(self.AllDockArea[key])
@@ -790,6 +790,7 @@ class PumpkinSettings(QtGui.QVBoxLayout):
             if len(self.dockList) > 1:
                 for index in range(1, len(self.dockList) - 1):
                     if self.dockList[index].objectName() != 'HTTP-Requests':
+                        #TODO Continue Refactor Here
                         self.Tab_Dock.tabifyDockWidget(self.dockList[index],
                             self.dockList[index + 1])
             try:

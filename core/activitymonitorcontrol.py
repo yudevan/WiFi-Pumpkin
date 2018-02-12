@@ -25,9 +25,6 @@ class ActivityMonitorControl(QGroupBox):
 
             if row==3:
                 col +=1
-
-
-
         self.setLayout(self.mainlayout)
 
 

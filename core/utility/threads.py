@@ -85,14 +85,14 @@ class ThRunDhcp(QThread):
         self.args    = args
         self.session = session
         self.process = None
+        print self.objectName()
 
     def getNameThread(self):
         return '[New Thread {} ({})]'.format(self.currentThreadId(),self.objectName())
-
     def run(self):
         self.process = Popen(self.args,
         stdout=PIPE,stderr=STDOUT,preexec_fn=setsid)
-        print '[New Thread {} ({})]'.format(self.process.pid,self.objectName())
+        print '[New DHCP Thread {} ({})]'.format(self.process.pid,self.objectName())
         setup_logger('dhcp', C.LOG_DHCP,self.session)
         loggerDhcp = logging.getLogger('dhcp')
         loggerDhcp.info('---[ Start DHCP '+asctime()+']---')

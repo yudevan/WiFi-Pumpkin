@@ -2,6 +2,7 @@ from collections import OrderedDict
 from datetime import datetime
 from functools import partial
 from os import path
+from core.config.globalimport import *
 
 import core.utility.constants as C
 from core.main import  QtGui,QtCore
@@ -29,7 +30,7 @@ class ProxySSLstripDock(DockableWidget):
         super(ProxySSLstripDock,self).__init__(parent)
 class ProxySSLstrip(ProxyMode):
     Name = "SSLStrip+DNS2Proxy"
-    Author = "P0cL4bs"
+    Author = "Wahyudin Aziz"
     Description = "Generic Placeholder for Attack Scenario"
     Icon = "icons/mac.png"
     ModSettings = True
@@ -39,13 +40,15 @@ class ProxySSLstrip(ProxyMode):
     _cmd_array = []
     _PluginsToLoader = {'plugins': None,'Content':''}
 
-    def __init__(self,parent=None,FSettings=None):
-        super(ProxySSLstrip, self).__init__(parent,FSettings)
+    def __init__(self,parent, FsettingsUI=None, main_method=None, **kwargs):
+        super(ProxySSLstrip, self).__init__(parent)
         self.main_method = parent
         self.urlinjected= []
-        self.FSettings  = parent.FSettings
+        self.FSettings  = SuperSettings.instances[0]
         self.mainLayout    = QtGui.QVBoxLayout()
         self.dock = ProxySSLstripDock(self,self.Name)
+        self.search[self.Name] = str('iptables -t nat -A PREROUTING -p tcp' +
+                                     ' --destination-port 80 -j REDIRECT --to-port ' + self.FSettings.redirectport.text())
 
         #scroll area
         self.scrollwidget = QtGui.QWidget()
@@ -212,8 +215,7 @@ class ProxySSLstrip(ProxyMode):
         self.comboxBox.addItems(self.plugins.keys())
     @property
     def CMD_ARRAY(self):
-        self._cmd_array=[C.DNS2PROXY_EXEC,'-i',str(self.parent.selectCard.currentText()),'-k',self.parent.currentSessionID]
-
+        self._cmd_array=[C.DNS2PROXY_EXEC,'-i',str(self.Wireless.WLANCard.currentText()),'-k',self.parent.currentSessionID]
         return self._cmd_array
     def Serve(self,on=True):
         if on:
@@ -225,6 +227,9 @@ class ProxySSLstrip(ProxyMode):
                 self.server.start()
         else:
             self.server.stop()
+    def Initialize(self):
+        self.unset_Rules(self.Name)
+        self.unset_Rules("dns2proxy")
     def boot(self):
         self.reactor = ProcessThread({'python': self.CMD_ARRAY})
         self.reactor._ProcssOutput.connect(self.LogOutput)
@@ -234,6 +239,8 @@ class ProxySSLstrip(ProxyMode):
                                                self.plugins, self._PluginsToLoader,
                                                self.parent.currentSessionID)
         self.subreactor.setObjectName("sslstrip2")
+        self.SetRules(self.Name)
+        self.SetRules("dns2proxy")
 
     def SafeLog(self):
         lines = []
@@ -243,6 +250,4 @@ class ProxySSLstrip(ProxyMode):
                     lines.append(str(self.log_inject.item(index).text()))
                 for log in lines: injectionlog.write(log+'\n')
                 injectionlog.close()
-    def optionsRules(self):
-        return str('iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port '+self.FSettings.redirectport.text())
 

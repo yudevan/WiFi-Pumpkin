@@ -12,7 +12,7 @@ class DockableWidget(QtGui.QDockWidget):
         self.title = t
         self.logger = info
         self.startThread = False
-        self.processThrear = None
+        self.processThread = None
         self.setSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
         self.setAllowedAreas(QtCore.Qt.AllDockWidgetAreas)
         self.setFeatures(QtGui.QDockWidget.DockWidgetMovable | QtGui.QDockWidget.DockWidgetFloatable)

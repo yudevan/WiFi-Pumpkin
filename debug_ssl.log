@@ -166,3 +166,81 @@ GET http://23.39.223.48/alerts/v1/203174.json?apikey=a33466bfa5b24f9f82aa7cf62d4
 GET http://23.39.223.48/forecasts/v1/hourly/1hour/203174?apikey=a33466bfa5b24f9f82aa7cf62d482f67&metric=true&language=en&details=true
 {'connection': 'Keep-Alive', 'host': 'api.accuweather.com', 'content-length': '0', 'user-agent': 'HTTPWebUtil/1.0.1'}
 
+GET http://10.0.0.1/
+{'host': '10.0.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://10.0.0.1/
+{'host': '10.0.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://74.125.68.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36'}
+
+GET http://111.94.249.82/generate_204
+{'host': 'clients3.google.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://10.0.0.1/
+{'host': '10.0.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://162.125.81.1/
+{'connection': 'close', 'accept-language': 'en-GB,en;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'host': 'www.dropbox.com', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://198.35.26.96/
+{'connection': 'close', 'accept-language': 'en-GB,en;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'host': 'www.wikipedia.org', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://192.0.78.12/
+{'connection': 'close', 'accept-language': 'en-GB,en;q=0.8,en-US;q=0.6,en;q=0.4', 'content-length': '0', 'host': 'www.wordpress.com', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://74.125.68.94/generate_204
+{'host': 'connectivitycheck.gstatic.com', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36'}
+
+GET http://74.125.24.94/intl/en_gb/searchlite/gifs/v0/gifs.v0.pb
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/high_five.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/funny.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/good_morning.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/good_night.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/i_love_you.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/thank_you.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://74.125.24.94/searchlite/gifs/clapping.webp
+{'host': 'www.gstatic.com', 'connection': 'keep-alive', 'content-length': '0', 'user-agent': 'com.google.android.apps.searchlite/11396 (Linux; U; Android 7.1.1; en_GB; SM-C710F; Build/NMF26X; Cronet/61.0.3163.140)'}
+
+GET http://10.0.0.1/
+{'host': '10.0.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://10.0.0.1/
+{'host': '10.0.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+
+GET http://172.16.0.1/
+{'host': '172.16.0.1', 'connection': 'Keep-Alive', 'content-length': '0', 'user-agent': 'Dalvik/2.1.0 (Linux; U; Android 7.1.1; SM-C710F Build/NMF26X)'}
+

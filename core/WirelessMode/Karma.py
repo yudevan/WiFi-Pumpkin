@@ -6,10 +6,10 @@ from core.WirelessMode.WirelessMode import Mode
 
 
 class Karma(Mode):
-    ConfigRoot = "Mana"
-    SubConfig = "Mana"
-    Name = "Mana AP Mode"
-    ID = "Mana"
+    ConfigRoot = "Karma"
+    SubConfig = "Karma"
+    Name = "Karma AP Mode"
+    ID = "Karma"
     def __init__(self,parent=0):
         super(Karma,self).__init__(parent)
 
@@ -26,21 +26,17 @@ class Karma(Mode):
                     if not config.startswith(ignore):
                         apconf.write(config + '\n')
             if self.Settings.EnableMana.isChecked():
-                apconf.write('enable_mana=1'+'\n')
+                apconf.write('enable_karma=1'+'\n')
                 if self.Settings.ManaLoud.isChecked():
-                    apconf.write('mana_loud=1' + '\n')
+                    apconf.write('karma_black_white=1' + '\n')
                 else:
-                    apconf.write('mana_loud=0' + '\n')
-                if self.Settings.ManaACL.isChecked():
-                    apconf.write('mana_macl=1' + '\n')
-                else:
-                    apconf.write('mana_macacl=0' + '\n')
+                    apconf.write('karma_black_white=0' + '\n')
             apconf.close()
 
     def boot(self):
         # create thread for hostapd and connect get_Hostapd_Response function
         self.reactor = ProcessHostapd({self.hostapd_path: [C.HOSTAPDCONF_PATH]}, self.parent.currentSessionID)
-        self.reactor.setObjectName('ManaHostapd')
+        self.reactor.setObjectName('KarmaHostapd')
         self.reactor.statusAP_connected.connect(self.LogOutput)
         self.reactor.statusAPError.connect(self.Shutdown)
     @property
@@ -48,14 +44,14 @@ class Karma(Mode):
         return KarmaSettings.instances[0]
 
 class KarmaSettings(CoreSettings):
-    ConfigRoot = "Mana"
-    Name = "Mana"
-    ID = "Mana"
+    ConfigRoot = "Karma"
+    Name = "Karma"
+    ID = "Karma"
     instances = []
     def __init__(self,parent):
         super(KarmaSettings,self).__init__(parent)
         self.__class__.instances.append(weakref.proxy(self))
-        self.FSettings = SuperSettings()
+        self.FSettings = SuperSettings.instances[0]
         self.setCheckable(False)
         self.WLayout = QtGui.QGroupBox()
         self.WLayout.setTitle("Karma AP Settings")
@@ -79,19 +75,15 @@ class KarmaSettings(CoreSettings):
         self.EditChannel.setFixedWidth(10)
         self.EditChannel.setMinimum(0)
 
-        self.EnableMana = QtGui.QGroupBox("Enable Mana")
+        self.EnableMana = QtGui.QGroupBox("Enable Karma")
         self.EnableMana.setCheckable(True)
-        self.EnableMana.setObjectName("enable_mana")
-        self.EnableMana.setChecked(self.FSettings.Settings.get_setting(self.ConfigRoot, 'enable_mana',format=bool))
-        self.ManaLoud = QtGui.QCheckBox("Mana Loud")
-        self.ManaLoud.setObjectName("mana_loud")
-        self.ManaLoud.setChecked(self.FSettings.Settings.get_setting(self.ConfigRoot, 'mana_loud',format=bool))
-        self.ManaACL = QtGui.QCheckBox("Mana ACL")
-        self.ManaACL.setObjectName("mana_macl")
-        self.ManaACL.setChecked(self.FSettings.Settings.get_setting(self.ConfigRoot, 'mana_macacl',format=bool))
+        self.EnableMana.setObjectName("enable_karma")
+        self.EnableMana.setChecked(self.FSettings.Settings.get_setting(self.ConfigRoot, 'enable_karma',format=bool))
+        self.ManaLoud = QtGui.QCheckBox("Karma Black")
+        self.ManaLoud.setObjectName("karma_black_white")
+        self.ManaLoud.setChecked(self.FSettings.Settings.get_setting(self.ConfigRoot, 'karma_black_white',format=bool))
         self.KLayout = QtGui.QFormLayout()
         self.KLayout.addRow(self.ManaLoud)
-        self.KLayout.addRow(self.ManaACL)
         self.EnableMana.setLayout(self.KLayout)
 
         self.EditSSID.setText(self.FSettings.Settings.get_setting('accesspoint', 'ssid'))

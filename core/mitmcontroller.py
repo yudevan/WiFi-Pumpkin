@@ -1,18 +1,22 @@
-from PyQt4 import QtGui, QtCore
+from core.config.globalimport import *
 from collections import OrderedDict
 from core.servers.http_handler.proxyhandler import *
+from core.widgets.default.uimodel import *
+from core.utility.component import ControllerBlueprint
 
 
-class MitmController(QtGui.QTableWidget):
+class MitmController(PluginsUI,ControllerBlueprint):
+    Name = "MITM"
+    Caption = "Activity Monitor"
     mitmhandler = {}
     SetNoMitmMode = QtCore.pyqtSignal(object)
     dockMount = QtCore.pyqtSignal(bool)
     def __init__(self,parent = 0):
         super(MitmController, self).__init__(parent)
         self.parent=parent
-        self.FSettings = self.parent.FSettings
+        self.FSettings = SuperSettings.instances[0]
         #self.uplinkIF = self.parent.Refactor.get_interfaces()
-        #self.downlinkIF = self.parent.selectCard.currentText()
+        #self.downlinkIF = self.parent.WLANCard.currentText()
         __manipulator= [prox(parent=self.parent) for prox in MitmMode.MitmMode.__subclasses__()]
         #Keep Proxy in a dictionary
         for k in __manipulator:
@@ -32,24 +36,24 @@ class MitmController(QtGui.QTableWidget):
             #self.parent.Stack.addWidget(p)
 
         self.MitmModeTable = OrderedDict(
-            [('proxyhandler', self.m_name),
+            [('Activity Monitor', self.m_name),
              ('Settings', self.m_settings),
              ('Description', self.m_desc)
              ])
-        self.setColumnCount(3)
-        self.setRowCount(len(self.MitmModeTable['proxyhandler']))
-        self.resizeRowsToContents()
-        self.setSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
-        self.horizontalHeader().setStretchLastSection(True)
-        self.setSelectionBehavior(QtGui.QAbstractItemView.SelectRows)
-        self.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
-        self.verticalHeader().setVisible(False)
-        self.verticalHeader().setDefaultSectionSize(23)
-        self.setSortingEnabled(True)
-        self.setHorizontalHeaderLabels(self.MitmModeTable.keys())
-        self.horizontalHeader().resizeSection(0, 158)
-        self.horizontalHeader().resizeSection(1, 80)
-        self.resizeRowsToContents()
+        self.table.setColumnCount(3)
+        self.table.setRowCount(len(self.MitmModeTable['Activity Monitor']))
+        self.table.resizeRowsToContents()
+        self.table.setSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        self.table.horizontalHeader().setStretchLastSection(True)
+        self.table.setSelectionBehavior(QtGui.QAbstractItemView.SelectRows)
+        self.table.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
+        self.table.verticalHeader().setVisible(False)
+        self.table.verticalHeader().setDefaultSectionSize(23)
+        self.table.setSortingEnabled(True)
+        self.table.setHorizontalHeaderLabels(self.MitmModeTable.keys())
+        self.table.horizontalHeader().resizeSection(0, 158)
+        self.table.horizontalHeader().resizeSection(1, 80)
+        self.table.resizeRowsToContents()
 
         # add all widgets in Qtable 2 plugin
         Headers = []
@@ -57,11 +61,11 @@ class MitmController(QtGui.QTableWidget):
             Headers.append(key)
             for m, item in enumerate(self.MitmModeTable[key]):
                 if type(item) == type(QtGui.QCheckBox()) or type(item) == type(QtGui.QPushButton()):
-                    self.setCellWidget(m, n, item)
+                    self.table.setCellWidget(m, n, item)
                 else:
                     item = QtGui.QTableWidgetItem(item)
-                    self.setItem(m, n, item)
-        self.setHorizontalHeaderLabels(self.MitmModeTable.keys())
+                    self.table.setItem(m, n, item)
+        self.table.setHorizontalHeaderLabels(self.MitmModeTable.keys())
     def DisableMitmMode(self,status):
         self.SetNoMitmMode.emit(status)
     def dockUpdate(self,add=True):

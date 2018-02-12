@@ -5,13 +5,13 @@ from core.widgets.default.uimodel import *
 from core.WirelessMode.WirelessMode import Mode
 
 
-class Karma(Mode):
+class Mana(Mode):
     ConfigRoot = "Mana"
     SubConfig = "Mana"
     Name = "Mana AP Mode"
     ID = "Mana"
     def __init__(self,parent=0):
-        super(Karma,self).__init__(parent)
+        super(Mana,self).__init__(parent)
 
 
     def Initialize(self):
@@ -45,20 +45,20 @@ class Karma(Mode):
         self.reactor.statusAPError.connect(self.Shutdown)
     @property
     def Settings(self):
-        return KarmaSettings.instances[0]
+        return ManaSettings.instances[0]
 
-class KarmaSettings(CoreSettings):
+class ManaSettings(CoreSettings):
     ConfigRoot = "Mana"
     Name = "Mana"
     ID = "Mana"
     instances = []
     def __init__(self,parent):
-        super(KarmaSettings,self).__init__(parent)
+        super(ManaSettings,self).__init__(parent)
         self.__class__.instances.append(weakref.proxy(self))
-        self.FSettings = SuperSettings()
+        self.FSettings = SuperSettings.instances[0]
         self.setCheckable(False)
         self.WLayout = QtGui.QGroupBox()
-        self.WLayout.setTitle("Karma AP Settings")
+        self.WLayout.setTitle("Mana AP Settings")
         self.WLGrid = QtGui.QGridLayout()
         self.WLayout.setLayout(self.WLGrid)
 

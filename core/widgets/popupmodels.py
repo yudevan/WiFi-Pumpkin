@@ -35,7 +35,7 @@ class PopUpPlugins(QtGui.QVBoxLayout):
         self.layout = QtGui.QVBoxLayout()
         self.layoutform = QtGui.QFormLayout()
         self.GroupPlugins = QtGui.QGroupBox()
-        self.GroupPlugins.setTitle('proxyhandler:')
+        self.GroupPlugins.setTitle('Activity Monitor:')
 
         self.layoutproxy = QtGui.QVBoxLayout()
         self.GroupPluginsProxy = QtGui.QGroupBox()
@@ -154,7 +154,7 @@ class PopUpPlugins(QtGui.QVBoxLayout):
             self.unset_Rules('dns2proxy')
             self.unset_Rules('sslstrip')
             self.unset_Rules('bdfproxy')
-
+    #TODO Routine relates with TCP Proxy
     def checkBoxTCPproxy(self):
         if self.check_tcpproxy.isChecked():
             self.FSettings.Settings.set_setting('plugins','tcpproxy_plugin',True)

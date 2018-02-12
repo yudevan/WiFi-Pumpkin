@@ -36,7 +36,7 @@ class URLMonitorDock(DockableWidget):
         self.maindockwidget.scrollToBottom()
 
     def clear(self):
-        self.maindockwidget.model.clear()
+        self.model.clear()
 
     def stopProcess(self):
         self.maindockwidget.clearSelection()
@@ -45,6 +45,7 @@ class URLMonitor(MitmMode):
     Author = "Wahyudin Aziz"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"
     Icon = "icons/tcpproxy.png"
+    LogFile = C.LOG_URLCAPTURE
     _cmd_array = []
     ModSettings = True
     ModType = "proxy"  # proxy or server
@@ -53,7 +54,7 @@ class URLMonitor(MitmMode):
         self.dockwidget = URLMonitorDock(None,title=self.Name)
     @property
     def CMD_ARRAY(self):
-        self._cmd_array=[C.NETCREDS_EXEC,'-i',str(self.parent.selectCard.currentText())]
+        self._cmd_array=[C.NETCREDS_EXEC,'-i',str(self.Wireless.WLANCard.currentText())]
         return self._cmd_array
 
 

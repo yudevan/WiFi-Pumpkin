@@ -6,9 +6,10 @@ from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 class Responder(MitmMode):
     Name = "Responder"
-    Author = "P0cL4bs"
+    Author = "Wahyudin Aziz"
     Description = "Responder an LLMNR, NBT-NS and MDNS poisoner By default, the tool will only answer to File Server Service request, which is for SMB."
     Icon = "icons/tcpproxy.png"
+    LogFile = C.LOG_RESPONDER
     ModSettings = True
     ModType = "proxy"  # proxy or server
     _cmd_array = []
@@ -17,14 +18,14 @@ class Responder(MitmMode):
         self.ConfigWindow = ResponderSettings()
     @property
     def CMD_ARRAY(self):
-        self._cmd_array=[C.RESPONDER_EXEC,'-I', str(self.parent.selectCard.currentText()),'-wrFbv']
+        self._cmd_array=[C.RESPONDER_EXEC,'-I', str(self.Wireless.WLANCard.currentText()),'-wrFbv']
         return self._cmd_array
 
 
 class ResponderSettings(PumpkinModule):
     def __init__(self,parent=None):
         super(ResponderSettings, self).__init__(parent)
-        self.setWindowTitle('Firelamb Plugin settings')
+        self.setWindowTitle('Responder Plugin settings')
         self.setGeometry(0,0,480, 500)
         self.main       = QtGui.QVBoxLayout()
         self.THeaders   = {'Config':[],'Value':[] }
@@ -80,7 +81,7 @@ class ResponderSettings(PumpkinModule):
             self.userConfig.write()
     def saveConfigObject(self):
         self.checkConfigKeysResponder(saveObjct=True)
-        QtGui.QMessageBox.information(self,'Firelamb settings','All settings in {} has been saved '
+        QtGui.QMessageBox.information(self,'Responder settings','All settings in {} has been saved '
         'with success.'.format(str(self.configure.Settings.get_setting('plugins','responder_config'))))
         self.close()
 

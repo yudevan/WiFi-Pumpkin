@@ -50,6 +50,7 @@ if __name__ == '__main__':
 
     print('Loading GUI...')
     main = Initialize()
+    main.passSettings()
     main.setWindowIcon(QtGui.QIcon('icons/icon.png'))
     main.center()
     # check if Wireless connection

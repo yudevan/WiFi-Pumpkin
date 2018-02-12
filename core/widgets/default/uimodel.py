@@ -1,7 +1,9 @@
 from core.config.globalimport import *
+import weakref
 
 class TabsWidget(QtGui.QWidget):
     Name="Generic"
+    ID = "Generic"
     Icon = ""
     __subitem = False
     sendMensage = QtCore.pyqtSignal(str)
@@ -10,7 +12,7 @@ class TabsWidget(QtGui.QWidget):
         super(TabsWidget,self).__init__(parent)
         self.setObjectName(self.Name)
         #self.setTitle("{}".format(self.Name))
-        self.FSettings = FSettings
+        self.FSettings = SuperSettings.instances[0]
         self.parent = parent
 
         self.tabinterface = QtGui.QListWidgetItem()
@@ -37,9 +39,13 @@ class TabsWidget(QtGui.QWidget):
 
 
 class CoreSettings(QtGui.QGroupBox):
-    Name = "Generic"
+
+    Name = "General"
+    ID = "General"
+    ConfigRoot = "General"
     Icon=None
     __subitem=False
+    conf={}
 
 
     def __init__(self,parent=0,FSettings=None):
@@ -48,24 +54,30 @@ class CoreSettings(QtGui.QGroupBox):
         self.setTitle("{} Settings".format(self.Name))
         self.setCheckable(True)
         self.parent = parent
-        self.FSettings = SuperSettings()
-
+        self.FSettings = SuperSettings.instances[0]
         self.layout = QtGui.QVBoxLayout()
         self.setLayout(self.layout)
+    def deleteObject(self,obj):
+        ''' reclaim memory '''
+        del obj
 
     @property
     def isSubitem(self):
         return self.__subitem
+    def osWalkCallback(self,arg,directory,files):
+        pass
+
 
 
 class HomeDisplay(QtGui.QWidget):
     Name = "HomeDisplay"
+    ID = "Generic"
     Icon=None
     __subitem=False
     def __init__(self,parent=0,FSettings=None):
         super(HomeDisplay,self).__init__(parent)
         self.setObjectName(self.Name)
-        self.FSettings = SuperSettings()
+        self.FSettings = SuperSettings.instances[0]
         self.parent = parent
         self.layout = QtGui.QVBoxLayout(self)
         self.setSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
@@ -78,10 +90,11 @@ class HomeDisplay(QtGui.QWidget):
 class PluginsUI(QtGui.QGroupBox):
     Name = "Default"
     Caption = "Default"
+    ID = "Generic"
     def __init__(self,parent=0,FSettings={}):
         super(PluginsUI,self).__init__(parent)
         self.parent = parent
-        self.FSettings = SuperSettings()
+        self.FSettings = SuperSettings.instances[0]
         self.sessionconfig ={}
         self.setTitle(self.Caption)
         self.table = QtGui.QTableWidget()

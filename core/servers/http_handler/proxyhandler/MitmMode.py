@@ -1,8 +1,8 @@
 from os import path
-from core.main import  QtGui,QtCore
 from datetime import datetime
 from core.utils import Refactor
 from collections import OrderedDict
+from core.config.globalimport import *
 from core.utility.threads import ThreadPopen
 from core.widgets.docks.dockmonitor import (
     dockAreaAPI,dockUrlMonitor,dockCredsMonitor,dockPumpkinProxy,dockTCPproxy
@@ -19,8 +19,10 @@ from plugins.extension import *
 from functools import partial
 from plugins.analyzers import *
 import core.utility.constants as C
+from core.utils import setup_logger
 from core.widgets.customiseds import AutoGridLayout
 from core.widgets.docks.dock import DockableWidget
+from core.wirelessmodecontroller import AccessPointSettings
 class Widget(QtGui.QFrame):
     def __init__(self,parent):
         QtGui.QWidget.__init__(self,parent)
@@ -38,9 +40,10 @@ class MitmDock(DockableWidget):
 
 class MitmMode(Widget):
     Name = "Generic"
-    Author = "P0cL4bs"
+    Author = "Wahyudin Aziz"
     Description = "Generic Placeholder for Attack Scenario"
     Icon = "icons/plugins-new.png"
+    LogFile = C.LOG_ALL
     ModSettings = False
     ModType = "proxy" # proxy or server
     Hidden = True
@@ -52,9 +55,11 @@ class MitmMode(Widget):
     def __init__(self,parent=None):
         super(MitmMode, self).__init__(parent)
         self.parent = parent
-        self.FSettings = parent.FSettings
+        self.FSettings = SuperSettings.instances[0]
         self.reactor = None
         self.server = None
+        setup_logger(self.Name, self.LogFile, self.parent.currentSessionID)
+        self.logger = getLogger(self.Name)
         self.popup = QtGui.QWidget()
         self.tabinterface = QtGui.QListWidgetItem()
         self.tabinterface.setText(self.Name)
@@ -91,6 +96,9 @@ class MitmMode(Widget):
         return self._cmd_array
 
     @property
+    def Wireless(self):
+        return AccessPointSettings.instances[0]
+    @property
     def hasSettings(self):
         return self.ModSettings
     def CheckOptions(self):
@@ -114,11 +122,22 @@ class MitmMode(Widget):
             self.reactor= ProcessThread({'python': self.CMD_ARRAY})
             self.reactor._ProcssOutput.connect(self.LogOutput)
             self.reactor.setObjectName(self.Name)
-            print "Scheduling {}".format(self.Name)
     def shutdown(self):
-        pass
+        if self.reactor is not None:
+            self.reactor.stop()
+            if hasattr(self.reactor, 'wait'):
+                if not self.reactor.wait(msecs=500):
+                    self.reactor.terminate()
     def LogOutput(self,data):
-        pass
+        if self.FSettings.Settings.get_setting('accesspoint', 'statusAP', format=bool):
+            try:
+                data = str(data).split(' : ')[1]
+                for line in data.split('\n'):
+                    if len(line) > 2 and not self.parent.currentSessionID in line:
+                        self.dockwidget.writeModeData(line)
+                        self.logger.info(line)
+            except IndexError:
+                return None
 
 
 

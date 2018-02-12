@@ -3,7 +3,7 @@ from PyQt4.QtCore import *
 from PyQt4.Qt import *
 
 from core.widgets.docks.dock import DockableWidget
-from core.widgets.default.SettingsItem import SettingsItem
+from core.widgets.default.uimodel import CoreSettings
 
 class ActivityMonitor(DockableWidget):
     id = "Default"
@@ -14,10 +14,3 @@ class ActivityMonitor(DockableWidget):
         self.settings = ActivityMonitorSettings(self.parent)
         self.maindockwidget = QGroupBox()
         self.maindockwidget.setLayout(self.mainlayout)
-        self.settings.mainlayout.addWidget(self.maindockwidget)
-
-
-
-class ActivityMonitorSettings(SettingsItem):
-    def __init__(self,parent=None,FSettings=None):
-        super(ActivityMonitorSettings,self).__init__(parent,FSettings)

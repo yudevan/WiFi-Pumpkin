@@ -88,7 +88,7 @@ class Initialize(QtGui.QMainWindow):
     ''' Main window settings multi-window opened'''
     def __init__(self, parent=None):
         super(Initialize, self).__init__(parent)
-        self.FSettings      = frm_Settings()
+        self.FSettings      = frm_Settings.instances[0]
         self.form_widget    = WifiPumpkin(self)
 
         #for exclude USB adapter if the option is checked in settings tab
@@ -533,7 +533,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.EditChannel.setFixedWidth(50)
         self.EditGateway.setFixedWidth(120)
         self.EditGateway.setHidden(True) # disable Gateway
-        self.selectCard = QtGui.QComboBox(self)
+        self.WLANCard = QtGui.QComboBox(self)
         self.btn_random_essid.clicked.connect(self.setAP_essid_random)
         self.btn_random_essid.setIcon(QtGui.QIcon('icons/refresh.png'))
 
@@ -579,7 +579,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.GroupAdapter = QtGui.QGroupBox()
         self.layoutNetworkAd = QtGui.QHBoxLayout()
         self.GroupAdapter.setTitle('Network Adapter')
-        self.layoutNetworkAd.addWidget(self.selectCard)
+        self.layoutNetworkAd.addWidget(self.WLANCard)
         self.layoutNetworkAd.addWidget(self.btrn_refresh)
         self.layoutNetworkAd.addWidget(self.btrn_find_Inet)
         self.GroupAdapter.setLayout(self.layoutNetworkAd)
@@ -816,7 +816,7 @@ class WifiPumpkin(QtGui.QWidget):
     def add_avaliableIterfaces(self,ifaces):
         for index,item in enumerate(ifaces):
             if search('wl', item):
-                self.selectCard.addItem(ifaces[index])
+                self.WLANCard.addItem(ifaces[index])
         return self.btrn_refresh.setEnabled(True)
 
 
@@ -886,7 +886,7 @@ class WifiPumpkin(QtGui.QWidget):
         for iface in interfaces:
             if search('wl', iface):
                 wireless.append(iface)
-        self.selectCard.addItems(wireless)
+        self.WLANCard.addItems(wireless)
 
         if  self.get_interfaces['activated'][0]:
             self.set_StatusConnected_Iface(True,self.get_interfaces['activated'][0])
@@ -896,7 +896,7 @@ class WifiPumpkin(QtGui.QWidget):
 
         interface = self.FSettings.Settings.get_setting('accesspoint','interfaceAP')
         if interface != 'None' and interface in self.get_interfaces['all']:
-            self.selectCard.setCurrentIndex(wireless.index(interface))
+            self.WLANCard.setCurrentIndex(wireless.index(interface))
 
         # check if a program is installed
         lista = [ '', '',popen('which driftnet').read().split('\n')[0],
@@ -909,7 +909,7 @@ class WifiPumpkin(QtGui.QWidget):
 
     def set_interface_wireless(self):
         ''' get all wireless interface available '''
-        self.selectCard.clear()
+        self.WLANCard.clear()
         self.btrn_refresh.setEnabled(False)
         ifaces = Refactor.get_interfaces()['all']
         QtCore.QTimer.singleShot(3000, lambda : self.add_avaliableIterfaces(ifaces))
@@ -1171,7 +1171,7 @@ class WifiPumpkin(QtGui.QWidget):
             ],
         'hostapd':
             [
-                'interface={}\n'.format(str(self.selectCard.currentText())),
+                'interface={}\n'.format(str(self.WLANCard.currentText())),
                 'ssid={}\n'.format(str(self.EditApName.text())),
                 'channel={}\n'.format(str(self.EditChannel.value())),
                 'bssid={}\n'.format(str(self.EditBSSID.text())),
@@ -1207,32 +1207,32 @@ class WifiPumpkin(QtGui.QWidget):
 
     def start_access_point(self):
         ''' start Access Point and settings plugins  '''
-        if len(self.selectCard.currentText()) == 0:
+        if len(self.WLANCard.currentText()) == 0:
             return QtGui.QMessageBox.warning(self,'Error interface ','Network interface is not found')
         if not type(self.get_soft_dependencies()) is bool: return
 
         # check if interface has been support AP mode (necessary for hostapd)
         if self.FSettings.Settings.get_setting('accesspoint','check_support_ap_mode',format=bool):
-            if not 'AP' in Refactor.get_supported_interface(self.selectCard.currentText())['Supported']:
+            if not 'AP' in Refactor.get_supported_interface(self.WLANCard.currentText())['Supported']:
                 return QtGui.QMessageBox.warning(self,'No Network Supported failed',
                 "<strong>failed AP mode: warning interface </strong>, the feature "
                 "Access Point Mode is Not Supported By This Device -><strong>({})</strong>.<br><br>"
                 "Your adapter does not support for create Access Point Network."
-                " ".format(self.selectCard.currentText()))
+                " ".format(self.WLANCard.currentText()))
 
         # check connection with internet
         self.interfacesLink = Refactor.get_interfaces()
 
         # check if Wireless interface is being used
-        if str(self.selectCard.currentText()) == self.interfacesLink['activated'][0]:
+        if str(self.WLANCard.currentText()) == self.interfacesLink['activated'][0]:
             iwconfig = Popen(['iwconfig'], stdout=PIPE,shell=False,stderr=PIPE)
             for line in iwconfig.stdout.readlines():
-                if str(self.selectCard.currentText()) in line:
+                if str(self.WLANCard.currentText()) in line:
                     return QtGui.QMessageBox.warning(self,'Wireless interface is busy',
                     'Connection has been detected, this {} is joined the correct Wi-Fi network'
                     ' : Device or resource busy\n{}\nYou may need to another Wi-Fi USB Adapter'
                     ' for create AP or try use with local connetion(Ethernet).'.format(
-                    str(self.selectCard.currentText()),line))
+                    str(self.WLANCard.currentText()),line))
 
         # check if range ip class is same
         dh, gateway = self.PumpSettingsTAB.getPumpkinSettings()['router'],str(self.EditGateway.text())
@@ -1271,7 +1271,7 @@ class WifiPumpkin(QtGui.QWidget):
 
         # check if using ethernet or wireless connection
         print('[*] Configuring hostapd...')
-        self.SettingsEnable['AP_iface'] = str(self.selectCard.currentText())
+        self.SettingsEnable['AP_iface'] = str(self.WLANCard.currentText())
         set_monitor_mode(self.SettingsEnable['AP_iface']).setDisable()
         if self.interfacesLink['activated'][1] == 'ethernet' or self.interfacesLink['activated'][1] == 'ppp' \
                 or self.interfacesLink['activated'][0] == None: #allow use without internet connection
@@ -1354,7 +1354,7 @@ class WifiPumpkin(QtGui.QWidget):
 
             elif self.FSettings.Settings.get_setting('accesspoint','dnsproxy_server',format=bool):
                 self.ThreadDNSServer = ProcessThread({'python':['plugins/external/dns2proxy/dns2proxy.py','-i',
-                str(self.selectCard.currentText()),'-k',self.currentSessionID]})
+                str(self.WLANCard.currentText()),'-k',self.currentSessionID]})
                 self.ThreadDNSServer._ProcssOutput.connect(self.get_dns2proxy_output)
                 self.ThreadDNSServer.setObjectName('DNSServer') # use dns2proxy as DNS server
 
@@ -1370,7 +1370,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.set_status_label_AP(True)
         self.ProxyPluginsTAB.GroupSettings.setEnabled(False)
         self.FSettings.Settings.set_setting('accesspoint','statusAP',True)
-        self.FSettings.Settings.set_setting('accesspoint','interfaceAP',str(self.selectCard.currentText()))
+        self.FSettings.Settings.set_setting('accesspoint','interfaceAP',str(self.WLANCard.currentText()))
 
 
         # check plugins that use sslstrip
@@ -1400,7 +1400,7 @@ class WifiPumpkin(QtGui.QWidget):
         if self.PopUpPlugins.check_responder.isChecked():
             # create thread for plugin responder
             self.Thread_responder = ProcessThread({
-                'python':[C.RESPONDER_EXEC,'-I', str(self.selectCard.currentText()),'-wrFbv']})
+                'python':[C.RESPONDER_EXEC,'-I', str(self.WLANCard.currentText()),'-wrFbv']})
             self.Thread_responder._ProcssOutput.connect(self.get_responder_output)
             self.Thread_responder.setObjectName('Firelamb')
             self.Apthreads['RougeAP'].append(self.Thread_responder)
@@ -1408,7 +1408,7 @@ class WifiPumpkin(QtGui.QWidget):
         if self.PopUpPlugins.check_dns2proy.isChecked():
             # create thread for plugin DNS2proxy
             self.Thread_dns2proxy = ProcessThread(
-            {'python':[C.DNS2PROXY_EXEC,'-i',str(self.selectCard.currentText()),'-k',self.currentSessionID]})
+            {'python':[C.DNS2PROXY_EXEC,'-i',str(self.WLANCard.currentText()),'-k',self.currentSessionID]})
             self.Thread_dns2proxy._ProcssOutput.connect(self.get_dns2proxy_output)
             self.Thread_dns2proxy.setObjectName('Dns2Proxy')
             self.Apthreads['RougeAP'].append(self.Thread_dns2proxy)
@@ -1442,7 +1442,7 @@ class WifiPumpkin(QtGui.QWidget):
 
         # start thread TCPproxy Module
         if self.PopUpPlugins.check_tcpproxy.isChecked():
-            self.Thread_TCPproxy = ThreadSniffingPackets(str(self.selectCard.currentText()),self.currentSessionID)
+            self.Thread_TCPproxy = ThreadSniffingPackets(str(self.WLANCard.currentText()),self.currentSessionID)
             self.Thread_TCPproxy.setObjectName('Firelamb')
             self.Thread_TCPproxy.output_plugins.connect(self.get_TCPproxy_output)
             self.Apthreads['RougeAP'].append(self.Thread_TCPproxy)
@@ -1477,7 +1477,7 @@ class WifiPumpkin(QtGui.QWidget):
         print('-------------------------------')
         print('AP::[{}] Running...'.format(self.EditApName.text()))
         print('AP::BSSID::[{}] CH {}'.format(Refactor.get_interface_mac(
-        self.selectCard.currentText()),self.EditChannel.value()))
+        self.WLANCard.currentText()),self.EditChannel.value()))
         self.FSettings.Settings.set_setting('accesspoint','ssid',str(self.EditApName.text()))
         self.FSettings.Settings.set_setting('accesspoint','channel',str(self.EditChannel.value()))
 

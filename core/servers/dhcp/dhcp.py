@@ -1,18 +1,116 @@
+from re import *
+from netaddr import EUI
 from core.config.globalimport import *
 from core.widgets.customiseds import *
 from core.widgets.default.uimodel import *
-from core.servers.components.BaseComponent import BaseComponent
+from core.utility.component import ControllerBlueprint
+from isc_dhcp_leases.iscdhcpleases import IscDhcpLeases
 
 
-class DHCPServers(BaseComponent):
-    def __init__(self):
+class DHCPServers(QtGui.QWidget,ComponentBlueprint):
+    Name = "Generic"
+    ID = "Generic"
+    def __init__(self,parent=0):
         super(DHCPServers,self).__init__()
+        self.parent = parent
+        self.FSettings = SuperSettings.instances[0]
+        self.EditGateway = QtGui.QLineEdit(self)
+        self.EditGateway.setFixedWidth(120)
+        self.EditGateway.setHidden(True)  # disable Gateway
+        self.controlui = QtGui.QRadioButton(self.Name)
+        self.controlui.toggled.connect(partial(self.controlcheck, self.controlui))
+        self.controlui.setChecked(self.FSettings.Settings.get_setting('dhcpserver', self.ID,format=bool))
+        self.controlui.setObjectName(self.ID)
         self.DHCPConf = self.Settings.conf
-
+    def controlcheck(self,object):
+        self.FSettings.Settings.set_setting('dhcpserver', self.ID, self.controlui.isChecked())
+    def prereq(self):
+        dh, gateway = self.DHCPConf['router'], str(self.EditGateway.text())
+        # dh, gateway = self.PumpSettingsTAB.getPumpkinSettings()['router'],str(self.EditGateway.text())
+        if dh[:len(dh) - len(dh.split('.').pop())] == gateway[:len(gateway) - len(gateway.split('.').pop())]:
+            return QtGui.QMessageBox.warning(self, 'DHCP Server settings',
+                                             'The DHCP server check if range ip class is same.'
+                                             'it works, but not share internet connection in some case.\n'
+                                             'for fix this, You need change on tab (settings -> Class Ranges)'
+                                             'now you have choose the Class range different of your network.')
+    def Stop(self):
+        self.shutdown()
+    def Start(self):
+        self.prereq()
+        self.Initialize()
+        self.boot()
     @property
     def Settings(self):
         return DHCPSettings.instances[0]
+    @property
+    def HomeDisplay(self):
+        return DHCPClient.instances[0]
+    def get_mac_vendor(self,mac):
+        ''' discovery mac vendor by mac address '''
+        try:
+            d_vendor = EUI(mac)
+            d_vendor = d_vendor.oui.registration().org
+        except:
+            d_vendor = 'unknown mac'
+        return d_vendor
+    def add_data_into_QTableWidget(self,client):
+        print self.HomeDisplay
+        self.HomeDisplay.ClientTable.addNextWidget(client)
+    def add_DHCP_Requests_clients(self,mac,user_info):
+        self.parent.StationMonitor.addRequests(mac,user_info,True)
+    def get_DHCP_Discover_clients(self,message):
+        '''get infor client connected with AP '''
+        self.APclients = {}
+        if message['mac_addr'] not in self.HomeDisplay.ClientTable.APclients.keys():
+            self.APclients[message['mac_addr']] = \
+            {'IP': message['ip_addr'],
+            'device': message['host_name'],
+             'MAC': message['mac_addr'],
+             'Vendors' : self.get_mac_vendor(message['mac_addr'])}
 
+            self.add_DHCP_Requests_clients(message['mac_addr'],self.APclients[message['mac_addr']])
+            self.add_data_into_QTableWidget(self.APclients)
+            self.parent.connectedCount.setText(str(len(self.HomeDisplay.ClientTable.APclients.keys())))
+    def get_DHCP_Requests_clients(self,data):
+        ''' filter: data info sended DHCPD request '''
+        self.APclients = {}
+        if len(data) == 8:
+            device = sub(r'[)|(]',r'',data[5])
+            if len(device) == 0: device = 'unknown'
+            if Refactor.check_is_mac(data[4]):
+                if data[4] not in self.HomeDisplay.APclients.keys():
+                    self.APclients[data[4]] = {'IP': data[2],
+                    'device': device,'MAC': data[4],'Vendors' : self.get_mac_vendor(data[4])}
+                    self.add_DHCP_Requests_clients(data[4],self.APclients[data[4]])
+        elif len(data) == 9:
+            device = sub(r'[)|(]',r'',data[6])
+            if len(device) == 0: device = 'unknown'
+            if Refactor.check_is_mac(data[5]):
+                if data[5] not in self.HomeDisplay.ClientTable.APclients.keys():
+                    self.APclients[data[5]] = {'IP': data[2],
+                    'device': device,'MAC': data[5],'Vendors' : self.get_mac_vendor(data[5])}
+                    self.add_DHCP_Requests_clients(data[5],self.APclients[data[5]])
+        elif len(data) == 7:
+            if Refactor.check_is_mac(data[4]):
+                if data[4] not in self.HomeDisplay.ClientTable.APclients.keys():
+                    leases = IscDhcpLeases(C.DHCPLEASES_PATH)
+                    hostname = None
+                    try:
+                        for item in leases.get():
+                            if item.ethernet == data[4]:
+                                hostname = item.hostname
+                        if hostname == None:
+                            item = leases.get_current()
+                            hostname = item[data[4]]
+                    except:
+                        hostname = 'unknown'
+                    if hostname == None or len(hostname) == 0:hostname = 'unknown'
+                    self.APclients[data[4]] = {'IP': data[2],'device': hostname,
+                                               'MAC': data[4], 'Vendors': self.get_mac_vendor(data[4])}
+                    self.add_DHCP_Requests_clients(data[4],self.APclients[data[4]])
+        if self.APclients != {}:
+            self.add_data_into_QTableWidget(self.APclients)
+            self.parent.connectedCount.setText(str(len(self.HomeDisplay.ClientTable.APclients.keys())))
 
 
 
@@ -26,6 +124,13 @@ class DHCPSettings(CoreSettings):
         self.__class__.instances.append(weakref.proxy(self))
         self.setCheckable(False)
         self.setFixedWidth(400)
+        self.dhmode = [mod(parent) for mod in DHCPServers.__subclasses__()]
+        self.modoption = QtGui.QFormLayout()
+        self.modegroup = QtGui.QButtonGroup()
+
+        for dhmode in self.dhmode:
+            self.modoption.addRow(dhmode.controlui)
+            self.modegroup.addButton(dhmode.controlui)
         self.layoutDHCP = QtGui.QFormLayout()
         self.layoutbuttons = QtGui.QHBoxLayout()
         self.btnDefault = QtGui.QPushButton('Default')
@@ -54,6 +159,7 @@ class DHCPSettings(CoreSettings):
         self.broadcast = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'broadcast'))
         self.dhcpClassIP.currentIndexChanged.connect(self.dhcpClassIPClicked)
 
+        self.layoutDHCP.addRow(self.modoption)
         self.layoutDHCP.addRow('Class Ranges', self.dhcpClassIP)
         self.layoutDHCP.addRow('Default Lease time', self.leaseTimeDef)
         self.layoutDHCP.addRow('Max Lease time', self.leaseTimeMax)
@@ -62,6 +168,7 @@ class DHCPSettings(CoreSettings):
         self.layoutDHCP.addRow('Netmask', self.netmask)
         self.layoutDHCP.addRow('Broadcaset Address', self.broadcast)
         self.layoutDHCP.addRow('DHCP IP-Range', self.range)
+
         self.updateconf()
 
         # layout add
@@ -103,7 +210,7 @@ class DHCPSettings(CoreSettings):
         self.FSettings.Settings.set_setting('dhcp','router',str(self.router.text()))
         self.FSettings.Settings.set_setting('dhcp','subnet',str(self.subnet.text()))
         self.FSettings.Settings.set_setting('dhcp','broadcast',str(self.broadcast.text()))
-        if not str(self.route.text()) in self.all_geteway_check:
+        if not str(self.router.text()) in self.all_geteway_check:
             self.FSettings.Settings.set_setting('dhcp','classtype','Custom')
         self.btnSave.setEnabled(False)
         self.sendMensage.emit('settings DHCP saved with success...')
@@ -120,8 +227,10 @@ class DHCPSettings(CoreSettings):
 class DHCPClient(HomeDisplay):
     Name = "DHCP"
     ID = "DHCP"
+    instances=[]
     def __init__(self,parent):
         super(DHCPClient,self).__init__(parent)
+        self.__class__.instances.append(weakref.proxy(self))
         self.ClientTable = AutoTableWidget()
         self.THeaders = OrderedDict([('Devices', []),
                                      ('IP Address', []),

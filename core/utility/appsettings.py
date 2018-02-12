@@ -196,9 +196,9 @@ class SettingsTabGeneral(QVBoxLayout):
             self.edit_hostapd_path.setEnabled(False)
 
 
-class frm_Settings(QDialog):
+class SettingsRegister(QDialog):
     def __init__(self, parent = None):
-        super(frm_Settings, self).__init__(parent)
+        super(SettingsRegister, self).__init__(parent)
         self.setWindowTitle('WiFi-Pumpkin - Settings')
         self.Settings = SettingsINI(C.CONFIG_INI)
         self.loadtheme(self.get_theme_qss())
