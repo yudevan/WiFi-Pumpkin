@@ -55,7 +55,7 @@ class MitmMode(Widget):
     def __init__(self,parent=None):
         super(MitmMode, self).__init__(parent)
         self.parent = parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.reactor = None
         self.server = None
         setup_logger(self.Name, self.LogFile, self.parent.currentSessionID)
@@ -66,6 +66,7 @@ class MitmMode(Widget):
         self.tabinterface.setSizeHint(QtCore.QSize(30, 30))
         self.tabinterface.setIcon(QtGui.QIcon(self.Icon))
         self.ConfigWindow = QtGui.QDialog()
+        self.ConfigWindow.setWindowTitle("{} Settings".format(self.Name))
 
         self.controlui = QtGui.QCheckBox(self.Name)
         self.controlui.setObjectName(QtCore.QString(self.Description))

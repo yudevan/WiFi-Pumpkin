@@ -16,7 +16,7 @@ class Mode(QtGui.QWidget):
     def __init__(self,parent=None,FSettings = None):
         super(Mode,self).__init__(parent)
         self.parent = parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.controlui = QtGui.QCheckBox(self.Name)
         self.controlui.clicked.connect(partial(self.controlcheck,self.controlui))
         self.SettingsAP = {}

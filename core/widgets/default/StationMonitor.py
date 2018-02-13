@@ -9,12 +9,12 @@ class StationMonitor(TabsWidget):
     __subitem = False
     def __init__(self,parent= None,FSettings=None):
         super(StationMonitor,self).__init__(parent,FSettings)
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.Home = QtGui.QVBoxLayout()
         self.widget = QtGui.QWidget()
         self.layout = QtGui.QVBoxLayout(self.widget)
 
-        self.GroupMonitor = QtGui.QGroupBox()
+        # self.GroupMonitor = QtGui.QGroupBox()
         self.MonitorTreeView = QtGui.QTreeView()
         self.MonitorTreeView.setSelectionBehavior(QtGui.QAbstractItemView.SelectRows)
         self.model = QtGui.QStandardItemModel()
@@ -23,12 +23,13 @@ class StationMonitor(TabsWidget):
         self.MonitorTreeView.setUniformRowHeights(True)
         self.MonitorTreeView.setColumnWidth(0, 130)
 
-        self.GroupMonitor.setTitle('Station Monitor AP:')
-        self.GroupMonitor.setFixedHeight(400)
-        self.MonitorLayout = QtGui.QVBoxLayout()
-        self.MonitorLayout.addWidget(self.MonitorTreeView)
-        self.GroupMonitor.setLayout(self.MonitorLayout)
-        self.mainlayout.addWidget(self.GroupMonitor)
+        # self.GroupMonitor.setTitle('Station Monitor AP:')
+        # self.GroupMonitor.setFixedHeight(400)
+        # self.MonitorLayout = QtGui.QVBoxLayout()
+        # self.MonitorLayout.addWidget(self.MonitorTreeView)
+        # self.GroupMonitor.setLayout(self.MonitorLayout)
+        self.scroll.setWidget(self.MonitorTreeView)
+        # #self.mainlayout.addWidget(self.GroupMonitor)
 
     def addRequests(self, macddress, user, status):
         if status:

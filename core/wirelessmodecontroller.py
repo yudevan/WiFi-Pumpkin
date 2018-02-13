@@ -19,7 +19,7 @@ class WirelessModeController(QtGui.QTableWidget):
     def __init__(self, parent, FSettings=None, main_method=None, **kwargs):
         super(WirelessModeController,self).__init__(parent)
         self.parent = parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.SessionsAP = loads(str(self.FSettings.Settings.get_setting('accesspoint', 'sessions')))
         self.currentSessionID = self.parent.currentSessionID
         self.SettingsAP = self.parent.SettingsAP

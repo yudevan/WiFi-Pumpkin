@@ -118,13 +118,8 @@ class StaticSettings(CoreSettings):
     def __init__(self,parent):
         super(StaticSettings,self).__init__(parent)
         self.__class__.instances.append(weakref.proxy(self))
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.setCheckable(False)
-        self.WLayout = QtGui.QGroupBox()
-        self.WLayout.setTitle("Access Point")
-        self.WLayout.setFixedWidth(260)
-        self.WLGrid = QtGui.QGridLayout()
-        self.WLayout.setLayout(self.WLGrid)
 
 
         self.WSLayout = QtGui.QGroupBox()
@@ -162,7 +157,7 @@ class StaticSettings(CoreSettings):
 
         self.WSLayout.setLayout(self.WSGrid)
         self.APLayout = QtGui.QFormLayout()
-        self.APLayout.addRow(self.WLayout,self.WSLayout)
+        self.APLayout.addRow(self.WSLayout)
         self.layout.addLayout(self.APLayout)
     def check_StatusWPA_Security(self):
         '''simple connect for get status security wireless click'''

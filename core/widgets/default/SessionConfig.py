@@ -14,7 +14,7 @@ class SessionConfig(TabsWidget):
     def __init__(self,parent=None,FSettings=None):
         super(SessionConfig,self).__init__(parent,FSettings)
         self.__class__.instances.append(weakref.proxy(self))
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.title = self.__class__.__name__
 
         settingsItem = [setitem(self.parent ) for setitem in CoreSettings.__subclasses__()]

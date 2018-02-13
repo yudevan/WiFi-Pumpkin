@@ -13,7 +13,7 @@ class DHCPServers(QtGui.QWidget,ComponentBlueprint):
     def __init__(self,parent=0):
         super(DHCPServers,self).__init__()
         self.parent = parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.EditGateway = QtGui.QLineEdit(self)
         self.EditGateway.setFixedWidth(120)
         self.EditGateway.setHidden(True)  # disable Gateway

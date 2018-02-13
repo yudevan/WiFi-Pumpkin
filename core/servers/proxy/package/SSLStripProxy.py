@@ -40,11 +40,11 @@ class ProxySSLstrip(ProxyMode):
     _cmd_array = []
     _PluginsToLoader = {'plugins': None,'Content':''}
 
-    def __init__(self,parent, FsettingsUI=None, main_method=None, **kwargs):
+    def __init__(self,parent, **kwargs):
         super(ProxySSLstrip, self).__init__(parent)
         self.main_method = parent
         self.urlinjected= []
-        self.FSettings  = SuperSettings.instances[0]
+        self.FSettings  = SuperSettings.getInstance()
         self.mainLayout    = QtGui.QVBoxLayout()
         self.dock = ProxySSLstripDock(self,self.Name)
         self.search[self.Name] = str('iptables -t nat -A PREROUTING -p tcp' +

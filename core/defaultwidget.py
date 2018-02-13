@@ -1,13 +1,12 @@
-from PyQt4.QtGui import *
-from PyQt4.QtCore import *
+from core.config.globalimport import *
 from core.widgets.default.uimodel import *
 
 
-class DefaultWidget(QWidget):
-    def __init__(self,parent=None,FSettings = None):
+class DefaultWidget(QtGui.QWidget):
+    def __init__(self,parent = None,**kwargs):
         super(DefaultWidget,self).__init__(parent)
         self.parent = parent
-        self.FSettings = FSettings
+        self.FSettings = SuperSettings.getInstance()
         self.defaultui = []
         self.allui =[]
         self.__tabbyname = {}

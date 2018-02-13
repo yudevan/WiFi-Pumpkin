@@ -4,7 +4,7 @@ class IP():
     ID="Default"
     def __init__(self):
         super(IP,self).__init__()
-        self.FSettings= SuperSettings.instances[0]
+        self.FSettings= SuperSettings.getInstance()
         self.ClassRanges = ""
         self.DefaultLease = 600
         self.MaxLease = 7200

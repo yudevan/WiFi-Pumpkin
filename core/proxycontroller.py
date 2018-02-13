@@ -13,15 +13,16 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
     SetNoProxy = QtCore.pyqtSignal(object)
     dockMount = QtCore.pyqtSignal(bool)
 
-    def __init__(self,parent, FSettings=None, main_method=None, **kwargs):
+    def __init__(self,parent = None,**kwargs):
         super(ProxyModeController, self).__init__(parent)
         self.parent=parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.setCheckable(True)
         self.setChecked(self.FSettings.Settings.get_setting('plugins', 'disableproxy', format=bool))
         self.clicked.connect(self.get_disable_proxy)
         self.proxyGroup = QtGui.QButtonGroup()
         __proxlist= [prox(parent=self.parent) for prox in ProxyMode.ProxyMode.__subclasses__()]
+
         #Keep Proxy in a dictionary
         for k in __proxlist:
             self.proxies[k.Name]=k
@@ -29,7 +30,11 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
         self.p_name = []
         self.p_desc = []
         self.p_settings = []
+        self.NoProxy = None
         for n,p in self.proxies.items():
+            if p.Name == "No Proxy":
+                print "{} Is no proxy".format(p.Name)
+                self.NoProxy = p
             self.p_name.append(p.controlui)
             self.p_settings.append(p.btnChangeSettings)
             self.p_desc.append(p.controlui.objectName())
@@ -71,15 +76,19 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
 
 
         if self.isChecked():
-            self.parent.set_proxy_statusbar(self.Activated.Name, disabled=False)
-            self.FSettings.Settings.set_setting('plugins', 'disableproxy',
-                                                self.isChecked())
+            if self.Activated.Name == "No Proxy":
+                self.SetNoProxy.emit(False)
+            else:
+
+                self.parent.set_proxy_statusbar(self.Activated.Name, disabled=False)
+                self.FSettings.Settings.set_setting('plugins', 'disableproxy',
+                                                    self.isChecked())
 
         else:
             self.SetNoProxy.emit(self.isChecked())
             self.FSettings.Settings.set_setting('plugins', 'disableproxy',
                                                 self.isChecked())
-            self.parent.set_proxy_statusbar('', disabled=True)
+
 
     def dockUpdate(self,add=True):
         self.dockMount.emit(add)
@@ -93,23 +102,37 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
     @property
     def ActiveReactor(self):
         reactor = []
-        for act in self.proxies.values():
-            if act.controlui.isChecked():
-                if act.Name =="No Proxy":
-                    return None
-                else:
-                    reactor.append(act.reactor)
-                    if act.subreactor:
+        if self.isChecked():
+
+            for act in self.proxies.values():
+                if act.controlui.isChecked():
+                    if act.Name == "No Proxy":
+                        reactor.append(act.reactor)
                         reactor.append(act.subreactor)
-        return reactor
+                    else:
+                        reactor.append(act.reactor)
+                        if act.subreactor:
+                            reactor.append(act.subreactor)
+        else:
+            reactor.append(self.NoProxy.reactor)
+            reactor.append(self.NoProxy.subreactor)
+
+        return  reactor
+
+
+
     @property
     def Activated(self):
-        for act in self.proxies.values():
-            if act.controlui.isChecked():
-                if act.Name =="No Proxy":
-                    return None
-                else:
-                    return act
+        if self.isChecked():
+
+            for act in self.proxies.values():
+                if act.controlui.isChecked():
+                    if act.Name == "No Proxy":
+                        return self.NoProxy
+                    else:
+                        return act
+        else:
+            return self.NoProxy
     @property
     def get(self):
         return self.proxies

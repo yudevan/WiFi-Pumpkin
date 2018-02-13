@@ -13,6 +13,7 @@ class Home(TabsWidget):
     def __init__(self,parent= None,FSettings=None):
         super(Home,self).__init__(parent,FSettings)
         self.__homeitem = [hi(parent) for hi in HomeDisplay.__subclasses__()]
+
         for wid in self.__homeitem:
             self.mainlayout.addWidget(wid)
             setattr(self,wid.ID,wid)

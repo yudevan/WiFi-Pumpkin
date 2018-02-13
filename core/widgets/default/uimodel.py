@@ -12,7 +12,7 @@ class TabsWidget(QtGui.QWidget):
         super(TabsWidget,self).__init__(parent)
         self.setObjectName(self.Name)
         #self.setTitle("{}".format(self.Name))
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.parent = parent
 
         self.tabinterface = QtGui.QListWidgetItem()
@@ -54,7 +54,7 @@ class CoreSettings(QtGui.QGroupBox):
         self.setTitle("{} Settings".format(self.Name))
         self.setCheckable(True)
         self.parent = parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.layout = QtGui.QVBoxLayout()
         self.setLayout(self.layout)
     def deleteObject(self,obj):
@@ -77,7 +77,7 @@ class HomeDisplay(QtGui.QWidget):
     def __init__(self,parent=0,FSettings=None):
         super(HomeDisplay,self).__init__(parent)
         self.setObjectName(self.Name)
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.parent = parent
         self.layout = QtGui.QVBoxLayout(self)
         self.setSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
@@ -94,7 +94,7 @@ class PluginsUI(QtGui.QGroupBox):
     def __init__(self,parent=0,FSettings={}):
         super(PluginsUI,self).__init__(parent)
         self.parent = parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.sessionconfig ={}
         self.setTitle(self.Caption)
         self.table = QtGui.QTableWidget()

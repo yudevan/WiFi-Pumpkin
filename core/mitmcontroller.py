@@ -11,10 +11,10 @@ class MitmController(PluginsUI,ControllerBlueprint):
     mitmhandler = {}
     SetNoMitmMode = QtCore.pyqtSignal(object)
     dockMount = QtCore.pyqtSignal(bool)
-    def __init__(self,parent = 0):
+    def __init__(self,parent = None,**kwargs):
         super(MitmController, self).__init__(parent)
         self.parent=parent
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         #self.uplinkIF = self.parent.Refactor.get_interfaces()
         #self.downlinkIF = self.parent.WLANCard.currentText()
         __manipulator= [prox(parent=self.parent) for prox in MitmMode.MitmMode.__subclasses__()]
@@ -32,7 +32,7 @@ class MitmController(PluginsUI,ControllerBlueprint):
             #self.manipulatorGroup.addButton(p.controlui)
             p.sendSingal_disable.connect(self.DisableMitmMode)
             p.dockwidget.addDock.connect(self.dockUpdate)
-            #self.parent.TabListWidget_Menu.addItem(p.tabinterface)
+            #self.parent.LeftTabBar.addItem(p.tabinterface)
             #self.parent.Stack.addWidget(p)
 
         self.MitmModeTable = OrderedDict(

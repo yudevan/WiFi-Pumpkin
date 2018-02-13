@@ -1,19 +1,14 @@
-
-from PyQt4.QtGui import *
-from PyQt4.QtCore import *
-from PyQt4.Qt import *
-
-
+from core.config.globalimport import *
 from core.widgets.docks.activitymonitor import *
 
 
-class ActivityMonitorControl(QGroupBox):
+class ActivityMonitorControl(QtGui.QGroupBox):
     monitor ={}
-    addDock = pyqtSignal(bool)
-    def __init__(self,parent=None):
+    addDock = QtCore.pyqtSignal(bool)
+    def __init__(self,parent = None,**kwargs):
         super(ActivityMonitorControl,self).__init__(parent)
         self.setTitle("Activity Monitor")
-        self.mainlayout = QGridLayout()
+        self.mainlayout = QtGui.QGridLayout()
         _actmon = [act(parent=self) for act in activitymonitor.ActivityMonitor.__subclasses__()]
         row=0
         col=0

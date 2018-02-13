@@ -241,31 +241,31 @@ class WifiPumpkin(QtGui.QWidget):
         # self.item_home.setText('Home')
         # self.item_home.setSizeHint(QtCore.QSize(30,30))
         # self.item_home.setIcon(QtGui.QIcon('icons/home.png'))
-        # self.TabListWidget_Menu.addItem(self.item_home)
+        # self.LeftTabBar.addItem(self.item_home)
 
         # self.item_settings = QtGui.QListWidgetItem()
         # self.item_settings.setText('Settings')
         # self.item_settings.setSizeHint(QtCore.QSize(30,30))
         # self.item_settings.setIcon(QtGui.QIcon('icons/settings-AP.png'))
-        # self.TabListWidget_Menu.addItem(self.item_settings)
+        # self.LeftTabBar.addItem(self.item_settings)
 
         # self.item_plugins =QtGui.QListWidgetItem()
         # self.item_plugins.setText('Plugins')
         # self.item_plugins.setSizeHint(QtCore.QSize(30,30))
         # self.item_plugins.setIcon(QtGui.QIcon('icons/plugins-new.png'))
-        # self.TabListWidget_Menu.addItem(self.item_plugins)
+        # self.LeftTabBar.addItem(self.item_plugins)
 
         # self.item_injector = QtGui.QListWidgetItem()
         # self.item_injector.setText('SSLstrip-Proxy')
         # self.item_injector.setSizeHint(QtCore.QSize(30,30))
         # self.item_injector.setIcon(QtGui.QIcon('icons/mac.png'))
-        # self.TabListWidget_Menu.addItem(self.item_injector)
+        # self.LeftTabBar.addItem(self.item_injector)
 
         # self.item_pumpkinProxy = QtGui.QListWidgetItem()
         # self.item_pumpkinProxy.setText('Pumpkin-Proxy')
         # self.item_pumpkinProxy.setSizeHint(QtCore.QSize(30,30))
         # self.item_pumpkinProxy.setIcon(QtGui.QIcon('icons/pumpkinproxy.png'))
-        # self.TabListWidget_Menu.addItem(self.item_pumpkinProxy)
+        # self.LeftTabBar.addItem(self.item_pumpkinProxy)
 
         self.item_packetsniffer = QtGui.QListWidgetItem()
         self.item_packetsniffer.setText('TCP-Proxy')
@@ -283,13 +283,13 @@ class WifiPumpkin(QtGui.QWidget):
         # self.item_dock.setText('Activity-Monitor')
         # self.item_dock.setSizeHint(QtCore.QSize(30,30))
         # self.item_dock.setIcon(QtGui.QIcon('icons/activity-monitor.png'))
-        # self.TabListWidget_Menu.addItem(self.item_dock)
+        # self.LeftTabBar.addItem(self.item_dock)
 
         # self.item_monitor = QtGui.QListWidgetItem()
         # self.item_monitor.setText('Stations')
         # self.item_monitor.setSizeHint(QtCore.QSize(30,30))
         # self.item_monitor.setIcon(QtGui.QIcon('icons/stations.png'))
-        # self.TabListWidget_Menu.addItem(self.item_monitor)
+        # self.LeftTabBar.addItem(self.item_monitor)
 
 
 

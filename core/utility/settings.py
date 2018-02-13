@@ -208,6 +208,9 @@ class frm_Settings(QDialog):
         self.setGeometry(0, 0, 420, 440)
         self.center()
         self.Qui()
+    @classmethod
+    def getInstance(cls):
+        return cls.instances[0]
 
     def loadtheme(self,theme):
         ''' load theme widgets '''

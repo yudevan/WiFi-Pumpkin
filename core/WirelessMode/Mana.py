@@ -55,29 +55,14 @@ class ManaSettings(CoreSettings):
     def __init__(self,parent):
         super(ManaSettings,self).__init__(parent)
         self.__class__.instances.append(weakref.proxy(self))
-        self.FSettings = SuperSettings.instances[0]
+        self.FSettings = SuperSettings.getInstance()
         self.setCheckable(False)
-        self.WLayout = QtGui.QGroupBox()
-        self.WLayout.setTitle("Mana AP Settings")
-        self.WLGrid = QtGui.QGridLayout()
-        self.WLayout.setLayout(self.WLGrid)
 
 
         self.HostapdKarmaPath = QtGui.QLineEdit()
         self.HostapdKarmaPath.setText(self.FSettings.Settings.get_setting(self.ConfigRoot ,'{}_hostapd_path'.format(self.ConfigRoot)))
         self.HostapdConf = QtGui.QComboBox()
         os.path.walk('core/config/hostapd',self.osWalkCallback,None)
-
-        self.EditSSID = QtGui.QLineEdit()
-        self.BtnRandomSSID = QtGui.QPushButton()
-        self.BtnRandomSSID.setIcon(QtGui.QIcon('icons/refresh.png'))
-        self.BtnRandomSSID.clicked.connect(self.setAP_essid_random)
-
-        self.EditBSSID = QtGui.QLineEdit()
-        self.EditChannel = QtGui.QSpinBox()
-        self.EditChannel.setMaximum(11)
-        self.EditChannel.setFixedWidth(10)
-        self.EditChannel.setMinimum(0)
 
         self.EnableMana = QtGui.QGroupBox("Enable Mana")
         self.EnableMana.setCheckable(True)
@@ -94,21 +79,10 @@ class ManaSettings(CoreSettings):
         self.KLayout.addRow(self.ManaACL)
         self.EnableMana.setLayout(self.KLayout)
 
-        self.EditSSID.setText(self.FSettings.Settings.get_setting('accesspoint', 'ssid'))
-        self.EditBSSID.setText(self.FSettings.Settings.get_setting('accesspoint', 'bssid'))
-        self.EditChannel.setValue(self.FSettings.Settings.get_setting('accesspoint', 'channel', format=int))
-
-        self.WLGrid.addWidget(QtGui.QLabel("Initial SSID:"), 0, 0)
-        self.WLGrid.addWidget(self.EditSSID, 0, 1)
-        self.WLGrid.addWidget(QtGui.QLabel("BSSID:"), 2, 0)
-        self.WLGrid.addWidget(self.EditBSSID, 2, 1)
-        self.WLGrid.addWidget(self.BtnRandomSSID, 2, 2)
-        self.WLGrid.addWidget(QtGui.QLabel("Channel:"), 3, 0)
-        self.WLGrid.addWidget(self.EditChannel, 3, 1)
         self.APLayout = QtGui.QFormLayout()
         self.APLayout.addRow(QtGui.QLabel("Hostapd with Mana"),self.HostapdKarmaPath)
         self.APLayout.addRow(QtGui.QLabel("Mana Conf"), self.HostapdConf)
-        self.APLayout.addRow(self.WLayout,self.EnableMana)
+        self.APLayout.addRow(self.EnableMana)
         self.layout.addLayout(self.APLayout)
     def osWalkCallback(self,arg,directory,files):
         for file in files:

@@ -13,7 +13,4 @@ class ActivityMonitor(TabsWidget):
     def __init__(self,parent= None,FSettings=None):
         super(ActivityMonitor,self).__init__(parent,FSettings)
         self.Dock = QtGui.QMainWindow()
-        del self.scrollwidget
-        del self.scroll
-        del self.mainlayout
-        self.layout.addWidget(self.Dock,True)
+        self.scroll.setWidget(self.Dock)
