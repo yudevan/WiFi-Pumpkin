@@ -1,9 +1,0 @@
-Package: wifi-pumpkin
-Version: 20171114
-Priority: optional
-Installed-Size: 6520.21
-Architecture: all
-Maintainer: Marcos Nesster <mh4root@gmail.com>
-Depends: python-pip, libffi-dev, libssl-dev, libxml2-dev, libxslt1-dev, zlib1g-dev, libarchive-dev, build-essential, libnetfilter-queue-dev, python-qt4, python-scapy, hostapd, rfkill, python-dev, git, libpcap-dev
-Description: WiFi-Pumpkin
- A tool for creating a WiFi-Hotspot and executing MitM-Attacks
