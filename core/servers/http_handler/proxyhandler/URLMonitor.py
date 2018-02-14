@@ -43,6 +43,7 @@ class URLMonitorDock(DockableWidget):
 class URLMonitor(MitmMode):
     Name = "URLMonitor"
     Author = "Wahyudin Aziz"
+    ID = "URLMonitor"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"
     Icon = "icons/tcpproxy.png"
     LogFile = C.LOG_URLCAPTURE

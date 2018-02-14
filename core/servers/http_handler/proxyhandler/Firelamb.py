@@ -43,6 +43,7 @@ class FirelambDock(DockableWidget):
 class Firelamb(MitmMode):
     Name = "Firelamb"
     Author = "Wahyudin Aziz"
+    ID = "Firelamb"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"
     Icon = "icons/tcpproxy.png"
     LogFile = C.LOG_CREDSCAPTURE

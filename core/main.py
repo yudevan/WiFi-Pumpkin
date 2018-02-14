@@ -205,11 +205,11 @@ class WifiPumpkin(QtGui.QWidget):
         #self.Tab_Default    = QtGui.QWidget()
         #self.Tab_Injector   = QtGui.QWidget()
         #self.Tab_PumpkinPro = QtGui.QWidget()
-        self.Tab_Packetsniffer = QtGui.QWidget()
-        self.Tab_statusAP   = QtGui.QWidget()
+        #self.Tab_Packetsniffer = QtGui.QWidget()
+        #self.Tab_statusAP   = QtGui.QWidget()
         #self.Tab_imageCap   = QtGui.QWidget()
         #self.Tab_Settings   = QtGui.QWidget()
-        self.Tab_ApMonitor  = QtGui.QWidget()
+        # self.Tab_ApMonitor  = QtGui.QWidget()
         #self.Tab_Plugins    = QtGui.QWidget()
         self.Tab_dock       = QtGui.QMainWindow() # for dockarea
         self.FSettings      = self.mainWindow.FSettings
@@ -228,17 +228,23 @@ class WifiPumpkin(QtGui.QWidget):
         #TODO This is a new Implementation to simplify development
         self.coreui = DefaultWidget(self)
         self.proxy = self.coreui.Plugins.Proxy
-        self.proxy.dockMount.connect(self.dockAdd)
+        self.proxy.dockMount.connect(self.proxyDockAdd)
         self.proxyDocklist = []
         self.mitmhandler = self.coreui.Plugins.MITM
         self.mitmDockList=[]
+        self.AreaDockInfo=[]
         self.mitmhandler.dockMount.connect(self.mitmDockAdd)
         self.wireless = WirelessModeController(self)
 
+        #TODO Might need improvement, checking if the program needed are installed
 
-
-
-
+        lista = ['', '',
+                 popen('which driftnet').read().split('\n')[0],
+                 popen('which dhcpd').read().split("\n")[0], '',
+                 popen('which hostapd').read().split("\n")[0],
+                 popen('which xterm').read().split("\n")[0]
+                 ]
+        for i in lista: self.SettingsEnable['ProgCheck'].append(path.isfile(i))
 
         # icons menus left widget
 
@@ -272,11 +278,11 @@ class WifiPumpkin(QtGui.QWidget):
         # self.item_pumpkinProxy.setIcon(QtGui.QIcon('icons/pumpkinproxy.png'))
         # self.LeftTabBar.addItem(self.item_pumpkinProxy)
 
-        self.item_packetsniffer = QtGui.QListWidgetItem()
-        self.item_packetsniffer.setText('TCP-Proxy')
-        self.item_packetsniffer.setSizeHint(QtCore.QSize(30,30))
-        self.item_packetsniffer.setIcon(QtGui.QIcon('icons/tcpproxy.png'))
-        self.LeftTabBar.addItem(self.item_packetsniffer)
+        # self.item_packetsniffer = QtGui.QListWidgetItem()
+        # self.item_packetsniffer.setText('TCP-Proxy')
+        # self.item_packetsniffer.setSizeHint(QtCore.QSize(30,30))
+        # self.item_packetsniffer.setIcon(QtGui.QIcon('icons/tcpproxy.png'))
+        # self.LeftTabBar.addItem(self.item_packetsniffer)
 
         # self.item_imageCapture = QtGui.QListWidgetItem()
         # self.item_imageCapture.setText('Images-Cap')
@@ -317,19 +323,21 @@ class WifiPumpkin(QtGui.QWidget):
         #self.ContentTabsettings= QtGui.QVBoxLayout(self.Tab_Settings)
         #self.ContentTabInject  = QtGui.QVBoxLayout(self.Tab_Injector)
         #self.ContentTabPumpPro = QtGui.QVBoxLayout(self.Tab_PumpkinPro)
-        self.ContentTabPackets = QtGui.QVBoxLayout(self.Tab_Packetsniffer) # TCP Proxy Tab
+        # self.ContentTabPackets = QtGui.QVBoxLayout(self.Tab_Packetsniffer) # TCP Proxy Tab
         #self.ContentImageCap   = QtGui.QHBoxLayout(self.Tab_imageCap)
         #self.ContentTabMonitor = QtGui.QVBoxLayout(self.Tab_ApMonitor)
         #self.ContentTabPlugins = QtGui.QVBoxLayout(self.Tab_Plugins)
-        self.ContentTabStatus  = QtGui.QVBoxLayout(self.Tab_statusAP)
+        # self.ContentTabStatus  = QtGui.QVBoxLayout(self.Tab_statusAP)
         #self.Stack.addWidget(self.Tab_Settings)
         #self.Stack.addWidget(self.Tab_Plugins)
         #self.Stack.addWidget(self.Tab_Injector)
         #self.Stack.addWidget(self.Tab_PumpkinPro)
-        self.Stack.addWidget(self.Tab_Packetsniffer)
+        #self.Stack.addWidget(self.Tab_Packetsniffer)
         #self.Stack.addWidget(self.Tab_imageCap)
         #self.Stack.addWidget(self.Tab_dock)
         #self.Stack.addWidget(self.Tab_ApMonitor)
+
+        self.status_plugin_proxy_name = QtGui.QLabel('')  # status name proxy activated
 
 
 
@@ -368,7 +376,7 @@ class WifiPumpkin(QtGui.QWidget):
         #                                ('Vendors',[])],
         #                              )
         # load all session saved in file ctg
-        self.status_plugin_proxy_name = QtGui.QLabel('') # status name proxy activated
+
         self.SessionsAP     = loads(str(self.FSettings.Settings.get_setting('accesspoint','sessions')))
         #self.PopUpPlugins   = PopUpPlugins(self.FSettings,self) # create popupPlugins
         #self.PopUpPlugins.GroupPluginsProxy.setChecked(self.FSettings.Settings.get_setting('plugins', 'disableproxy', format=bool))
@@ -377,15 +385,22 @@ class WifiPumpkin(QtGui.QWidget):
         self.THReactor = ThreadReactor() # thread reactor for sslstrip
         self.window_phishing = GUIModules.frm_PhishingManager()
         # TODO Refactored default widget
+        self.index = 0
+        indexpass = False
         for v in sorted(self.coreui.allui):
+            if v.Name == "Home":
+                indexpass =True
+
             self.LeftTabBar.addItem(v.tabinterface)
             self.Stack.addWidget(v)
             setattr(self, v.ID, v)
+            if not indexpass:
+                self.index+=1
         # self.proxy.sendSingal_disable.connect(self.get_disable_proxy_status)
         self.proxy.SetNoProxy.connect(self.get_disable_proxy_status)
         #TODO DHCP Configuration Definition
 
-        self.index = 2
+
         for v in self.proxy.get.values():
             if not v.Hidden:
                 self.LeftTabBar.addItem(v.tabinterface)
@@ -450,6 +465,7 @@ class WifiPumpkin(QtGui.QWidget):
         self.proxy.Activated.dockwidget.addDock.emit(self.proxy.Activated.controlui.isChecked())
         for mitm in self.mitmhandler.Activated:
             mitm.dockwidget.addDock.emit(mitm.controlui.isChecked())
+        self.DockArrage()
     def updateSettingsAP(self):
         self.SettingsAP = {
             'interface':
@@ -495,39 +511,37 @@ class WifiPumpkin(QtGui.QWidget):
                 ],
         }
     def mitmDockAdd(self,adding=True):
-        temp = self.mitmhandler.ActiveDock
-        for active in temp:
-            self.mitmDockList.append(active)
-            self.ActivityMonitor.Dock.addDockWidget(QtCore.Qt.LeftDockWidgetArea, active)
+        for dck in self.mitmDockList:
+            dck.close()
+            self.ActivityMonitor.Dock.removeDockWidget(dck)
+        self.mitmDockList=[]
+        self.mitmDockList.extend(self.mitmhandler.ActiveDock)
+        self.DockArrage()
 
-        for i in self.mitmDockList:
-            if i not in temp:
-                i.close()
-                self.mitmDockList.remove(i)
-                self.ActivityMonitor.Dock.removeDockWidget(i)
-        alldock = self.mitmDockList + self.proxyDocklist
+    def proxyDockAdd(self,adding=True):
+        for dck in self.proxyDocklist:
+            dck.close()
+            self.ActivityMonitor.Dock.removeDockWidget(dck)
+        self.proxyDocklist=[]
+        self.proxyDocklist.insert(0,self.proxy.Activated.dockwidget)
+        self.DockArrage()
 
-        if len(alldock) > 1:
-            for index in range(1, len(alldock) - 1):
-                self.ActivityMonitor.Dock.tabifyDockWidget(alldock[index],
-                                                   alldock[index + 1])
 
-    def dockAdd(self,adding=True):
-        for i in self.proxyDocklist:
-            i.close()
-            self.ActivityMonitor.Dock.removeDockWidget(i)
-        if adding:
-            try:
-                self.proxyDocklist.append(self.proxy.Activated.dockwidget)
-                self.ActivityMonitor.Dock.addDockWidget(QtCore.Qt.LeftDockWidgetArea, self.proxy.Activated.dockwidget)
-            except:
-                pass
-        alldock = self.mitmDockList + self.proxyDocklist
+    def DockArrage(self):
+        #TODO Find how to refresh dockarea
+        self.AreaDockInfo=[]
+        self.AreaDockInfo.insert(0,self.proxyDocklist[0])
+        self.AreaDockInfo.extend(self.mitmDockList)
+        for dock in self.AreaDockInfo:
+            self.ActivityMonitor.Dock.addDockWidget(QtCore.Qt.LeftDockWidgetArea, dock)
+            dock.show()
+        if len(self.AreaDockInfo) > 1:
+            for index in range(1, len(self.AreaDockInfo) - 1):
+                self.ActivityMonitor.Dock.tabifyDockWidget(self.AreaDockInfo[index],
+                                                           self.AreaDockInfo[index + 1])
+        self.AreaDockInfo[0].raise_()
 
-        if len(alldock) > 1:
-            for index in range(1, len(alldock) - 1):
-                self.ActivityMonitor.Dock.tabifyDockWidget(alldock[index],
-                                                               alldock[index + 1])
+
 
 
 
@@ -535,7 +549,7 @@ class WifiPumpkin(QtGui.QWidget):
     def initial_GUI_loader(self):
         ''' configure GUI default window '''
         self.SetupUI()
-        self.tcpproxy_TAB_Content()
+        #self.tcpproxy_TAB_Content()
         #self.imageCapture_TAB_Content()
         #self.settings_TAB_Content()
         #self.pumpkinProxy_TAB_Content()
@@ -792,7 +806,7 @@ class WifiPumpkin(QtGui.QWidget):
         # self.WPAtype_spinbox    = QtGui.QSpinBox()
         # self.wpa_pairwiseCB     = QtGui.QComboBox()
         # self.lb_type_security   = QtGui.QLabel()
-        wpa_algotims = self.FSettings.Settings.get_setting('accesspoint','WPA_Algorithms')
+        # wpa_algotims = self.FSettings.Settings.get_setting('accesspoint','WPA_Algorithms')
         # self.wpa_pairwiseCB.addItems(C.ALGORITMS)
         # self.wpa_pairwiseCB.setCurrentIndex(C.ALGORITMS.index(wpa_algotims))
         # self.WPAtype_spinbox.setMaximum(2)
@@ -828,8 +842,8 @@ class WifiPumpkin(QtGui.QWidget):
         self.Formbuttons.addRow(self.btn_start_attack,self.btn_cancelar)
         self.hBoxbutton.addLayout(self.Formbuttons)
 
-        self.Main_  = QtGui.QVBoxLayout()
-        self.slipt = QtGui.QHBoxLayout()
+        # self.Main_  = QtGui.QVBoxLayout()
+        # self.slipt = QtGui.QHBoxLayout()
         #self.slipt.addWidget(self.GroupAP)
         #self.slipt.addWidget(self.GroupApPassphrase)
 
@@ -881,7 +895,7 @@ class WifiPumpkin(QtGui.QWidget):
     def show_dns_spoof(self):
         ''' call GUI DnsSpoof module '''
         if  self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
-            if self.PopUpPlugins.GroupPluginsProxy.isChecked():
+            if self.proxy.isChecked():
                 return QtGui.QMessageBox.information(self,'DnsSpoof with AP','if you want to use the module'
                 ' Dns Spoof Attack with AP started, you need to disable Proxy Server. You can change this in plugins tab'
                 ' and only it necessary that the option "Enable Proxy Server"  be unmarked and '
@@ -1078,12 +1092,9 @@ class WifiPumpkin(QtGui.QWidget):
         #     self.SessionConfig.Wireless.WLANCard.setCurrentIndex(wireless.index(interface))
 
         # check if a program is installed
-        lista = [ '', '',popen('which driftnet').read().split('\n')[0],
-        popen('which dhcpd').read().split("\n")[0],'',popen('which hostapd').read().split("\n")[0],
-        popen('which xterm').read().split("\n")[0]]
-        for i in lista:self.SettingsEnable['ProgCheck'].append(path.isfile(i))
+
         # delete obj
-        self.deleteObject(lista)
+        #self.deleteObject(lista)
         #self.deleteObject(wireless)
 
     # # TODO Tobe Removed as it has been moved to SessionConfig.py
@@ -1333,7 +1344,7 @@ class WifiPumpkin(QtGui.QWidget):
 
         # get Tab-Hostapd conf and configure hostapd
 
-        # TODO Need to be removed as it has been done in WirelessMode.py
+        # TODO Need to be removed as it has been done in wirelessmode.py
 
         # self.configure_network_AP()
         # self.check_Wireless_Security() # check if user set wireless password

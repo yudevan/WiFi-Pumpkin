@@ -358,7 +358,7 @@ class WifiPumpkin(QtGui.QWidget):
         Menu_View.addAction(self.statusap_action)
 
         #tools Menu
-        Menu_tools = self.myQMenuBar.addMenu('&Tools')
+        Menu_tools = self.myQMenuBar.addMenu('&tools')
         btn_drift = QtGui.QAction('Active DriftNet', self)
         btn_drift.setShortcut('Ctrl+Y')
         btn_drift.triggered.connect(self.show_driftnet)
@@ -717,7 +717,7 @@ class WifiPumpkin(QtGui.QWidget):
             if self.SettingsEnable['ProgCheck'][6]:
                 if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
                     Thread_driftnet = ThreadPopen(['driftnet', '-i',
-                    self.SettingsEnable['AP_iface'],'-d','./logs/Tools/Driftnet/',])
+                    self.SettingsEnable['AP_iface'],'-d','./logs/tools/Driftnet/',])
                     Thread_driftnet.setObjectName('Tool::Driftnet')
                     self.Apthreads['RougeAP'].append(Thread_driftnet)
                     return Thread_driftnet.start()

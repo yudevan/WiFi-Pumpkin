@@ -8,7 +8,7 @@ from pwd import getpwnam
 from grp import getgrnam
 from time import asctime
 from core.utility.threads import ProcessHostapd,ThRunDhcp,ProcessThread
-from core.WirelessMode.WirelessMode import Mode
+from core.wirelessmode.WirelessMode import Mode
 from core.widgets.default.uimodel import *
 
 

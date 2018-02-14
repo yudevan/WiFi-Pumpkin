@@ -8,7 +8,7 @@ from shutil import move
 from pwd import getpwnam
 from grp import getgrnam
 from core.widgets.customiseds import AutoGridLayout
-from core.WirelessMode import *
+from core.wirelessmode import *
 from json import dumps,loads
 from core.utility.threads import ProcessHostapd,ThRunDhcp,ProcessThread
 from core.widgets.default.uimodel import *

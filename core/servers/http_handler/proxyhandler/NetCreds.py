@@ -11,6 +11,7 @@ class NetCredential(DockableWidget):
     title = "Net Crendential"
     def __init__(self,parent=None,title="",info={}):
         super(NetCredential,self).__init__(parent,title,info)
+        self.setObjectName(self.title)
         self.maindockwidget = QTableWidget()
         self.maindockwidget.setColumnCount(4)
         self.maindockwidget.resizeRowsToContents()
@@ -51,6 +52,7 @@ class NetCredential(DockableWidget):
         self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
 class NetCreds(MitmMode):
     Name = "Net Credentials"
+    ID = "NetCreds"
     Author = "Wahyudin Aziz"
     Description = "Sniff passwords and hashes from an interface or pcap file coded by: Dan McInerney"
     Icon = "icons/tcpproxy.png"

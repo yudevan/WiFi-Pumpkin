@@ -4,15 +4,16 @@ from functools import  partial
 class DockableWidget(QtGui.QDockWidget):
     title = 'Default'
     id = 'default'
+    Icon = "icons/tcpproxy.png"
     addDock = QtCore.pyqtSignal(object)
     def __init__(self,parent=0,t='Default',info={}):
         super(DockableWidget,self).__init__(t)
-        self.setObjectName(t)
         self.parent = parent
         self.title = t
         self.logger = info
         self.startThread = False
         self.processThread = None
+        self.setWindowIcon(QtGui.QIcon(self.Icon))
         self.setSizePolicy(QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Expanding)
         self.setAllowedAreas(QtCore.Qt.AllDockWidgetAreas)
         self.setFeatures(QtGui.QDockWidget.DockWidgetMovable | QtGui.QDockWidget.DockWidgetFloatable)

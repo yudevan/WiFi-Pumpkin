@@ -3,8 +3,6 @@ from collections import OrderedDict
 from functools import partial
 from PyQt4.QtGui import *
 from PyQt4.QtCore import QThread,pyqtSignal
-from time import sleep,asctime,strftime
-import threading
 from threading import Thread
 import Queue
 from scapy.all import *
@@ -14,7 +12,7 @@ from plugins.analyzers import *
 import core.utility.constants as C
 from core.utils import setup_logger
 from core.main import  QtGui
-from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
+from core.servers.proxy.package.ProxyMode import *
 from core.utility.collection import SettingsINI
 from core.widgets.docks.dockmonitor import (
     dockTCPproxy
@@ -68,21 +66,22 @@ class TCPProxyDock(DockableWidget):
         self.maindockwidget.clearContents()
         self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
 
-class TCPProxy(MitmMode):
+class TCPProxy(ProxyMode):
     Name = "TCP Proxy"
     Author = "Wahyudin Aziz"
-    Description = "Sniff for isntercept network traffic on UDP,TCP protocol get password,hash,image,etc..."
+    Description = "Sniff for intercept network traffic on UDP,TCP protocol get password,hash,image,etc..."
     Icon = "icons/tcpproxy.png"
+    Hidden = False
     LogFile = C.LOG_TCPPROXY
     _cmd_array = []
     ModSettings = True
     ModType = "proxy"  # proxy or server
-    def __init__(self,parent,FSettingsUI=None,main_method=None,  **kwargs):
+    def __init__(self,parent=None, **kwargs):
         super(TCPProxy,self).__init__(parent)
         self.mainLayout = QtGui.QVBoxLayout()
         self.config = SettingsINI(C.TCPPROXY_INI)
         self.plugins = []
-        self.main_method = main_method
+        self.parent = parent
         self.bt_SettingsDict = {}
         self.check_PluginDict = {}
         self.search_all_ProxyPlugins()
@@ -159,11 +158,21 @@ class TCPProxy(MitmMode):
         self.layout.addWidget(self.scroll)
         self.setLayout(self.layout)
 
+    def onProxyDisabled(self):
+        self.handler = self.parent.Plugins.MITM
+        self.handler.NetCreds.controlui.setChecked(False)
+        self.handler.URLMonitor.controlui.setChecked(False)
+    def onProxyEnabled(self):
+        self.handler=self.parent.Plugins.MITM
+        self.handler.NetCreds.controlui.setChecked(True)
+        self.handler.URLMonitor.controlui.setChecked(True)
+
+
     def setPluginOption(self, name, status):
         ''' get each plugins status'''
         # enable realtime disable and enable plugin
-        if self.main_method.FSettings.Settings.get_setting('accesspoint', 'statusAP', format=bool):
-            self.main_method.Thread_TCPproxy.disablePlugin(name, status)
+        if self.FSettings.Settings.get_setting('accesspoint', 'statusAP', format=bool):
+            self.Thread_TCPproxy.disablePlugin(name, status)
         self.config.set_setting('plugins', name, status)
 
     def search_all_ProxyPlugins(self):
@@ -191,7 +200,7 @@ class TCPProxy(MitmMode):
             elif data.keys()[0] == 'image':
                 self.ImageCapTAB.SendImageTableWidgets(data['image'])
             else:
-                self.PacketSnifferTAB.tableLogging.writeModeData(data)
+                self.tableLogging.writeModeData(data)
                 self.LogTcpproxy.info('[{}] {}'.format(data.keys()[0],data[data.keys()[0]]))
 
 

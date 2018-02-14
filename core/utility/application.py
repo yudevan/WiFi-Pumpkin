@@ -16,6 +16,7 @@ class ApplicationLoop(QtGui.QApplication):
         self.setWindowIcon(QtGui.QIcon('icons/icon.ico'))
         self.setAppQTDesigner(self.style().objectName())
         self.Settings = SuperSettings()
+        self.Settings.hide()
         if self._memory.attach():
             self._running = True
         else:

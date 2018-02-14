@@ -40,6 +40,7 @@ class MitmDock(DockableWidget):
 
 class MitmMode(Widget):
     Name = "Generic"
+    ID = "Generic"
     Author = "Wahyudin Aziz"
     Description = "Generic Placeholder for Attack Scenario"
     Icon = "icons/plugins-new.png"
@@ -71,7 +72,7 @@ class MitmMode(Widget):
         self.controlui = QtGui.QCheckBox(self.Name)
         self.controlui.setObjectName(QtCore.QString(self.Description))
         self.controlui.setChecked(self.FSettings.Settings.get_setting('mitmhandler', self.Name, format=bool))
-        self.controlui.clicked.connect(self.CheckOptions)
+        self.controlui.toggled.connect(self.CheckOptions)
 
         self.setEnabled(self.FSettings.Settings.get_setting('mitmhandler', self.Name, format=bool))
         self.btnChangeSettings = QtGui.QPushButton("None")
@@ -84,6 +85,7 @@ class MitmMode(Widget):
             self.btnChangeSettings.clicked.connect(self.Configure)
 
         self.dockwidget = MitmDock(None,title=self.Name)
+        self.dockwidget.addDock.emit(self.controlui.isChecked())
         self.mainLayout = QtGui.QFormLayout()
         self.scrollwidget = QtGui.QWidget()
         self.scrollwidget.setLayout(self.mainLayout)

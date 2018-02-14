@@ -2,7 +2,7 @@ from core.config.globalimport import  *
 import weakref
 from core.utility.threads import ProcessHostapd,ThRunDhcp,ProcessThread
 from core.widgets.default.uimodel import *
-from core.WirelessMode.WirelessMode import Mode
+from core.wirelessmode.WirelessMode import Mode
 
 
 class Mana(Mode):

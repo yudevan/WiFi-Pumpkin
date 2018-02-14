@@ -32,6 +32,7 @@ class MitmController(PluginsUI,ControllerBlueprint):
             #self.manipulatorGroup.addButton(p.controlui)
             p.sendSingal_disable.connect(self.DisableMitmMode)
             p.dockwidget.addDock.connect(self.dockUpdate)
+            setattr(self,p.ID,p)
             #self.parent.LeftTabBar.addItem(p.tabinterface)
             #self.parent.Stack.addWidget(p)
 
@@ -73,9 +74,8 @@ class MitmController(PluginsUI,ControllerBlueprint):
     @property
     def ActiveDock(self):
         manobj = []
-        for manip in self.mitmhandler.values():
-            if manip.controlui.isChecked():
-                manobj.append(manip.dockwidget)
+        for manip in self.Activated:
+            manobj.append(manip.dockwidget)
         return manobj
     @property
     def Activated(self):

@@ -6,6 +6,7 @@ from core.servers.http_handler.proxyhandler.MitmMode import MitmMode
 
 class ImageCapture(MitmMode):
     Name = "Image Capture"
+    ID = "ImageCapture"
     Author = "Wahyudin Aziz"
     Description = "Capture Image Sniffed from the connection"
     Icon = "icons/image.png"

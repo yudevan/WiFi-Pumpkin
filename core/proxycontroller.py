@@ -33,7 +33,6 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
         self.NoProxy = None
         for n,p in self.proxies.items():
             if p.Name == "No Proxy":
-                print "{} Is no proxy".format(p.Name)
                 self.NoProxy = p
             self.p_name.append(p.controlui)
             self.p_settings.append(p.btnChangeSettings)
@@ -92,7 +91,6 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
 
     def dockUpdate(self,add=True):
         self.dockMount.emit(add)
-
     def DisableProxy(self,status):
         self.SetNoProxy.emit(status)
     @property
