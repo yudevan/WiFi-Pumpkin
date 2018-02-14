@@ -399,8 +399,7 @@ class WifiPumpkin(QtGui.QWidget):
         # self.proxy.sendSingal_disable.connect(self.get_disable_proxy_status)
         self.proxy.SetNoProxy.connect(self.get_disable_proxy_status)
         #TODO DHCP Configuration Definition
-
-
+got;
         for v in self.proxy.get.values():
             if not v.Hidden:
                 self.LeftTabBar.addItem(v.tabinterface)
