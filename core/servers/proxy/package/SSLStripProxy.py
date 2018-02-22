@@ -231,14 +231,14 @@ class ProxySSLstrip(ProxyMode):
         self.unset_Rules(self.Name)
         self.unset_Rules("dns2proxy")
     def boot(self):
-        self.reactor = ProcessThread({'python': self.CMD_ARRAY})
-        self.reactor._ProcssOutput.connect(self.LogOutput)
-        self.reactor.setObjectName(self.Name)
+        #self.reactor = ProcessThread({'python': self.CMD_ARRAY})
+        #self.reactor._ProcssOutput.connect(self.LogOutput)
+        #self.reactor.setObjectName(self.Name)
         
-        self.subreactor = Thread_sslstrip(self.parent.SettingsEnable['PortRedirect'],
+        self.reactor = Thread_sslstrip(self.parent.SettingsEnable['PortRedirect'],
                                                self.plugins, self._PluginsToLoader,
                                                self.parent.currentSessionID)
-        self.subreactor.setObjectName("sslstrip2")
+        self.reactor.setObjectName(self.Name)
         self.SetRules(self.Name)
         self.SetRules("dns2proxy")
 
@@ -250,4 +250,7 @@ class ProxySSLstrip(ProxyMode):
                     lines.append(str(self.log_inject.item(index).text()))
                 for log in lines: injectionlog.write(log+'\n')
                 injectionlog.close()
+    def onProxyEnabled(self):
+        self.SetRules(self.Name)
+        self.SetRules('dns2proxy')
 

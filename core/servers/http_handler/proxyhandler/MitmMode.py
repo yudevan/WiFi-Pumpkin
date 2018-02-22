@@ -23,6 +23,7 @@ from core.utils import setup_logger
 from core.widgets.customiseds import AutoGridLayout
 from core.widgets.docks.dock import DockableWidget
 from core.wirelessmodecontroller import AccessPointSettings
+from core.widgets.default.uimodel import *
 class Widget(QtGui.QFrame):
     def __init__(self,parent):
         QtGui.QWidget.__init__(self,parent)
@@ -66,7 +67,7 @@ class MitmMode(Widget):
         self.tabinterface.setText(self.Name)
         self.tabinterface.setSizeHint(QtCore.QSize(30, 30))
         self.tabinterface.setIcon(QtGui.QIcon(self.Icon))
-        self.ConfigWindow = QtGui.QDialog()
+        self.ConfigWindow = OptionDialog(self)
         self.ConfigWindow.setWindowTitle("{} Settings".format(self.Name))
 
         self.controlui = QtGui.QCheckBox(self.Name)
@@ -79,7 +80,7 @@ class MitmMode(Widget):
         self.btnChangeSettings.setEnabled(False)
 
         if self.ModSettings:
-            self.btnChangeSettings.setEnabled(True)
+            self.btnChangeSettings.setEnabled(self.controlui.isChecked())
             self.btnChangeSettings.setText("Change")
             self.btnChangeSettings.setIcon(QtGui.QIcon('icons/config.png'))
             self.btnChangeSettings.clicked.connect(self.Configure)
@@ -107,6 +108,8 @@ class MitmMode(Widget):
     def CheckOptions(self):
         self.FSettings.Settings.set_setting('mitmhandler', self.Name, self.controlui.isChecked())
         self.dockwidget.addDock.emit(self.controlui.isChecked())
+        if self.ModSettings:
+            self.btnChangeSettings.setEnabled(self.controlui.isChecked())
         if self.controlui.isChecked() == True:
             self.setEnabled(True)
         else:

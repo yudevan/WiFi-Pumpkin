@@ -45,7 +45,7 @@ class Mana(Mode):
         self.reactor.statusAPError.connect(self.Shutdown)
     @property
     def Settings(self):
-        return ManaSettings.instances[0]
+        return ManaSettings.getInstance()
 
 class ManaSettings(CoreSettings):
     ConfigRoot = "Mana"
@@ -57,6 +57,7 @@ class ManaSettings(CoreSettings):
         self.__class__.instances.append(weakref.proxy(self))
         self.FSettings = SuperSettings.getInstance()
         self.setCheckable(False)
+        self.hide()
 
 
         self.HostapdKarmaPath = QtGui.QLineEdit()
@@ -93,3 +94,7 @@ class ManaSettings(CoreSettings):
         for item in [x for x in str(self.EditBSSID.text()).split(':')]:
             prefix.append(int(item,16))
         self.EditBSSID.setText(Refactor.randomMacAddress([prefix[0],prefix[1],prefix[2]]).upper())
+
+    @classmethod
+    def getInstance(cls):
+        return cls.instances[0]

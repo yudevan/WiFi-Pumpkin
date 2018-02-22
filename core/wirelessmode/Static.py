@@ -24,7 +24,7 @@ class Static(Mode):
 
     @property
     def Settings(self):
-        return StaticSettings.instances[0]
+        return StaticSettings.getInstance()
     def Initialize(self):
         self.check_Wireless_Security()
         dh, gateway = self.SessionConfig.DHCP.conf['router'], str(self.SessionConfig.DHCP.EditGateway.text())
@@ -120,6 +120,7 @@ class StaticSettings(CoreSettings):
         self.__class__.instances.append(weakref.proxy(self))
         self.FSettings = SuperSettings.getInstance()
         self.setCheckable(False)
+        self.hide()
 
 
         self.WSLayout = QtGui.QGroupBox()
@@ -194,3 +195,7 @@ class StaticSettings(CoreSettings):
         self.lb_type_security.setStyleSheet("QLabel {border-radius: 2px;"
         "padding-left: 10px; background-color: #3A3939; color : silver; } "
         "QWidget:disabled{ color: #404040;background-color: #302F2F; } ")
+
+    @classmethod
+    def getInstance(cls):
+        return cls.instances[0]

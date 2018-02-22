@@ -74,11 +74,11 @@ class MitmController(PluginsUI,ControllerBlueprint):
     @property
     def ActiveDock(self):
         manobj = []
-        for manip in self.Activated:
+        for manip in self.Active:
             manobj.append(manip.dockwidget)
         return manobj
     @property
-    def Activated(self):
+    def Active(self):
         manobj =[]
         for manip in self.mitmhandler.values():
             if manip.controlui.isChecked():
@@ -87,7 +87,7 @@ class MitmController(PluginsUI,ControllerBlueprint):
     @property
     def ActiveReactor(self):
         reactor=[]
-        for i in self.Activated:
+        for i in self.Active:
             reactor.append(i.reactor)
         return reactor
     @property
@@ -100,8 +100,8 @@ class MitmController(PluginsUI,ControllerBlueprint):
     def disableproxy(self, name):
         pass
     def Start(self):
-        for i in self.Activated:
+        for i in self.Active:
             i.boot()
     def Stop(self):
-        for i in self.Activated:
+        for i in self.Active:
             i.shutdown()

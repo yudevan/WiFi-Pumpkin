@@ -27,10 +27,14 @@ class ComponentBlueprint(object):
         """
         pass
     def shutdown(self):
-
         pass
+    def LogOutput(self,data):
+        print data
     def Start(self):
-        pass
+        self.PreBoot()
+        self.Initialize()
+        self.boot()
+        self.PostBoot()
     def Stop(self):
         pass
     @property
@@ -39,6 +43,10 @@ class ComponentBlueprint(object):
 
     def stupidthings(self):
         print "From Component Blueprint"
+    def PreBoot(self):
+        pass
+    def PostBoot(self):
+        pass
 
 
 class ControllerBlueprint(object):

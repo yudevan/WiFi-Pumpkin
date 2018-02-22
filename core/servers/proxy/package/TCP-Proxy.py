@@ -53,9 +53,10 @@ class TCPProxyDock(DockableWidget):
         for n, key in enumerate(self.THeaders.keys()):
             Headers.append(key)
             for m, item in enumerate(self.THeaders[key]):
-                item = QTableWidgetItem(item)
+                item = QTableWidgetItem(m)
                 if key != 'Logging':
-                    item.setTextAlignment(Qt.AlignVCenter | Qt.AlignCenter)
+                    item.setTextAlignment(QtCore.Qt.AlignCenter | QtCore.Qt.AlignVCenter)
+                    #item.setTextAlignment(Qt.AlignVCenter | Qt.AlignCenter)
                 self.maindockwidget.setItem(m, n, item)
         self.maindockwidget.setHorizontalHeaderLabels(self.THeaders.keys())
         self.maindockwidget.verticalHeader().setDefaultSectionSize(27)

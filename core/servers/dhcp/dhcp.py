@@ -5,11 +5,13 @@ from core.widgets.customiseds import *
 from core.widgets.default.uimodel import *
 from core.utility.component import ControllerBlueprint
 from isc_dhcp_leases.iscdhcpleases import IscDhcpLeases
+from core.utility.threads import (ProcessThread)
 
 
 class DHCPServers(QtGui.QWidget,ComponentBlueprint):
     Name = "Generic"
     ID = "Generic"
+    ExecutableFile=""
     def __init__(self,parent=0):
         super(DHCPServers,self).__init__()
         self.parent = parent
@@ -43,8 +45,25 @@ class DHCPServers(QtGui.QWidget,ComponentBlueprint):
     def Settings(self):
         return DHCPSettings.instances[0]
     @property
+    def commandargs(self):
+        pass
+    def boot(self):
+        print self.command
+        self.reactor = ProcessThread({self.command: self.commandargs})
+        self.reactor._ProcssOutput.connect(self.LogOutput)
+        self.reactor.setObjectName(self.Name)  # use dns2proxy as DNS server
+
+    @property
     def HomeDisplay(self):
         return DHCPClient.instances[0]
+
+    @property
+    def command(self):
+        cmdpath = os.popen('which {}'.format(self.ExecutableFile)).read().split('\n')[0]
+        if cmdpath:
+            return cmdpath
+        else:
+            return None
     def get_mac_vendor(self,mac):
         ''' discovery mac vendor by mac address '''
         try:
@@ -115,8 +134,9 @@ class DHCPServers(QtGui.QWidget,ComponentBlueprint):
 
 
 class DHCPSettings(CoreSettings):
-    Name = "DHCP"
+    Name = "WP DHCP"
     ID = "DHCP"
+    ConfigRoot = "dhcp"
     instances=[]
 
     def __init__(self,parent=0):
@@ -138,7 +158,7 @@ class DHCPSettings(CoreSettings):
         self.btnSave.setIcon(QtGui.QIcon('icons/export.png'))
         self.btnDefault.setIcon(QtGui.QIcon('icons/settings.png'))
         self.btnDefault.clicked.connect(self.setdefaultSettings)
-        self.btnSave.clicked.connect(self.savesettingsDHCP)
+
 
         self.dhcpClassIP = QtGui.QComboBox()
         self.EditGateway = QtGui.QLineEdit(self)
@@ -147,16 +167,16 @@ class DHCPSettings(CoreSettings):
 
         self.classtypes = ['Class-A-Address', 'Class-B-Address', 'Class-C-Address', 'Class-Custom-Address']
         for types in self.classtypes:
-            if 'Class-{}-Address'.format(self.FSettings.Settings.get_setting('dhcp', 'classtype')) in types:
+            if 'Class-{}-Address'.format(self.FSettings.Settings.get_setting(self.ConfigRoot, 'classtype')) in types:
                 self.classtypes.remove(types), self.classtypes.insert(0, types)
         self.dhcpClassIP.addItems(self.classtypes)
-        self.leaseTimeDef = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'leasetimeDef'))
-        self.leaseTimeMax = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'leasetimeMax'))
-        self.netmask = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'netmask'))
-        self.range = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'range'))
-        self.router = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'router'))
-        self.subnet = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'subnet'))
-        self.broadcast = QtGui.QLineEdit(self.FSettings.Settings.get_setting('dhcp', 'broadcast'))
+        self.leaseTimeDef = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'leasetimeDef'))
+        self.leaseTimeMax = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'leasetimeMax'))
+        self.netmask = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'netmask'))
+        self.range = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'range'))
+        self.router = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'router'))
+        self.subnet = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'subnet'))
+        self.broadcast = QtGui.QLineEdit(self.FSettings.Settings.get_setting(self.ConfigRoot, 'broadcast'))
         self.dhcpClassIP.currentIndexChanged.connect(self.dhcpClassIPClicked)
 
         self.layoutDHCP.addRow(self.modoption)
@@ -186,6 +206,7 @@ class DHCPSettings(CoreSettings):
         self.router.setText(self.FSettings.Settings.get_setting(self.selected,'router'))
         self.subnet.setText(self.FSettings.Settings.get_setting(self.selected,'subnet'))
         self.broadcast.setText(self.FSettings.Settings.get_setting(self.selected,'broadcast'))
+        self.savesettingsDHCP()
     def setdefaultSettings(self):
         self.dhcpClassIP.setCurrentIndex(self.classtypes.index('Class-A-Address'))
         self.leaseTimeDef.setText(self.FSettings.Settings.get_setting('dhcpdefault','leasetimeDef'))
@@ -202,18 +223,16 @@ class DHCPSettings(CoreSettings):
         for types in self.classtypes:
             if not 'Class-Custom-Address' in types:
                 self.all_geteway_check.append(self.FSettings.Settings.get_by_index_key(5,types))
-        self.FSettings.Settings.set_setting('dhcp','classtype',str(self.dhcpClassIP.currentText()).split('-')[1])
-        self.FSettings.Settings.set_setting('dhcp','leasetimeDef',str(self.leaseTimeDef.text()))
-        self.FSettings.Settings.set_setting('dhcp','leasetimeMax',str(self.leaseTimeMax.text()))
-        self.FSettings.Settings.set_setting('dhcp','netmask',str(self.netmask.text()))
-        self.FSettings.Settings.set_setting('dhcp','range',str(self.range.text()))
-        self.FSettings.Settings.set_setting('dhcp','router',str(self.router.text()))
-        self.FSettings.Settings.set_setting('dhcp','subnet',str(self.subnet.text()))
-        self.FSettings.Settings.set_setting('dhcp','broadcast',str(self.broadcast.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'classtype',str(self.dhcpClassIP.currentText()).split('-')[1])
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'leasetimeDef',str(self.leaseTimeDef.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'leasetimeMax',str(self.leaseTimeMax.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'netmask',str(self.netmask.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'range',str(self.range.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'router',str(self.router.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'subnet',str(self.subnet.text()))
+        self.FSettings.Settings.set_setting(self.ConfigRoot,'broadcast',str(self.broadcast.text()))
         if not str(self.router.text()) in self.all_geteway_check:
-            self.FSettings.Settings.set_setting('dhcp','classtype','Custom')
-        self.btnSave.setEnabled(False)
-        self.sendMensage.emit('settings DHCP saved with success...')
+            self.FSettings.Settings.set_setting(self.ConfigRoot,'classtype','Custom')
         self.btnSave.setEnabled(True)
     def updateconf(self):
         self.conf['leasetimeDef'] = str(self.leaseTimeDef.text())

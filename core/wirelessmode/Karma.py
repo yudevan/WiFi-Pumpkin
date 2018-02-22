@@ -12,10 +12,7 @@ class Karma(Mode):
     ID = "Karma"
     def __init__(self,parent=0):
         super(Karma,self).__init__(parent)
-
-
     def Initialize(self):
-
         self.configure_network_AP()
         self.get_soft_dependencies()
         ignore = ('interface=', 'ssid=', 'channel=', 'essid=')
@@ -41,7 +38,7 @@ class Karma(Mode):
         self.reactor.statusAPError.connect(self.Shutdown)
     @property
     def Settings(self):
-        return KarmaSettings.instances[0]
+        return KarmaSettings.getInstance()
 
 class KarmaSettings(CoreSettings):
     ConfigRoot = "Karma"
@@ -57,6 +54,7 @@ class KarmaSettings(CoreSettings):
         self.WLayout.setTitle("Karma AP Settings")
         self.WLGrid = QtGui.QGridLayout()
         self.WLayout.setLayout(self.WLGrid)
+        self.hide()
 
 
         self.HostapdKarmaPath = QtGui.QLineEdit()
@@ -90,3 +88,6 @@ class KarmaSettings(CoreSettings):
         for item in [x for x in str(self.EditBSSID.text()).split(':')]:
             prefix.append(int(item,16))
         self.EditBSSID.setText(Refactor.randomMacAddress([prefix[0],prefix[1],prefix[2]]).upper())
+    @classmethod
+    def getInstance(cls):
+        return cls.instances[0]

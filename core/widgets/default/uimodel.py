@@ -1,6 +1,30 @@
 from core.config.globalimport import *
 import weakref
 
+
+class OptionDialog(QtGui.QDialog):
+    def __init__(self,parent=None):
+        super(OptionDialog,self).__init__(parent)
+        self.parent = parent
+        self.setWindowTitle("{} Options".format(self.parent.ID))
+        self.setMinimumSize(QtCore.QSize(300,100))
+
+        self.layout = QtGui.QFormLayout()
+        groupbox = QtGui.QGroupBox()
+        groupbox.setTitle("Custom Options")
+        self.content = QtGui.QFormLayout()
+        groupbox.setLayout(self.content)
+        self.btnOK = QtGui.QPushButton("OK")
+        self.btnOK.clicked.connect(self.onOK)
+        self.btnCancel = QtGui.QPushButton("Cancel")
+        self.btnCancel.clicked.connect(self.onCancel)
+        self.layout.addRow(groupbox)
+        self.layout.addRow(self.btnOK,self.btnCancel)
+        self.setLayout(self.layout)
+    def onOK(self):
+        pass
+    def onCancel(self):
+        self.close()
 class TabsWidget(QtGui.QWidget):
     Name="Generic"
     ID = "Generic"
@@ -91,7 +115,7 @@ class PluginsUI(QtGui.QGroupBox):
     Name = "Default"
     Caption = "Default"
     ID = "Generic"
-    def __init__(self,parent=0,FSettings={}):
+    def __init__(self,parent=0):
         super(PluginsUI,self).__init__(parent)
         self.parent = parent
         self.FSettings = SuperSettings.getInstance()

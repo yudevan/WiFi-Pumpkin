@@ -16,7 +16,7 @@ from core.widgets.default.SessionConfig import *
 
 class WirelessModeController(QtGui.QTableWidget):
 
-    def __init__(self, parent, FSettings=None, main_method=None, **kwargs):
+    def __init__(self, parent, **kwargs):
         super(WirelessModeController,self).__init__(parent)
         self.parent = parent
         self.FSettings = SuperSettings.getInstance()
@@ -247,12 +247,15 @@ class AccessPointSettings(CoreSettings):
         self.ModeList = {}
         for mode in self.__modelist:
             setattr(self.__class__, mode.ID, mode)
-            self.ModeList[mode.ID] = QtGui.QRadioButton(mode.Name)
-            self.ModeList[mode.ID].setObjectName(mode.ID)
-            self.ModeGroup.addButton(self.ModeList[mode.ID])
-            self.ModeSelectionLayout.addWidget(self.ModeList[mode.ID])
-            self.ModeList[mode.ID].setChecked(self.FSettings.Settings.get_setting('accesspoint', mode.ID,format=bool))
-            self.ModeList[mode.ID].toggled.connect(partial(self.ModelistChanged,self.ModeList[mode.ID]))
+            self.ModeGroup.addButton(mode.controlui)
+            self.ModeSelectionLayout.addWidget(mode.controlui)
+
+            # self.ModeList[mode.ID] = QtGui.QRadioButton(mode.Name)
+            # self.ModeList[mode.ID].setObjectName(mode.ID)
+            # self.ModeGroup.addButton(self.ModeList[mode.ID])
+            # self.ModeSelectionLayout.addWidget(self.ModeList[mode.ID])
+            # self.ModeList[mode.ID].setChecked(self.FSettings.Settings.get_setting('accesspoint', mode.ID,format=bool))
+            # self.ModeList[mode.ID].toggled.connect(partial(self.ModelistChanged,mode,self.ModeList[mode.ID]))
 
 
         # Initialize WLAN Settings
@@ -288,13 +291,12 @@ class AccessPointSettings(CoreSettings):
         self.layout.addWidget(self.GroupAdapter)
         self.layout.addWidget(self.ModeSelection)
 
-    def ModelistChanged(self,widget):
-        self.FSettings.Settings.set_setting('accesspoint',
-                                            widget.objectName(), widget.isChecked())
+    def ModelistChanged(self,mode,widget):
+        pass
     @property
     def getActiveMode(self):
         for mode in self.__modelist:
-            if self.ModeList[mode.ID].isChecked():
+            if mode.controlui.isChecked():
                 return mode
 
     @property

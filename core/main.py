@@ -12,8 +12,7 @@ from platform import dist
 from collections import OrderedDict
 from shlex import split
 
-from core.proxycontroller import *
-from core.mitmcontroller import *
+
 
 from os import (
     system,path,getcwd,
@@ -52,11 +51,18 @@ from core.helpers.report import frm_ReportLogger
 from core.widgets.notifications import ServiceNotify
 from netfilterqueue import NetfilterQueue
 from core.widgets.default import *
-from core.activitymonitorcontrol import *
-from core.wirelessmodecontroller import *
-from core.dhcpcontroller import *
+
+
 from core.defaultwidget import *
+from core.wirelessmodecontroller import *
+from core.proxycontroller import *
+from core.mitmcontroller import *
+from core.dnscontroller import *
 from core.servers.dhcp.dhcp import *
+from core.activitymonitorcontrol import *
+
+from core.dhcpcontroller import *
+
 
 approot = QtCore.QCoreApplication.instance()
 
@@ -227,6 +233,11 @@ class WifiPumpkin(QtGui.QWidget):
 
         #TODO This is a new Implementation to simplify development
         self.coreui = DefaultWidget(self)
+        self.wireless = WirelessModeController(self)
+        self.dnsserver = DNSController(self)
+        self.dnsDockList = []
+        self.dnsserver.dockMount.connect(self.dnsDockAdd)
+
         self.proxy = self.coreui.Plugins.Proxy
         self.proxy.dockMount.connect(self.proxyDockAdd)
         self.proxyDocklist = []
@@ -234,7 +245,6 @@ class WifiPumpkin(QtGui.QWidget):
         self.mitmDockList=[]
         self.AreaDockInfo=[]
         self.mitmhandler.dockMount.connect(self.mitmDockAdd)
-        self.wireless = WirelessModeController(self)
 
         #TODO Might need improvement, checking if the program needed are installed
 
@@ -397,9 +407,9 @@ class WifiPumpkin(QtGui.QWidget):
             if not indexpass:
                 self.index+=1
         # self.proxy.sendSingal_disable.connect(self.get_disable_proxy_status)
-        self.proxy.SetNoProxy.connect(self.get_disable_proxy_status)
+        self.proxy.SetNoProxy.connect(self.
+                                      get_disable_proxy_status)
         #TODO DHCP Configuration Definition
-got;
         for v in self.proxy.get.values():
             if not v.Hidden:
                 self.LeftTabBar.addItem(v.tabinterface)
@@ -461,8 +471,8 @@ got;
                 ],
         }
         self.initial_GUI_loader()
-        self.proxy.Activated.dockwidget.addDock.emit(self.proxy.Activated.controlui.isChecked())
-        for mitm in self.mitmhandler.Activated:
+        self.proxy.Active.dockwidget.addDock.emit(self.proxy.Active.controlui.isChecked())
+        for mitm in self.mitmhandler.Active:
             mitm.dockwidget.addDock.emit(mitm.controlui.isChecked())
         self.DockArrage()
     def updateSettingsAP(self):
@@ -516,13 +526,19 @@ got;
         self.mitmDockList=[]
         self.mitmDockList.extend(self.mitmhandler.ActiveDock)
         self.DockArrage()
-
+    def dnsDockAdd(self,adding=True):
+        for dck in self.dnsDockList:
+            dck.close()
+            self.ActivityMonitor.Dock.removeDockWidget(dck)
+        self.dnsDockList=[]
+        self.dnsDockList.insert(0,self.dnsserver.Active.dockwidget)
+        self.DockArrage()
     def proxyDockAdd(self,adding=True):
         for dck in self.proxyDocklist:
             dck.close()
             self.ActivityMonitor.Dock.removeDockWidget(dck)
         self.proxyDocklist=[]
-        self.proxyDocklist.insert(0,self.proxy.Activated.dockwidget)
+        self.proxyDocklist.insert(0, self.proxy.Active.dockwidget)
         self.DockArrage()
 
 
@@ -530,6 +546,7 @@ got;
         #TODO Find how to refresh dockarea
         self.AreaDockInfo=[]
         self.AreaDockInfo.insert(0,self.proxyDocklist[0])
+        self.AreaDockInfo.extend(self.dnsDockList)
         self.AreaDockInfo.extend(self.mitmDockList)
         for dock in self.AreaDockInfo:
             self.ActivityMonitor.Dock.addDockWidget(QtCore.Qt.LeftDockWidgetArea, dock)
@@ -846,8 +863,6 @@ got;
         #self.slipt.addWidget(self.GroupAP)
         #self.slipt.addWidget(self.GroupApPassphrase)
 
-
-
         self.donatelink = C.DONATE
         self.donateLabel = ServiceNotify(C.DONATE_TXT,title='Support development',
         link=self.donatelink,timeout=10000)
@@ -931,12 +946,6 @@ got;
         self.FSettings.Settings.set_setting('settings', 'show_dashboard_info', False)
         self.Home.APStatus.scroll.setHidden(True)
 
-    # TODO Tobe Removed as it has been moved to SessionConfig.py
-    def check_StatusWPA_Security(self):
-        '''simple connect for get status security wireless click'''
-        self.FSettings.Settings.set_setting('accesspoint',
-        'enable_security',self.GroupApPassphrase.isChecked())
-
     def check_NetworkConnection(self):
         ''' update inferfaces '''
         self.btrn_find_Inet.setEnabled(False)
@@ -944,65 +953,65 @@ got;
         self.set_StatusConnected_Iface(False,'checking...',check=True)
         QtCore.QTimer.singleShot(3000, lambda: self.set_backgroud_Network(interfaces))
 
-    def check_plugins_enable(self):
-        ''' check plugin options saved in file ctg '''
-        #FIXME Trigger for TCP Proxy Need to refactor
-        if self.FSettings.Settings.get_setting('plugins','tcpproxy_plugin',format=bool):
-            self.PopUpPlugins.check_tcpproxy.setChecked(True)
-        self.PopUpPlugins.checkBoxTCPproxy()
-        if self.FSettings.Settings.get_setting('plugins','responder_plugin',format=bool):
-            self.PopUpPlugins.check_responder.setChecked(True)
-        if self.FSettings.Settings.get_setting('plugins','dns2proxy_plugin',format=bool):
-            self.PopUpPlugins.check_dns2proy.setChecked(True)
-        elif self.FSettings.Settings.get_setting('plugins','pumpkinproxy_plugin',format=bool):
-            self.PopUpPlugins.check_pumpkinProxy.setChecked(True)
-        elif self.FSettings.Settings.get_setting('plugins','sergioproxy_plugin',format=bool):
-            self.PopUpPlugins.check_sergioProxy.setChecked(True)
-        elif self.FSettings.Settings.get_setting('plugins','bdfproxy_plugin',format=bool):
-            self.PopUpPlugins.check_bdfproxy.setChecked(True)
-        elif self.FSettings.Settings.get_setting('plugins','noproxy',format=bool):
-            self.PopUpPlugins.check_noproxy.setChecked(True)
-            #self.PopUpPlugins.GroupPluginsProxy.setChecked(False)
-            #self.PopUpPlugins.tableplugincheckbox.setEnabled(True)
-        self.PopUpPlugins.checkGeneralOptions()
+    # def check_plugins_enable(self):
+    #     ''' check plugin options saved in file ctg '''
+    #     #FIXME Trigger for TCP Proxy Need to refactor
+    #     if self.FSettings.Settings.get_setting('plugins','tcpproxy_plugin',format=bool):
+    #         self.PopUpPlugins.check_tcpproxy.setChecked(True)
+    #     self.PopUpPlugins.checkBoxTCPproxy()
+    #     if self.FSettings.Settings.get_setting('plugins','responder_plugin',format=bool):
+    #         self.PopUpPlugins.check_responder.setChecked(True)
+    #     if self.FSettings.Settings.get_setting('plugins','dns2proxy_plugin',format=bool):
+    #         self.PopUpPlugins.check_dns2proy.setChecked(True)
+    #     elif self.FSettings.Settings.get_setting('plugins','pumpkinproxy_plugin',format=bool):
+    #         self.PopUpPlugins.check_pumpkinProxy.setChecked(True)
+    #     elif self.FSettings.Settings.get_setting('plugins','sergioproxy_plugin',format=bool):
+    #         self.PopUpPlugins.check_sergioProxy.setChecked(True)
+    #     elif self.FSettings.Settings.get_setting('plugins','bdfproxy_plugin',format=bool):
+    #         self.PopUpPlugins.check_bdfproxy.setChecked(True)
+    #     elif self.FSettings.Settings.get_setting('plugins','noproxy',format=bool):
+    #         self.PopUpPlugins.check_noproxy.setChecked(True)
+    #         #self.PopUpPlugins.GroupPluginsProxy.setChecked(False)
+    #         #self.PopUpPlugins.tableplugincheckbox.setEnabled(True)
+    #     self.PopUpPlugins.checkGeneralOptions()
     #FIXME has been moved to Static.py
 
-    def check_key_security_invalid(self):
-        return QtGui.QMessageBox.warning(self, 'Security Key',
-                                   'This Key can not be used.\n'
-                                   'The requirements for a valid key are:\n\n'
-                                   'WPA:\n'
-                                   '- 8 to 63 ASCII characters\n\n'
-                                   'WEP:\n'
-                                   '- 5/13 ASCII characters or 13/26 hexadecimal characters')
-    #FIXME Need to be removed after implemented insid wirelessmodecontroller.py
-    def check_Wireless_Security(self):
-        '''check if user add security password on AP'''
-        #New Implementation after refactored
-        if self.GroupApPassphrase.isChecked():
-            self.confgSecurity = []
-            if 1 <= self.WPAtype_spinbox.value() <= 2:
-                self.confgSecurity.append('wpa={}\n'.format(str(self.WPAtype_spinbox.value())))
-                self.confgSecurity.append('wpa_key_mgmt=WPA-PSK\n')
-                self.confgSecurity.append('wpa_passphrase={}\n'.format(self.editPasswordAP.text()))
-                if '+' in self.wpa_pairwiseCB.currentText():
-                    self.confgSecurity.append('wpa_pairwise=TKIP CCMP\n')
-                else:
-                    self.confgSecurity.append('wpa_pairwise={}\n'.format(self.wpa_pairwiseCB.currentText()))
-
-            if self.WPAtype_spinbox.value() == 0:
-                self.confgSecurity.append('auth_algs=1\n')
-                self.confgSecurity.append('wep_default_key=0\n')
-                if len(self.editPasswordAP.text()) == 5 or len(self.editPasswordAP.text()) == 13:
-                    self.confgSecurity.append('wep_key0="{}"\n'.format(self.editPasswordAP.text()))
-                else:
-                    self.confgSecurity.append('wep_key0={}\n'.format(self.editPasswordAP.text()))
-
-            for config in self.confgSecurity:
-                self.SettingsAP['hostapd'].append(config)
-            self.FSettings.Settings.set_setting('accesspoint','WPA_SharedKey',self.editPasswordAP.text())
-            self.FSettings.Settings.set_setting('accesspoint','WPA_Algorithms',self.wpa_pairwiseCB.currentText())
-            self.FSettings.Settings.set_setting('accesspoint','WPA_type',self.WPAtype_spinbox.value())
+    # def check_key_security_invalid(self):
+    #     return QtGui.QMessageBox.warning(self, 'Security Key',
+    #                                'This Key can not be used.\n'
+    #                                'The requirements for a valid key are:\n\n'
+    #                                'WPA:\n'
+    #                                '- 8 to 63 ASCII characters\n\n'
+    #                                'WEP:\n'
+    #                                '- 5/13 ASCII characters or 13/26 hexadecimal characters')
+    # #FIXME Need to be removed after implemented insid wirelessmodecontroller.py
+    # def check_Wireless_Security(self):
+    #     '''check if user add security password on AP'''
+    #     #New Implementation after refactored
+    #     if self.GroupApPassphrase.isChecked():
+    #         self.confgSecurity = []
+    #         if 1 <= self.WPAtype_spinbox.value() <= 2:
+    #             self.confgSecurity.append('wpa={}\n'.format(str(self.WPAtype_spinbox.value())))
+    #             self.confgSecurity.append('wpa_key_mgmt=WPA-PSK\n')
+    #             self.confgSecurity.append('wpa_passphrase={}\n'.format(self.editPasswordAP.text()))
+    #             if '+' in self.wpa_pairwiseCB.currentText():
+    #                 self.confgSecurity.append('wpa_pairwise=TKIP CCMP\n')
+    #             else:
+    #                 self.confgSecurity.append('wpa_pairwise={}\n'.format(self.wpa_pairwiseCB.currentText()))
+    #
+    #         if self.WPAtype_spinbox.value() == 0:
+    #             self.confgSecurity.append('auth_algs=1\n')
+    #             self.confgSecurity.append('wep_default_key=0\n')
+    #             if len(self.editPasswordAP.text()) == 5 or len(self.editPasswordAP.text()) == 13:
+    #                 self.confgSecurity.append('wep_key0="{}"\n'.format(self.editPasswordAP.text()))
+    #             else:
+    #                 self.confgSecurity.append('wep_key0={}\n'.format(self.editPasswordAP.text()))
+    #
+    #         for config in self.confgSecurity:
+    #             self.SettingsAP['hostapd'].append(config)
+    #         self.FSettings.Settings.set_setting('accesspoint','WPA_SharedKey',self.editPasswordAP.text())
+    #         self.FSettings.Settings.set_setting('accesspoint','WPA_Algorithms',self.wpa_pairwiseCB.currentText())
+    #         self.FSettings.Settings.set_setting('accesspoint','WPA_type',self.WPAtype_spinbox.value())
 
 
     def add_DHCP_Requests_clients(self,mac,user_info):
@@ -1016,7 +1025,7 @@ got;
         for index,item in enumerate(ifaces):
             if search('wl', item):
                 self.SessionConfig.Wireless.WLANCard.addItem(ifaces[index])
-        return self.btrn_refresh.setEnabled(True)
+        return self.SessionConfig.Wireless.setEnabled(True)
 
 
     def set_dhcp_setings_ap(self,data):
@@ -1184,19 +1193,19 @@ got;
             if not self.SettingsEnable['ProgCheck'][3]:
                 return QtGui.QMessageBox.warning(self,'Error dhcpd','isc-dhcp-server (dhcpd) is not installed')
         return True
-    #TODO get_dns2proxy_output
-    def get_dns2proxy_output(self,data):
-        ''' get std_ouput the thread dns2proxy and add in DockArea '''
-        if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
-            if hasattr(self,'dockAreaList'):
-                if self.PumpSettingsTAB.dockInfo['Dns2Proxy']['active']:
-                    try:
-                        data = str(data).split(' : ')[1]
-                        for line in data.split('\n'):
-                            if len(line) > 2 and not self.currentSessionID in line:
-                                self.dockAreaList['Dns2Proxy'].writeModeData(line)
-                    except IndexError:
-                        return None
+    # #TODO get_dns2proxy_output
+    # def get_dns2proxy_output(self,data):
+    #     ''' get std_ouput the thread dns2proxy and add in DockArea '''
+    #     if self.FSettings.Settings.get_setting('accesspoint','statusAP',format=bool):
+    #         if hasattr(self,'dockAreaList'):
+    #             if self.PumpSettingsTAB.dockInfo['Dns2Proxy']['active']:
+    #                 try:
+    #                     data = str(data).split(' : ')[1]
+    #                     for line in data.split('\n'):
+    #                         if len(line) > 2 and not self.currentSessionID in line:
+    #                             self.dockAreaList['Dns2Proxy'].writeModeData(line)
+    #                 except IndexError:
+    #                     return None
 
     def get_PumpkinProxy_output(self,data):
         ''' get std_ouput the thread Pumpkin-Proxy and add in DockArea '''
@@ -1432,6 +1441,7 @@ got;
         #TODO The code below is a replacement for the all codes
         self.wireless.Start()
         self.dhcpcontrol.Start()
+        self.dnsserver.Start()
         self.proxy.Start()
         self.mitmhandler.Start()
 
@@ -1448,9 +1458,10 @@ got;
         #         self.THReactor.start()
 
 
-        self.Apthreads['RogueAP'].append(self.wireless.ActiveReactor)
-        self.Apthreads['RogueAP'].append(self.dhcpcontrol.ActiveReactor)
-        self.Apthreads['RogueAP'].append(self.dhcpcontrol.ActiveService)
+        self.Apthreads['RogueAP'].insert(0,self.wireless.ActiveReactor)
+        self.Apthreads['RogueAP'].insert(1,self.dhcpcontrol.ActiveReactor)
+        self.Apthreads['RogueAP'].insert(2,self.dnsserver.ActiveReactor)
+        #self.Apthreads['RogueAP'].append(self.dhcpcontrol.ActiveService)
         self.Apthreads['RogueAP'].extend(self.proxy.ActiveReactor)
         self.Apthreads['RogueAP'].extend(self.mitmhandler.ActiveReactor)
 
@@ -1477,10 +1488,11 @@ got;
             if thread is not None:
                 self.progress.update_bar_simple(i)
                 QtCore.QThread.sleep(1)
-                try:
-                    thread.start()
-                except:
-                    print "Unable to Start {}".format(thread.objectName())
+                thread.start()
+                # try:
+                #     thread.start()
+                # except:
+                #     print "Unable to Start {}".format(thread.objectName())
         self.progress.setValue(100)
         self.progress.hideProcessbar()
         # check if Advanced mode is enable
@@ -1499,8 +1511,10 @@ got;
         print('-------------------------------')
         self.proxy.Stop()
         self.mitmhandler.Stop()
-        self.wireless.Stop()
+        self.dnsserver.Stop()
         self.dhcpcontrol.Stop()
+        self.wireless.Stop()
+
 
         self.FSettings.Settings.set_setting('accesspoint','statusAP',False)
         #TODO Fix this

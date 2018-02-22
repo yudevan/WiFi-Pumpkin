@@ -29,4 +29,8 @@ class SessionConfig(TabsWidget):
     def isSubitem(self):
         return self.__subitem
 
+    @classmethod
+    def getInstance(cls):
+        return cls.instances[0]
+
 

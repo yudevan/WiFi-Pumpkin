@@ -9,17 +9,18 @@ class PyDHCP(DHCPServers):
     def __init__(self,parent=0):
         super(PyDHCP,self).__init__(parent)
     def Initialize(self):
-        if self.FSettings.Settings.get_setting('accesspoint', 'pydns_server', format=bool):
-            self.service = DNSServer(str(self.parent.SessionConfig.Wireless.WLANCard.currentText()),
-                                             self.DHCPConf['router'])
-            self.service.setObjectName('PyDNS')  # use DNS python implements
-
-        elif self.FSettings.Settings.get_setting('accesspoint', 'dnsproxy_server', format=bool):
-            self.service = ProcessThread({'python': ['plugins/external/dns2proxy/dns2proxy.py', '-i',
-                                                             str(self.parent.SessionConfig.Wireless.WLANCard.currentText()),
-                                                             '-k', self.parent.currentSessionID]})
-            self.service._ProcssOutput.connect(self.parent.get_dns2proxy_output)
-            self.service.setObjectName('DNS2Proxy')  # use dns2proxy as DNS server
+        pass
+        # if self.FSettings.Settings.get_setting('accesspoint', 'pydns_server', format=bool):
+        #     self.service = DNSServer(str(self.parent.SessionConfig.Wireless.WLANCard.currentText()),
+        #                                      self.DHCPConf['router'])
+        #     self.service.setObjectName('PyDNS')  # use DNS python implements
+        #
+        # elif self.FSettings.Settings.get_setting('accesspoint', 'dnsproxy_server', format=bool):
+        #     self.service = ProcessThread({'python': ['plugins/external/dns2proxy/dns2proxy.py', '-i',
+        #                                                      str(self.parent.SessionConfig.Wireless.WLANCard.currentText()),
+        #                                                      '-k', self.parent.currentSessionID]})
+        #     self.service._ProcssOutput.connect(self.parent.get_dns2proxy_output)
+        #     self.service.setObjectName('DNS2Proxy')  # use dns2proxy as DNS server
 
 
     def boot(self):

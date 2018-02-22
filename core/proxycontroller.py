@@ -75,11 +75,11 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
 
 
         if self.isChecked():
-            if self.Activated.Name == "No Proxy":
+            if self.Active.Name == "No Proxy":
                 self.SetNoProxy.emit(False)
             else:
 
-                self.parent.set_proxy_statusbar(self.Activated.Name, disabled=False)
+                self.parent.set_proxy_statusbar(self.Active.Name, disabled=False)
                 self.FSettings.Settings.set_setting('plugins', 'disableproxy',
                                                     self.isChecked())
 
@@ -95,7 +95,7 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
         self.SetNoProxy.emit(status)
     @property
     def ActiveDocks(self):
-        return self.Activated.dockwidget
+        return self.Active.dockwidget
 
     @property
     def ActiveReactor(self):
@@ -120,7 +120,7 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
 
 
     @property
-    def Activated(self):
+    def Active(self):
         if self.isChecked():
 
             for act in self.proxies.values():
@@ -142,14 +142,14 @@ class ProxyModeController(PluginsUI,ControllerBlueprint):
         pass
     def Start(self):
         self.setEnabled(False)
-        self.Activated.Initialize()
-        self.Activated.Serve()
-        self.Activated.boot()
+        self.Active.Initialize()
+        self.Active.Serve()
+        self.Active.boot()
 
     def Stop(self):
         self.setEnabled(True)
-        self.Activated.Serve(False)
-        self.Activated.shutdown()
+        self.Active.Serve(False)
+        self.Active.shutdown()
     def SaveLog(self):
 
-        self.Activated.SaveLog()
+        self.Active.SaveLog()

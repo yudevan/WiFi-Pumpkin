@@ -1,19 +1,20 @@
 from core.config.globalimport import *
 from core.utility.threads import ProcessThread
 from core.servers.dns.DNSBase import DNSBase
+from core.servers.dhcp.dhcpserver import  DNSServer
 
-class DNS2ProxyServer(DNSBase):
-    ID = "DNS2Proxy"
-    Name = "DNS2Proxy Server"
-    ExecutableFile = "plugins/external/dns2proxy/dns2proxy.py"
+class PyDNSServer(DNSBase):
+    ID = "PyDNS"
+    Name = "PyDNS Server"
+    ExecutableFile = ""
     def __init__(self,parent):
-        super(DNS2ProxyServer,self).__init__(parent)
+        super(PyDNSServer,self).__init__(parent)
     @property
-    def commandline(self):
+    def commandargs(self):
         cmd=[]
         cmd.insert(0,self.ExecutableFile)
-        cmd.extend(['-i',str(self.parent.SessionConfig.Wireless.WLANCard.currentText()),'-k', self.parent.currentSessionID])
+        cmd.extend(['-i',str(self.SessionConfig.Wireless.WLANCard.currentText()),'-k', self.parent.currentSessionID])
     def boot(self):
-        self.reactor = ProcessThread({'python': self.commandline})
-        self.reactor._ProcssOutput.connect(self.parent.get_dns2proxy_output)
+        self.reactor = DNSServer(str(self.SessionConfig.Wireless.WLANCard.currentText()),
+                                             self.SessionConfig.DHCP.conf['router'])
         self.reactor.setObjectName(self.Name)  # use dns2proxy as DNS server

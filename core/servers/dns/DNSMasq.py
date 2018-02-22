@@ -3,12 +3,16 @@ from core.utility.threads import ProcessThread
 from core.servers.dns.DNSBase import DNSBase
 from core.servers.dhcp.dhcpserver import  DNSServer
 
-class DNSChef(DNSBase):
-    ID = "DNSChef"
-    Name = "DNSChef Server"
-    ExecutableFile = "dnschef"
+class DNSMasq(DNSBase):
+    ID = "DNSMasq"
+    Name = "DNSMasq Server"
+    ExecutableFile = "dnsmasq"
     def __init__(self,parent):
-        super(DNSChef,self).__init__(parent)
+        super(DNSMasq,self).__init__(parent)
+        if self.command is None:
+            self.controlui.setText("{} not Found".format(self.Name))
+            self.controlui.setDisabled(True)
+
     @property
     def commandargs(self):
         cmd=[]

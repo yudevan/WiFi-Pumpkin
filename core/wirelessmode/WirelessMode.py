@@ -1,8 +1,10 @@
 from core.config.globalimport import *
+from re import *
 from os import (
     system,path,getcwd,
     popen,listdir,mkdir,chown
 )
+from shutil import move
 from core.widgets.default.SessionConfig import *
 from core.servers.dhcp.dhcp import DHCPClient
 
@@ -17,16 +19,18 @@ class Mode(QtGui.QWidget):
         super(Mode,self).__init__(parent)
         self.parent = parent
         self.FSettings = SuperSettings.getInstance()
-        self.controlui = QtGui.QCheckBox(self.Name)
-        self.controlui.clicked.connect(partial(self.controlcheck,self.controlui))
+        self.controlui = QtGui.QRadioButton("{}".format(self.Name))
+        self.controlui.toggled.connect(partial(self.controlcheck,self.controlui))
+        self.controlui.setChecked(self.FSettings.Settings.get_setting('accesspoint', self.ID, format=bool))
         self.SettingsAP = {}
         self.hostapd_path = os.path.abspath(
             str(self.FSettings.Settings.get_setting(self.ConfigRoot, '{}_hostapd_path'.format(self.ConfigRoot))))
         self.currentSessionID = self.parent.currentSessionID
         self.SettingsAP = self.parent.SettingsAP
         self.SessionsAP = self.parent.SessionsAP
-        self.SessionConfig = SessionConfig.instances[0]
+        self.SessionConfig = SessionConfig.getInstance()
         self.interfacesLink = Refactor.get_interfaces()
+
     def get_soft_dependencies(self):
         ''' check if Hostapd, isc-dhcp-server is installed '''
         if not path.isfile(self.hostapd_path):
@@ -38,7 +42,15 @@ class Mode(QtGui.QWidget):
     def configure_network_AP(self):
         self.parent.configure_network_AP()
     def controlcheck(self,object):
-        pass
+        self.FSettings.Settings.set_setting('accesspoint',
+                                            self.ID, self.controlui.isChecked())
+        if self.Settings:
+            self.Settings.setEnabled(self.controlui.isChecked())
+            if self.controlui.isChecked():
+                self.Settings.show()
+
+            else:
+                self.Settings.hide()
 
     @property
     def WirelessSettings(self):
@@ -88,3 +100,8 @@ class Mode(QtGui.QWidget):
                 self.parent.StationMonitor.addRequests(data,self.DHCPClient.ClientTable.APclients[data],False)
             self.DHCPClient.ClientTable.delete_item(data)
             self.parent.connectedCount.setText(str(len(self.DHCPClient.ClientTable.APclients.keys())))
+
+
+
+
+
