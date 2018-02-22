@@ -83,3 +83,148 @@ Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
 wlan0: interface state UNINITIALIZED->ENABLED
 wlan0: AP-ENABLED 
 
+SessionID[NjgxNzI=] 2018-02-16 03:01:40,723 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjAyNg==] 2018-02-18 02:25:41,834 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NDY1Mjg=] 2018-02-18 02:25:41,834 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjAyNg==] 2018-02-18 02:26:09,947 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NDY1Mjg=] 2018-02-18 02:26:09,947 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[Mzc1OTU=] 2018-02-18 02:26:09,947 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjI3Mg==] 2018-02-18 02:40:30,658 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjI3Mg==] 2018-02-18 02:40:47,367 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+
+SessionID[MjI3Mg==] 2018-02-18 02:40:47,370 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+
+SessionID[MjI3Mg==] 2018-02-18 02:40:47,370 : wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session 30AC5F865A87CA44
+
+SessionID[ODc5Nzc=] 2018-02-18 02:42:13,464 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODc5Nzc=] 2018-02-18 02:42:26,254 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+
+SessionID[ODc5Nzc=] 2018-02-18 02:42:26,257 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+
+SessionID[ODc5Nzc=] 2018-02-18 02:42:26,257 : wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session 5208FBDCBD12A781
+
+SessionID[Mjk5Nw==] 2018-02-18 02:44:34,543 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session CDEB7AF3C0087137
+
+SessionID[NTYyNw==] 2018-02-18 02:46:42,718 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MjIxNg==] 2018-02-18 02:51:22,320 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjIwNTk=] 2018-02-18 02:53:04,930 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjIwNTk=] 2018-02-18 02:53:29,948 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+
+SessionID[NjIwNTk=] 2018-02-18 02:53:30,115 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+
+SessionID[NjIwNTk=] 2018-02-18 02:53:30,116 : wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session DBD44FC46E488F59
+
+SessionID[MTQxNTI=] 2018-02-18 02:54:11,227 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session 99F38997CD33987C
+
+SessionID[MTgzNTE=] 2018-02-18 02:56:23,024 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MTgzNTE=] 2018-02-18 02:56:29,845 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+
+SessionID[MTgzNTE=] 2018-02-18 02:56:29,847 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+
+SessionID[MTgzNTE=] 2018-02-18 02:56:29,848 : wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session BA504B56565001A4
+
+SessionID[MTgzNTE=] 2018-02-18 02:57:49,996 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[ODcyNzc=] 2018-02-18 02:57:49,996 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MTgzNTE=] 2018-02-18 02:58:06,966 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+
+SessionID[ODcyNzc=] 2018-02-18 02:58:06,966 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: authenticated
+
+SessionID[MTgzNTE=] 2018-02-18 02:58:06,972 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+
+SessionID[ODcyNzc=] 2018-02-18 02:58:06,972 : wlan0: STA c0:87:eb:31:af:e3 IEEE 802.11: associated (aid 1)
+wlan0: AP-STA-CONNECTED c0:87:eb:31:af:e3
+
+SessionID[MTgzNTE=] 2018-02-18 02:58:06,972 : wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session 0FF029D6C747C03C
+
+SessionID[ODcyNzc=] 2018-02-18 02:58:06,972 : wlan0: STA c0:87:eb:31:af:e3 RADIUS: starting accounting session 0FF029D6C747C03C
+
+SessionID[MjY5MjI=] 2018-02-18 04:00:48,011 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[NjQ2MzY=] 2018-02-18 04:01:43,745 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
+SessionID[MTE2NA==] 2018-02-18 04:03:36,903 : Configuration file: core/config/hostapd/hostapd.conf
+Using interface wlan0 with hwaddr bc:f6:85:21:26:0b and ssid "Internet"
+wlan0: interface state UNINITIALIZED->ENABLED
+wlan0: AP-ENABLED 
+
